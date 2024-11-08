@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS backlog (
+    feature_id INTEGER PRIMARY KEY,
+    status TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
