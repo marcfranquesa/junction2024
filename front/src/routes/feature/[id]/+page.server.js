@@ -30,7 +30,6 @@ export const load = async ({ params }) => {
 		};
 	}
 
-	// Funció per obtenir les actualitzacions (backlog)
 	const getUpdates = new Promise((resolve, reject) => {
 		db.all(
 			'SELECT * FROM feature_backlog WHERE feature_id = ? ORDER BY timestamp DESC',
@@ -44,18 +43,14 @@ export const load = async ({ params }) => {
 			}
 		);
 	});
-
-	// Obtenir els updates
 	const updates = await getUpdates;
-	console.log(updates);
 
-	// Retornar les dades a la pàgina
 	return {
 		feature: {
 			name: feature.tag,
 			status: feature.status,
-			description: 'Placeholder description for now', // Potser vols substituir per més dades
-			updates: updates.map((update) => update.status) // Afegeix més camps segons calgui
+			description: feature.description,
+			updates: updates
 		},
 		email: 'example@example.com' // Get it from the user
 	};

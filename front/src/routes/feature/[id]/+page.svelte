@@ -33,7 +33,7 @@
 		<ul class="list-inside list-disc">
 			<ul class="list-inside list-disc">
 				{#each data.feature.updates as update}
-					<li>{update.status}</li>
+					<li>{update.description}<span>{update.timestamp}</span></li>
 				{/each}
 			</ul>
 		</ul>
@@ -66,5 +66,5 @@
 </div>
 
 <style>
-	/* Classes per donar format al layout i colors addicionals, si cal */
+	/* Add if needed */
 </style>
