@@ -23,5 +23,5 @@ RUN poetry install --no-root --no-dev
 COPY . .
 
 # Set the default command to run the Python application
-CMD ["poetry", "run", "python", "test/dummy-db-data.py"]
+CMD ["poetry", "run", "python", "main.py"]
 
