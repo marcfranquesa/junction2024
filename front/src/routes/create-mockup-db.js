@@ -3,11 +3,11 @@ sqlite3.verbose();
 
 // Create a new SQLite database (it will be created if it doesn't exist)
 const db = new sqlite3.Database('./features.db', (err) => {
-  if (err) {
-    console.error("Error opening database:", err.message);
-    return;
-  }
-  console.log("Database opened successfully.");
+	if (err) {
+		console.error('Error opening database:', err.message);
+		return;
+	}
+	console.log('Database opened successfully.');
 });
 
 // Create the 'features' table
@@ -20,12 +20,12 @@ const createFeaturesTableQuery = `
   )
 `;
 
-db.run(createFeaturesTableQuery, function(err) {
-  if (err) {
-    console.error("Error creating features table:", err.message);
-    return;
-  }
-  console.log("Features table created successfully.");
+db.run(createFeaturesTableQuery, function (err) {
+	if (err) {
+		console.error('Error creating features table:', err.message);
+		return;
+	}
+	console.log('Features table created successfully.');
 });
 
 // Create the 'feature_backlog' table with a foreign key reference to 'features'
@@ -39,12 +39,12 @@ const createBacklogTableQuery = `
   )
 `;
 
-db.run(createBacklogTableQuery, function(err) {
-  if (err) {
-    console.error("Error creating feature_backlog table:", err.message);
-    return;
-  }
-  console.log("Feature backlog table created successfully.");
+db.run(createBacklogTableQuery, function (err) {
+	if (err) {
+		console.error('Error creating feature_backlog table:', err.message);
+		return;
+	}
+	console.log('Feature backlog table created successfully.');
 });
 
 // Insert mock data into the 'features' table
@@ -58,13 +58,31 @@ const insertFeaturesQuery = `
     ('Feature E', 'Client 9, Client 10', 'active')
 `;
 
-db.run(insertFeaturesQuery, function(err) {
-  if (err) {
-    console.error("Error inserting features data:", err.message);
-    return;
-  }
-  console.log("Mock features inserted successfully.");
+db.run(insertFeaturesQuery, function (err) {
+	if (err) {
+		console.error('Error inserting features data:', err.message);
+		return;
+	}
+	console.log('Mock features inserted successfully.');
 });
 
-// Insert mock data into the 'feature_backlog' ta
+// Insert mock data into the 'feature_backlog' table
+const insertBacklogQuery = `
+  INSERT INTO feature_backlog (feature_id, status, timestamp)
+  VALUES
+    (1, 'backlog', '2024-11-01 10:00:00'),
+    (1, 'in progress', '2024-11-02 12:30:00'),
+    (2, 'backlog', '2024-11-01 14:00:00'),
+    (2, 'deployed', '2024-11-03 16:00:00'),
+    (3, 'backlog', '2024-11-01 09:00:00'),
+    (4, 'in progress', '2024-11-02 11:00:00'),
+    (5, 'deployed', '2024-11-03 17:00:00')
+`;
 
+db.run(insertBacklogQuery, function (err) {
+	if (err) {
+		console.error('Error inserting feature_backlog data:', err.message);
+		return;
+	}
+	console.log('Mock feature_backlog inserted successfully.');
+});
