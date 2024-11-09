@@ -8,6 +8,15 @@ CREATE TABLE
     );
 
 CREATE TABLE
+    feature_users (
+        feature_id INTEGER,
+        user_id INTEGER,
+        PRIMARY KEY (feature_id, user_id),
+        FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE,
+        FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
+    );
+
+CREATE TABLE
     feature_backlog (
         backlog_id INTEGER PRIMARY KEY AUTOINCREMENT,
         feature_id INTEGER,
@@ -60,3 +69,13 @@ VALUES
     (3, 'backlog', '2024-11-01 09:00:00'),
     (4, 'in progress', '2024-11-02 11:00:00'),
     (5, 'deployed', '2024-11-03 17:00:00');
+
+INSERT INTO
+    feature_users (feature_id, user_id)
+VALUES
+    (1, 101),
+    (1, 102),
+    (2, 103),
+    (3, 101),
+    (4, 104),
+    (5, 105);
