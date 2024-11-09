@@ -1,5 +1,5 @@
 export const load = async ({ params }) => {
-	const response = await fetch(`http://localhost:8000/feature/${params.id}`, {
+	const response = await fetch(`http://api/feature/${params.id}`, {
 		method: 'GET'
 	});
 
