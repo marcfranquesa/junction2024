@@ -7,47 +7,77 @@ app = FastAPI()
 
 # Dummy data for features and feature_backlog
 dummy_features = [
-    {"feature_id": 1, "tag": "Feature A", "status": "active"},
-    {"feature_id": 2, "tag": "Feature B", "status": "inactive"},
-    {"feature_id": 3, "tag": "Feature C", "status": "active"},
-    {"feature_id": 4, "tag": "Feature D", "status": "inactive"},
-    {"feature_id": 5, "tag": "Feature E", "status": "active"},
+    {
+        "feature_id": 1,
+        "name": "Feature A",
+        "tag": "Tag 1",
+        "client_list": "Client 1, Client 2",
+        "status": "active",
+        "description": "Feature A Description",
+    },
+    {
+        "feature_id": 2,
+        "name": "Feature B",
+        "tag": "Tag 1",
+        "client_list": "Client 3, Client 4",
+        "status": "inactive",
+        "description": "Feature B Description",
+    },
+    {
+        "feature_id": 3,
+        "name": "Feature C",
+        "tag": "Tag 1",
+        "client_list": "Client 5, Client 6",
+        "status": "active",
+        "description": "Feature C Description",
+    },
+    {
+        "feature_id": 4,
+        "name": "Feature D",
+        "tag": "Tag 2",
+        "client_list": "Client 7, Client 8",
+        "status": "inactive",
+        "description": "Feature D Description",
+    },
+    {
+        "feature_id": 5,
+        "name": "Feature E",
+        "tag": "Tag 3",
+        "client_list": "Client 9, Client 10",
+        "status": "active",
+        "description": "Feature E Description",
+    },
 ]
 
 dummy_backlog = {
     1: [
         {
             "backlog_id": 1,
-            "status": "backlog",
-            "description": "Update 123",
+            "status": "Change description 1",
             "timestamp": "2024-11-01T10:00:00",
         },
         {
             "backlog_id": 2,
-            "status": "in progress",
-            "description": "Update 456",
+            "status": "Change description 2",
             "timestamp": "2024-11-02T12:30:00",
         },
     ],
     2: [
         {
             "backlog_id": 3,
-            "status": "backlog",
-            "description": "Update 789",
+            "status": "Change description 3",
             "timestamp": "2024-11-01T14:00:00",
         },
         {
             "backlog_id": 4,
-            "status": "deployed",
-            "description": "Update 123",
+            "status": "Change description 4",
             "timestamp": "2024-11-03T16:00:00",
         },
     ],
     3: [
         {
             "backlog_id": 5,
-            "status": "backlog",
-            "description": "Update 456",
+            "status": "Change description 5",
             "timestamp": "2024-11-01T09:00:00",
         },
     ],
@@ -55,13 +85,13 @@ dummy_backlog = {
 
 
 # Endpoint to return a list of features with optional filters
-@app.get("/featurelist")
+@app.get("/featurelists")
 def feature_list(
     tag: Optional[str] = None,
     status: Optional[str] = None,
     user_id: Optional[int] = None,
 ):
-    filtered_features = dummy_features
+    filtered_features: list[dict] = dummy_features
 
     # Apply tag filter
     if tag:
@@ -71,8 +101,11 @@ def feature_list(
         filtered_features = [f for f in filtered_features if f["status"] == status]
     # Dummy filter for user_id
     if user_id:
-        # For this dummy data, assume user_id filtering isn't implemented and return all features
-        pass
+        filtered_features = [
+            f
+            for f in filtered_features
+            if "Client {client_id}" in f["client_list"].split(", ")
+        ]
 
     return filtered_features
 

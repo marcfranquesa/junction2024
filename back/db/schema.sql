@@ -1,6 +1,7 @@
 CREATE TABLE
     features (
         feature_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
         tag TEXT NOT NULL,
         client_list TEXT NOT NULL,
         status TEXT NOT NULL,
@@ -26,34 +27,39 @@ CREATE TABLE
     );
 
 INSERT INTO
-    features (tag, client_list, description, status)
+    features (name, tag, client_list, description, status)
 VALUES
     (
         'Feature A',
+        'Tag 1',
         'Client 1, Client 2',
         'this is the description of this changes 123',
         'active'
     ),
     (
         'Feature B',
+        'Tag 1',
         'Client 3, Client 4',
         'this is the description of this changes 123',
         'inactive'
     ),
     (
         'Feature C',
+        'Tag 1',
         'Client 5, Client 6',
         'this is the description of this changes 123',
         'active'
     ),
     (
         'Feature D',
+        'Tag 2',
         'Client 7, Client 8',
         'this is the description of this changes 123',
         'inactive'
     ),
     (
         'Feature E',
+        'Tag 3',
         'Client 9, Client 10',
         'this is the description of this changes 123',
         'active'
