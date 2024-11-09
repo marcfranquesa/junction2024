@@ -9,7 +9,7 @@
 		alert(`Message submitted:
         - Subject: ${subject}
         - Message: ${message}
-        - From: ${data.email}`);
+        - From: ${data.client.email}`);
 
 		// Reset content
 		subject = '';
@@ -33,13 +33,10 @@
 		<ul class="space-y-2 pl-5">
 			{#each data.feature.updates as update}
 				<li class="flex items-center space-x-2">
-					<!-- Bullet point styling -->
-					<span class="h-2.5 w-2.5 rounded-full bg-blue-500"></span>
-
 					<span class="font-semibold">{update.status}</span>
 
 					<!-- Timestamp styling -->
-					<span class="text-sm text-gray-500">{update.timestamp}</span>
+					<span class="text-sm text-gray-500">{update.timestamp.substring(0, 10)}</span>
 				</li>
 			{/each}
 		</ul>

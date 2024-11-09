@@ -7,6 +7,9 @@ export const load = async ({ params }) => {
 
 	return {
 		feature,
-		email: 'example@example.com' // Get it from the user
+		client: {
+			id: 1,
+			email: 'example@example.com' // Get it from the user
+		}
 	};
 };

@@ -101,10 +101,11 @@ def feature_list(
         filtered_features = [f for f in filtered_features if f["status"] == status]
     # Dummy filter for user_id
     if user_id:
+        for f in filtered_features:
         filtered_features = [
             f
             for f in filtered_features
-            if "Client {client_id}" in f["client_list"].split(", ")
+            if f"Client {user_id}" in f["client_list"].split(", ")
         ]
 
     return filtered_features
@@ -126,8 +127,6 @@ def feature_detail(feature_id: int, limit: Optional[int] = None):
 
     # Include updates in the response
     return {
-        "feature_id": feature["feature_id"],
-        "tag": feature["tag"],
-        "status": feature["status"],
+        **feature,
         "updates": updates,
     }

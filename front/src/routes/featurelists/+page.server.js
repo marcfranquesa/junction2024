@@ -1,5 +1,10 @@
 export const load = async ({ params }) => {
-	const response = await fetch('http://localhost:8000/featurelists', {
+	const client = {
+		id: 1,
+		email: 'example@example.com' // Get it from the user
+	};
+	console.log(`http://localhost:8000/featurelists?user_id=${client.id}`);
+	const response = await fetch(`http://localhost:8000/featurelists?user_id=${client.id}`, {
 		method: 'GET'
 	});
 	const features = await response.json();
@@ -11,6 +16,7 @@ export const load = async ({ params }) => {
 	}
 
 	return {
-		features
+		features,
+		client
 	};
 };
