@@ -22,7 +22,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: "postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:${POSTGRES_PORT}/${POSTGRES_DB}"
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:${POSTGRES_PORT}/${POSTGRES_DB}"
 
   # py:
   #   depends_on:
@@ -34,4 +34,5 @@ services:
   #     POSTGRES_HOST: db
   #     POSTGRES_PORT: ${POSTGRES_PORT}
   #   build: ./back/py
+
 

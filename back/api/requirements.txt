@@ -1,6 +1,3 @@
 fastapi[all]
-asyncpg
-sqlalchemy
-uvicorn[gunicorn]
-databases
-
+sqlmodel
+psycopg2

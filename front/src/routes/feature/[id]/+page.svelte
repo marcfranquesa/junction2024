@@ -9,7 +9,7 @@
 		alert(`Message submitted:
         - Subject: ${subject}
         - Message: ${message}
-        - From: ${data.email}`);
+        - From: ${data.client.email}`);
 
 		// Reset content
 		subject = '';
@@ -30,12 +30,15 @@
 		<p>{data.feature.description}</p>
 
 		<h2 class="mt-4 text-xl font-semibold">Latest Updates</h2>
-		<ul class="list-inside list-disc">
-			<ul class="list-inside list-disc">
-				{#each data.feature.updates as update}
-					<li>{update.description}<span>{update.timestamp}</span></li>
-				{/each}
-			</ul>
+		<ul class="space-y-2 pl-5">
+			{#each data.feature.updates as update}
+				<li class="flex items-center space-x-2">
+					<span class="font-semibold">{update.status}</span>
+
+					<!-- Timestamp styling -->
+					<span class="text-sm text-gray-500">{update.timestamp.substring(0, 10)}</span>
+				</li>
+			{/each}
 		</ul>
 	</div>
 

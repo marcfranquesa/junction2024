@@ -6,6 +6,8 @@
 	else if (status === 'active') statusColor = 'bg-green-500';
 </script>
 
-<div class={`rounded p-2 ${statusColor} font-bold text-white`}>
-	{status}
+<div
+	class={`rounded p-2 ${statusColor} flex min-w-64 items-center justify-center font-bold text-white`}
+>
+	<p>{status.toUpperCase()}</p>
 </div>

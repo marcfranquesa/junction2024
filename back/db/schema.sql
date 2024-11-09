@@ -1,7 +1,9 @@
 CREATE TABLE
     features (
-        feature_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        feature_id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
         tag TEXT NOT NULL,
+        description TEXT NOT NULL,
         status TEXT NOT NULL
     );
 
@@ -10,29 +12,27 @@ CREATE TABLE
         feature_id INTEGER,
         user_id INTEGER,
         PRIMARY KEY (feature_id, user_id),
-        FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE,
-        FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
+        FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE
     );
 
 
 CREATE TABLE
     feature_backlog (
-        backlog_id INTEGER PRIMARY KEY AUTOINCREMENT,
         feature_id INTEGER,
         status TEXT NOT NULL,
-        description TEXT NOT NULL,
-        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+        timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (feature_id, timestamp),
         FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE
     );
 
 INSERT INTO
-    features (tag, status)
+    features (feature_id, name, tag, description, status)
 VALUES
-    ('Feature A', 'active'),
-    ('Feature B', 'inactive'),
-    ('Feature C', 'active'),
-    ('Feature D', 'inactive'),
-    ('Feature E', 'active');
+    (1, 'Feature A', 'Feature A', 'Description for Feature A', 'active'),
+    (2, 'Feature B', 'Feature B', 'Description for Feature B', 'inactive'),
+    (3, 'Feature C', 'Feature C', 'Description for Feature C', 'active'),
+    (4, 'Feature D', 'Feature D', 'Description for Feature D', 'inactive'),
+    (5, 'Feature E', 'Feature E', 'Description for Feature E', 'active');
 
 INSERT INTO
     feature_users (feature_id, user_id)
@@ -89,3 +89,4 @@ VALUES
         'this is the description of this changes 000',
         '2024-11-03 17:00:00'
     );
+
