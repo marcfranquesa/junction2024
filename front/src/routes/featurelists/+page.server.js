@@ -1,6 +1,6 @@
 export const load = async ({ params }) => {
 	const client = {
-		id: 1,
+		id: 101,
 		email: 'example@example.com' // Get it from the user
 	};
 
