@@ -9,6 +9,7 @@ class Features(SQLModel, table=True):
     tag: str = Field(index=True)
     description: str = Field(index=True)
     status: str
+    pdf: str
 
 
 class Feature_Users(SQLModel, table=True):

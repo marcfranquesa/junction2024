@@ -39,13 +39,15 @@
 			</div>
 		</div>
 
-		<div class="feature-description">
-			{feature.description}
-		</div>
+        <div class="feature-description">
+            {feature.description}
+        </div>
 
-		<div class="pdf-link">
-			<a href="pdfs/{feature.pdf}">PDF</a>
-		</div>
+        <a href="/pdfs/{feature.pdf}.pdf" target="_blank">
+            <div class="pdf-link">
+                PDF
+            </div>
+        </a>
 
 		<div class="feature-footer">
 			<span class="feature-id">ID: {feature.feature_id}</span>

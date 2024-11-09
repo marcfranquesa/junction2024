@@ -1,6 +1,5 @@
 <script>
     export let feature;
-    console.log(feature)
 
     $: statusColor = feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
     $: starIcon = feature.following === 1 ? '★' : '☆';  // Full star if following, empty star otherwise

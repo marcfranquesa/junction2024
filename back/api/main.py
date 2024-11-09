@@ -55,6 +55,7 @@ def feature_list(
             "tag": feature[0].tag,
             "description": feature[0].description,
             "status": feature[0].status,
+            "pdf": feature[0].pdf,
             "following": feature[1] if user_id else 0,
         }
         for feature in features
@@ -84,6 +85,7 @@ def feature_detail(
         "tag": feature.tag,
         "description": feature.description,
         "status": feature.status,
+        "pdf": feature.pdf,
         "updates": [
             {"timestamp": update[0].timestamp, "status": update[0].status}
             for update in updates
