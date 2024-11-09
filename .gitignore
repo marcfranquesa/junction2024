@@ -8,7 +8,7 @@ node_modules
 # Output
 .output
 .vercel
-/.svelte-kit
+front/.svelte-kit
 /build
 
 # OS
