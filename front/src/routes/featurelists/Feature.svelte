@@ -1,7 +1,5 @@
 <script>
-    export let feature;
-    console.log(feature)
-
+	export let feature;
 	// Convert client_list string to array
 
 	// Function to get status color

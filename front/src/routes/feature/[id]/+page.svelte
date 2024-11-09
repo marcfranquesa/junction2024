@@ -1,9 +1,13 @@
 <script>
-	import Status from './Status.svelte';
 	export let data;
+
+	const feature = data.feature;
 
 	let subject = '';
 	let message = '';
+
+	$: statusColor =
+		feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
 
 	const submitMessage = () => {
 		alert(`Message submitted:
@@ -18,28 +22,35 @@
 </script>
 
 <div class="w-full space-y-6 p-4">
-	<div class="card">
+	<div class="feature-card">
 		<!-- Header (name and status) -->
-		<div class="flex items-center justify-between">
-			<h1 class="text-3xl font-bold">{data.feature.name}</h1>
-			<Status status={data.feature.status} />
+		<div class="feature-header">
+			<h2 class="feature-title text-2xl">
+				<span class="tag-tag bg-blue-100 text-blue-800">
+					{feature.tag}
+				</span>{feature.name}
+			</h2>
+			<span class="status-badge {statusColor} text-2xl">
+				{feature.status}
+			</span>
 		</div>
 
 		<!-- Feature content (Description and updates) -->
-		<div>
-			<h2 class="text-xl font-semibold">Description</h2>
-			<p>{data.feature.description}</p>
+		<div class="feature-footer">
+			<p class="text-base">{data.feature.description}</p>
+		</div>
 
-			<h2 class="mt-4 text-xl font-semibold">Latest Updates</h2>
-			<ul class="space-y-2 pl-5">
+		<div class="feature-footer">
+			<h2 class="text-xl font-semibold">Latest Updates</h2>
+			<ul class="space-y-2">
 				{#each data.feature.updates as update}
-					<li class="flex items-center space-x-2">
-						<span class="font-semibold">{update.status}</span>
-
+					<li class="update-item flex items-center space-x-2">
 						<!-- Timestamp styling -->
 						<span class="text-sm text-gray-500"
 							>{update.timestamp.substring(0, 10)}</span
 						>
+
+						<span>{update.status}</span>
 					</li>
 				{/each}
 			</ul>
@@ -47,17 +58,18 @@
 	</div>
 
 	<!-- Mail form -->
-	<div class="card">
-		<form on:submit|preventDefault={submitMessage} class="space-y-4">
+	<div class="feature-card">
+		<div class="mb-4">
 			<h2 class="text-xl font-semibold">Any doubt or suggestion?</h2>
 			<p class="text-base font-medium">Leave us a message and we will get you via mail.</p>
-
+		</div>
+		<form on:submit|preventDefault={submitMessage} class="space-y-4">
 			<div class="input-container">
 				<input
 					bind:value={subject}
 					type="text"
 					placeholder="Subject"
-					class="input w-full rounded"
+					class="input mb-2 w-full rounded"
 				/>
 
 				<textarea
@@ -79,21 +91,61 @@
 </div>
 
 <style>
-	.card {
+	.feature-card {
 		background: white;
 		border-radius: 12px;
 		padding: 1.5rem;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transition:
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+	.feature-title {
+		font-weight: 600;
+		color: #1a1a1a;
+	}
+	.feature-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+	.feature-footer {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e5e7eb;
+	}
+	/* Feature details */
+	.update-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		color: #4b5563;
+	}
+	.tag-tag {
+		padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		margin-right: 1rem;
+	}
+	.status-badge {
+		padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		font-weight: 500;
+		text-transform: capitalize;
 	}
 
+	/* Input container for consistent form styling */
 	.input-container {
-		position: relative;
-		margin-bottom: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
+	/* Input styling for both text and textarea */
 	.input {
 		width: 100%;
 		padding: 0.75rem 1rem;
-		padding-right: 2.5rem;
 		font-size: 1rem;
 		border: 2px solid #e5e7eb;
 		border-radius: 8px;
@@ -101,10 +153,14 @@
 		transition:
 			border-color 0.2s ease,
 			box-shadow 0.2s ease;
+		background-color: #f9fafb;
+		color: #1f2937;
 	}
 
+	/* Focused input styling */
 	.input:focus {
 		border-color: #2563eb;
 		box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+		background-color: #ffffff;
 	}
 </style>
