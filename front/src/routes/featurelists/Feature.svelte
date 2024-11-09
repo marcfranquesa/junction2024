@@ -1,8 +1,8 @@
 <script>
-	export let feature;
+    export let feature;
+    console.log(feature)
 
 	// Convert client_list string to array
-	$: clients = feature.client_list.split(', ');
 
 	// Function to get status color
 	$: statusColor =
@@ -20,15 +20,6 @@
 			<span class="status-badge {statusColor}">
 				{feature.status}
 			</span>
-		</div>
-
-		<div class="client-section">
-			<h3 class="client-title">Clients</h3>
-			<div class="client-tags">
-				{#each clients as client}
-					<span class="client-tag">{client}</span>
-				{/each}
-			</div>
 		</div>
 
 		<div class="feature-footer">
