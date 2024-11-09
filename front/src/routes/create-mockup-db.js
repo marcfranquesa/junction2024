@@ -2,7 +2,7 @@ import sqlite3 from 'sqlite3';
 sqlite3.verbose();
 
 // Create a new SQLite database (it will be created if it doesn't exist)
-const db = new sqlite3.Database('./features.db', (err) => {
+const db = new sqlite3.Database('./src/routes/features.db', (err) => {
 	if (err) {
 		console.error('Error opening database:', err.message);
 		return;
@@ -12,7 +12,8 @@ const db = new sqlite3.Database('./features.db', (err) => {
 
 // Create the 'features' table
 const createFeaturesTableQuery = `
-  CREATE TABLE IF NOT EXISTS features (
+  DROP TABLE IF EXISTS features;
+  CREATE TABLE features (
     feature_id INTEGER PRIMARY KEY AUTOINCREMENT,
     tag TEXT NOT NULL,
     client_list TEXT NOT NULL,
@@ -30,10 +31,12 @@ db.run(createFeaturesTableQuery, function (err) {
 
 // Create the 'feature_backlog' table with a foreign key reference to 'features'
 const createBacklogTableQuery = `
-  CREATE TABLE IF NOT EXISTS feature_backlog (
+  DROP TABLE IF EXISTS feature_backlog;
+  CREATE TABLE feature_backlog (
     backlog_id INTEGER PRIMARY KEY AUTOINCREMENT,
     feature_id INTEGER,
     status TEXT NOT NULL,
+    description TEXT NOT NULL,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE
   )
@@ -68,15 +71,15 @@ db.run(insertFeaturesQuery, function (err) {
 
 // Insert mock data into the 'feature_backlog' table
 const insertBacklogQuery = `
-  INSERT INTO feature_backlog (feature_id, status, timestamp)
+  INSERT INTO feature_backlog (feature_id, status, description, timestamp)
   VALUES
-    (1, 'backlog', '2024-11-01 10:00:00'),
-    (1, 'in progress', '2024-11-02 12:30:00'),
-    (2, 'backlog', '2024-11-01 14:00:00'),
-    (2, 'deployed', '2024-11-03 16:00:00'),
-    (3, 'backlog', '2024-11-01 09:00:00'),
-    (4, 'in progress', '2024-11-02 11:00:00'),
-    (5, 'deployed', '2024-11-03 17:00:00')
+    (1, 'backlog', 'this is the description of this changes 123', '2024-11-01 10:00:00'),
+    (1, 'in progress', 'this is the description of this changes 456', '2024-11-02 12:30:00'),
+    (2, 'backlog', 'this is the description of this changes 789', '2024-11-01 14:00:00'),
+    (2, 'deployed', 'this is the description of this changes 123', '2024-11-03 16:00:00'),
+    (3, 'backlog', 'this is the description of this changes 456', '2024-11-01 09:00:00'),
+    (4, 'in progress', 'this is the description of this changes 789', '2024-11-02 11:00:00'),
+    (5, 'deployed', 'this is the description of this changes 000', '2024-11-03 17:00:00')
 `;
 
 db.run(insertBacklogQuery, function (err) {
