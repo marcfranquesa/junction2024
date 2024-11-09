@@ -5,7 +5,9 @@ from sqlmodel import Field, SQLModel
 
 class Features(SQLModel, table=True):
     feature_id: int = Field(primary_key=True)
-    tag: str = Field(index=True)  # Index for faster lookups if needed
+    name: str = Field(index=True)
+    tag: str = Field(index=True)
+    description: str = Field(index=True)
     status: str
 
 

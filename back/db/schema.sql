@@ -1,7 +1,9 @@
 CREATE TABLE
     features (
         feature_id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
         tag TEXT NOT NULL,
+        description TEXT NOT NULL,
         status TEXT NOT NULL
     );
 
@@ -18,20 +20,19 @@ CREATE TABLE
     feature_backlog (
         feature_id INTEGER,
         status TEXT NOT NULL,
-        description TEXT NOT NULL,
         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (feature_id, timestamp),
         FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE
     );
 
 INSERT INTO
-    features (feature_id, tag, status)
+    features (feature_id, name, tag, description, status)
 VALUES
-    (1, 'Feature A', 'active'),
-    (2, 'Feature B', 'inactive'),
-    (3, 'Feature C', 'active'),
-    (4, 'Feature D', 'inactive'),
-    (5, 'Feature E', 'active');
+    (1, 'Feature A', 'Feature A', 'Description for Feature A', 'active'),
+    (2, 'Feature B', 'Feature B', 'Description for Feature B', 'inactive'),
+    (3, 'Feature C', 'Feature C', 'Description for Feature C', 'active'),
+    (4, 'Feature D', 'Feature D', 'Description for Feature D', 'inactive'),
+    (5, 'Feature E', 'Feature E', 'Description for Feature E', 'active');
 
 INSERT INTO
     feature_users (feature_id, user_id)

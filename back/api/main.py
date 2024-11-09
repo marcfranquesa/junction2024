@@ -38,7 +38,9 @@ def feature_list(
     return [
         {
             "feature_id": feature.feature_id,
+            "name": feature.name,
             "tag": feature.tag,
+            "description": feature.description,
             "status": feature.status,
         }
         for feature, in features
@@ -59,7 +61,6 @@ def feature_detail(
         {
             "feature_id": feature.feature_id,
             "status": feature.status,
-            "description": feature.description,
             "timestamp": feature.timestamp,
         }
         for feature, in features
