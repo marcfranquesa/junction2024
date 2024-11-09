@@ -9,5 +9,5 @@
 <div
 	class={`rounded p-2 ${statusColor} flex min-w-64 items-center justify-center font-bold text-white`}
 >
-	<p>{status.toUpperCase()}</p>
+	<p>{status}</p>
 </div>
