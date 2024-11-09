@@ -1,104 +1,57 @@
 <script>
-  import { onMount } from 'svelte';
-  import { writable } from 'svelte/store';
-
-  export let features = [];
-
-  // State for filters
-  let searchQuery = writable('');
-  let showActive = writable(false);
-  let showInactive = writable(false);
-
-  // Filtered features
-  let filteredFeatures = writable(features);
-
-  // Update filter when the searchQuery or switches change
-  function filterFeatures() {
-    let filtered = features;
-
-    // Filter by search query
-    if ($searchQuery) {
-      filtered = filtered.filter(feature =>
-        feature.tag.toLowerCase().includes($searchQuery.toLowerCase())
-      );
-    }
-
-    // Filter by status
-    if ($showActive || $showInactive) {
-      filtered = filtered.filter(feature => {
-        const isActive = feature.status === 'active';
-        const isInactive = feature.status === 'inactive';
-        return (
-          ($showActive && isActive) ||
-          ($showInactive && isInactive)
-        );
-      });
-    }
-
-    filteredFeatures.set(filtered);
-  }
-
-  // Watch for changes in filters
-  $: searchQuery, filterFeatures();
-  $: showActive, filterFeatures();
-  $: showInactive, filterFeatures();
-
-  onMount(() => {
-    filterFeatures();
-  });
+    import Feature from './Feature.svelte';
+    export let data;
+    const { features } = data;
 </script>
 
-<div class="filter-bar">
-  <input
-    type="text"
-    placeholder="Search features..."
-    bind:value={$searchQuery}
-    class="search-input"
-  />
-  <div class="switches">
-    <label>
-      <input type="checkbox" bind:checked={$showActive} /> Active
-    </label>
-    <label>
-      <input type="checkbox" bind:checked={$showInactive} /> Inactive
-    </label>
-  </div>
-</div>
-
-<div class="feature-list">
-  {#each $filteredFeatures as feature}
-    <Feature {feature} />
-  {/each}
+<div class="container">
+    <h1 class="title">Features Dashboard</h1>
+    <div class="features-list">
+        {#each features as feature (feature.feature_id)}
+            <Feature {feature} />
+        {/each}
+    </div>
 </div>
 
 <style>
-  .filter-bar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
+    .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
 
-  .search-input {
-    width: 60%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
+    .title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 2rem;
+    }
 
-  .switches {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 80vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+    }
 
-  .switches input {
-    margin-right: 5px;
-  }
+    /* Styling the scrollbar */
+    .features-list::-webkit-scrollbar {
+        width: 8px;
+    }
 
-  .feature-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
+    .features-list::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .features-list::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .features-list::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 </style>
-
