@@ -1,95 +1,44 @@
 <script>
-	import { onMount } from 'svelte';
-	import {
-		Chart,
-		BarController,
-		CategoryScale,
-		LinearScale,
-		BarElement,
-		Tooltip,
-		Legend
-	} from 'chart.js';
+	import Plot from './Plot.svelte';
+	import Inactive from './Inactive.svelte';
 
 	export let data;
 	const featureCounts = data.feature_counts.feature_counts;
-
-	Chart.register(BarController, CategoryScale, LinearScale, BarElement, Tooltip, Legend);
-
-	let featureChart;
-
-	const labels = featureCounts.map((f) => f.name);
-	const chart_data = {
-		labels,
-		datasets: [
-			{
-				label: 'Users watching the Feature',
-				data: featureCounts.map((f) => f.userCount),
-				backgroundColor: '#2563eb',
-				borderRadius: 8,
-				barPercentage: 0.8
-			}
-		]
-	};
-
-	console.log(labels);
-	console.log(featureCounts.map((f) => f.userCount));
-
-	const options = {
-		responsive: true,
-		scales: {
-			y: {
-				beginAtZero: true,
-				ticks: {
-					color: '#6b7280',
-					stepSize: 1
-				},
-				grid: {
-					color: '#e5e7eb'
-				}
-			},
-			x: {
-				ticks: {
-					color: '#6b7280'
-				},
-				grid: {
-					display: false
-				}
-			}
-		},
-		plugins: {
-			legend: {
-				position: 'top',
-				labels: {
-					color: '#1f2937'
-				}
-			},
-			tooltip: {
-				backgroundColor: '#2563eb'
-			}
-		}
-	};
-
-	onMount(() => {
-		const ctx = document.getElementById('featureChart').getContext('2d');
-		featureChart = new Chart(ctx, {
-			type: 'bar',
-			data: chart_data,
-			options
-		});
-	});
+	const inactiveFeatures = data.inactive_features;
 </script>
 
 <div class="page-container">
-	<h1 class="mb-4 text-2xl font-bold">Feature Relevance Statistics</h1>
+	<h1 class="mb-4 text-2xl font-bold">Internal reporting</h1>
 
-	<div class="chart-card">
-		<canvas id="featureChart"></canvas>
+	<div class="grid-container">
+		<!-- Gràfic -->
+		<div class="chart-card">
+			<Plot {featureCounts} />
+		</div>
+
+		<!-- Llistat de features inactives -->
+		<div class="inactive-features">
+			<Inactive {inactiveFeatures} />
+		</div>
 	</div>
 </div>
 
 <style>
 	.page-container {
 		padding: 2rem;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	/* A partir de mida mitjana (md), es mostren les columnes */
+	@media (min-width: 768px) {
+		.grid-container {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	.chart-card {
@@ -105,6 +54,10 @@
 	.chart-card:hover {
 		transform: translateY(-2px);
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.inactive-features {
+		margin-top: 0; /* Elimina el marge extra quan es passa a dues columnes */
 	}
 
 	/* Text and utility styles */
