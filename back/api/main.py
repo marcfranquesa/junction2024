@@ -89,3 +89,18 @@ def feature_detail(
             for update in updates
         ],
     }
+
+
+@app.get("/users-per-feature")
+def feature_detail(
+    *,
+    session: Session = Depends(db.get_session),
+):
+    query = select(
+        m.Feature_Users.feature_id,
+        func.count(m.Feature_Users.feature_id).label("count"),
+    ).group_by(m.Feature_Users.feature_id)
+
+    result = session.execute(query).all()
+
+    return {"feature_counts": result}
