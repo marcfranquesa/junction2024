@@ -3,7 +3,7 @@ FROM python:3.10-slim
 
 # Install Poetry
 RUN apt-get update \
-    && apt-get install -y curl \
+    && apt-get install -y curl libpq-dev build-essential gcc \
     && curl -sSL https://install.python-poetry.org | python3 - \
     && apt-get clean
 
@@ -23,5 +23,5 @@ RUN poetry install --no-root --no-dev
 COPY . .
 
 # Set the default command to run the Python application
-CMD ["poetry", "run", "python", "main.py"]
+CMD ["poetry", "run", "python", "test/dummy-db-data.py"]
 
