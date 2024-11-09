@@ -6,7 +6,7 @@ export const load = async ({ params }) => {
 	};
 
 	try {
-		const response = await fetch(`http://localhost:8000/featurelists?user_id=${client.id}`, {
+		const response = await fetch(`http://api/featurelists?user_id=${client.id}`, {
 			method: 'GET'
 		});
 
