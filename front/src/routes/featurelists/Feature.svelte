@@ -9,33 +9,56 @@
 		feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
 </script>
 
-<div class="feature-card">
-	<div class="feature-header">
-		<h2 class="feature-title">
-			<span class="tag-tag bg-blue-100 text-blue-800">
-				{feature.tag}
-			</span>{feature.name}
-		</h2>
-		<span class="status-badge {statusColor}">
-			{feature.status}
-		</span>
-	</div>
+<a href="/feature/{feature.feature_id}" class="feature-link"
+	><div class="feature-card">
+		<div class="feature-header">
+			<h2 class="feature-title">
+				<span class="tag-tag bg-blue-100 text-blue-800">
+					{feature.tag}
+				</span>{feature.name}
+			</h2>
+			<span class="status-badge {statusColor}">
+				{feature.status}
+			</span>
+		</div>
 
-	<div class="client-section">
-		<h3 class="client-title">Clients</h3>
-		<div class="client-tags">
-			{#each clients as client}
-				<span class="client-tag">{client}</span>
-			{/each}
+		<div class="client-section">
+			<h3 class="client-title">Clients</h3>
+			<div class="client-tags">
+				{#each clients as client}
+					<span class="client-tag">{client}</span>
+				{/each}
+			</div>
+		</div>
+
+		<div class="feature-footer">
+			<span class="feature-id">ID: {feature.feature_id}</span>
 		</div>
 	</div>
-
-	<div class="feature-footer">
-		<span class="feature-id">ID: {feature.feature_id}</span>
-	</div>
-</div>
+</a>
 
 <style>
+	.feature-link {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+	}
+
+	.feature-card {
+		background: white;
+		border-radius: 12px;
+		padding: 1.5rem;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		transition:
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+
+	.feature-link:hover .feature-card {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
 	.feature-card {
 		background: white;
 		border-radius: 12px;

@@ -101,7 +101,6 @@ def feature_list(
         filtered_features = [f for f in filtered_features if f["status"] == status]
     # Dummy filter for user_id
     if user_id:
-        for f in filtered_features:
         filtered_features = [
             f
             for f in filtered_features
