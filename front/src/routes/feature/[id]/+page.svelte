@@ -43,6 +43,10 @@
 			{feature.description}
 		</div>
 
+		<div class="pdf-link">
+			<a href="pdfs/{feature.pdf}">PDF</a>
+		</div>
+
 		<div class="feature-footer">
 			<span class="feature-id">ID: {feature.feature_id}</span>
 		</div>
@@ -98,6 +102,27 @@
 </div>
 
 <style>
+    .pdf-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #2563eb; /* Blue color */
+      background-color: #f0f9ff; /* Light blue background */
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .pdf-link:hover {
+      background-color: #2563eb; /* Darker blue background on hover */
+      color: #ffffff; /* White text on hover */
+      transform: translateY(-2px); /* Subtle upward movement */
+    }
+
+    .pdf-link:active {
+      transform: translateY(0); /* Return to normal position on click */
+    }
 	.feature-card {
 		background: white;
 		border-radius: 12px;
