@@ -1,0 +1,1072 @@
+Minutes 
+
+1 (17) 
+
+Development Working Group 
+Fingrid Datahub Oy / Marko Juslin 
+11.5.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Fingrid Datahub Development Working Group Meeting 7 
+Time 
+11.05.2023 10:00–14:00 
+
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+
+Present 
+Marko Juslin 
+
+Fingrid Datahub Oy (Chairman) 
+Pauliina Himanen 
+
+Fingrid Datahub Oy (Director) 
+Laura Markkanen 
+
+Fingrid Datahub Oy 
+Jenni Mäkinen 
+
+Fingrid Datahub Oy 
+Elina Konttinen 
+
+Fingrid Datahub Oy 
+Greetta Arha 
+
+Väre
+Suvi Manninen 
+Caruna Oy 
+Mia Nyman 
+Herrfors Nät-Verkko Oy Ab (remotely) 
+Niina Leikas 
+Keravan Energia (arriving at 11:30) 
+Pia Aaltonen 
+Fortum Markets 
+Päivi Karppanen 
+Helen Oy 
+Pekka Eerikäinen 
+Veni Energia Oy (remotely) 
+Kari Iltola 
+Enerkey Oy 
+Kirsi Jylhä 
+Pohjois-Suomen Energiatieto Oy (remotely) 
+Jari Arve 
+Sallila Energiapalvelut Oy (remotely) 
+Absent 
+Niina Leikas until 11:30 
+Agenda 
+1 
+Opening of the meeting, confirmation of attendees and agenda 
+Marko Juslin opened the meeting at 10:02, confirmed attendees and reviewed the meeting's agenda. No comments or additions were made to the agenda. 
+The order of the agenda will be changed so that development proposal #178 will be reviewed first, followed by #202 and #203. After this, we will return to the agenda. 
+In the “Change” item, development proposal #57 “Change of the status of the site from Unavailable to Connected under Construction” will be discussed. We will briefly review the progress in option 2 to identify the scenarios missing from option 2, so that there is no need to meet again. 
+The minutes of the previous meeting were reviewed. Suvi commented on the previous minutes’ entry about situations (item 2, current events, Coming soon comment page 2) in which the seller directs the customer to connect to the network and verify the site’s site ID. 
+The network cannot hand over the ID to the customer if the customer does not have an agreement for the site in question, but it is the electricity seller’s responsibility to verify the site ID. This has been requested to be 
+corrected in a new memorandum. Greetta asked how the situation has changed since the prodat world. Suvi clarified that the seller must find out the usage point ID in question, as in the 
+PRODAT era. That is the seller's task and the industry's guidelines at the moment. 
+
+Minutes 
+
+2 (17) 
+
+Development working group 
+Fingrid Datahub Oy / Marko Juslin 
+11.5.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+2 
+Current review of Datahub 
+Development team, disaster recovery action plan - Elina Konttinen 10 min 
+Elina reviewed the follow-up actions for the December 2022 incident (Appendix 1 “2023 December incident_actions”), which included a disaster recovery exercise. During the incident, the datahub maintenance actions did not go as planned and the exercise reviewed a similar situation. Based on the actions, a strict course of action has been agreed upon to prevent a similar error from occurring in the future. Regarding the problem that occurred, corrections and improvements are coming to the system version in 2024 to avoid similar problems in the future. 
+3 
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+
+Recommendation from the working group (whether to recommend items further in the process) concerns the following items on the development proposal list, proposed solution in Appendix 2 “Datahub change requests 
+20230426: 
+• 
+#178 (Fingrid), metering data process, Pauliina reviewed the material (Appendix 3 “Development proposal 178”). 
+Suvi: According to 2.0, metering data delivery requires system changes and the transition period must be long so that you can make changes to your own system properly. This would require a complete overhaul of the system if you wanted to fix the system. At the moment, the system supplier needs to take action to ensure that the delivery of measurement data is successful according to the current requirements of Datahub. The situation is currently unsustainable. There are still daily queries, and the vendors are not able to invoice the items. 
+Pia: I agree with Suvi and I agree that it is difficult to implement. Purkkana currently operates a daily exchange, which can now be invoiced. 
+Suvi: The processing of renovation items has become significantly more difficult. The problem would be fixed by returning to the 1.0 model. The renovation mode is not needed at all in this case. These are the comments of the people in the measurement data department. The new mode is not a solution at this point. The problem is significant and is not going away. We can be invoiced as a network. Suvi asks how the vendors work. 
+Päivi: We cannot be invoiced when there are no full time series. The system will change in November, so I am excitedI'm waiting to see how it works then. 
+Pia: It works for a few and it doesn't work for a few. Who works for it? Is there a system fault and we're just trying to make this work? 
+Greetta: Our ATJ does not require a time series for the entire period. Time series from connection onwards are sufficient. The change would certainly help so that there would be less scolding about the missing time series. 
+
+Minutes 
+
+3 (17) 
+
+Development working group 
+Fingrid Datahub Oy / Marko Juslin 
+11.5.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Suvi: Balance corrections happen anyway. A factual error in FG's document/presentation that there would be no errors in the balance when delivery is not allowed. There is something to be corrected anyway. 
+Mia: Our metering data system fixes the missing series, so there is no problem with billing. They need a complete series to be able to bill, but the sites will fix this. 
+Jari: The sites are done manually. They want to keep the time series consistent and the billing has been successful. If we start changing, how will it be done with a change in the validation rules? 
+Suvi: It will be covered later in the material. This problem also applies to usage points that have been under construction even before the introduction of 2.0. 2.0 changed the handling of these as well. 
+Marko: What is the long time frame that would be needed to be ready for the 2.0 model in Suvi and Piia's comments? How do we get the willpower? 
+Suvi: It would be important for the industry to agree on how to proceed and to have sufficient time for implementation. Customers are currently not being billed. This problem is visible to end customers. The cost-effective way is to return to the old one. 
+Time extension requested and discussion about returning to the 2.0 model only after this. However, a reasonable amount of time is needed. 
+Pia: Discussion with system suppliers is definitely desirable and 
+requires clarification on their part. 
+Pia: Estimated information should be provided to usage points. 
+Suvi: The network operator would be able to provide a zero series. Datahub would not generate 
+zero, but would allow the network to send it. Just like in version 1.0. Nothing is saved and if it is corrected, the time series must be manually inserted. 
+Greetta: You should ask ET what status the measurement data should be sent with. 
+Greetta and Jari: Our customer information systems are already processing incomplete shifts at the moment. 
+Pia: It depends on the contracts how much the change will cost. Whether it is a legal requirement or just a change, there will not necessarily be any costs. You need to clarify the documentation. 
+The challenge is how often different system suppliers release versions. And the price tag is determined by the type of contract each company has. 
+Suvi: Option 2: It cannot be said that the problem is only with a few parties, but with several. You could have asked the parties about this so that DH would not be unclear that the situation affects such a large group. 
+
+Minutes 
+
+4 (17) 
+
+Development working group 
+Fingrid Datahub Oy / Marko Juslin 
+11.5.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Pia asked Marko to immediately send a message to the system suppliers so that they can 
+start to find out by the next sub-working group (13.6.2023), 
+how big a renovation this is. 
+Option 2: 
+Pia: Regarding usage points, where zero is not delivered, vendors place zero. 
+Suvi: This is the model, wherever it is desired. We would return to a model that would be easier. 
+I will vote for this model. The amount of e-mail has increased between the parties under the current model. 
+Option 3: 
+Greetta: Could Datahub make a mandatory change? And generate billable zero. With what status should this be done? Is it the networks or DH that generates the zero? 
+Marko: Who owns the metering data? This could become a Master data problem, 
+when DH manipulates the metering data in between. 
+
+Final discussion (review of recommendations): 
+Pia: I want to discuss it with the system supplier group first. 
+Suvi: I hope this would go to the sub-working group quickly. We would use a discussion so that it is not a problem for individuals. And I understand that we need to look further afield here. 
+Pia: Customer billing is the most important thing. 
+Päivi: We need a comment from the system supplier. There is a change coming, so 
+I am confused about how to proceed. Maybe it would work in the new system? 
+Suvi: If it drags on for too long, we will have problems as the customer will not be billed this 
+year. 
+Marko: Possible in January through the main version, but there is a possibility to 
+consider a supplementary version earlier, but this is a change that needs to be tested carefully. 
+Päivi: We need to find out who will be able to do it and who will not. 
+Greetta: Option 3, there must be clear rules of the game. Is it possible to submit billing to the network management?ista zero. 
+Summer: Measurement information does not need to be provided if there is no sales contract. FG's 
+the material does not have enough precision at this point. Measurement data must be processed
+guarantee only if there is a sales contract at the destination. 
+ 
+Minutes 
+ 
+5 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Mia: The measurement information system only delivers zero when there is a sales contract 
+exist for ko,item. 
+Kari: None of the options are good, but option 3. 
+Kirsi: Option 1 was supported by us. 
+Mia: Option 1, let's go with this. If there were 3, which would fix the space-
+I do in the whole industry? Can we fix this in our own systems? 
+in places. 
+Jari: Wants to hear from system suppliers.  Currently, option 1. Cat-
+I will go through this again at the June meeting and then I will have a better view. 
+Pekka: Doesn't touch us. Perhaps I would leave it up to the market participants 
+and ET's sustainable solution. I don't take a position on that. 
+Summary (how to proceed with the development proposal) Marko: Let's say, 
+to be taken to a sub-working group. Bigger companies are clear about this.
+much more, although this does not cause problems for some companies. 
+ 
+It requires a discussion in the working group and preliminary questions to be clarified as desired 
+proceed with the following development proposals. In Appendices 2 "Datahub change requests 
+20230426" and background for the discussion and questions: 
+• 
+#202: Discussion of a temporary possible deviant course of action for the spring/ 
+for the summer. Marko presented the matter in accordance with Appendix 4 "Development proposal 202". 
+Greetta: The DH system should change the 07 status to the 05 status. Let's wait 
+DH 2.1 version. It was a big disappointment that the spring version didn't come. 
+Suvi: The way of working, how to establish production sites, is impossible now 
+move in the middle of the season. In order to do anything at all, the object must be ra-
+in the fields Some of the sellers make contracts for a short period of time and some 
+an agreement made months in advance. Kudos to Greetta. Wild west, so 
+sellers have very different operating methods. Everyone works a little in their own way 
+regarding these. During construction, the moment inevitably comes to the sites. There's no way around it 
+get rid of It was not recognized that what could be told to the industry and instructed here. 
+Greetta: It doesn't work if you don't keep it under construction for a long time. Unable to even
+no way to change this way of doing things. Networks transmit consumer
+normal data from the workplace, dh changes it to 07. Status is wrong bill-
+to the 
+Pia: Is it possible to make a decision to replace the 07 status with something else? 
+other?  
+Marko: Let's write it down and settle it as one withdrawal. 
+ 
+Minutes 
+ 
+6 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Kirsi: How to keep the space as short as possible during construction: no place to use it 
+equated to a place of consumption, but not all systems lend themselves to this
+you Fixing the status could solve this problem. 
+Greetta: Unable to process in the seller's system without parallel
+room. 
+Suvi: There is a problem with the status. No matter what the seller does, the status is wrong. 
+Laura: If there was no parallelism, there would be no netting, so there would be no false sta-
+feel 
+Greetta: And when the status under construction has been changed to connected, we only do parallel
+notice of failure. 
+Summer: It is not possible to make changes to the system with this schedule. 
+Summary: Marko: Let's think about the status issue. The instruction does not work and not for the summer 
+get no more changes to the systems. 
+Lunch from 11:30. 
+The meeting continues at: 12.12. 
+Suvi joined remotely at: 12:15 p.m 
+ 
+• 
+#203 (Fingrid), Connection/disconnection process, Pauliina presented appendix 5 "Development proposal 
+203 connection in the middle of the hour. 
+Greetta pointed out that Vartti will fix the situation.  
+Marko asked if the parties have information about the amounts, how much goes into the balance sheet
+to them online because of this. 
+Greetta: Shortcomings in balance sheet agreements are currently causing more balance sheet
+he problem. 
+Suvi: In any case, it is worth doing a survey of the size category of the solution. 
+In a long run, it is theoretically possible to report information to the correct minute. 
+The investigation should be done already at this stage and not after two years 
+get out when the matter comes up again. 
+Kirsi and Mia agree. 
+Mia: the situation will change in a quarter of an hour, but the transition time is long and small 
+the items will come later. These also include a lot of changes and
+shed/connections. So the problem may last for a long time. 
+Summer: A quick reflection that the current model has not suffered any major lossesnights. 
+ 
+Minutes 
+ 
+7 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Greetta: Vartti is in a transitional phase when the measuring devices are renewed. Is this 
+repair possible and reasonable in just 1.5 years? Is it worth using ai-
+and resources for this kind of thing? Connections and interruptions of debt collection, where payment
+challenges and the same items are repeated. Consumption is small with these. 
+Pekka: Is it possible that it will become a practice to cut the lesson 
+goes to whoever interrupted. In practice, the whole hour would be spent
+to the cabbage (seller). Not for network losses / for the seller. Cut-off hour reading per month
+bone to the deal. 
+Greetta: This is not systematically possible, there are no variations that would be col-
+mas option. I don't see that as a realistic option. 
+Pia: Evenings and weekends are chargeable, some networks charge for connections, so 
+the connection status had to be seen correctly from the hub. 
+Summer: Before a quarter of an hour, a customer who is moving appears to the salesperson as a target 
+would be connected. The connection mode is not correct immediately in the data hub. This changes gradually
+with the transition to ti, hardly 15 min will bring down the world. 
+Marko: Is this generally seen as a necessary development proposal? Teh-
+shall I give a more detailed explanation? Vartti will change this for the better. Mi-
+the situation will be seen? 
+Niina: It would be good to do an investigation. An ongoing problem though. Don't worry
+mattu harmful. It would be better if it was the right time. 
+Pia: From the seller's point of view, this is not close. But if the right watch-
+the time is available, so I support exact information and further explanation. Statement 
+also pays. 
+Päivi: There is no objection to investigating the situation. Is it expensive to find out the energy
+amounts which now go to losses? Vartti's change, however, changes ti-
+loin. 
+Greetta: It would be interesting to hear the background as to why the technical
+what time of the day It sounds like a lot of work to dig the data into losses because of this 
+of the remaining amounts. The fix would cause a big change to atj systems. 
+A bigger problem is that the balance agreement does not come back into force on time. 
+Pia: depends on the month when the amount of losses is investigated. In May 
+values ​​higher than in winter, when there was no interruption. Does Marko know what it costs? 
+statement? A hundred? Tons? 
+ 
+Marko: The daily price is in the order of a ton and this cannot be done in a day. 
+ 
+Pia: Then I say no. Not investigated. 
+Kari: Better to save the euros used for the settlement and see how it goes 
+after the transfer it works. Is it relevant then? 
+ 
+Minutes 
+ 
+8 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Suvi: Let's do an investigation of what it would cost if the data hub was notified of the
+to the point. When it has been brought to the table, the investigation work is done. real-time
+that information would be in the data hub and would facilitate clarification work with the customer.  Pit-
+with this scope, if the exact connection time can be reported to the data hub aut-
+guarantees all parties. 
+Pia: If kp shows an outage in the data hub and it is done for another customer 
+moving there, going to the forest when the datahub is miscommunicated 
+due to incorrect switching mode. 
+Niina: Unnecessary clarification is eliminated when the real situation is seen immediately from dh. 
+Pia: The assumption is that real-time information can be seen from the data hub. 
+Niina: Real-time is the most important feature of datahub. 
+Pekka: Absolutely for a minute. How much does the quarter take care of and how much is there for this 
+available resources. Accurate information must be used sometimes, so good 
+discuss at this point. It's not prio one thing. How did these losses go 
+before hubby? 
+Suvi: Before, the network was called to find out what the object's connection status is. Sanoman 
+there was a difference in broadcasts between network companies. Some sent to the equinox that-
+but no. 
+Pekka: So you could imagine that there have always been losses, but you should think, 
+which would serve the parties and think about the operational side. 
+Greetta: The problem is that the balance sheet is at Datahub and these things go 
+to network losses now. DH balance agreements will now come into force on even hours
+I thought. Now this problem occurs when a balance statement is made and the network cannot
+blame the situation because there is no more balance sheet. 
+Marko: In that sense, it went in a worse direction? 
+Greetta: yes 
+Pekka: I support that this could be promoted in a certain way. 
+Jari: No change was seen as necessary and it takes time to get a change. 
+We are on the lookout and the problem will go away. Don't see it as necessary, but can-
+let's find out the costs of that change. 
+Miia: No investigation of losses. Clearing work on moving at the exact time 
+worth doing. Although varttthe transition to i will come, we are talking about the small ones 
+targets, and we will only move forward with regard to these after a couple of years, 
+there are problems with these when there is no proper space to see. Could be many more years 
+problem. What if we were to report to the previous equinox? Should always use
+connection status of the place known. Status of the place of use The problem would be solved if the informa-
+would be set to the previous equinox. The losses are small in these, however. 
+ 
+Minutes 
+ 
+9 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Kirsi: I didn't see the problem as a big one, otherwise we don't even have electricity
+lane. The exact time was not seen as a problem, it is possible to move even with small
+with toxins. I'm interested in how much the changes to different systems cost. 
+Summary of the proposal and its promotion: 
+Marko: It's good to include datahub in the next sub-working group and make a report 
+costs. There's no need to figure out the energy amounts and what's in the losses now. 
+ 
+• 
+#136 (Fingrid), customer information management, Laura 
+Laura introduced proposal 136. 
+Kirsi: There was no feedback on this. One system has earlier 
+created task if the customer's name information changes. It didn't appear now. 
+Mia: It's rare if it happens, but it's not a good thing. What kind of f-
+would be a tannus estimate for the announcement, already implement it? 
+Marko: not yet. Let's first see how to solve it. 
+Laura: If this were to be done, what form should the notification take, e-
+mail or a bigger message? 
+Greetta: Did I understand that the intention was to investigate the matter against VTJ also on a wider
+min. 
+Suvi: There is a problem and the quality of the data is deteriorating. Everyone has 
+it is your responsibility to provide the correct information. 
+Jari: There are quite a few cases. It would seem that datahub would check the extensive
+min data before forwarding. The price tag is important and determines 
+matter. There is a bit of confusion that, in terms of the network, a man calls and the sales
+here's a woman, let's talk about which information is correct and when we get a different address
+that needs to be balled up. These will still remain manual work. 
+Marko: In what format is the best way to inform you of this information? 
+Jari: E-mail still, although otherwise we want to reduce it. 
+Pekka: No work. If there was a solution to prevent the data from getting worse, I would 
+in favor of it. 
+Suvi: I'll compare the previous ones, the problem is real. But is there anything that can be done 
+to do and at what price tag. 
+Niina: Does the whole name have to change or just part of the name. How exactly do you check-
+let's go. Maybe not able to do it right away if they remain in the manual check-
+if that were to happen. Who checks? Seller check? Can dh do 
+ 
+Minutes 
+ 
+10 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+revision and who has access to VTJ. It would be nice if there was an alarm, but no ha-
+luta unnecessary manual work, which would then be part of the wake-up calls. email
+or in the support service or with the user interface, something where the matter is acknowledged
+dyke Not easily solved. 
+Jenni: Datahub does not have the right to check information from VTJ.  
+Pia: Challenging when everyone has different playing equipment. The VTJ system has changed 
+more difficult. You can no longer see all the information you used to see. Not in practice 
+don't know what we can even do about it. We don't have a record of what all 
+could use. Changing the name is easy to do, and these are done nowadays
+chicken a lot. No common rule can be found. The name changes by x and the parties 
+are blocked and no one is doing the raised tasks. I wouldn't do anything about it. 
+Suvi: I strongly sympathize with Pia. The purpose of getting invalid name variables
+you don't catch it, but how do you know what is relevant and what is not. 
+Päivi: It would be nice if I could do something, but I can't figure out how. It would be nice to have 
+catch the real genuine cases, where there is a mistake. Is the situation so that this 
+just have to live with? 
+Pia: All sellers make contracts online in such a way that the buyer is not identified 
+required, so this does not correct the situation. 
+Greetta: The ice breaker was that DH cannot make revisions to the VTJ system. No 
+do nothing if DH can do nothing. 
+Pia: You could investigate how many customers have changed both their last name and last name 
+first name - the information could arouse the parties. Thus, the difference dh- 
+magistrate in between. What information right. 
+Kari: The same goes. Impossible to judge which are false changes. 
+Marko: looks like there's no emperor here? 
+Päivi: Everyone is probably in favor, but impossible to implement. 
+Jari: Are there any grounds on which the authority forbids data hubs from using VTJ? 
+Looked at #116justifications for the proposal, reviewed during the winter, that the current
+according to its legislation, datahub has no right.  
+Jari: Legislation is changed all the time.  
+Suvi: In the future, the FG should bring this need to the attention of the legislators and take it 
+the need to move forward 
+Jari: The parties involved in driving the issue and speeding up the operation. 
+Nina. From the point of view of the customer's data protection, it was best that the checks be made 
+in one place, on FG. 
+ 
+Minutes 
+ 
+11 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Summary of the proposal and its promotion: 
+Marko: Let's find out the possibilities regarding the legislation for the data hub 
+for inspections and what it would mean in terms of the data hub. 
+ 
+o #163 (Greetta Arha Väre Oy), customer information management, 
+Greetta: A sub-working group has now been established to improve the quality of customer information
+in relation to that, which was the purpose of this development proposal. 
+Marko presented the data fields prepared by the customer information management sub-working group
+road quality analyzes (Appendix 7 ” 20230502 Datahub TITTA quality analysis”) and 
+to which part of the development proposal list do these relate. 
+ 
+▪ 
+#31 (Suvi Manninen Caruna Oy), customer information management,  
+Laura reviewed the development proposal. 
+Greetta: Please note that some systems have built-in updates 
+so that when updating the address, information to be deleted is not sent as empty, 
+but only new information. All columns should be sent to datahub and 
+leave blank if necessary so that the information is saved correctly. 
+Mia: The old value remains in the datahub if a row is omitted. Removable road-
+dot must be sent empty. 
+Niina: it's ok 
+Pia: to continue 
+Päivi: to continue 
+Greetta: to continue 
+Kirsi: to continue 
+Mia: go on 
+Jari: to continue 
+Pekka: to continue 
+Summer: to be continued. I would also like to discuss filling in the fields. Kan-
+Natta reminds system administrators about this. 
+Summary of the proposal and its promotion: 
+Marko: The proposal received a clear recommendation and will be taken forward. 
+ 
+Minutes 
+ 
+12 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+ 
+▪ 
+#53 (Fingrid), customer information management, Laura 
+Laura reviewed the development proposal. 
+Päivi: Biting into them, how has it become +358 and zeros. Will still come through 
++358 1234567. 
+Laura: Do you have any idea in which situations or why invented pu-
+ringing numbers? 
+Summer: Spoken in customer information groups. One party at least uses ta-
+paa, to put a fake number. 
+Pia: Would they have the mandatory information in their own account, but not the correct number 
+not known? 
+Päivi: Can we find out who it is and contact them? 
+Suvi: I'm in favor of this and anyone sending incorrect information can be contacted 
+by datahub. 
+Pekka: if there is no other option, I will continue 
+Jari: to continue 
+Miia: Let's continue. I was thinking about the old contracts brought in during the migration, which
+the person responsible has not been known and therefore the number used is +358 000. 
+Can there be problems with mass updates for these? Can you come 
+situations where that should be allowed through when updates are made. 
+Suvi: Good comment. If the information has been migrated, it should not be rejected because of that 
+updates. In migrated online contracts, there will be a problem with these. 
+Are sellers having the same problem? 
+Marko: Processes DH-322 and -321 should be excluded from the list that check-
+regarding them? 
+Miia: You can come across them. According to the rules, after +358 you can't 
+be 0 and these have now. 
+Marko: Such an exception to this. 
+Summer: can you take it easy and look at just one point. 
+Kirsi: to continue 
+Kari: to continue 
+Greetta: to continue 
+ 
+Minutes 
+ 
+13 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Päivi: to continue  
+Niina: to continue 
+Marko: Let's take this further and 322 and 321 will be left out of the third
+regarding that. 
+Summary of the proposal and its promotion: 
+The development proposal is supported and it will be taken forward taking into account the pro-
+sessions DH-321/322, where the third point is not checked (Country code 
+The number following '+358' must not be zero). 
+ 
+▪ 
+#75 (Fingrid), customer information management, Laura 
+Laura reviewed the development proposal. 
+Niina: to continue 
+Maid: to continue 
+Päivi: to continue 
+Greetta: to continue 
+Kari: to continue 
+Summer: to be continued 
+Pekka: to continue 
+Jari: to continue 
+Miia: Let's continue. Existing information can also be updated. Is it going 
+update message or does the system freezein unchanged? 
+Laura: The idea of ​​not correcting existing data. 
+Kirsi: to continue 
+Summary of the proposal and its promotion: 
+Marko: The proposal received a clear recommendation and will be taken forward.  
+ 
+▪ 
+#103 (Fingrid), customer information management, Jenni 
+Jenni reviewed the development proposal. 
+ 
+Minutes 
+ 
+14 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Miia: how many of these are there 
+Greetta: will there be a lot of tickets? 
+Jenni: these have probably come in migration. Not much anymore 
+a lot, not even weekly. 
+Pia: These things continue to come up in connection with bankruptcies. 
+Päivi: Could there be a need for mergers? 
+Pia: The old y-IDs will cease to exist and the others will merge, it does not apply to them. 
+Suvi: It's funny that it's not possible. After the migrations, there may be an agreement 
+to remain invisible to the customer in Datahub's end customer portal. Repair 
+would be good. 
+Pekka; to continue 
+Jari: to continue 
+Miia: to continue 
+Kirsi: to continue 
+Niina: to continue 
+Pia: to continue 
+Päivi: to continue 
+Kari: to continue 
+Summary of the proposal and its promotion: 
+Marko: The proposal received a clear recommendation and will be taken forward.  
+ 
+▪ 
+#150 (Fingrid), customer information management, Laura 
+Laura reviewed the development proposal. 
+Niina: to continue 
+Pia: to continue 
+Päivi: to continue 
+Greetta: margin problem, certainly not a big one to implement, so let's continue 
+Kari: to continue 
+ 
+Minutes 
+ 
+15 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Kirsi: to continue 
+Jari: to continue 
+Pekka: to continue 
+Summer: to be continued 
+Summary of the proposal and its promotion: 
+Marko: The proposal received a clear recommendation and will be taken forward. 
+ 
+▪ 
+#267 (Fingrid), customer information management, Laura 
+Laura reviewed the development proposal. 
+Greetta: A form check that has already been implemented in quite a few systems. Oh-
+can I be in contact with operators who abuse. Individual functions
+of course they will come. Kolibri already checks for these in itself. 
+Miia: Not a single flaw. I don't know how necessary. 
+Kirsi: There is no recognized problem, I support it if necessary. 
+Jari: Not necessary, but it would be nice if the information were correct. It can be done. 
+Pekka: can be done 
+Summer: can be implemented 
+Kari: It's all about the little things, let's continue 
+Greetta: to continue. We have this title: Titta's rules apply to data
+to the hub! 
+Päivi: Good if we include it in the bundle. 
+Pia: to continue 
+Niina: to continue 
+Summary of the proposal and its promotion: 
+This was left unfinished and will be continued at the next meeting. The rest of the agenda 
+the issues go to the next meeting and a couple of discussed issues in the working group
+terrestrial. 
+4  
+Instructions on preparing for emergency situations - 10 min Marko Juslin 
+• 
+Appendix 6: Instructions for the parties on preparing for exceptional situations. 
+ 
+Minutes 
+ 
+16 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Pia: No other comments on the instructions, overall good. But hey-
+sorry for confusing you when the fault situation was on this week. Disturbance 
+commenting challenging. It was said in the disturbance bulletin that the point to comment-
+daan more, but had to wait another hour. The documentation itself does not bring
+ray information here. I would have liked FG's obligation to the parties to come up
+guarantee and any obligation to the contrary. More of that guidance. Let's give in the future 
+the time of day, when will more information be given in the event of disturbances, now the communication is too round-
+round. 
+Mia: It would be nice to know how long the malfunction lasts. Is it about 
+long-term problem or not, so you know if you need to start using buffering 
+on. 
+Suvi: I think it's hard to be prepared when the message is a bit vague. Probably-
+there have been such situations. And it is unclear when to announce with texters. 
+Pia: We don't have a buffer button. Everything that doesn't go to the hub stays
+to them. After the break, we will start sending those who missed the error. Should the organization
+about to have a buffering mode? In terms of documentation, can you think that 
+whether we are talking about buffered or error messages. 
+Summer: Komppaan Piaa. The wording could be opened up so that it is not quite so restrictive
+done as a term. 
+Summary: 
+Marko: A new version will be updated for the September meeting.
+away. 
+5  
+Future change needs - 10 min Marko Juslin 
+There was no time to deal with this point. 
+6  
+Next meeting times 
+Meetings of the development working group at the end of 2023:7.11. and 19.12. 
+7  
+Change 
+In the last sub-working group there was development proposal #57, which is related to the use of the under construction
+to the starting rules of place contracts. The sub-working group received feedback that in the described scenarios
+not all situations are depicted in the narratives.  We put our own central
+I'll tell you about this and link the material and the deadline, we'll complete it through that. 
+ 
+8  
+Closing the meeting 
+- 
+Marko closed the meeting at: 14:08. 
+ 
+Minutes 
+ 
+17 (17) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+11/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+ 
+Attachments 
+ 
+ 
+Appendix 1 December 2023 disturbance situation_measures 
+Appendix 2 Datahub Change wishes 20230426 
+Appendix 3 Development proposal 178 
+Appendix 4 Development proposal 202 
+Appendix 5 Development proposal 203 connection in the middle of the hour 
+Appendix 6 Instructions for the parties on preparing for exceptional situations 
+Appendix 7 20230502 Datahub TITTA quality analysis 
+ 
+ 
+Distribution 
+Development team members and industry

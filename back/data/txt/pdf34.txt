@@ -1,0 +1,596 @@
+Minutes 
+ 
+1 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 13 - 05/2024 
+Time 
+6/5/2024 10:00–13:40 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy  
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (director) 
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy (site).  
+Suvi Manninen 
+ 
+Caruna Oy 
+Mari Lehikoinen 
+ 
+Väre Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets  
+ 
+Hanna Surakka  
+ 
+Helen Oy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Tomi Mäkelä  
+ 
+Elenia Verkko Oy 
+Mikko Vähäsaari 
+ 
+Savon Voima Verkko Oy 
+ 
+Away 
+  
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab  
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+ 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting and we went through a presentation tour. The group has a new representative 
+Tomi Mäkelä from Elenia along. After this, Marko reviewed the agenda of the meeting and 
+a request came from the group to discuss handling the tax rate change in datahub. You realize-
+it was decided to take it under "Other matters".  
+The minutes of the previous meeting were reviewed. 
+2  
+Competition law instructions for the development work group – Appendix 1 
+Marko went through Fingrid's competition law guidelines for customer committees. 
+3  
+Current overview of Datahub 
+Current affairs of the customer service - Appendix 2 
+Nelli told the working group about the current affairs of Datahub's customer service. The service level is 
+still good. The spring balance sheet error calculations were completed on schedule and even ahead of schedule. Tu-
+Nelli mentioned the Datahub seminar and the main user forum as popular events. 
+ 
+Minutes 
+ 
+2 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Current affairs of the development team 
+Didn't go through this time. 
+4  
+Service contract availability changes – Appendix 3 
+Marko went through Datahub's proposed changes to the appendices of the service agreement. 
+The group commented that the datahub's instructions should include a process description, how 
+exclusion of the party from the data hub is done, but there is no need to include it 
+to the service contract appendices. You also have to think to what level process description is necessary 
+to do, not necessarily to a detailed level. Communication on the matter should also be described 
+as part of the process. Otherwise, there were no comments from the group regarding the change conditions for the availability item.
+to the tusk. 
+Regarding other changes to the service contract, the group came up with a proposal from section 2.1 that it would be 
+these are better to be attached with French lines. Now quite a bit heavy to read and would be 
+easier to use and better to maintain if the document set changes.  
+Other changes to the service contract. Section 4.3: A conflict was raised about the group
+regarding the times in the second point, when maintenance breaks should not be made. 
+There were no other comments from the group regarding other changes to the service contract change conditions
+to the tusk. 
+The planned schedule for the changes to the terms of service and the promotion of confirmation is presented
+to the working group. 
+5  
+Questionnaire proposal about a possible data hub implementation related to the irrelevant 
+to relocations – Appendix 4  
+Laura went through the questionnaire and the clarifications requested from the group regarding the use of the data hub.
+in identifying unwarranted moves. It was found that the inspection alternatives
+questions 1, 2, 3, 5, 7 and 8 about
+dolism for free comment. Question 4 provides suggested answer options 
+and the possibility of free comment. The inspection according to section 6 cannot be carried out, 
+but the situation is submitted to the survey as an identified case. Presumably for the parties 
+situations that cause a lot of manual work will be mentioned separately 
+points. In addition, it was stated that the notification according to section 1 would also be useful for distribution ver-
+for conhalts. The survey is only sent to sellers, but if the sellers see the situation 1 mu-
+necessary, the implementation of the notification is taken into account in the same context 
+also for the web.  
+The survey is supposed to be sent to the parties during May with a response time of one month, so that 
+the answers will be received before the summer holidays. In the distribution of the questionnaire, e.g. head
+the user forum and the results will be reviewed in the development group.   
+ 
+Minutes 
+ 
+3 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+FaxBusiness ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+6  
+Industry comments on changes in the development of customer information quality management – 
+Appendix 5 
+Marjut Huotari went through the comments from the industry and, based on them, Datahub
+propose changes related to the development of customer information quality management and comment
+to the documents you had, The business processes of the electricity retail market data hu-
+bissa, Datahub events and Datahub Name and Address structure instructions.  
+Datahub's Name and Address structure instructions: 
+2.1 Addresses in the form of postal addresses should be deleted from the section "If necessary". Not to this 
+comments from the group. 
+Chapter 2 address structure: The group concluded that in YTJ all customers' contact
+the information is not necessarily correct, the customer's name is. There was a discussion in the group, 
+can the entry into force period of the information be used in YTJ to determine the correctness of the information
+in it and it was stated that based on that, one cannot be sure of the correctness of the information. Mouth-
+rem customers' information is usually fine in YTJ, and they have problems connecting
+regarding the correctness of data management. The group concluded that the information also in some other
+in real situations, they update to YTJ with a rather long delay. The group concluded that there is no reason to refer 
+only as a source of correct information for YTJ. The group's proposal was "Corporate customers' postal
+the address must be the address of the main office. Addresses of possible separate locations
+dot is maintained in the contract information (billing address). Some business customers maintain an active
+address information in YTJ for the main office or on their own website". 
+Introduction paragraph update: No comments from the group. 
+Sections 3 and 4 customer's e-mail address and phone number:  
+The group proposed the following wording to replace the proposed change:
+with akka, the address must be a general email address/phone number. Company contact
+the person's information is maintained in the contract information. 
+Section 5 Billing address: The group was also asked about changes in the terms of online services
+because, does it affect this. It was stated that there will be no change regarding this point. Group 
+stated that there is no need for changes to the proposed wording. 
+Section 2.4 customer address:  
+The group commented that a customer can have three different addresses in a certain situation. 
+The address of the place of use is always included on the invoice. A business customer of several different offices 
+there is no place for addresses in datahub, unless the address in question is a billing address. Group eh-
+dotti not to make the proposed change to this section (can only confuse the reader), but 
+let's bring it up through an example, in the form of Fingrid. 
+Section 3.1 consumer customers: The group concluded that the proposed change is appropriate, only
+guarantee that we write open DVV. YTJ could also be written open elsewhere in the document. 
+Section 2.2 detailed instructions for the street address: The group stated that it could be used to pre-
+in the sign "Saaristo" the address because the street is usually expected to have a house number. 
+ 
+Minutes 
+ 
+4 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Where should Poste Restante be recorded?: No comments from the group on the proposal 
+that there is no change to the current guidelines. 
+The business processes of the electricity retail market in the data hub:  
+Section 3.1.2 DH-110 Maintenance of customer information: The group stated that the same texts are not repeated
+you, but we refer to the section of the instruction document that contains an example, thus easier to maintain
+this, if there are any changes. 
+3.1.2.2. Correctness and maintenance of customer data: The same comments from the group as before
+to that point.  
+Business processes document comments, additional DH messages: About group 
+an example was given where the customer has two vendors and in the data hub the second vendor's storage
+Mana is misinformation. The network company does not receive the sellers' information. Online still own, van-
+outdated information. Datahub has been in use for more than two years, can you hang on to customers who 
+several sellers, and no one has noticed any mistakes. The determination of customer data update requests
+rags can be in the hundreds every day. 
+In the past, extra messages have meant rounding up customer information, so no 
+reason to mix this up.  
+If the proposed change were to be made, it would cause a need for change in the industry's systems 
+to check the changes against datahub. 
+The group concluded that there is no need to change the current design, i.e. no proposals are made
+that design. The issue will also be discussed at the SÄTI days. The goal is to get rid of it 
+large masses of erroneous events. 
+Datahub events: 
+Datahub transactions Section 4.1 Customer data update - seller: Rone stated that 
+we refer to the same instruction as already mentioned above. 
+4.2. and 4.3 – JVH and 3rd party: The group stated that also for these, the reference to the instruction 
+respectively. 
+Section 4.4 DH-114 notice on updating the customer's identifier: No com-
+ments for the proposed change to be made to the business documentation. 
+ 
+ 
+Minutes 
+ 
+5 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+7  
+Presentation of development proposals and recommendation decision 
+7.1  
+Recommendation from the working group (whether items are recommended for further development process
+in), applies to the following points in the list of development proposals, the solution proposal attached
+in you Appendix 6 and "Appendix 7 Datahub change requests 20240422": 
+7.1.1  
+Development proposal #280, Comparison of the average of the corresponding end-user group 
+with the end user 
+Marko introduced the situation of the development proposal. There has been no response from EV to numerous contact
+samples regardless of how the end-user group is defined for comparison and data-
+the hub's user group does not meet the need because the average would be calculated on the basis of
+vin according to apartments with different energy use. Fingrid Datahub is also a dispatch
+made an official request for instructions to EV because it is EV's responsibility to issue instructions on this. 
+It was concluded from the group that the legal provisions are added to the invoices sent by the parties and the guidelines
+I guarantee customers to check the situation on datahub's end customer portal. Thus, as a problem 
+is that the section of the law is not fulfilled if that information cannot be compared in the data hub. The group stressed that 
+there should be a solution to this and soon. 
+Regarding the group, it was stated that the user groups of the datahub were originally formed by Statistics
+on the basis of grouping. From the group, it was suggested that the current user group
+online using the annual usage estimate. For example, Apartment buildings under 5000 kWh/year, over 5000 
+kWh, etc... Similarly, for single-family houses, in a similar way. This would be, at least in the short term,
+solution of the table. Tentatively planned solution planned with Statistics Finland 
+can also be promoted. Regarding the group, it was concluded that the end-user grouping can be updated 
+e.g. once a year for old places of use and once a month for new ones 
+end user groupings are obtained for comparison. The group also highlighted the fuse
+using size for groupings, but it was also noted that for these data, the data 
+the level of maintenance varies between companies. 
+The group also stated that they have already started making their own solutions, but when the final
+nen solution can be found in Datahub, then we will move on to using it. Of the group, highlight-
+the importance of one centralized solution was emphasized. 
+Summary: The development team recommended that a solution be made soon based on the data hub 
+to the user group and the annual usage estimate and continue with the direction of the Statistics Finland's alternative
+scolding. 
+7.2  
+It requires a discussion in the working group and preliminary questions to be clarified, mi-
+we want to proceed with the following development proposals. In the Appendix "Appendix 7 
+Datahub changes wishes 20240422" background for discussion and questions
+it:   
+7.2.1  
+Development proposal #88, Validation of information arriving at Datahub 
+Tomi initiated the development proposal. It would be easier to check how from the user interface 
+a lot of invoice line information has been sent. Tomi stated that the point is that when invoice line data 
+are sent and if they are sent via Datahub in the future, the amount per network may increase 
+to high. In practice, it would be best and easiest to look at these from the user interface. Tom 
+ 
+Minutes 
+ 
+6 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+stated that we are talking about thousands of lines per month. Datahub stated that the user
+there is no change to the connection in terms of line restrictions (performance issue). 
+ 
+The group stated that the issue is still topical and could be handled with a report. From the group 
+it was also pointed out that the report could be run based on a certain date and also sell
+again, this would be useful, you would see "this much has been sent", i.e. how much has come online 
+this information. 
+ 
+ 
+7.2.2  
+Development proposal #101, Changes to the measurement data search view 
+The group commented that datahub has already been implemented in the latest version
+data feature and it is also possible to download the data to Excel. Datahub still ensures this
+internally and we are in contact with the ticket holder to see if the current solution is sufficient. Eh-
+otherwise, there is no need to move forward with dotus. 
+ 
+7.2.3  
+Development Proposal #155, USeamma's place of use/customer/contract information search 
+at once 
+The group commented that this has been a challenge, especially in small-scale production
+in terms of equipment. The change to the data hub can be big, but it was stated that the change will be investigated 
+scope. 
+ 
+7.2.4  
+Development proposal #158, Customer portal error message is not descriptive 
+Pauliina said that the end customer's error had occurred during the datahub's disruption situation and 
+no other similar situations have been encountered. The group concluded that error messages could 
+be clearer so that the user can understand them. Datahub can check what the error messages are 
+tasks. 
+ 
+7.2.5  
+Development proposal #173, Management of members of energy communities to the data hub 
+Pia stated that this ET's previous proposal had now been asked again and it was stated that this 
+there is no need for change. The group agreed. Marko also stated that here is 
+chicken-and-egg problem, i.e. community members cannot be managed in datahub until it is pe-
+connected to the data hub, but it cannot be set up until the administrative members are agreed. Marko 
+stated that there are also separate commercial solutions for this. 
+ 
+7.2.6  
+Development proposal #214, User numbers of the parties' customers in the data hub 
+The group concluded that this would be good information especially for the network. Some networks are strategic
+logically aligned that they will direct end customers to the datahub's customer portal, in which case the online
+koa is interested in how many of their customers log in there. This information could also be 
+in the "customer letter". This could be taken into account in the development of the end customer portal. 
+ 
+8  
+Other things  
+• 
+Are separate guidelines needed for the annual usage estimate of production locations? 
+ 
+Minutes 
+ 
+7 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The group commented on this that the system supplier had received an inquiry about this, that 
+does VKA have to be calculated for production locations, there has been no guidance on this. 
+Marko stated that Fingrid also needs to obtain small production sites 
+total information (based on nominal power). 
+ 
+The group concluded that it is good to take the matter to a sub-working group in order to understand the impact of
+from the point of view of editors. The group concluded that the term "annual usage estimate" would also work 
+new, because this term specifically refers to consumption and not income. It isn't 
+to be decided by this group. The group also pointed out that a more frequent measurement cycle 
+in the world, the role of the annual use estimate has decreased, but a new one is still needed 
+in the customer's case. The group stated that the new production use locations should be taken into account 
+in connection with the annual usage estimate instructions, so that it is not necessary to update it in order to obtain
+I give them clear instructions and update annual usage estimates with a sufficient cycle. 
+ 
+• 
+Change in the VAT rate 
+Tomi brought up the upcoming change in the VAT rate: how this will be instructed and implemented
+terrestrial? Tomi stated that in his own notes, Alvi's transformation should be done 
+with completely new products 30 days before the VAT rate change. would the change be successful
+only with the DH-714 event, or does it require heavier changes? Would we have to? 
+to make all the products new or can the price information changes be received by DH-714-
+saying? Marko showed development proposal #9, which has already been implemented in version 1.9.0, which 
+seems to be related to the same issue and solves this situation at least partially
+by dollarizing the update of the tax rate of the product component. The new change has already
+hit proposal (#403) to allow the use of decimals in tax rate information. 
+ 
+Pauliina stated regarding the calculation of balance sheet errors that the VAT change brings its own com-
+a trick when there are three different VAT rates. Tomi stated that in practice this means 
+to them (the networks) that they have to separate several different VATs themselves. 
+The group was asked on what schedule these VAT changes are coming? Marko stated that 
+the datahub system provider has already been warned about these and that this will be delivered 
+in autumn at the latest (September 1, 2024 deadline set by the Finnish government). 
+ 
+9  
+Next meeting times  
+The June meeting will be held on June 13, 2024. The meeting will go over e.g. authorization-
+things. The autumn meetings will be arranged at that time. 
+10  
+Closing the meeting 
+Marko closed the meeting at 14:15. 
+ 
+Attachments 
+Appendix 1 Presentation sheets - Competition law guidelines for FG's committees and customer bodies 
+Appendix 2 Current information at datahub's customer service 06052024 
+Appendix 3 Datahub availability deviation processing changes to the service contract 
+for the year 2025 
+ 
+Minutes 
+ 
+8 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+6/5/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Social security number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Appendix 4 Datahub Industry survey related to the management of unjustified migration 
+Appendix 5 Industry comments customer information quality management 
+Appendix 6 Use of KE 280 end user group in comparison 
+Appendix 7 Datahub Change wishes 20240422

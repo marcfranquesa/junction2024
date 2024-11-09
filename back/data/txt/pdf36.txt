@@ -1,0 +1,16 @@
+Time zone usage, 
+documentation update
+Development group 21.9.2023
+5 October 2023
+2
+Datahub documentation: Time zone usage
+•
+In the current DH process documentation, it is mentioned: "The information contained in the basic data of the place of use 
+about the time zone gives the seller the necessary information when choosing the product of the sales contract for the customer". This is not for everyone 
+regarding the parties, interpret exactly correctly, but regarding hourly metered usage locations, the network supplies each kp with a time zone 
+1 although e.g. a network product is billed with 2 or 3 pieces of information (day/night or season). This causes problems for sellers if any 
+confirmed to the customer the time zone of the network to be followed.
+•
+Documentation update proposal: "The information about the time zone of the place of use in the basic information of the place of use gives the seller 
+necessary information when choosing the product of the sales contract for the customer. The indicated time zone information should match the network 
+product."

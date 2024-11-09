@@ -1,0 +1,146 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+25/08/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 8 
+Time 
+21.09.2023 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko 5 min 
+2  
+Current overview of the data hub – 20 min 
+• 
+Customer service, Jenni – 10 min 
+• 
+Development team, Elina – 10 min 
+3  
+Summary of the work of the customer information management development sub-working group - 1 h 30 min 
+Laura 
+• 
+The recommendation/comments from the working group apply to the following of the customer information sub-working group 
+points prepared in the appendix "Asiakastieto's sub-working group summary": 
+o Information model and business processes 
+o Unnecessary events 
+o Customer data vs. contract information, major customers 
+o Postal address and billing address 
+o TITTA inspection rules 
+o Development proposals related to customer information management 
+o Disturbance notices 
+o Survey for the industry (appendix "Results of the industry survey"): 
+▪ 
+Question 3 
+▪ 
+Question 4 
+▪ 
+Question 5 
+▪ 
+Question 6 
+▪ 
+Question 7 
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+25/08/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Question 8 
+▪ 
+Question 9 
+▪ 
+Question 10 
+o Has there been anything left out of the development targets for customer information management?
+matt? 
+4  
+Presentation of development proposals and recommendation decision – 1 h 30 min 
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20230825" and background for the discussion and questions:  
+o #57 (Fingrid initiates and presents), point of use process, 
+o #276 (Fingrid), point of use process, 
+o #131 (Fingrid), contract process,  
+o #160, (Fingrid), contract process,  
+• 
+The recommendation from the working group (whether to recommend items further in the process), applies to
+the following points in the hit proposal list, the solution proposal in the appendix "Datahub muutos-
+wishes 20230825”: 
+o #162 + #310 (Fingrid), contract process,  
+o #265 (Fingrid), measurement data management,  
+o #293 (Fingrid), point of use process,  
+o #119+#302 (Fingrid), customer information management process,  
+▪ 
+As for the instructions, a walkthrough 
+5  
+Change - 5 min 
+• 
+ 
+6  
+Next meeting times - 5 min 
+ 
+7  
+Closing the meeting

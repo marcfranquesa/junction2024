@@ -1,0 +1,596 @@
+Minutes 
+ 
+1 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 8 - 09/2023 
+Time 
+21/09/2023 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (director) 
+Elina Konttinen 
+ 
+Fingrid Datahub Oy 
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy 
+Suvi Manninen 
+ 
+Caruna Oy 
+Greetta Arha  
+ 
+Väre Oy 
+ 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets  
+ 
+Päivi Karpanen  
+ 
+Helen Oy  
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+ 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy 
+ 
+Away 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+ 
+Agenda 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 10:01 a.m., the attendees were noted, and the agenda of the meeting was discussed.
+through the list. Niina Leikas has left the group in June and the membership rotation is coming 
+later this year, in connection with which the vacated place will also be filled. Member-
+regarding rotation, the group concluded that it would be good to be part of ET's development group in the future-
+also members. Marko stated that the aim is to take it into account in connection with other criteria 
+(large/small companies balance, different system backgrounds). Datahub's customer service 
+the representative in the development group will change and Nelli Karjalainen will replace Jenni in the future.  
+Marko briefly told about the 2.1 version of the datahub made between Tuesday and Wednesday night-
+about the update. The update schedule was a little long in the version update process, ol-
+due to leide's challenges and there have been some more known errors. These will come 
+to go through Friday 22.9. in the webinar.  
+In addition, the development proposal #141 raised from ET's development working group was reviewed 
+attention to the fact that from the point of view of the networks, the reason for canceling the contract is of great importance. 
+This depends on how the networks work after the cancellation in terms of the place of use. Now a new one 
+the reason code for the termination of the seller's activity is only becoming available for terminated contracts
+for it, but the same reason code should also be used for canceled contracts. The change is tu-
+to the 2.2 version, but in the case of canceled contracts, implementation can no longer be
+to the country's version, but with regard to the cancellation reason code, the change is treated as its own 
+ 
+Minutes 
+ 
+2 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+change. It was stated that if a party goes bankrupt in the meantime, this can be done 
+challenges arise.  
+In the development work group, a wish was expressed that the group would go through the items on the change wish list 
+I cut those that are no longer relevant from the list, so as not to deal with them in more detail 
+it would waste time. Many development proposals can only be guidelines and outdated 
+going through the proposals was also seen as pointless work from CGI's point of view. Marko stated that the
+when asked, CGI makes a rough estimate only for those on the next development team's agenda 
+for development proposals, in order to get the assessment to support the decision of the development working group, and not otherwise 
+spend a lot of time processing development proposals at this stage. If the development
+dotus' workload estimate (after receiving the recommendation in the development work group) not later 
+significantly change from the rough estimate, the development proposal also does not return to the development group
+for processing. 
+In addition, the group inquired about the possibility of getting CGI to participate in the development group 
+to meetings. Marko stated that this had been discussed before the founding of the group
+that CGI would not have a representative in the actual group, because CGI is mu-
+chicken in the sub-working group.  
+In the development group, a concern regarding the schedule of version 2.2 was raised that the ver-
+sion content (at the exact schema level) has not yet been published. Marko stated that the content (sub-
+standard version of the business documentation) will come during September and the scheme will be published 
+during October. In addition, we still have to think about whether the export of the version should be delayed further
+in (also for version 2.2) for April, for example, because the content and schemas of the version 
+are not locked until the version's development period has ended (for version 2.2, September 
+2023) and they can only be published when the change content of the version is locked. 
+In addition, Marko went through the minutes of the previous meeting, which did not reveal anything to comment on.  
+ 
+2  
+Current overview of datahuba 
+Customer service updates 
+Jenni reviewed the current issues of customer service and brought up e.g. situations where sales
+the contract announced as a change of contract is restored as a move. The background is usually that the agreement 
+has been concluded long before the actual time limits of the data hub, and at the point when the contract 
+datahub is eventually notified, the contractual situation at the place of use has had time to change. group
+there was a discussion about making agreements to wait for the party's own arrangement
+before they can be reported to datahub and it was found that some of the customers
+luaa to agree on a cheap fixed-term contract long before the start of the contract and that 
+enabling this is good customer service. The group concluded that it is harmful
+list when the customer moves away and no longer remembers having made a contract for the future 
+to his old address. The customer has received contract confirmation at the point when 
+the contract has been concluded and the group thought that the customer should still be reminded e.g.
+find out by text message that the contract is about to start. However, in this case, the client-
+you should also be responsible for the contracts you enter into yourself. 
+ 
+ 
+Minutes 
+ 
+3 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Production situation 
+Elina reviewed the development of message volumes as well as production disruptions and measures. 
+In the development work group it was found that the DH-112 event always triggers a DH-111-
+event. The big problem is that there are still a lot of events coming from the network, 
+which is also reflected in the number of DH-111 messages from sellers.  
+Currently, the DH-716 transaction is blocked due to an error in the process, but cor-
+jaus it's coming. The event has been little used, but the group concluded that 
+the event is necessary because we are moving towards a one-invoice model, when 
+the seller needs to get price information from datahub.  
+ 
+3  
+Summary of the work of the customer information management development sub-working group - appendices 1, 
+4 and 10 
+Marko reviewed the summary of the customer information management sub-working group. The development team was 
+agree with the sub-working group on the observation and summary made by the sub-working group 
+the necessity of the described follow-up measures.  
+Regarding unnecessary events, it was pointed out that DH-311-6 messages are also transmitted 
+in vain, even if the information does not change. In connection with this, a bug has been raised in the datahub's system
+to the reporter.  
+After the summary, the results of the industry survey related to customer information management were reviewed 
+(Appendix 4). About a third of the industry's companies participated in the survey, and thus received a very favorable
+coverage of the industry's views that supports the positions. The development working group gave its recommendations
+sensa for each item in the survey. 
+Question 3: Views on the consumer's name (first name, middle names, surname) connected
+about the necessity of basic fields were clearly divided among different respondents, and for example 
+changes were supported, none of the change alternatives received the support of the majority. 
+The development team discussed different options, but ended up recommending the majority 
+supported alternative, i.e. that no changes are made. 
+Summary: No changes are made to the fields used for the consumer customer's name.  
+Question 4: Regarding the spelling of the customer's name, 3/4 of the respondents supported adding it 
+a validation rule that checks that the first letter of a name is capitalized and that is followed by is 
+used lowercase letters. No check would be made for a multipart surname. Group 
+stated that this view of the majority is good. 
+Summary: The proposed check will be implemented for all name fields of the consumer customer. 
+Question 5: In the revisions of the house number field of the postal address, the majority supported three 
+change: 1 (pink bar), 3 (green bar) and 4 (orange bar). The group ended up recommending
+lema the same checks. 
+To the open question about the missing house number, it was stated that such cases
+tyy, but according to the instructions, zero should be used as the house number.  
+ 
+Minutes 
+ 
+4 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Summary: Audit rules 1, 3 and 4 are implemented.  
+Question 6: From the checks in the step code field of the postal address, everyone had received
+from the respondents to the survey (one slightly less than half). The development team concluded that all 
+three rules are necessary.  
+Summary: All three inspection rules are implemented. 
+Question 7: Regarding the apartment field of the postal address, the answers were more divided-
+whence. The development team ended up favoring itto monitor the implementation of all inspections. 
+Summary: All four inspection rules are implemented. 
+Regarding the rules to be added, it was stated that it is important to have information about the implementation schedule 
+known to the industry in good time so that changes can be prepared for. The exact rules address
+in the form of tea will require special attention in order to get the information approved 
+to datahub.   
+Question 8: It was found that almost all systems have separate fields for the contract 
+to the billing and customer mailing address. However, it is possible that the use of these
+there are differences in teut. The use of address information will be instructed as part of the improvement guidelines
+yay  
+Question 9: 86% of the respondents stated that there is no need for separate data fields in the data hub 
+for mobile and landline numbers. The development team agreed on the matter. 
+Summary: No recommendation for changing phone numbers. 
+Question 10: Laura went through the free comments of the survey respondents regarding customer and contract
+in connection with ensuring the correctness of the information. The industry's free comments were category-
+play in three parts: 
+A) Use of address information, business customers. It was found that the comments are related to the same 
+topics that the sub-working group has dealt with and they have been taken into account in the group's working
+in the field.  
+B) New proposals, personal identification number and customer information. It was found that these withdrawals
+I will prepare separately for processing later. The development team does not here 
+there have been comments regarding these. 
+C) Other considerations. Regarding other considerations, there was a discussion without notice
+of support agreements, to which more attention was related. The group commented that web-
+strong identification is becoming mandatory for bimyinti, which I hope will help 
+(prevents) false hetu-name combinations from forming. It was also found that some ver-
+there will be cases where contracts are entered into without reason on the part of the party's own
+like that. In some cases, the customer's interest may already be known online, but the seller
+again, it doesn't exist, and the seller makes the contract using his own ID. These ai-
+throw up unpleasant situations where the customer can be found in the system several times at worst 
+once. The development group suggested that the data hub could investigate whether some of the
+on the other hand, larger amounts of useless contracts, in which case the reason for this could be inquired.   
+ 
+Minutes 
+ 
+5 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The development team had no comments on other items.  
+Has anything been left out of the development targets for customer information management? 
+matt? 
+Finally, Marko asked the development team if there were any things that the customer
+don may have been overlooked in the work of the sub-working group. The development team does not 
+received comments in this regard. 
+ 
+4  
+Presentation of development proposals and recommendation decision 
+4.1  
+Development proposal #57, processing of contracts in connection with connection - appendix 5 
+Laura went through the open questions of the development proposal related to the material in descriptors 3 and 
+7 to the cases presented. From the case in figure 3, it was found that the one remaining in the under construction period 
+the contract has had to be canceled in the party's own system, because the place of use does not 
+there hasn't been a meter, and you can't bill for this. The parties cannot cancel the contract
+to the datahub, because it is about contracts that have already ended, but the datahub should be here 
+in this case, cancels the contract and informs the party about this, so that the situations match 
+in the datahub and the party's system. The development group did not recognize the situation, 
+where the contract under construction should remain in force in such a situation. Provided 
+a canceled contract should be reinstated, for example, a contract concluded with the wrong customer
+therefore, the seller and the network would know that such an agreement has existed 
+in datahub. In a situation where the seller would have accidentally concluded the contract for the wrong
+to the workplace and canceled it, the place of use could remain without a seller, but such individual
+those error cases can otherwise be corrected. The canceled contract could also have been 
+value-added services, but cancellation was not seen as problematic when datahub
+lelle informs.   
+For the case described in 7, the development team concluded that the implementation of the case described now
+in accordance with it/the description, i.e. no contracts for the place of use are made in connection with the connection 
+changes. At the same time, it was stated that in that situation it would be a case of error, and not 
+such a situation should really arise. 
+Summary: In the case of figure 3, the useless period during the under construction period is cancelled 
+contract (sales/network) and notify the seller/network of the cancellation of the own contract
+for that. In the case of figure 7, the process described now is carried out4.2 
+Development proposal #276, retroactive changes to netting items 
+- appendix 9 
+Laura presented the development proposal and the open questions related to it. The development working group 
+stated that correction of parallelism data should be allowed retroactively from the beginning of 2023, when Datahub started performing netting calculations. For already decommissioned 
+
+Minutes 
+
+6 (8) 
+
+Development working group 
+Fingrid Datahub Oy / Marko Juslin 
+21.9.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+It is currently not possible to correct the data of the points of use, which was seen as problematic not only for this development proposal. The development working group proposed the possibility of restoring the deleted point of use back to active, after which the necessary changes could be made to its data and then the point of use removed from use again. This approach could also handle retroactive corrections to parallelism data, so that deleted points of use would not need to be separately taken into account in the parallelism data management processes. These are rare repair cases, which is why a return could be possible, for example, only via the user interface or by the Datahub system supplier, but there should be some way to make repairs. It was decided to investigate the proposed course of action and then bring the development proposal back to the development working group. 
+Summary of the proposal and its promotion: It should be possible to make corrections to the parallel data from the beginning of 2023. The possibility of changing the status of the decommissioned access point is being investigated and the matter is being brought back to the development working group. 
+
+4.3 
+Development proposal #131, forwarding the DH-311-4 message to the vendor of the parallel access point - Appendix 9 
+Laura reviewed the change previously recommended by the development working group, which also included the need to specify the cases in which the DH-311-4 message should not be sent. The development working group had different views on this, including whether the change should be implemented at all. At present, situations have been resolved in different ways in the systems and problems can be caused by, for example, the automatic processing of a message in a situation where it is sent unnecessarily. The development working group requested that the topic be returned to next time, so that it can be further clarified by the parties. It was agreed that the situation related to the open 
+question would also be clarified and the topic would be returned to next time. 
+Summary of the proposal and its promotion: The question related to this would be further clarified and the proposal would be continued in the next development working group. 
+
+4.4 
+Development proposal #160, further development of operator cancellation - appendices 6 and 9 
+Jenni presented a new solution proposal for the proposal previously discussed in the development working group on cancellations of contracts made by operators. The development team considered the change to be expensive (size class 2/3), and did not see that it would reduce the manual work done by the parties in the situations in question, for example in terms of correcting the invoicing. The current operating model, in which the party receives information related to the cancellation by email and takes the necessary measures based on it, was seen as functional. At the same time, however, the need to make the operator's work easier was seen, and the development team considered the possibility of finding a different solution that would not require changes on the parties' side. Since this is not a solution that directly benefits the parties, the development team requested that the proposal (and similar ones in the future) also clarify how much the situation currently employs the operator and what impact the change would have. It was agreed that the topic would be returned to. 
+
+Minutes 
+
+7 (8) 
+
+Development Working Group 
+Fingrid Datahub Oy / Marko Juslin 
+21.9.2023 
+
+Fingrid Datahub Oy 
+Street Address 
+Postal Address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Summary of the proposal and its promotion: The proposal will be submitted for further analysis and 
+the benefits and costs will be specified. 
+
+4.5 
+Development proposals #162 + #310, fake migrations - appendix 7 
+Laura reviewed the identification of “fake migrations” in Datahub through various cases. The development working group stated that fake migrations are a significant problem for the industry and that means to address them are necessary, although monitoring the notifications sent by Datahub and investigating possible cases would be laborious and obtaining a seamless solution would be challenging. The usefulness of the solution was considered if many situations could still be resolved throughpi 
+and on the other hand, catching situations where the seller does not change could also be unstructured-
+to the parties' own systems. With regard to the caught cases, it was stated that the
+are often solvable, because in order to avoid a contractual penalty, the customer often wants to pa-
+download to the previous contract.  
+Regarding the first case, the development team saw that it would be worthwhile to examine the use
+the situation of the place's previous contract for a longer period than just the previous day
+in order to prevent gimmicks in which more than one contract would be left in between 
+days.  
+In another case, it was suggested that the datahub should also check whether there is an emigration 
+the final billing address stated in connection is different from the original address. Final billing address 
+from the point of view of the review, the fact that not everyone reports it was seen as problematic. Datahub 
+regarding the e-mails sent, we also thought about expanding the proposal so that part-
+the party could choose on a case-by-case basis where they want to receive notifications.  
+The discussion of the topic was left unfinished due to the end of the meeting time, and the development work group did not 
+at this point there are still recommendations in this regard. The development team saw it as necessary 
+still think about different cases and their priority and we will come back to the matter next time.  
+Summary of the proposal and its promotion: Let's continue to go through the proposal 
+in the next development group. 
+ 
+4.6  
+Development proposal #265, measurement data reminders for boundary points - appendices 8 and 9 
+Pauliina went through development proposal #265 about the missing DH-212 reminders at border points-
+regarding it. The bug fix in this regard has been made to version 2.1 and reminders can be made again 
+put on The development group stated that the reminders can be implemented quickly
+also on schedule.  
+Summary of the proposal and its promotion: The matter will be announced in a newsletter and 
+reminders will be introduced shortly. 
+ 
+Other development proposals on the agenda were not reviewed and will be continued 
+in the next development group. 
+ 
+Minutes 
+ 
+8 (8) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+21/09/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+5  
+Other things  
+1. In relation to version updates, the development group pointed out that the parties and the
+It would help the suppliers' planning if they knew the exact dates of the production 
+regarding version updates as early as possible. Marko stated that it will be announced 
+the exact date as soon as possible and also in the future as early as possible or
+in him.  
+2. In meetings 6 and 7, Marko presented the industry recommendations for the recommended development proposals
+summary (Appendix 11). Comments had come from only two parties, and they-
+nor did they concern the content of the development proposals themselves. It was stated that it will be taken from someone else 
+in accordance with the proposal from the party, commenting on business documents
+versions use references in the text to development proposal numbers. 
+3. Not all network companies have reported the time zone information to datahub in the correct way. 
+Jenni presented the clarification of the instructions to be added to the process documentation (appendix 12) 
+related to the topic. The development group concluded that the guidelines were good. Instructions for additional
+also in the future newsletter. 
+4. Regarding the known bug related to seller cancellation that came in the 2.1 version update 
+it was stated that the situation will be discussed in the next day's 2.1 theme webinar.  
+ 
+6  
+Next meeting times  
+The next meeting of the development work group will be held on Thursday 9 November 2023 from 10 am to 2 pm. 
+The December meeting time is Tuesday 19 December 2023 from 10 am to 2 pm. 
+ 
+ 
+7  
+Closing the meeting 
+Marko ended the meeting at 14:01. 
+ 
+Attachments 
+Appendix 1 – Summary of the sub-working group of Asiakastieto 
+ 
+Appendix 2 - Customer service affiliations development work group 09-2023 
+ 
+Appendix 3 – Production situation_2023-09-11 
+ 
+Appendix 4 - Industry survey results 
+ 
+Appendix 5 – KE 57_Connection and contract dates 
+ 
+Appendix 6 – KE 160 operator cancellation 
+ 
+Appendix 7 – KE162_Valemuutot 
+ 
+Appendix 8 – KE 265_measuring reminders 
+ 
+Appendix 9 – Datahub Change requests 20230825 
+ 
+Appendix 10 – 20230502 Datahub TITTA quality analysis 
+ 
+Appendix 11 – Industry comments 6 and 7 
+ 
+ 
+Appendix 12 – Time zone instructions

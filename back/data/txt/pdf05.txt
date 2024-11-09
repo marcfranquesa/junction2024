@@ -1,0 +1,65 @@
+Agenda 
+ 
+1 (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[Enter organization] 
+Fingrid Datahub Oy / Marko Juslin 
+9 June 2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 1/2022 
+Time 
+22.6.2022 13:00–15:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Fingrid's competition law guidelines - Marko Juslin 5 min 
+3  
+Mandate of the development working group - Marko Juslin 15 min 
+4  
+Presentation of members of the development team 20 min 
+5  
+Current overview of the data hub 
+• 
+Customer service - Marjut Puukangas 15 min 
+• 
+Development team - Marko Juslin 15 min 
+6  
+Review of the operating model - Marko Juslin 30 min 
+7  
+General introduction and management of open development proposals in practice - Marko 
+Juslin 30 min 
+8  
+Next meeting times - 10 min 
+9  
+Closing the meeting

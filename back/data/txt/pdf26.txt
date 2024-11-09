@@ -1,0 +1,129 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+16.8.2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 15 
+Time 
+09/03/2024 10:00–15:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko 5 min 
+2  
+Competition law instructions for the development team - 5 min 
+3  
+Current overview of the data hub – 20 min 
+• 
+Customer service, Nelli – 10 min 
+• 
+Development team, Marko – 10 min 
+4  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+Recommendation from the working group (whether items are recommended further in the development process), regarding
+ke the following points of the development proposal list, the solution proposal in the appendix "Datahub 
+change requests 20240816": 
+o #113 (VENI Energia Oy, Pekka Eerikäinen), authorization process,  
+o #418 (Fingrid Datahub Oy), authorization process,  
+o #37 (Fingrid), connection/disconnection process,  
+o #94 (Caruna Oy, Suvi Manninen), connection/disconnection process,  
+o #153 (Fingrid Datahub Oy), point of use process,  
+o #169 (Fortum Markets Oy, Pia Aaltonen), place of use process,  
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20240816" and background for the discussion and questions:  
+o #192+#205 (Fingrid Datahub Oy), authorization process,  
+o #342 (Fingrid Datahub Oy), authorization process,  
+o #351+#357+#364+#385+#386 (Elenia Verkko Oyj Tomi Mäkelä, Caruna 
+Oy, Suvi Manninen, Savon Voima Verkko Oy, Mikko Vähäsaari), authorization
+process (limit points),  
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+16.8.2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #395 (VENI Energia Oy, Pekka Eerikäinen), authorization process,  
+o #261 (Fingrid Datahub Oy), customer information process,  
+o #267 (Fingrid), customer information process,  
+o #116+#136 (Caruna Oy, Suvi Manninen), customer information process,  
+o #117 (Fingrid), contract process,  
+• 
+For the information of the development team (datahub internal development), the development proposal concerns
+the following items in the list, the proposed solution in the appendix "Datahub muutoviet 
+20240816”:  
+o #384 (Fingrid Datahub Oy), reporting, 
+o #419 (Fingrid Datahub Oy), reporting, 
+ 
+5  
+Other - 15 min 
+• 
+ 
+6  
+Next meeting times - 5 min 
+ 
+7  
+Closing the meeting

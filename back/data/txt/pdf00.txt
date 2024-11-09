@@ -1,0 +1,81 @@
+Datahub summer
+Development group 09/2022
+19.8.2022
+Marko Juslin
+Using Datahub
+•
+The availability of Datahub has greatly improved usage 
+after the first three months
+•
+Previous unplanned datahub critical processes 
+the outage occurred on 12.5. Two short breaks, total 18 min.
+•
+A short planned outage on June 16 at 5:30, when a repair was delivered 
+to the problem that was behind the serious disruption that occurred on 1.5
+•
+Datahub's B2B interface response times are comparable 
+stable
+•
+There is no noticeable increase in response times over time
+•
+Response times increase when the datahub processes the so-called big ones 
+end customer contracts. Especially if the same customer 
+contracts are processed in parallel
+•
+Timeouts occur from time to time, but there are no known situations where 
+it is not possible to get through an individual agreement
+•
+The number of open service requests has decreased and 
+service request response times have improved
+19.8.2022
+Marko Juslin
+2
+The most significant challenges of use
+•
+Intermittent in the process related to the customer portal 
+unreliability
+•
+The background process sometimes gets stuck, which results in the contract information 
+are not uploaded to the portal
+•
+While waiting for the repair, monitoring of the use of the portal has been enhanced so that 
+the problem causes as little inconvenience to users as possible
+•
+The quality of customer and address information is not at a sufficient level
+•
+Fingrid is thinking about short- and long-term ways to improve data quality 
+can be improved and monitored. The topic will also be returned to in the webinar 
+in terms of
+•
+Plenty of extra and 
+unnecessary updates to customer and contract information
+•
+Has a negative impact on data quality
+•
+Unnecessary data rows cause the datahub database to fill up 
+faster than expected
+19.8.2022
+Marko Juslin
+3
+Towards priorities 
+autumn
+•
+Ensuring the delivery of Datahub 2.0
+•
+Delivery of patch version 1.9.0 in September
+•
+of software bugs in the backlog 
+repair and identified 
+planning the implementation of change needs
+•
+Improving the processing of service requests
+Marko Juslin
+4
+Fingrid Datahub Oy
+c/o Fingrid Oy Läkkisepäntie 21
+00620 Helsinki
+PO Box 530, 00101 Helsinki
+Tel. 030 395 5000
+Social security number: 2745543-5 
+www.fingrid.fi
+Thanks

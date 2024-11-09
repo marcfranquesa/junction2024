@@ -1,0 +1,121 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+22.8.2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 2/2022 
+Time 
+6/9/2022 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Current overview of the data hub 
+• 
+Customer service – Jenni Mäkinen 15 min 
+• 
+Development team - Marko Juslin 15 min 
+3  
+Presentation of development proposals and recommendation decision – 2 h 45 min 
+• 
+The recommendation from the working group (whether items are moved forward in the process), concerns the development
+the following points in the proposal list, the proposed solution in the appendix "Datahub muutoviet 
+20220822”:  
+o #11 (Fingrid presents the development proposal), contract process, 
+o #16 (Pia Aaltonen Fortum), contract process,  
+o #17 (Suvi Manninen Caruna), contract process,  
+o #35 (Fingrid), contract process,  
+o #41, (Fingrid), contract process,  
+o #45 (Fingrid), contract process,  
+o #56 (Fingrid), contract process,  
+o #69 (Fingrid), contract process,  
+o #70 (Fingrid), contract process,  
+o #31 (Suvi Manninen Caruna), customer process,  
+o #78 (Fingrid), customer process,  
+o #19 (Fingrid), point of use process,  
+o #59 (Suvi Manninen Caruna), place of use process,  
+o #65 (Fingrid), authorization process,  
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+22.8.2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #9 (Fingrid), product information process,  
+o #49 (Fingrid), information security,  
+• 
+It requires a discussion in the working group on how to resolve the following development conditions-
+information, in the appendix "Datahub change requests 20220822 background for the discussion:  
+o #54 (Suvi Manninen Caruna), contract process,  
+▪ 
+#89 (Fingrid), contract process, relates to #54 discussion  
+o #57 (Suvi Manninen Caruna), contract process,  
+▪ 
+#104 (Fingrid), contract process, relates to #57 discussion  
+• 
+Implemented development proposals (presented by Fingrid), implementation descriptions in the appendix 
+"Datahub change requests 20220822: #3, #6, #7, #10, #25, #48, #67, #71, #73, #79 
+4  
+Next meeting times - 5 min 
+5  
+Closing the meeting

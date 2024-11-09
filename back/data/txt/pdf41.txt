@@ -1,0 +1,126 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+1/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 10 
+Time 
+19.12.2023 10:00–15:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko 10 min 
+2  
+Current overview of the data hub – 20 min 
+• 
+Customer service, Nelli – 10 min 
+• 
+Development team, Marko – 10 min 
+3  
+Presentation of development proposals and recommendation decision – 2 h 
+• 
+Recommendation from the working group (whether items are recommended further in the development process), regarding
+ke the following points of the development proposal list, the solution proposal in the appendix "Datahub 
+change wishes 20231201": 
+o #97 (Fingrid), customer information management,  
+o #148 (Fingrid), customer information management,  
+o #203 (Fingrid), connection and disconnection process,  
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20231201" and background for the discussion and questions:  
+o #310, (Fingrid), contract process,  
+o #346, (Fingrid), contract process,  
+▪ 
+Related to development proposal #33 
+• 
+For the information of the development team (datahub internal development), the development proposal concerns
+the following items in the list, the proposed solution in the appendix "Datahub muutoviet 
+20231201”:  
+o #297, (Fingrid), reporting,  
+• 
+For the information of the development team, the improvements made to the versions of the CMS product 
+2.2/2.3, applies to the following items in the list of development proposals, solution proposal in the appendix 
+"Datahub change requests 20231201":  
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+1/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+4  
+Self-evaluation of the development team's activities – 1 h 
+• 
+Let's go through the results and comments of the self-assessment done in advance, Marko 
+5  
+Change - 5 min 
+• 
+ 
+6  
+Next meeting times - 5 min 
+• 
+Meetings of the development working group at the beginning of 2024 
+ 
+7  
+Closing the meeting

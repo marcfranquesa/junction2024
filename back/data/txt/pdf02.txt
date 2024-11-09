@@ -1,0 +1,721 @@
+Development proposal 
+#203
+1.12.2023
+[First name Last name]
+Development working group 19.12.2023
+Confidential
+Goals of development proposal #203
+• Minimize energy remaining in network losses and more correct allocation to the seller
+in the balance settlement with more accurate disconnection/connection times.
+• Usage point disconnection/connection times with minute accuracy in Datahub
+to better correspond to reality (close to the actual disconnection/connection time).
+1.12.2023
+[First name Last name]
+2
+Confidential
+Notes and assumptions
+•
+Disconnection and connection cannot be announced in the future.
+•
+Connection and disconnection are processed according to the usage point time step. Currently, 
+datahub's recommendation is that the disconnection time be set to the next quarter of an hour/hour, so that 
+the consumption prior to the disconnection is not recorded as network losses, but delaying the notification causes challenges for some parties (and system suppliers) and they 
+set the disconnection time to the previous quarter of an hour/hour. 
+•
+The following cases have been prepared on the assumption that if the point of use is 
+disconnected, then there will be no consumption for that period and thus no energy to be allocated for balance settlement. 
+1.12.2023
+[First name Last name]
+3
+Confidential
+Solution options
+A. Disconnection/connection times are reported to Datahub with minute accuracy and balance agreements and the status of the point of use are also processed with minute accuracy. The party whose balance the consumption goes to is determined according to the balance agreement situation at the beginning of the time step (15 
+min or 1 h). The disconnection time in the system data corresponds to the actual situation. 
+The metering data reminders do not currently support the solution, so further development would be needed for them as well. 
+(rough workload estimate level 1 + significant workload from reminders)
+B. Disconnection/connection times are reported to Datahub with minute accuracy, but the balance agreement in a disconnection situation
+remains valid until the end of the disconnection time step (15 min/1 h). In a connection situation, the balance agreement is created
+from the beginning of the connection time step. The status of the point of use is handled similarly to the balance agreement, which is why
+a new attribute is needed for the exact disconnection/connection time. (rough workload estimate level 2/3)
+•
+More detailed examples of the options are described on slides 7-28.
+1.12.2023
+[First name Last name]
+4
+Confidential
+Solution options, A advantages and disadvantages
+Disconnection/connection times are reported to Datahub with minute accuracy and balance agreements are also processed with minute accuracy. The party whose balance
+the consumption goes to is determined according to the balance agreement situation at the beginning of the time step (15 min or 1 h). 
+•
+The calculation takes into account the balance agreement according to how it is valid at the beginning of the time step at the time of the event. Examples from 15 min and 1 h 
+use points: 
+•
+15 min kp: A disconnection at 8:22 means that the 15 min period starting at 08:15 goes entirely to the seller's balance. 
+•
+15 min connection at 8:22 means that the 15 min period starting at 8:15 goes to network losses and the period starting at 8:30 goes to the seller's balance. 
+•
+1 h connection at 8:22 means that the 1 h period starting at 08:00 goes entirely to the seller's balance. 
+•
+1 h connection at 8:22 means that the 1 h period starting at 8:00 goes to network losses and the period starting at 9:00 goes to the seller's balance. 
+•
+Since energy is determined according to the time step of the point of use, especially at the 1 h point of use, the energy distribution deviates from the disconnection time. 
+•
+Metering data reminders would require further development (increase in size not yet known) so that Datahub does not incorrectly remind about missing or 
+disconnected metering data delivered to a point of use. The change will also have a slowing effect on system performance.
+1.12.2023
+[First name Last name]
+5
+Confidential
+Solution options, B advantages and disadvantages
+Disconnection/connection times are reported to Datahub with minute accuracy, but the balance agreement remains valid in a disconnection situation until the end of the time step (15 
+min/1 h) at the moment of disconnection. In a connection situation, the balance agreement is created from the beginning of the time step at the moment of connection. The status of the usage point in Datahub follows the validity of the balance agreement, which is why a new attribute is needed for minute-level disconnection/connection information. 
+•
+At a 15 min usage point, the calculation result is the same in connection with disconnection as in option A, i.e. the consumption of the time step (15 min) at the moment of disconnection
+goes to the seller's balance. 
+•
+In option B, the consumption of the time step (15 min) of the connection moment at the 15 min point of use also goes to the seller's balance. 
+•
+At the 1 h point of use, the hour period of the disconnection/connection moment goes to the seller's balance, because the balance agreement ends at the end of the hour of the disconnection/begins at the beginning of the hour of the connection moment.
+•
+Advantages: Calculation, point of use status and balance agreements are fully aligned with each other, i.e. no separate interpretation is required for the calculation. No changes are required to the metering information reminders. 
+•
+Disadvantages: The validity period of the balance agreement and point of use status differs from the actual exact connection/disconnection moment. A new attribute is needed to 
+present the information correctly, as well as possible changes to the messages transmitted to the parties (e.g. DH-13x, DH-412/422) connection/disconnectionfor information.
+1/12/2023
+[First Name Last Name]
+6
+Confidential
+DH-421 Disconnection request (vendor) + DH-422 Disconnection (Network), 
+15 min CP
+7
+Valid sales and balance sheet agreement
+The seller requests disconnection with the accuracy of a day
+The network disconnects the access point (ACTUAL CUT TIME) 8:22 and 
+report it to datahub at 9:48. The disconnection timestamp is saved 
+at datahub at 8:15 (KAT TIME).
+8:15 – 8:22 (8:15-8:30 quarter) consumption goes to network losses (7 
+minute consumption).
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:15
+9:48 am
+TOD CAT 
+TIME
+IMO
+KAT TIME
+Balance sheet
+mus power
+To network losses
+8:30 am
+Confidential
+DH-421 Disconnection request (vendor) + DH-422 Disconnection (Network), 
+15 min CP
+8
+Valid sales contract
+B) The balance agreement ends at the end of the quarter according to the cut-off time
+(8:30).
+15 min around the cut-off moment of the KP (8:15-8:30) the whole 7 min consumption (15 
+Wh) goes to the seller's balance sheet.
+Change ve B) The balance agreement ends in the quarter following the cut-off
+9:48 am
+IMO
+Balance sheet agreement in force
+8:22 am
+8:15
+8:30 am
+TOD KAT TIME
+Valid sales contract
+Change ve A) The balance agreement ends with termination
+9:48 am
+Balance sheet agreement in force
+8:22 am
+8:15
+IMO
+8:30 am
+TOD KAT TIME
+The network announces the disconnection at 8:22 (announcement 9:48). Cutoff 
+is recorded with 8:22 minute precision in the system.
+8:15-8:30 watch has consumption for 7 minutes 8:15-8:22 (e.g. 15 Wh)
+8:15-8:22 kp is switched on (reported with 1 minute accuracy. 
+cutoff 8:22)
+8:22-8:30 kp is cut off.
+To the seller's balance sheet
+To the seller's balance sheet
+A) The balance sheet agreement ends at cut-off at 8:22.
+ 15 min after the cut-off moment of the KP (8:15-8:30) the entire 7-minute consumption 
+(15 Wh) goes to the seller's balance sheet.
+9:00 am
+Confidential
+DH-421 Disconnection request (vendor) + DH-422 Disconnection (Network), 1 
+h AP
+9
+Valid sales and balance sheet agreement
+The network disconnects the access point at 8:22 and reports it to the data hub at 9:48. 
+The timestamp for disconnection is 8:00
+8:00-8:22 (8:00-9:00 hour) consumption goes to network losses.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:00 am
+9:48 am
+TOD KAT TIME
+Balance agreement 
+power
+IMO
+9:00 am
+KAT TIME
+To network losses
+8:30 am
+Confidential
+DH-421 Disconnection request (vendor) + DH-422 Disconnection (Network), 1 
+h AP
+10
+Valid sales contract
+B) The balance contract ends at the end of the hour according to the cut-off time, so
+the balance agreement is valid for the entire hour 8-9 and thus the consumption of the entire hour
+goes to the seller's balance sheet. 
+Change ve B) The balance agreement ends in the quarter following the cut-off
+9:48 am
+IMO
+TOD KAT TIME
+Balance sheet agreement in force
+8:22 am
+8:00 am
+9:00 am
+Valid sales contract
+Change ve A) The balance agreement ends with termination
+9:48 am
+Balance sheet agreement in force
+8:22 am
+8:00 am
+TOD KAT TIME
+IMO
+9:00 am
+The network disconnects the access point at 8:22 and reports it to the data hub at 9:48. 
+The cut-off is recorded in the system at 8:22 to the minute. 8:00-
+9:00 hour has a consumption of 22 minutes 8:00-8:22 (e.g. 60 Wh) 
+8:23 -> the place of use is disconnected
+To the seller's balance sheet
+8:30 am
+To the seller's balance sheet
+A1) The balance agreement ends at 8:22 a.m. at the time of disconnection.
+The entire consumption of 1 hour of the place of use from 8:00-9:00 goes to the seller 
+to the balance sheet.
+Confidential
+DH-422 Interruption (Network), 15 min KP
+11
+Valid sales and balance sheet agreement
+The network disconnects the access point (ACTUAL DISCONNECTION TIME) 8:22 
+and reports it to datahub at 9:48. The time stamp for the disconnection is set 
+to datahub 8:15 (CUT-OFF TIME)
+8:15-8:22 (8:15-8:30 quarter) consumption goes to network losses (7 
+minute consumption).
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:15
+9:48 am
+TOD KAT TIME
+Balance agreement 
+power
+IMO
+KAT TIME
+To network losses
+8:30 am
+Confidential
+DH-422 Interruption (Network), 15 min KP
+12
+Valid sales contract
+B) The balance agreement ends at the end of the quarter according to the cut-off time
+(8:30).
+15 min around the cut-off moment of the KP (8:15-8:30) the whole 7 min consumption (15 
+Wh) goes to the seller's balance sheet.
+Change ve B) The balance agreement ends in the quarter following the cut-off
+9:48 am
+IMO
+Balance sheet agreement in force
+8:22 am
+8:15
+8:30 am
+TOD KAT TIME
+Valid sales contract
+Change ve A) The balance agreement ends with termination
+9:48 am
+Balance sheet agreement in force
+8:22 am
+8:15
+TOD KAT TIME
+IMO
+8:30 am
+To the seller's balance sheet
+The network announces the disconnection at 8:22 (announcement 9:48). Cutoff 
+is recorded with 8:22 minute precision in the system.
+8:15-8:30 watch has consumption for 7 minutes 8:15-8:22 (e.g. 15 Wh)
+8:15-8:22 kp is switched on (reported with 1 minute accuracy. 
+cutoff 8:22)
+8:22-8:30 kp is cut off.
+To the seller's balance sheet
+A) The balance agreement ends with the connection at 8:22
+ consumption of the entire 7 minutes around the cut-off moment of the 15-min kp (8:15-8:30) 
+(15 Wh) goes to the seller's balance sheet.
+Confidential
+DH-422 Interruption (Network), 1 h KP
+13
+Valid sales and balance sheet agreement
+The network disconnects the access point at 8:22 and reports it to the data hub at 9:48. 
+The timestamp for disconnection is 8:00
+8:00-8:22 (8:00-9:00 hour) consumption goes to network losses.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:00 am
+9:48 am
+TOD KAT TIME
+Balance agreement
+us power
+IMO
+9:00 am
+To network losses
+Confidential
+DH-422 Interruption (Network), 1 h KP
+14
+Valid sales contract
+B) The balance agreement ends at the hour l of the cut-off timeI'm learning, so
+the balance agreement is valid for the entire hour 8-9 and thus the consumption of the entire hour
+goes to the seller's balance sheet. 
+Change ve B) The balance agreement ends in the quarter following the cut-off
+9:48 am
+IMO
+TOD KAT TIME
+Balance sheet agreement in force
+8:22 am
+8:00 am
+9:00 am
+Valid sales contract
+Change ve A) The balance agreement ends with termination
+9:48 am
+Balance sheet agreement in force
+8:22 am
+8:00 am
+TOD KAT TIME
+IMO
+9:00 am
+A) The balance agreement ends at 8:22 a.m. in connection with the disconnection.
+The entire consumption of 1 hour of the place of use from 8:00-9:00 goes to the seller 
+to the balance sheet.
+To the seller's balance sheet
+To the seller's balance sheet
+8:30 am
+The network disconnects the access point at 8:22 and reports it to the data hub at 9:48. 
+The cut-off is recorded in the system at 8:22 to the minute. 8:00-
+The 9:00 hour has a consumption of 22 minutes from 8:00 to 8:22 (e.g. 60 Wh). 
+8:23 -> the place of use is disconnected.
+Confidential
+DH-411 Connection request (vendor) + DH-412 Connection (Network), 
+15 min CP
+15
+Valid sales and balance sheet agreement
+The network connects the user location at 8:22 (ACTUAL CONNECTION TIME) and 
+reports it to the datahub 9:48, the timestamp of the connection in the datahub will be 
+8:15 (SWITCHING TIME)
+The quarter 8:15-8:30 goes to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:15
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+IMO
+NOW'S THE TIME
+8:30 am
+To the seller's balance sheet
+Confidential
+8:22 am
+DH-411 Connection request (vendor) + DH-412 Connection (Network), 
+15 min CP
+16
+Valid sales contract
+B) The balance agreement starts at the beginning of the quarter corresponding to the moment of connection, and thus 
+quarter (8:15-8:30) goes to the seller's balance sheet.
+Change ve B) The balance agreement begins at the beginning of the switching time period 
+in accordance with
+8:15
+9:48 am
+8:30 am
+Balance sheet agreement in force
+IMO
+TOD KYT TIME
+Valid sales contract
+Change ve A) The balance agreement begins with the connection
+8:22 am
+8:15
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+IMO
+8:30 am
+To the seller's balance sheet
+The network makes the connection at 8:22 and reports it to the data hub at 9:48. Coupling 
+is recorded in the system with minute accuracy (8:22).
+To network losses
+To the seller's balance sheet
+A) The balance agreement enters into force from the actual moment of connection (8:22), 
+but the seller's balance sheet goes to the quarter from the beginning of the next quarter, i.e. 8:30, 
+because the balance sheet calculation checks the balance agreement situation every time step 
+chassis. 8:15-8:30 goes to network losses, because there is no balance agreement 
+still valid at 8:15.
+Confidential
+DH-411 Connection request (vendor) + DH-412 Connection (Network), 1 
+h KP
+17
+Valid sales and balance sheet agreement
+The network makes the connection at 8:22 (TOD KYT TIME) and reports it to the data hub 
+9:48 am. The connection is saved as a time stamp in the system at 8:00 (CURRENT TIME).
+ The hour 8:00-9:00 goes to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:00 am
+9:48 am
+TOD KYT TIME
+IMO
+9:00 am
+To the seller's balance sheet
+Balance sheet agreement in force
+NOW'S THE TIME
+Confidential
+8:22 am
+DH-411 Connection request (vendor) + DH-412 Connection (Network), 1 
+h KP
+18
+Valid sales contract
+B) The balance agreement starts at the beginning of the hour according to the connection moment (8:00) and 
+thus hour 8-9 goes to the seller's balance sheet.
+Change ve B) The balance agreement begins at the beginning of the switching time period 
+in accordance with
+8:00 am
+9:48 am
+9:00 am
+Balance sheet agreement in force
+IMO
+TOD KYT TIME
+Valid sales contract
+Change ve A) The balance agreement begins with the connection
+8:22 am
+8:00 am
+9:48 am
+Balance sheet agreement in force
+IMO
+9:00 am
+TOD KYT TIME
+To network losses
+To the seller's balance sheet
+The network makes the connection at 8:22 and reports it to the data hub at 9:48. Coupling 
+is recorded in the system with minute accuracy (8:22).
+To the seller's balance sheet
+A) The balance agreement enters into force from the actual moment of connection (8:22), 
+but the periods from the beginning of the next hour, i.e. 9:00, go to the seller's balance sheet 
+because the balance sheet calculation checks the balance agreement situation every time step 
+chassis. 8:00-9:00 goes to network losses because there is no balance agreement 
+still valid at 8:00. 
+8:30 am
+Confidential
+DH-412 Connection (Network), 15 min KP
+19
+Valid sales and balance sheet agreement
+The network connects the user location at 8:22 (ACTUAL CONNECTION TIME) and 
+reports it to the datahub 9:48, the timestamp of the connection in the datahub will be 
+8:15 (SWITCHING TIME)
+The quarter 8:15-8:30 goes to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:15
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+IMO
+NOW'S THE TIME
+8:30 am
+To the seller's balance sheet
+Confidential
+8:22 am
+DH-412 Connection (Network), 15 min KP
+20
+A) The balance agreement takes effect from the actual connection time (8:22), but 
+the seller's balance sheet goes to the quarter from the beginning of the next quarter, i.e. 8:30, because 
+the balance calculation always checks the balance contract situation from the beginning of the time step. 
+8:15-8:30 goes to network losses, because the balance agreement is not yet in place 
+effective 8:15.
+Valid sales agreement
+B) The balance agreement starts at the beginning of the quarter corresponding to the moment of connection, and thus 
+quarter (8:15-8:30) goes to the seller's balance sheet.
+Change ve B) The balance agreement begins at the beginning of the switching time period 
+in accordance with
+8:15
+9:48 am
+8:30 am
+Balance sheet agreement in force
+IMO
+TOD KYT TIME
+Valid sales agreement
+Change ve A) The balance agreement begins with the connection
+8:22 am
+8:15
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+IMO
+8:30 am
+To network losses
+To the seller's balance sheet
+The network makes the connection at 8:22 and reports it to the data hub at 9:48. 
+The switching time is recorded in the system with an accuracy of one minute (8:22).
+Confidential
+DH-412 Connection (Network), 1h KP
+21
+Valid sales and balance sheet agreement
+The network makes the connection at 8:22 (TOD KYT TIME) and reports it to the data hub 
+9:48 am. The connection is saved as a time stamp in the system at 8:00 (CURRENT TIME).
+ The hour 8:00-9:00 goes to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:22 am
+8:00 am
+9:48 am
+TOD KYT TIME
+IMO
+9:00 am
+To the seller's balance sheet
+Balance sheet agreement in force
+NOW'S THE TIME
+Confidential
+8:22 am
+DH-412 Coupling (Network), 1 h KP
+22
+Valid sales agreement
+Change ve B) The balance agreement begins at the beginning of the switching time period 
+in accordance with
+8:00 am
+9:48 am
+9:00 am
+Balance sheet agreement in force
+IMO
+TOD KYT TIME
+Valid sales agreement
+Change ve A) The balance agreement begins with the connection
+8:22 am
+8:00 am
+9:48 am
+Balance sheet agreement in force
+IMO
+9:00 am
+TOD KYT TIME
+To network losses
+To the seller's balance sheet
+To the seller's balance sheet
+The network makes the connection at 8:22 and reports it to the data hub at 9:48. 
+The switching time is recorded in the system with an accuracy of one minute (8:22).
+A) The balance agreement enters into force from the actual moment of connection (8:22), 
+but the seller's balance goes to the periods from the beginning of the next hour, i.e. 9:00, 
+because the balance sheet calculation checks the balance agreement situation every time step 
+chassis. 8:00-9:00 goes to network losses because there is no balance agreement 
+still valid at 8:00. 
+B) The balance agreement starts at the beginning of the hour according to the connection moment (8:00) and 
+thus hour 8-9 goes to the seller's balance sheet.
+8:30 am
+Confidential
+DH-421-1 Disconnection and DH-411-1, connection at the same time 15 min 
+per episode, 15 min KP, seller's request
+23
+Valid sales and balance sheet agreement
+The network disconnects at 8:22 (TOD KAT TIME) and reports it to the data hub 
+9:40 am. 8:15 (KAT TIME) is recorded as the time stamp of disconnection. The network does 
+connection at 8:27 (TOD KYT TIME) and reports it to the data hub at 9:48. 
+8:15 (CURRENT TIME) is saved in the system as the time stamp of the connection.
+Vartti 8:15-8:30 to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:27 am
+9:48 am
+TOD 
+VISIT 
+TIME
+VISIT 
+IMO
+8:30 am
+8:22 am
+TOD 
+CAT 
+TIME
+8:15
+9:40 am
+CAT 
+IMO
+CAT/COMP 
+TIME
+Balance sheet agreement in force
+To the seller's balance sheet
+Confidential
+DH-421-1 Disconnection and DH-411-1, connection at the same time 15 min 
+per episode, 15 min KP, seller's request
+Amendment ve B) Balance sheet agreement to enter into force/end 
+with switching on/off
+Valid sales and balance sheet agreement
+8:27 am
+9:40 am
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+VISIT 
+IMO
+8:30 am
+8:22 am
+TOD KAT TIME
+8:15
+24
+CAT 
+IMO
+A) The balance agreement is valid until the moment of disconnection (8:22) and from the moment of connection 
+(8:27 a.m.)
+The balance agreement can be found at around 8:15 a.m., so check the consumption of a quarter goes 
+to the seller's balance sheet.
+B) The balance agreement is valid until the end of the cut-off moment (8:30) and 
+from the beginning of the switching moment (8:15). The handling of balance sheet agreements must be agreed 
+in such a way that there is no overlap (special rules, see the next slide).
+The balance agreement can be found at around 8:15 a.m., so check the consumption of a quarter goes 
+to the seller's balance sheet.
+Balance sheet agreement in force
+Change ve A) Balance sheet agreement to enter into force/end 
+with switching on/off
+Valid sales and balance sheet agreement
+8:27 am
+9:40 am
+9:48 am
+TOD KYT TIME
+VISIT 
+IMO
+8:30 am
+8:22 am
+TOD CAT 
+TIME
+8:15
+CAT 
+IMO
+Balance sheet agreement in force
+Balance sheet agreement in force
+To the seller's balance sheet
+To the seller's balance sheet
+To the seller's balance sheet
+The network disconnects at 8:22 and reports it to the data hub at 9:40 and the connection 
+8:27 and reports it to the datahub at 9:48. Switching off and switching times 
+are recorded in the system with minute accuracy (8:22 and 8:27)
+Confidential
+Notes from the previous slide (24)
+•
+In option B) disconnection would end the balance agreement at 8:30 (at the beginning of the next quarter) and connection
+would try to create a balance agreement at 8:15 (at the beginning of the previous quarter), even though there is already one at the place of use
+balance agreement. When disconnection and connection occur during the same 15 min, the new one created by the connection
+the balance agreement must start at the beginning of the next quarter. This should be taken into account in the DH-412 process:
+•
+When the DH-412 process recognizes that a balance agreement already exists (8:15 at the beginning of the quarter), the process
+it is necessary to check whether the balance agreement ends or not. quarter to the end (8:30). If the balance agreement ends, yes
+a new balance agreement will be created quarter of an hour from the end (8:30) instead of creating it from the beginning
+(8:15).
+•
+Note In other situations, the normal DH-412 process rules of the balance agreement are followed
+in terms of creation.
+1/12/2023
+25
+Confidential
+DH-421-1 Disconnection and DH-411-1 connection in the same hour, 1 h 
+KP, seller's request
+26
+Valid sales and balance sheet agreement
+The network disconnects at 8:22 (TOD KAT TIME) and reports it to the data hub 
+9:40 am. 8:00 (KAT TIME) is recorded as the timestamp of the disconnection. The network does 
+connection at 8:48 (TOD KYT TIME) and reports it to the data hub at 9:48. 
+8:00 (CURRENT TIME) is saved in the system as the connection time stamp.
+The hour 8:00-9:00 goes to the seller's balance sheet.
+Current situation: The site sales agreement and the balance sheet agreement are valid
+8:48 am
+9:48 am
+TOD 
+VISIT 
+TIME
+VISIT 
+IMO
+9:00 am
+8:22 am
+TOD CAT 
+TIME
+9:40 am
+CAT 
+IMO
+CAT/COMP 
+TIME
+8:00 am
+Balance sheet agreement in force
+To the seller's balance sheet
+Confidential
+DH-421-1 Disconnection and DH-411-1 connection in the same hour, 1 h 
+KP, seller's request
+Change ve B) Balance agreement valid as of the beginning of the period 
+in disconnection and out of power according to the end of the period in connection
+Valid sales and balance sheet agreement
+8:48 am
+9:40 am
+9:48
+TOD KYT TIME
+Balance sheet agreement in force
+NOTICE NOW
+9:00 am
+8:22 am
+TOD KAT TIME
+8:00 am
+KAT ILMO
+27
+A) The balance agreement is valid from the moment of disconnection (8:22) and from the moment of connection (8:48).
+The balance agreement can be found at the beginning of the class at 8:00, so hour's consumption goes to the seller 
+to the balance sheet.
+B) The balance agreement is valid until the end of the cut-off hour (9:00) and 
+from the beginning of the hour of the connection moment (8:00). The handling of balance sheet agreements must be agreed 
+in such a way that there is no overlap (special rules, see the next slide). 
+In any case, the balance agreement is valid for the entire hour from 8:00 to 9:00 and an hour 
+goes to the seller's balance sheet.
+Change ve A) Balance agreement into/out of force 
+with switching on/off
+Valid sales and balance sheet agreement
+8:48 am
+9:40 am
+9:48 am
+TOD KYT TIME
+Balance sheet agreement in force
+VISIT 
+IMO
+9:00 am
+8:22 am
+TOD KAT TIME
+8:00 am
+8:45
+CAT 
+IMO
+Balance sheet agreement in force
+8:30 am
+To the seller's balance sheet
+Balance sheet agreement in force
+To the seller's balance sheet
+The network disconnects at 8:22 and reports it to the data hub at 9:40 and connects at 8:48 and 
+report it to datahub at 9:48. Disconnection and switching times are recorded 
+to the system with minute precision (8:22 and 8:48)
+Confidential
+Notes from the previous slide (27)
+•
+In option B), disconnection would end the balance agreement at 9:00 (start of the next hour) and connection
+would try to create a balance agreement starting at 8:00 (the beginning of the previous hour), even though the place of use already has one 
+there is a balance agreement. When disconnection and connection occur during the same hour, created by the connection
+the new balance agreement must start at the beginning of the next hour. This consideration DH-412-
+in process:
+•
+When the DH-412 process recognizes that a balance agreement already exists (at the beginning of the 8:00 hour), the process
+it is necessary to check whether the balance agreement ends or not. until the end of the hour (9:00). If the balance agreement ends, yes
+a new balance sheet agreement will be created starting from from the end of the hour (9:00) instead of creating it 
+from the beginning of class (8:00).
+•
+Note In other situations, the normal DH-412 process rules of the balance agreement are followed
+in terms of creation.
+1/12/2023
+28

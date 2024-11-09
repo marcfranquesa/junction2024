@@ -1,0 +1,181 @@
+Agenda 
+ 
+1 (3) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/10/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 9 
+Time 
+9/11/2023 10:00–15:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko 5 min 
+2  
+Current overview of the data hub - 25 min 
+• 
+Development team, Marko – 25 min 
+3  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+Recommendation from the working group (whether items are recommended further in the development process), regarding
+ke the following points of the development proposal list, the solution proposal in the appendix "Datahub 
+change wishes 20231020": 
+o #119+#302 (Fingrid), customer information management,  
+▪ 
+As for the instructions, a walkthrough 
+o #166 (Fingrid), customer information management,  
+o #267 (Fingrid), customer information management,  
+o #268 (Fingrid), customer information management,  
+o #269 (Fingrid), customer information management,  
+o #270 (Fingrid), customer information management,  
+o #325 (Fingrid), customer information management,  
+o #327 (Fingrid), customer information management,  
+o #328 (Fingrid), customer information management,  
+o #329 (Fingrid), customer information management,  
+o #330 (Fingrid), customer information management,  
+o #246 (Fortum, Pia Aaltonen), measurement data management,  
+o #131 (Fingrid), contract process,  
+ 
+Agenda 
+ 
+2 (3) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/10/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #162 + #310 (Fingrid), contract process,  
+o #280 (Fingrid), end customer user interface,  
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20231020" and background for the discussion and questions:  
+o #309 (Caruna Oy, Suvi Manninen), connection/disconnection process,  
+o #271 (Caruna Oy, Suvi Manninen), place of use process,  
+• 
+For the development team's information, the status of the preparation (also for comments/questions
+to the development working group), applies to the following points of the list of development proposals, basic
+usual solution proposal in the appendix "Datahub muutoviet 20231020":  
+o #326 (Fingrid), customer information management,  
+o #297 (Fingrid), reporting,  
+o #303 (Fingrid), calculations,  
+• 
+For the information of the development team (datahub internal development), the development proposal concerns
+the following items in the list, the proposed solution in the appendix "Datahub muutoviet 
+20231020':  
+o #316 (Fingrid), authorization process,  
+• 
+For the information of the development team, the improvements made to the versions of the CMS product 
+2.1/2.2, applies to the following points in the list of development proposals, solution proposal in the appendix 
+"Datahub change requests 20231020":  
+o #12 (Fingrid), message management,  
+o #22 (Fingrid), general management,  
+o #26 (Fingrid), news management,  
+o Other product improvements. 
+4  
+Status and progress of older development proposals – 15 min  
+• 
+The situation and progress of older development proposals, Marko 
+ 
+5  
+Change - 5 min 
+• 
+ 
+ 
+Agenda 
+ 
+3 (3) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/10/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+6  
+Next meeting times - 5 min 
+• 
+Meetings of the development working group at the beginning of 2024 
+ 
+7  
+Closing the meeting
