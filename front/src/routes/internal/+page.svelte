@@ -1,7 +1,4 @@
 <script>
-	export let data;
-	const featureCounts = data.feature_counts;
-
 	import { onMount } from 'svelte';
 	import {
 		Chart,
@@ -13,27 +10,19 @@
 		Legend
 	} from 'chart.js';
 
-	// Register necessary Chart.js components
+	export let data;
+	const featureCounts = data.feature_counts.feature_counts;
+
 	Chart.register(BarController, CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 	let featureChart;
-	console.log(featureCounts);
-	let featureData = [
-		{ name: 'Feature A', userCount: 150 },
-		{ name: 'Feature B', userCount: 85 },
-		{ name: 'Feature C', userCount: 230 },
-		{ name: 'Feature D', userCount: 110 },
-		{ name: 'Feature E', userCount: 90 }
-	];
-	console.log(featureData);
 
-	// Format data for the chart
 	const labels = featureCounts.map((f) => f.name);
 	const chart_data = {
 		labels,
 		datasets: [
 			{
-				label: 'User Count per Feature',
+				label: 'Users watching the Feature',
 				data: featureCounts.map((f) => f.userCount),
 				backgroundColor: '#2563eb',
 				borderRadius: 8,
@@ -42,14 +31,17 @@
 		]
 	};
 
-	// Configure chart options
+	console.log(labels);
+	console.log(featureCounts.map((f) => f.userCount));
+
 	const options = {
 		responsive: true,
 		scales: {
 			y: {
 				beginAtZero: true,
 				ticks: {
-					color: '#6b7280'
+					color: '#6b7280',
+					stepSize: 1
 				},
 				grid: {
 					color: '#e5e7eb'
@@ -77,19 +69,18 @@
 		}
 	};
 
-	// Initialize chart on mount
 	onMount(() => {
 		const ctx = document.getElementById('featureChart').getContext('2d');
 		featureChart = new Chart(ctx, {
 			type: 'bar',
-			chart_data,
+			data: chart_data,
 			options
 		});
 	});
 </script>
 
 <div class="page-container">
-	<h1 class="mb-4 text-2xl font-bold">Feature Usage Statistics</h1>
+	<h1 class="mb-4 text-2xl font-bold">Feature Relevance Statistics</h1>
 
 	<div class="chart-card">
 		<canvas id="featureChart"></canvas>

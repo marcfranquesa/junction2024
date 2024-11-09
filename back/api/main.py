@@ -96,11 +96,24 @@ def feature_detail(
     *,
     session: Session = Depends(db.get_session),
 ):
-    query = select(
-        m.Feature_Users.feature_id,
-        func.count(m.Feature_Users.feature_id).label("count"),
-    ).group_by(m.Feature_Users.feature_id)
-
+    query = select(m.Feature_Users.feature_id)
     result = session.execute(query).all()
 
-    return {"feature_counts": result}
+    features_query = select(m.Features.feature_id, m.Features.name)
+    features_result = session.execute(features_query).all()
+    print(features_result)
+    features_dict = {feature[0]: feature[1] for feature in features_result}
+
+    feature_counts = {}
+    for feature_tuple in result:
+        feature = feature_tuple[0]
+        if feature not in feature_counts:
+            feature_counts[feature] = 0
+        feature_counts[feature] += 1
+
+    return {
+        "feature_counts": [
+            {"name": features_dict[feature], "userCount": count}
+            for feature, count in feature_counts.items()
+        ]
+    }
