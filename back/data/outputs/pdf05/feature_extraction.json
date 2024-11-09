@@ -1,45 +1,66 @@
 {
     "resp": [
         {
-            "Feature ID": null,
-            "Feature name": "Fingrid's competition law guidelines",
-            "Brief description": "Guidelines on competition law presented by Marko Juslin",
-            "Status": "existing"
-        },
-        {
-            "Feature ID": null,
+            "Feature ID": "unknown",
             "Feature name": "Mandate of the development working group",
-            "Brief description": "Mandate of the development working group presented by Marko Juslin",
+            "Feature tag": "Organizational",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Presentation of the mandate of the development working group",
             "Status": "existing"
         },
         {
-            "Feature ID": null,
+            "Feature ID": "unknown",
             "Feature name": "Presentation of members of the development team",
-            "Brief description": "Presentation of development team members",
+            "Feature tag": "Team",
+            "user_name": "unknown",
+            "user_id": 2,
+            "Brief description": "Introduction of the development team members",
             "Status": "existing"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Customer service overview",
-            "Brief description": "Overview of customer service presented by Marjut Puukangas",
+            "Feature ID": "unknown",
+            "Feature name": "Customer service",
+            "Feature tag": "Service",
+            "user_name": "Marjut Puukangas",
+            "user_id": 3,
+            "Brief description": "Overview of the customer service",
             "Status": "existing"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Development team overview",
-            "Brief description": "Overview of the development team presented by Marko Juslin",
+            "Feature ID": "unknown",
+            "Feature name": "Development team",
+            "Feature tag": "Team",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Overview of the development team",
             "Status": "existing"
         },
         {
-            "Feature ID": null,
+            "Feature ID": "unknown",
             "Feature name": "Review of the operating model",
-            "Brief description": "Review of the operating model presented by Marko Juslin",
+            "Feature tag": "Operational",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Review of the current operating model",
             "Status": "existing"
         },
         {
-            "Feature ID": null,
-            "Feature name": "General introduction and management of open development proposals in practice",
-            "Brief description": "Introduction and management of open development proposals presented by Marko Juslin",
+            "Feature ID": "unknown",
+            "Feature name": "General introduction and management of open development proposals",
+            "Feature tag": "Development",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Introduction and management of open development proposals",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "Next meeting times",
+            "Feature tag": "Schedule",
+            "user_name": "unknown",
+            "user_id": 4,
+            "Brief description": "Discussion of next meeting times",
             "Status": "existing"
         }
     ]
