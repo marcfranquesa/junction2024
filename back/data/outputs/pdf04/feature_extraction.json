@@ -1,15 +1,111 @@
 {
     "resp": [
         {
-            "Feature ID": "#178",
+            "Feature ID": "178",
             "Feature name": "measurement data process",
-            "Brief description": "A feature that involves handling and processing measurement data, with different models and scenarios discussed for improvement.",
-            "Status": "modified"
+            "Feature tag": "Measurement Data",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Change request based on Appendix 2 for the measurement data process.",
+            "Status": "new"
         },
         {
-            "Feature ID": "#281",
-            "Feature name": "netting calculation under construction status correction of object processing history",
-            "Brief description": "A feature that involves correcting the processing history for netting calculations under construction status.",
+            "Feature ID": "unknown",
+            "Feature name": "unified model for measurement data",
+            "Feature tag": "Measurement Data",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Aim for a unified model but revert to the DH 1.0 model due to current challenges.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "deliver zero measurement data",
+            "Feature tag": "Measurement Data",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Generate zero measurement data until the target is connected.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "measurement data ownership",
+            "Feature tag": "Measurement Data",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Determine the ownership of measurement data processed by the datahub.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "invoicing for less than a day",
+            "Feature tag": "Invoicing",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Enable invoicing for periods less than a day.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "billing based on the quarter",
+            "Feature tag": "Invoicing",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Support for billing based on quarterly data.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "return to DH 1.0 model",
+            "Feature tag": "Operating Model",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Revert to the DH 1.0 model as a temporary solution.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "mandatory measurement data",
+            "Feature tag": "Measurement Data",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Make sending measurement data mandatory for all parties.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "datahub returns missing values",
+            "Feature tag": "Measurement Data",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Datahub will return missing measurement values to the seller.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "final long-term operating model",
+            "Feature tag": "Operating Model",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Determine the final long-term operating model for the measurement data process.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "unknown",
+            "Feature name": "no temporary solution",
+            "Feature tag": "Operating Model",
+            "user_name": "unknown",
+            "user_id": 0,
+            "Brief description": "Proceed without implementing a temporary solution, focus on the final model.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "281",
+            "Feature name": "netting calculation correction",
+            "Feature tag": "Netting Calculation",
+            "user_name": "Marko Juslin",
+            "user_id": 1,
+            "Brief description": "Correction of object processing history for netting calculation under construction status.",
             "Status": "new"
         }
     ]

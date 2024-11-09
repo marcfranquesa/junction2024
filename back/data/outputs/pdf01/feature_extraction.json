@@ -1,22 +1,31 @@
 {
     "resp": [
         {
-            "Feature ID": null,
+            "Feature ID": "1",
             "Feature name": "Transmission of the information required for the refund of installment 2 of the electricity subsidy from the data hub",
-            "Brief description": "Transmission of information required for the refund of installment 2 of the electricity subsidy from the data hub, including telma and file format",
+            "Feature tag": "Transmission",
+            "user_name": "unknown",
+            "user_id": 1,
+            "Brief description": "Transmission of the information required for the refund of installment 2 of the electricity subsidy from the data hub",
             "Status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Change",
-            "Brief description": "Change (details not specified)",
-            "Status": "modified"
+            "Feature ID": "2",
+            "Feature name": "Telma and file format",
+            "Feature tag": "Format",
+            "user_name": "unknown",
+            "user_id": 2,
+            "Brief description": "Telma and file format",
+            "Status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Next meeting times",
-            "Brief description": "Scheduling the next meeting times",
-            "Status": "existing"
+            "Feature ID": "3",
+            "Feature name": "Change",
+            "Feature tag": "Change",
+            "user_name": "unknown",
+            "user_id": 3,
+            "Brief description": "Change",
+            "Status": "modified"
         }
     ]
 }
