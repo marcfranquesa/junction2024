@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 from fastapi import Depends, FastAPI, HTTPException
-from sqlalchemy import select, case, func
+from sqlalchemy import case, func, select
 from sqlmodel import Session, SQLModel
 from src import db
 from src import models as m
@@ -84,6 +84,7 @@ def feature_detail(
         "tag": feature.tag,
         "description": feature.description,
         "status": feature.status,
+        "pdf": feature.pdf,
         "updates": [
             {"timestamp": update[0].timestamp, "status": update[0].status}
             for update in updates
