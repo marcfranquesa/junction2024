@@ -1,4 +1,5 @@
 import os
+import json
 from mistralai import Mistral
 
 # api_key = os.environ["MISTRAL_API_KEY"]
@@ -16,6 +17,7 @@ prompts = {
     - Brief description
     - Status (new/existing/modified)
     Format the response as a JSON list.
+    Give ONLY the JSON, no extra text, please.
     """,
     
     'requirements': """
@@ -25,6 +27,7 @@ prompts = {
     - Non-functional requirements
     - Technical constraints
     Format the response as a JSON list.
+    Give ONLY the JSON, no extra text, please.
     """,
     
     'action_items': """
@@ -35,6 +38,7 @@ prompts = {
     - Due date (if mentioned)
     - Priority (if mentioned)
     Format the response as a JSON list.
+    Give ONLY the JSON, no extra text, please.
     """,
     
     'decisions': """
@@ -44,28 +48,36 @@ prompts = {
     - Context/rationale
     - Stakeholders involved
     Format the response as a JSON list.
+    Give ONLY the JSON, no extra text, please.
     """
 }
 
 txt_filenames = sorted([z for _, _, z in os.walk("data/txt/")][0])
-chat_responses = {}
+feat_desc = {}
 for filename in txt_filenames:
     with open("data/txt/"+filename, 'r', encoding='utf-8') as file:
         content = file.read()
+        os.makedirs(f"data/outputs/{filename.strip('.txt')}", exist_ok=True)
         for name, prompt in prompts.items():
+            print(name)
+            print(prompt)
             chat_response = client.chat.complete(
                 model= model,
                 messages = [
                     {
                         "role": "user",
-                        "content": prompt,
+                        "content": prompt + "\n" + content,
                     },
                 ]
             )
-            if name not in chat_responses.keys():
-                chat_responses[name] = {}
-            chat_responses[name][filename] = chat_response.choices[0].message.content
+            print(f"data/outputs/{filename.strip('.txt')}/{name}.json")
+            print(chat_response)
+            print()
+            resp_str = chat_response.choices[0].message.content.strip('```').strip('json\n')
+            data = json.loads(resp_str)
+            resp_dict = {"resp": data}
+            with open(f"data/outputs/{filename.strip('.txt')}/{name}.json", "w", encoding="utf-8") as file:
+                json.dump(resp_dict, file, indent=4)  # indent=4 for readable formatting
+            # chat_responses[name][filename] = chat_response.choices[0].message.content
 
-with open("data/chat_responses.json", "w", encoding="utf-8") as file:
-    json.dump(chat_responses, file, indent=4)  # indent=4 for readable formatting
 

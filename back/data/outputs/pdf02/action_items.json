@@ -1,0 +1,46 @@
+{
+    "resp": [
+        {
+            "Description": "Review the impact of minute-accurate disconnection/connection times on energy allocation and network losses.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Analyze the current disconnection/connection processing and the implications of setting disconnection times to the next quarter of an hour/hour.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Evaluate the workload and feasibility of implementing solution option A for minute-accurate disconnection/connection times and balance agreements.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Assess the development required for metering data reminders to support solution option A.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Evaluate the workload and feasibility of implementing solution option B for minute-accurate disconnection/connection times and balance agreements.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Determine the need for a new attribute to handle the exact disconnection/connection time in solution option B.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Review the detailed examples of solution options A and B described on slides 7-28.",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        }
+    ]
+}

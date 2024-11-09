@@ -1,23 +1,29 @@
 <script>
 	export let feature;
-	// Convert client_list string to array
 
-	// Function to get status color
 	$: statusColor =
 		feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
 </script>
 
-<a href="/feature/{feature.feature_id}" class="feature-link"
-	><div class="feature-card">
+<a href="/feature/{feature.feature_id}" class="feature-link">
+	<div class="feature-card">
 		<div class="feature-header">
-			<h2 class="feature-title">
+			<h2 class="feature-title">{feature.name}</h2>
+		</div>
+
+		<div class="tag-status-row">
+			<div class="tags-group">
 				<span class="tag-tag bg-blue-100 text-blue-800">
 					{feature.tag}
-				</span>{feature.name}
-			</h2>
-			<span class="status-badge {statusColor}">
-				{feature.status}
-			</span>
+				</span>
+				<span class="status-badge {statusColor}">
+					{feature.status}
+				</span>
+			</div>
+		</div>
+
+		<div class="feature-description">
+			{feature.description}
 		</div>
 
 		<div class="feature-footer">
@@ -48,32 +54,24 @@
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 
-	.feature-card {
-		background: white;
-		border-radius: 12px;
-		padding: 1.5rem;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		transition:
-			transform 0.2s ease,
-			box-shadow 0.2s ease;
-	}
-
-	.feature-card:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-
 	.feature-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 1rem;
+		margin-bottom: 0.75rem;
 	}
 
 	.feature-title {
 		font-size: 1.25rem;
 		font-weight: 600;
 		color: #1a1a1a;
+	}
+
+	.tag-status-row {
+		margin-bottom: 1rem;
+	}
+
+	.tags-group {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
 	}
 
 	.status-badge {
@@ -84,36 +82,17 @@
 		text-transform: capitalize;
 	}
 
-	.client-section {
-		margin-top: 1rem;
-	}
-
-	.client-title {
-		font-size: 0.875rem;
-		font-weight: 500;
-		color: #666;
-		margin-bottom: 0.5rem;
-	}
-
-	.client-tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-	}
-
 	.tag-tag {
 		padding: 0.25rem 0.75rem;
 		border-radius: 9999px;
 		font-size: 0.875rem;
-		margin-right: 1rem;
 	}
 
-	.client-tag {
-		background: #f3f4f6;
-		padding: 0.25rem 0.75rem;
-		border-radius: 9999px;
+	.feature-description {
 		font-size: 0.875rem;
 		color: #4b5563;
+		line-height: 1.5;
+		margin-bottom: 1rem;
 	}
 
 	.feature-footer {
@@ -142,5 +121,13 @@
 
 	:global(.text-red-800) {
 		color: #991b1b;
+	}
+
+	:global(.bg-blue-100) {
+		background-color: #dbeafe;
+	}
+
+	:global(.text-blue-800) {
+		color: #1e40af;
 	}
 </style>

@@ -1,0 +1,19 @@
+{
+    "resp": [
+        {
+            "Decision description": "Transmission of the information required for the refund of installment 2 of the electricity subsidy from the data hub",
+            "Context/rationale": "Discussed the telma and file format for transmission",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        },
+        {
+            "Decision description": "Change discussion",
+            "Context/rationale": "Not specified in the provided text",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        },
+        {
+            "Decision description": "Next meeting times",
+            "Context/rationale": "Scheduling the next meeting",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        }
+    ]
+}
