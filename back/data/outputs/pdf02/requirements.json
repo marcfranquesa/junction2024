@@ -1,0 +1,72 @@
+{
+    "resp": [
+        {
+            "type": "functional",
+            "description": "Minimize energy remaining in network losses and more correct allocation to the seller in the balance settlement with more accurate disconnection/connection times."
+        },
+        {
+            "type": "functional",
+            "description": "Usage point disconnection/connection times with minute accuracy in Datahub to better correspond to reality (close to the actual disconnection/connection time)."
+        },
+        {
+            "type": "functional",
+            "description": "Disconnection/connection times are reported to Datahub with minute accuracy and balance agreements and the status of the point of use are also processed with minute accuracy."
+        },
+        {
+            "type": "functional",
+            "description": "The party whose balance the consumption goes to is determined according to the balance agreement situation at the beginning of the time step (15 min or 1 h)."
+        },
+        {
+            "type": "functional",
+            "description": "Disconnection/connection times are reported to Datahub with minute accuracy, but the balance agreement in a disconnection situation remains valid until the end of the disconnection time step (15 min/1 h). In a connection situation, the balance agreement is created from the beginning of the connection time step."
+        },
+        {
+            "type": "functional",
+            "description": "The status of the point of use is handled similarly to the balance agreement, which is why a new attribute is needed for the exact disconnection/connection time."
+        },
+        {
+            "type": "functional",
+            "description": "At a 15 min usage point, the calculation result is the same in connection with disconnection as in option A, i.e. the consumption of the time step (15 min) at the moment of disconnection goes to the seller's balance."
+        },
+        {
+            "type": "functional",
+            "description": "In option B, the consumption of the time step (15 min) of the connection moment at the 15 min point of use also goes to the seller's balance."
+        },
+        {
+            "type": "functional",
+            "description": "At the 1 h point of use, the hour period of the disconnection/connection moment goes to the seller's balance, because the balance agreement ends at the end of the hour of the disconnection/begins at the beginning of the hour of the connection moment."
+        },
+        {
+            "type": "functional",
+            "description": "Calculation, point of use status and balance agreements are fully aligned with each other, i.e. no separate interpretation is required for the calculation. No changes are required to the metering information reminders."
+        },
+        {
+            "type": "non-functional",
+            "description": "The validity period of the balance agreement and point of use status differs from the actual exact connection/disconnection moment. A new attribute is needed to present the information correctly, as well as possible changes to the messages transmitted to the parties (e.g. DH-13x, DH-412/422) connection/disconnection for information."
+        },
+        {
+            "type": "technical",
+            "description": "Disconnection and connection cannot be announced in the future."
+        },
+        {
+            "type": "technical",
+            "description": "Connection and disconnection are processed according to the usage point time step. Currently, datahub's recommendation is that the disconnection time be set to the next quarter of an hour/hour, so that the consumption prior to the disconnection is not recorded as network losses, but delaying the notification causes challenges for some parties (and system suppliers) and they set the disconnection time to the previous quarter of an hour/hour."
+        },
+        {
+            "type": "technical",
+            "description": "The following cases have been prepared on the assumption that if the point of use is disconnected, then there will be no consumption for that period and thus no energy to be allocated for balance settlement."
+        },
+        {
+            "type": "technical",
+            "description": "The metering data reminders do not currently support the solution, so further development would be needed for them as well. (rough workload estimate level 1 + significant workload from reminders)"
+        },
+        {
+            "type": "technical",
+            "description": "Since energy is determined according to the time step of the point of use, especially at the 1 h point of use, the energy distribution deviates from the disconnection time. Metering data reminders would require further development (increase in size not yet known) so that Datahub does not incorrectly remind about missing or disconnected metering data delivered to a point of use. The change will also have a slowing effect on system performance."
+        },
+        {
+            "type": "technical",
+            "description": "Disadvantages: The validity period of the balance agreement and point of use status differs from the actual exact connection/disconnection moment. A new attribute is needed to present the information correctly, as well as possible changes to the messages transmitted to the parties (e.g. DH-13x, DH-412/422) connection/disconnection for information."
+        }
+    ]
+}

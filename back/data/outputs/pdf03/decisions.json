@@ -1,0 +1,24 @@
+{
+    "resp": [
+        {
+            "Decision description": "Discuss and clarify development proposals.",
+            "Context/rationale": "To resolve development proposals for Datahub.",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        },
+        {
+            "Decision description": "Review and decide on Amendment proposal 57 options 1 and 2.",
+            "Context/rationale": "Related to the point of use process.",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        },
+        {
+            "Decision description": "Review and decide on development proposal 33 and 114.",
+            "Context/rationale": "Related to the contract process.",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        },
+        {
+            "Decision description": "Schedule next meetings of the sub-working group.",
+            "Context/rationale": "Plan for future meetings in 2023.",
+            "Stakeholders involved": "Development team, Fingrid Datahub Oy / Marko Juslin"
+        }
+    ]
+}

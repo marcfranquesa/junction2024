@@ -1,0 +1,31 @@
+{
+    "resp": [
+        {
+            "type": "Functional requirements",
+            "requirements": [
+                "Identify those present and the agenda",
+                "Present Fingrid's competition law guidelines",
+                "Present the mandate of the development working group",
+                "Present members of the development team",
+                "Provide an overview of the data hub, including customer service and development team",
+                "Review the operating model",
+                "Introduce and manage open development proposals in practice",
+                "Determine next meeting times"
+            ]
+        },
+        {
+            "type": "Non-functional requirements",
+            "requirements": [
+                "Meeting duration should be 2 hours and 30 minutes",
+                "Meeting should be held at Fingrid Datahub Oy, L\u00e4kkisep\u00e4ntie 23, Helsinki"
+            ]
+        },
+        {
+            "type": "Technical constraints",
+            "requirements": [
+                "Meeting time is set for 22.6.2022 13:00\u201315:30",
+                "Specific time allocations for each agenda item"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+{
+    "resp": [
+        {
+            "Feature ID": "30",
+            "Feature name": "Real-time status of the place of use in CMS",
+            "Brief description": "Update the connection status of the place of use to CMS in real time.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "51",
+            "Feature name": "Include user interface error codes in the AVR document",
+            "Brief description": "Add industry error codes related to the user interface to the published FD.CMD.AVR document.",
+            "Status": "modified"
+        },
+        {
+            "Feature ID": "318",
+            "Feature name": "Changing the customer's name to the date of the customer's identifier",
+            "Brief description": "Fix a bug where the operator's customer identification update for a new identifier does not take into account possible updates to the customer's name or data.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "59",
+            "Feature name": "New validation rule for event DH-124-1",
+            "Brief description": "Block validation rule update requests for user location information, requesting user group BE14.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "142",
+            "Feature name": "Do not accept to update the annual usage estimate if the value does not change",
+            "Brief description": "Prevent the update event of the annual usage estimate if it contains information already found in Datahub.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "160",
+            "Feature name": "Operator cancellation development",
+            "Brief description": "Automate email messages in the contract cancellation process to reduce manual work.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "102",
+            "Feature name": "Search for measurement data in the user interface",
+            "Brief description": "Address a driver-oriented problem related to the search for measurement data.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "168",
+            "Feature name": "Transmission of measurement data in connection with retroactive contract changes",
+            "Brief description": "Automatically send ongoing measurement data in connection with the initiation of retroactive contracts.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "266",
+            "Feature name": "Measurement information reminders when a disconnected object is reported consumption",
+            "Brief description": "Send a reminder of what was reported to the disconnected object of consumption only once.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "206",
+            "Feature name": "New type 'Communication contact information' party contact for information",
+            "Brief description": "Transfer contact information for data exchange from the portal to Datahub.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "32",
+            "Feature name": "Mutual selection of annual usage estimate and time zone information",
+            "Brief description": "Investigate and address conflicting information in Datahub where two annual usage estimates have been reported for a location or vice versa.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "37",
+            "Feature name": "Use of message ID for connection and disconnection notifications",
+            "Brief description": "Address problems for sellers related to connection and disconnection notifications.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "80",
+            "Feature name": "List of places of use of the authorized business customer",
+            "Brief description": "Provide a list of places of use from Datahub for large customers to reduce work.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "86",
+            "Feature name": "Energy production type visible to 3rd parties",
+            "Brief description": "Clarify the information meant in the proposal and ask the proposer for more information.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": "87",
+            "Feature name": "Review date for reports",
+            "Brief description": "Reject the proposal to add the review date field to reports.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "88",
+            "Feature name": "Validation of information arriving at Datahub",
+            "Brief description": "Leave the proposal for validation of information for the next time.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "98",
+            "Feature name": "Development of the Open Events report",
+            "Brief description": "Reject the proposal to develop the Open Events report.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "101",
+            "Feature name": "Changes to the measurement data search view",
+            "Brief description": "Return the proposal for changes to the measurement data search view for further clarification.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "106",
+            "Feature name": "Blocking a connection request if there is no previous disconnection request",
+            "Brief description": "Investigate the relevance and size of the problem related to connection requests without previous disconnection requests.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "108",
+            "Feature name": "Review date field to be active in the place of use view",
+            "Brief description": "Keep the proposal on the list.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "118",
+            "Feature name": "Report on places of use by vendor",
+            "Brief description": "Keep the proposal on the list and bundle its processing with other development proposals related to network reporting.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "124",
+            "Feature name": "Mandatory time step in DH-122-1 message",
+            "Brief description": "Reject the proposal as it is no longer relevant after version 2.0 changes.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "125",
+            "Feature name": "Mandatory measuring range DH-126-1- and DH-127-1-sano-",
+            "Brief description": "Reject the proposal as it is no longer relevant after version 2.0 changes.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "137",
+            "Feature name": "Your connection delays in application",
+            "Brief description": "Reject the proposal as there is no need to bring information about safe connection to Datahub.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": "149",
+            "Feature name": "Changing the format of the usage location ID",
+            "Brief description": "Reject the proposal to change the format of the usage location ID.",
+            "Status": "existing"
+        }
+    ]
+}

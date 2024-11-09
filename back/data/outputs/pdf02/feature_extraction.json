@@ -1,0 +1,76 @@
+{
+    "resp": [
+        {
+            "Feature ID": null,
+            "Feature name": "Minute accuracy for disconnection/connection times",
+            "Brief description": "Report disconnection/connection times with minute accuracy to Datahub and process with minute accuracy.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Balance agreement and usage point status processing with minute accuracy",
+            "Brief description": "Determine the party whose balance the consumption goes to according to the balance agreement situation at the beginning of the time step (15 min or 1 h).",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Metering data reminders update",
+            "Brief description": "Further development of metering data reminders to support minute accuracy for disconnection/connection times.",
+            "Status": "modified"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Balance agreement validity in disconnection situation",
+            "Brief description": "Balance agreement remains valid until the end of the disconnection time step (15 min/1 h) at the moment of disconnection.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "New attribute for exact disconnection/connection time",
+            "Brief description": "A new attribute is needed to handle the exact disconnection/connection time in Datahub.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Balance agreement creation in connection situation",
+            "Brief description": "Balance agreement is created from the beginning of the connection time step.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Alignment of calculation, point of use status, and balance agreements",
+            "Brief description": "Ensure that calculation, point of use status, and balance agreements are fully aligned with each other.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "No changes required to metering information reminders",
+            "Brief description": "No changes are required to the metering information reminders in option B.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Possible changes to messages transmitted to the parties",
+            "Brief description": "Possible changes to the messages transmitted to the parties (e.g., DH-13x, DH-412/422) for connection/disconnection information.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Balance agreement situation checked every time step",
+            "Brief description": "The balance agreement situation is checked every time step frame.",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Handling of balance agreements in same quarter disconnection/connection",
+            "Brief description": "Handle balance agreements to avoid overlap when disconnection and connection occur during the same 15 min.",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Handling of balance agreements in same hour disconnection/connection",
+            "Brief description": "Handle balance agreements to avoid overlap when disconnection and connection occur during the same hour.",
+            "Status": "new"
+        }
+    ]
+}

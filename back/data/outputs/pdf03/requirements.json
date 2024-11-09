@@ -1,0 +1,27 @@
+{
+    "resp": [
+        {
+            "type": "Functional requirements",
+            "details": [
+                "Discussion in the working group, preliminary questions and alternatives to be clarified- and how the following development proposals are to be resolved.",
+                "More information in the appendix 'Amendment proposal 57 - options 1 and 2'",
+                "More information in the appendices 'Development proposal-33 - review' and 'Development condition-sockets 33 and 114'"
+            ]
+        },
+        {
+            "type": "Non-functional requirements",
+            "details": [
+                "Identifying those present and the agenda",
+                "Preparation situation applies to the list of development proposals rough points in the appendix 'Datahub changes requests 20230330'",
+                "Proposal from the meeting of the development work group on June 13, 2023"
+            ]
+        },
+        {
+            "type": "Technical constraints",
+            "details": [
+                "The meeting will take place on 13.04.2023 12:30\u201314:30",
+                "The meeting place is Fingrid Datahub Oy, L\u00e4kkisep\u00e4ntie 23, Helsinki"
+            ]
+        }
+    ]
+}

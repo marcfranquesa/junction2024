@@ -1,0 +1,40 @@
+{
+    "resp": [
+        {
+            "Description": "Discuss development proposals and recommendation decisions",
+            "Assigned to": "Development team",
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Clarify preliminary questions and alternatives for the following development proposals: #57, #176, #33+#114",
+            "Assigned to": "Development team",
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Review the preparation situation for the list of development proposals: #160, #178",
+            "Assigned to": "Development team",
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Change - 5 min",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Determine next meeting times for the sub-working group of the development working group",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Proposal for the meeting of the development work group on June 13, 2023",
+            "Assigned to": null,
+            "Due date": "2023-06-13",
+            "Priority": null
+        }
+    ]
+}

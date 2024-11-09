@@ -1,0 +1,20 @@
+{
+    "resp": [
+        {
+            "category": "Functional requirements",
+            "requirements": [
+                "Transmission of the information required for the refund of installment 2 of the electricity subsidy from the data hub"
+            ]
+        },
+        {
+            "category": "Non-functional requirements",
+            "requirements": [
+                "Telma and file format for the transmission of information"
+            ]
+        },
+        {
+            "category": "Technical constraints",
+            "requirements": []
+        }
+    ]
+}

@@ -53,6 +53,7 @@ prompts = {
 }
 
 txt_filenames = sorted([z for _, _, z in os.walk("data/txt/")][0])
+feat_desc = {}
 for filename in txt_filenames:
     with open("data/txt/"+filename, 'r', encoding='utf-8') as file:
         content = file.read()
