@@ -3,12 +3,18 @@
     console.log(feature)
 
     $: statusColor = feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
+    $: starIcon = feature.following === 1 ? '★' : '☆';  // Full star if following, empty star otherwise
 </script>
 
 <a href="/feature/{feature.feature_id}" class="feature-link">
     <div class="feature-card">
         <div class="feature-header">
-            <h2 class="feature-title">{feature.name}</h2>
+            <h2 class="feature-title">
+                {feature.name}
+                <span class="star-icon">
+                    {starIcon} <!-- This is where the star is dynamically added -->
+                </span>
+            </h2>
         </div>
 
         <div class="tag-status-row">
@@ -62,6 +68,14 @@
         font-size: 1.25rem;
         font-weight: 600;
         color: #1a1a1a;
+        display: flex;
+        align-items: center;
+    }
+
+    .star-icon {
+        font-size: 1.5rem;
+        color: #ffcc00;  /* Yellow color for filled star */
+        margin-left: 0.5rem;
     }
 
     .tag-status-row {
@@ -131,3 +145,4 @@
         color: #1e40af;
     }
 </style>
+
