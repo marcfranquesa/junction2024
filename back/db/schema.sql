@@ -2,9 +2,18 @@ CREATE TABLE
     features (
         feature_id INTEGER PRIMARY KEY AUTOINCREMENT,
         tag TEXT NOT NULL,
-        client_list TEXT NOT NULL,
         status TEXT NOT NULL
     );
+
+CREATE TABLE
+    feature_users (
+        feature_id INTEGER,
+        user_id INTEGER,
+        PRIMARY KEY (feature_id, user_id),
+        FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE,
+        FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE
+    );
+
 
 CREATE TABLE
     feature_backlog (
@@ -17,13 +26,23 @@ CREATE TABLE
     );
 
 INSERT INTO
-    features (tag, client_list, status)
+    features (tag, status)
 VALUES
-    ('Feature A', 'Client 1, Client 2', 'active'),
-    ('Feature B', 'Client 3, Client 4', 'inactive'),
-    ('Feature C', 'Client 5, Client 6', 'active'),
-    ('Feature D', 'Client 7, Client 8', 'inactive'),
-    ('Feature E', 'Client 9, Client 10', 'active');
+    ('Feature A', 'active'),
+    ('Feature B', 'inactive'),
+    ('Feature C', 'active'),
+    ('Feature D', 'inactive'),
+    ('Feature E', 'active');
+
+INSERT INTO
+    feature_users (feature_id, user_id)
+VALUES
+    (1, 101),
+    (1, 102),
+    (2, 103),
+    (3, 101),
+    (4, 104),
+    (5, 105);
 
 INSERT INTO
     feature_backlog (feature_id, status, description, timestamp)

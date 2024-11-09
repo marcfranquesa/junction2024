@@ -1,0 +1,6 @@
+fastapi[all]
+asyncpg
+sqlalchemy
+uvicorn[gunicorn]
+databases
+
