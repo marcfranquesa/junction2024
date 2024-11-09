@@ -22,6 +22,7 @@ def extract_text_from_pdf(pdf_path):
 pdfs = []
 for _, _, files in os.walk("data/"):
     pdfs = files
+    break
 
 pdf_texts = []
 pdf_filtered = []
@@ -33,6 +34,8 @@ for pdf in tqdm(pdfs):
             print(f"error in {pdf} ")
             continue
         if "Aika" in fi_text:
+            os.makedirs("data/filtered_pdfs", exist_ok=True)
+            os.rename("data/"+pdf, "data/filtered_pdfs/"+pdf)
             pdf_filtered.append(pdf)
             bs = 4999
             if len(fi_text) >= bs:
