@@ -1,11 +1,17 @@
 <script>
     import Feature from './Feature.svelte';
+
     export let data;
+
     const { features, error } = data;
+
     let searchQuery = '';
+
     $: filteredFeatures = features?.filter(feature =>
         feature.tag.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        feature.status.toLowerCase().includes(searchQuery.toLowerCase())
+        feature.status.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        feature.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        feature.name?.toLowerCase().includes(searchQuery.toLowerCase())
     ) || [];
 </script>
 
