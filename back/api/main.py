@@ -13,7 +13,6 @@ app = FastAPI()
 async def index():
     return {"Hello": db.DATABASE_URL}
 
-
 @app.get("/featurelists")
 def feature_list(
     *,
@@ -23,27 +22,27 @@ def feature_list(
     user_id: Optional[int] = None,
 ):
     query = select(m.Features)
-    
+
     if tag:
         query = query.where(m.Features.tag == tag)
     if status:
         query = query.where(m.Features.status == status)
     if user_id:
         case_when = case(
-            (m.Feature_Users.user_id.is_(None), 1),
+            (m.Feature_Users.user_id == user_id, 1),
             else_=0
         ).label("user_status")
 
         query = (
             select(m.Features, case_when)
-            .distinct()  # Move distinct here after the join
+            .distinct()
             .join(
-                m.Feature_Users, 
-                m.Feature_Users.feature_id == m.Features.feature_id, 
+                m.Feature_Users,
+                m.Feature_Users.feature_id == m.Features.feature_id,
                 isouter=True
             )
         )
-    
+
     features = session.exec(query).all()
 
     return [
@@ -57,6 +56,7 @@ def feature_list(
         }
         for feature in features
     ]
+
 
 @app.get("/feature/{feature_id}")
 def feature_detail(
