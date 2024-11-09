@@ -1,100 +1,71 @@
 from typing import List, Optional
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy import select
+from sqlmodel import Session, SQLModel
+from src import db
+from src import models as m
 
-# Initialize the FastAPI app
 app = FastAPI()
 
-# Dummy data for features and feature_backlog
-dummy_features = [
-    {"feature_id": 1, "tag": "Feature A", "status": "active"},
-    {"feature_id": 2, "tag": "Feature B", "status": "inactive"},
-    {"feature_id": 3, "tag": "Feature C", "status": "active"},
-    {"feature_id": 4, "tag": "Feature D", "status": "inactive"},
-    {"feature_id": 5, "tag": "Feature E", "status": "active"},
-]
 
-dummy_backlog = {
-    1: [
-        {
-            "backlog_id": 1,
-            "status": "backlog",
-            "description": "Update 123",
-            "timestamp": "2024-11-01T10:00:00",
-        },
-        {
-            "backlog_id": 2,
-            "status": "in progress",
-            "description": "Update 456",
-            "timestamp": "2024-11-02T12:30:00",
-        },
-    ],
-    2: [
-        {
-            "backlog_id": 3,
-            "status": "backlog",
-            "description": "Update 789",
-            "timestamp": "2024-11-01T14:00:00",
-        },
-        {
-            "backlog_id": 4,
-            "status": "deployed",
-            "description": "Update 123",
-            "timestamp": "2024-11-03T16:00:00",
-        },
-    ],
-    3: [
-        {
-            "backlog_id": 5,
-            "status": "backlog",
-            "description": "Update 456",
-            "timestamp": "2024-11-01T09:00:00",
-        },
-    ],
-}
+# @app.on_event("startup")
+# def on_startup():
+#     init_db()
 
 
-# Endpoint to return a list of features with optional filters
-@app.get("/featurelist")
+@app.get("/")
+async def index():
+    return {"Hello": db.DATABASE_URL}
+
+
+@app.get("/featurelists")
 def feature_list(
+    *,
+    session: Session = Depends(db.get_session),
     tag: Optional[str] = None,
     status: Optional[str] = None,
     user_id: Optional[int] = None,
 ):
-    filtered_features = dummy_features
+    query = select(m.Features)
 
-    # Apply tag filter
     if tag:
-        filtered_features = [f for f in filtered_features if f["tag"] == tag]
-    # Apply status filter
+        query = query.where(m.Features.tag == tag)
     if status:
-        filtered_features = [f for f in filtered_features if f["status"] == status]
-    # Dummy filter for user_id
+        query = query.where(m.Features.status == status)
     if user_id:
-        # For this dummy data, assume user_id filtering isn't implemented and return all features
-        pass
+        query = query.join(
+            m.Feature_Users, m.Feature_Users.feature_id == m.Features.feature_id
+        ).where(m.Feature_Users.user_id == user_id)
 
-    return filtered_features
+    features = session.exec(query).all()
+
+    return [
+        {
+            "feature_id": feature.feature_id,
+            "tag": feature.tag,
+            "status": feature.status,
+        }
+        for feature, in features
+    ]
 
 
-# Endpoint to return a specific feature by ID with backlog updates
 @app.get("/feature/{feature_id}")
-def feature_detail(feature_id: int, limit: Optional[int] = None):
-    # Find the feature with the given feature_id
-    feature = next((f for f in dummy_features if f["feature_id"] == feature_id), None)
-    if not feature:
-        raise HTTPException(status_code=404, detail="Feature not found")
+def feature_detail(
+    *,
+    session: Session = Depends(db.get_session),
+    feature_id: int,
+):
+    query = select(m.Feature_Backlog).where(m.Feature_Backlog.feature_id == feature_id)
 
-    # Get updates for the specified feature_id
-    updates = dummy_backlog.get(feature_id, [])
-    # Apply limit if provided
-    if limit:
-        updates = updates[:limit]
+    features = session.exec(query).all()
 
-    # Include updates in the response
-    return {
-        "feature_id": feature["feature_id"],
-        "tag": feature["tag"],
-        "status": feature["status"],
-        "updates": updates,
-    }
+    return [
+        {
+            "feature_id": feature.feature_id,
+            "status": feature.status,
+            "description": feature.description,
+            "timestamp": feature.timestamp,
+        }
+        for feature, in features
+    ]
