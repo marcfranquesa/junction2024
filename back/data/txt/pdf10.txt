@@ -1,0 +1,483 @@
+Minutes 
+ 
+1 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 10 - 12/2023 
+Time 
+19.12.2023 10:00–12:58 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy (director)  
+ 
+Pauliina Himanen  
+ 
+Fingrid Datahub Oy (director) 
+ 
+Suvi Manninen 
+ 
+Caruna Oy 
+ 
+Greetta Arha  
+ 
+Väre Oy 
+ 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets 
+ 
+Päivi Karpanen 
+ 
+Helen Oy (remotely) 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+ 
+Kari Iltola 
+ 
+ 
+EnerKey Oy 
+ 
+Away 
+Jenni Mäkinen 
+ 
+Fingrid Datahub Oy 
+ 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+ 
+Agenda 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 10:08 a.m. and noted the attendees and the agenda.  
+Marko went through the minutes of the previous meeting. For the member rotation of the development work group 
+related, it was stated that since there have been very few applicants, the composition of the working group has 
+there are only a few changes coming. The changes will be announced shortly. 
+Regarding the future versions, it was said that the exact schedule for the 2.3 version has not yet been published, 
+but the design is progressing and, in general, the content has remained the same as before
+min went through. The 2.2 version has been brought to test environments this week, but the version also
+getting it is still in progress, so the test environments do not have the full version yet.  
+It was also noted that Mia Nyman has sent a question related to the one discussed earlier 
+to development proposal #329 and that a new development proposal has been raised for this, which will be
+will go through later separately.  
+2  
+Current overview of Datahub 
+Current affairs of the customer service - Appendix 1 
+Nelli told the current affairs of customer service. There was a discussion in the development work group 
+of cases where the party has asked the end customer to contact Datahub 
+to customer service to change contact information. It was concluded that this should not be done, because 
+ 
+Minutes 
+ 
+2 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+maintenance of customer data is the responsibility of the parties, and Datahub's customer service cannot change
+provide contact information. In these cases, Datahub is in contact with the wrongdoer 
+to the party and gives instructions on the operation.  
+Regarding December, the ticket processing times were found to be similar to the extended ones in November 
+processing times. In the development work group, the need to prioritize tickets with an end
+customer impact, because these can lead to awkward situations if it takes time to get an answer
+this. The end customer may suffer a financial loss if, for example, a change of vendor is not possible 
+go through because of Datahub and need a carrier fix. Currently 
+the end customer impact and the work group that may be related to it are not directly apparent from the tickets 
+suggested a possible development of the ticket system so that tickets could be given something 
+additional information regarding the end customer. Development of the ticket system was also hoped for, 
+that the user would remain logged in to the system for a longer time than the current one. In addition, you wish-
+was informed about the extended response times, because now the parties have not had the opportunity to
+ability and extended response times have caused astonishment.  
+The development team also asked about the material from the previous week's topical webinar. 
+It was stated that the material is to be published quickly, but with regard to the recordings
+the county has a report on whether they will be published on the Datahub Palvelut portal in the future. center-
+it was brought up that due to the current geopolitical situation, the minutes of ET's working groups 
+are no longer public, but only available to working group members, and the development work group
+the question was raised whether the same practice should also be considered in Datahub's development
+for the working group's materials. The challenge was seen to be that it is nevertheless important for the industry 
+to get information about what is happening in the development team. The matter is being reviewed internally Data-
+with the hub.   
+Current affairs of the development working group - Appendix 2 
+Marko reviewed the development team's current issues. The use of the supplementary version of the main version 2.1
+employment is on 23 February 2024. Testing of the 2.2 version starts on 18.12.2023 in the VEN02 environment and 
+25.12. In the CERT02 environment.  
+The list of bug fixes included in version 2.2 is planned to be published as soon as possible 
+earlyfrom the year, but the exact schedule is not yet clear.  
+ 
+3  
+Presentation of development proposals and recommendation decision 
+3.1  
+Recommendation from the working group (whether items are recommended for further development process
+in), applies to the following points in the list of development proposals, the solution proposal attached
+in "Datahub change requests 20231201": - Appendix 3 
+3.1.1  
+Development proposal #97, checks on customer information 
+Laura presented the development proposal and related open issues. Street name letters 
+regarding the possible inspection of the size, it was stated that because there are many types in Finland 
+addresses that use capital letters in different ways (for example, Roman numerals and 
+people's names), the inspection rule cannot be implemented as it is.  
+ 
+Minutes 
+ 
+3 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Regarding foreign addresses, it was found that the format of the address is very country-specific and 
+we are talking about small amounts of customers, so it is not the case for foreign addresses 
+need for additional rules. The up-to-dateness of the instructions should be checked to the extent that
+it mentions that zero (0) should be entered in the house number field if the house number
+there is no sea.  
+Summary: The instructions check the use of zero in the house number field. Other-
+no new inspections are carried out. 
+ 
+3.1.2  
+Development proposal #148, Updating the text of the name and address structure instructions 
+Laura presented the development proposal and the updated text of the Name and address structure guidelines. Develop
+the working group liked the new text. In addition, the specification mentioned above is added to the instructions 
+about the use of zero in the house number.  
+Summary: A proposed update to the help text is made.  
+ 
+3.1.3  
+Development proposal #203, connection and disconnection with minute accuracy - appendix 4 
+Pauliina went through the development proposal in relation to reporting the connection and disconnection to me-
+tin's accuracy in order to minimize the energy remaining in network losses and prepared for this 
+two solution options. 
+In the development work group, it was concluded that moving to the vart takes care of a large part of the problem, and it does not 
+both solution options were seen to bring additional benefits to networks and sellers in terms of cost-
+compared to the pussies. In addition to Datahub, the change would also require the implementation of the systems of the parties
+where and the change would not be expected until 2025/2026, when the quarter has to be transferred
+rutty already more widely. In the development work group, it was concluded that ET's development work group had not
+read comments about it. 
+The current operating model was therefore found to be sufficient, but it was found that revision
+and, if necessary, the instructions on the recommended methods of action will be specified. 
+Summary: The guidelines will be revised, but otherwise the issue will not be advanced. Let's get back to this if 
+need sometime later. 
+ 
+3.2  
+It requires a discussion in the working group and preliminary questions to be clarified, mi-
+we want to proceed with the following development proposals. In the appendices "Data-
+hub muuotoiveet 20231201" background for the discussion and questions:   
+3.2.1  
+Development proposal #310, exchange of contracts between clients 
+Laura presented a development proposal related to a case where a customer changes their contract 
+to another name, preventing disconnection. In the development group, it was stated that on Datahub's side, no 
+nothing can be done about this. It's a round of the contract, but that's not the case 
+ 
+Minutes 
+ 
+4 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+nothing official was mentioned, for example in the debt collection act. The parties should solve the situations
+in order to start from what the terms of the contract say and, for example, demand, if necessary,
+to insure. In the case of a fixed-term contract, the seller has also available 
+contractual penalty. On the network side, the methods are, under certain conditions, to leave the electricity switched off or 
+online contract not confirmed. Catching the cases is the responsibility of the parties' own systems.
+my business.  
+Summary: No changes to Datahub. The parties must have their own processes in order, 
+so that the cases remain in the minds of the parties and can be handled by, for example, collateral 
+through. 
+ 
+3.2.2  
+Development proposal #346, notification of contract termination to an already terminated contract
+for the mus 
+ 
+Laura reviewed development proposal #346, which presented an extension to the previously recommended one 
+to development #33. The development work group concluded that in the case described in the proposal
+it is about an incorrect situation, because there cannot be contracts at the same place of use 
+with overlapping dates. The seller should become aware of the situation at the point when 
+the customer tries to indicate the end dateend and the seller sees that the contract is already concluded
+tired In this case, it is a situation where something has been declared incorrectly, and the seller has to leave 
+to clarify the matter by e-mail or telephone. Datahub's side did not see any connection to this
+I don't see the need for development, but #33 should be implemented as is for version 2.3. In the same 
+in connection, different use cases could be described in the documentation about which situations Da-
+can be handled through tahub and how to handle situations that cannot be handled through Datahub.  
+Summary: No change is made to the solution, but #33 is implemented as currently planned. 
+In connection with this, strengthening the guidelines on which situations can/cannot be treated with this and what
+then we will act (clarification of the matter between the parties). 
+ 
+3.3  
+For the information of the development team (Datahub's internal development), concerns the development
+the following points in the proposal list, the solution proposal in the appendix "Datahub other
+wishes 20231201":   
+3.3.1  
+Development Proposal #297, Data to be submitted to EV  
+Marko presented a completed list of information to be delivered to EV, which has also been requested 
+EV's comment by the end of this week. In the development group, central
+information about how information about the seller who is obliged to deliver is maintained in Datahub and whether 
+the need to convey that information in the report, when EV also has it. It was stated that it will be checked 
+this is still from Datahub's side. In addition, it was stated that it is also necessary to convey information 
+billing address of the customer's previous sales contract. The first invoice is sent 
+using that address and the customer can change the billing method themselves if necessary.  
+Summary: Let's complete the solution description so that we also include the pre-
+avoid the billing address in the sales contract. In addition, the person responsible for delivery is still being checked 
+vendor maintenance in Datahub and the need to include the information in the report.  
+ 
+Minutes 
+ 
+5 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+ 
+3.4  
+For the information of the development team, the improvements made to the versions of the CMS product 
+2.2/2.3, applies to the following points in the list of development proposals, the solution proposal attached
+in "Datahub change requests 20231201": - Appendix 5 
+Marko presented the development proposals #21, #24, #77 and #323, which are becoming CMS product pa-
+as rants in versions 2.2/2.3. Regarding proposal #24, it was clarified that both the seller and 
+it should be possible for the network to retrieve everything except the measurement data
+messages. 
+ 
+4  
+Self-evaluation of the development team's activities – Appendix 6 
+Marko went through the preliminary answers given for the self-evaluation, and the development team did 
+the results of the discussion and the working group's activities. The development working group stated that the working group 
+the activity has developed in a good direction and the discussions in the working group about different cases 
+were felt to be really important. With the composition of the group, different views come along 
+and experiences that also bring knowledge to other group members. The development team also stated, 
+that the materials prepared in advance have been good, but as far as possible 
+there could be more examples of the problem and information about its extent. Also operational
+model, where everyone is asked for recommendations/comments, has been found to work also in
+in terms of getting to know each other and handling things. 
+Some of the group members felt that it has been challenging to get comments on the preparation of the topics 
+internally and from stakeholders, even when it comes to important issues. In addition, some experienced the implemented
+to maintain the low response rates of the respondents, as these offer the industry an opportu-
+den affects things. On the other hand, the group also had opposite experiences and topics 
+there are many enthusiastic participants in the preparation. Preparing topics requires time and effort
+the aim is to have the material of the meetings published earlier so that the participants will have time 
+as much time as possible to prepare for the topics of the meetings.   
+Challenges were also seen in the fact that after the development work group's discussion, things progress slowly
+again, and with regard to the recommended proposals, it is not known in which version the implementation will be. 
+However, the growth of the team on the Datahub system supplier side should start 
+also appear in the design for future versions, in which case the situation in this regard will improve
+no. In addition to this, with regard to unprocessed development proposals, there is no visibility into 
+when these will be processed. To improve the situation, it was agreed that in the meetings 
+we will also begin to spend time going through the list of development proposals together, so that we can
+with careful preparation, you can identify e.g. issues affecting priority and possible fear of
+cases treated with this guideline.  
+In addition, the development group expressed the wish to include ET in the activity at least
+I created whenthere are issues on the agenda that also concern ET.  
+ 
+ 
+Minutes 
+ 
+6 (6) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+19/12/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+5  
+Other things  
+In the development work group, there was a discussion about the change in the Electricity Market Act and the timetables 
+regarding the report to be submitted to EV (development proposal #297) and the comparison of electricity consumption
+for presenting data in the end customer portal (development proposal #280). Report and comparison 
+for the customer's consumption of the previous year, it is planned to put into production on June 1, 2024 the
+in it. The comparison of the customer's consumption with the corresponding end user group is an open topic, 
+because the comparison criteria have not yet been confirmed. At the moment it seems that compar-
+the information that may be required by the bone is not available in Datahub or in the parties' own 
+in systems. A comment on the matter has been requested from EV by the end of week 51. 
+ 
+6  
+Next meeting times  
+The next meeting will be held on Thursday 15 February 2024, when the following meetings will be agreed
+from times. 
+ 
+ 
+7  
+Closing the meeting 
+Marko Juslin closed the meeting at 12:58. 
+Attachments 
+Appendix 1 Current information in datahub's customer service 20231205 
+ 
+Appendix 2 Overview of the development team 
+ 
+Appendix 3 Datahub Change wishes 20231201 
+ 
+Appendix 4 KE 203 alternatives 
+ 
+Appendix 5 20231212 Datahub 2.x_product improvements 
+Appendix 6 20231219 Self-evaluation of the development team

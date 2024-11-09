@@ -1,0 +1,134 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+31.1.2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 11 
+Time 
+15.02.2024 10:00–15:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko 5 min 
+2  
+Current overview of the data hub - 10 min 
+• 
+Development team, Marko – 10 min 
+3  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+Recommendation from the working group (whether items are recommended further in the development process), regarding
+ke the following points of the development proposal list, the solution proposal in the appendix "Datahub 
+change wishes 20240131": 
+o #309 (Suvi Manninen Caruna Oy), connection and disconnection process.  
+• 
+It requires a discussion in the working group, whether to start preparing these development conditions
+tusks more, at this stage there is no solution proposal prepared yet. Connect
+in you "Datahub muutoviet 20240131" and background for the discussion:  
+o #4 (Fingrid), product process,  
+o #15 (Fingrid), product process,  
+o #18 (Suvi Manninen Caruna Oy), general management,  
+o #20 (Fingrid), general management,  
+o #34 (Fingrid), message management,  
+o #36 (Fingrid), customer information management,  
+o #38 (Fingrid), billing information management,  
+o #40 (Fingrid), point of use process,  
+o #42 (Timo Halttunen Elenia Verkko Oy), customer information management,  
+o #47 (Fingrid), point of use process,  
+o #52 (Fingrid), customer information management,  
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+31.1.2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #95 (Suvi Manninen Caruna Oy), general management,  
+o #105 (Fingrid), customer information management,  
+o #248 (Fingrid), customer information management.  
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20240131" and background for the discussion and questions:  
+o #374 (Fingrid), connection and disconnection process,  
+▪ 
+Related to development proposal #329. 
+• 
+For the information of the development team (datahub internal development), the development proposal concerns
+the following items in the list, the proposed solution in the appendix "Datahub muutoviet 
+20240131”:  
+o #249 (Fingrid), calculations,  
+o #332 (Fingrid), calculations,  
+o #347 (Fingrid), measurement data management,  
+o #375 (Fingrid), measurement data management. 
+4  
+Change - 5 min 
+• 
+ 
+5  
+Next meeting times - 5 min 
+• 
+There will be 2024 meetings of the development working group 
+ 
+6  
+Closing the meeting

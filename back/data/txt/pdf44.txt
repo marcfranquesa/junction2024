@@ -1,0 +1,1024 @@
+Minutes 
+ 
+1 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 4/2022 
+Time 
+19.12.2022 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Minna Luojus 
+ 
+Fingrid Datahub Oy (director) 
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy  
+Elina Konttinen 
+ 
+Fingrid Datahub Oy (remotely) 
+Suvi Manninen 
+ 
+Caruna Oy 
+ 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+Niina Leikas  
+ 
+Kerava Energy 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets (remotely) 
+ 
+Päivi Karpanen  
+ 
+Helen Oy (remotely) 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy (remotely) 
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy (remotely) 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+ 
+Away 
+ 
+Greetta Arha  
+ 
+Leppäkoski Sähkö 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+Marko Juslin opened the meeting at 10:01 a.m., the attendees were noted, and the agenda of the meeting was discussed.
+through the list. The purpose is to go through the development proposals carefully. The agenda (appendix 1) did not appear 
+comments or additions. 
+2  
+Presentation of development proposals and recommendation decision – 2 h 30 min 
+The development proposals under consideration were reviewed according to the agenda, the proposed solutions attached
+in "Datahub change wishes 20221202": 
+• 
+Development proposal #44 
+Laura Markkanen presented the development proposal and the solution description, which was 
+that the change according to the development proposal will not be made. No to the proposal 
+there have been additions or questions. 
+The members of the development team in turn gave their views on the development proposal
+about this. All members felt the change was unnecessary. 
+The development group did not support the original proposal, so no changes will be made. 
+ 
+Minutes 
+ 
+2 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Development proposal #58 
+Laura Markkanen presented the development proposal and its solution description. Marko 
+stated that the views of the parties on the proposal are hoped for, whether this is possible
+is it a matter to be resolved with instructions or are system changes required? 
+Niina Leikas asked what is the disconnection notice, which is meant here? Laura full-
+densi that it is a DH-420 event. Niina further specified what is here 
+the thing that causes the problem in events? 
+Kirsi Jylhä stated that they have had the problem in question on a part of the network 
+in connection with temporary connections and for these, it has been done so that the place of use 
+is first set to cut-off mode and only then the agreement to remove the meter is concluded 
+in connection with. Now they have been instructed on the correct course of action in those situations, i.e. so-
+the pimuses are finished first and only then set to cut. 
+Päivi Karppanen said that they did not identify the problem situations in question and 
+they have not occurred. 
+Niina asked if the cut-off mode is correct at all in those situations? Cherry full-
+densi, that according to their information, this has always been the case. Niina said that the space
+in the case of head connections, the "under construction" status would certainly be a more correct way to operate, and not 
+sets the target to disconnected state. 
+Jari Arve added that such situations are rare for them as well. 
+Suvi Manninen, asked if the seller could further specify what the
+nassa causes the actual problem? How does the activity in question change in practice
+itchy at the sellers? Are certain processes, for example, connected to cut-
+to happen, even if in this situation it shouldn't be like that? 
+Pia Aaltonen asked if the dates could also cause a problem here? Eg-
+kikis termination will be announced earlier and the contract announcement will only come later
+for which day? In the seller's processes, incorrect status information of the place of use could affect
+for example, whether the basic fee can be invoiced. 
+Suvi comments that at least they haven't become aware of any problems with the space in question
+of you. There may be a slight delay in the notification of events and disconnection notifications 
+leave for a larger number of destinations at once. The handling of the case could also be 
+ET development group thing. 
+Pia wondered if the problem is caused by the fact that there is a longer delay between events? Pi-
+dempi delay can cause manual work for sellers and if notifications come 
+for example on different days. 
+Kirsi added that for a certain network, the builder first announces that the object has been disconnected 
+- mode. This information is forwarded to the next party, which informs the subject of the agreement
+set to end. In this case, the delaythat it can take even more days. 
+ 
+Minutes 
+ 
+3 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Pia commented that the situations should be delivered according to the current data hub processes
+either. Suvi commented that there is currently no notification of the events in question 
+no time limits specified. 
+Marko asked how it would be possible to add time limits to processes at this point or 
+what kind of validations would be needed? Suvi commented that adding validation 
+feels challenging in this situation. It is not possible to conclude from the disconnection notice alone 
+should the termination notice come from this within a certain time limit, interruptions will be announced 
+also in other connections. 
+Laura comments that it is still possible to find out whether the problem here is caused by 
+that the events come with too long a delay, or would the situation work correctly if ta-
+incidents are reported, for example, during the same day. Could the problem be caused by
+also guarantees if the events are announced during the same day, but in different order
+in it. 
+Marko stated that the background of the situation in question and the problem in more detail will be investigated 
+the reason in more detail before proceeding with the matter. The group members combined
+here and more detailed information about the background must be obtained before it can be done 
+decisions about the proposal's possible resolution method or possible guidelines
+for that. 
+• 
+Development Proposal #63 
+Suvi presented the development proposal and Laura presented the solution description. Marko's introduction
+the members' view of the proposal and its progress was reviewed: 
+Kirsi: supported 
+Pia: ok 
+Pekka: ok, it's worth looking at the additions in a coordinated way, if others are coming  
+Päivi: supported 
+Kari: we support and should look at the whole in a coordinated way, there is reason to
+is there anything else that is missing and can be developed at the same time?
+regarding the viewing of contracts, also taking into account the previously
+the development proposal that received the citation.   
+Mia: supported 
+Niina: supported 
+Jari: it is supported and should bundle possible other additions into the same size
+to womanhood 
+The development group unanimously supported the proposal. 
+• 
+Development proposal #68 
+ 
+Minutes 
+ 
+4 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Suvi presented the development proposal and Laura the solution description, which was that no 
+start making changes according to the development proposal. 
+Niina asked for further clarification, whether it's about the network and the seller seeing 
+possible reasons for cancellation also in connection with these? It would be good to be more specific 
+the reasons are also visible. Suvi added that yes, more specific reasons for both 
+should be equally visible. The development proposal is during the project phase 
+and no longer see it as necessary. 
+Next, the members' view of the proposal and its progress was reviewed: 
+Jari: they haven't had a need, I agree, but the needs of the size class and others
+with it, it is supported 
+Niina: not supported  
+Mia: not supported 
+Jari: not supported 
+Päivi: there is no need 
+Pekka: There is no need for a third party, it sounds like the others don't either, so no 
+be supported 
+Pia: not supported  
+Kirsi: no need, not supported 
+The development group did not support the original proposal, so no changes will be made. 
+• 
+Development proposal #110 
+Suvi presented the development proposal and the members had a few additional questions
+mush. 
+Pia asked if it is the case that the network has to manually handle the decision every time
+canceling it? Suvi commented that no, you should automatically go to the main
+at least they have.  
+Kirsi commented that this was a problem for them at one point, but the situation improved
+divided  Pia asked if manual repairs can still catch those situations, 
+where the decision was later made again for a different day? Kirsi commented, 
+that we mainly only get a couple of situations encountered where definitive information is obtained 
+had not come. 
+Laura presented the solution description of the proposal.  
+Päivi comments that at least they haven't had time to process everything in the system
+kia events as fast as they came. Suvi agreed that 
+ 
+Minutes 
+ 
+5 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+datahub should become information about the final situation of the contract, especially if the seller 
+made several consecutive mnews about the contract situation in a short time. 
+Marko also stated that it is a change of 1 size class. We visited next 
+through the members' view of the proposal and its progress: 
+Päivi: supported and at least makes it easier for them to do 
+Pekka: ok, sounds necessary 
+Pia: I agree 
+Kirsi: I agree 
+Kari: supported 
+Mia: supported 
+Niina: supported 
+Jari: supported 
+The development group supported the proposal unanimously. 
+• 
+Development proposal #131 
+Laura presented the development proposal and its solution description. 
+Niina asked for clarification, is it the case that the DH-311-4 event would only start if
+it has a different seller? Should the event also start in a situation where the seller is 
+the same, but the customer is different? These situations can certainly come up. The customer doesn't always 
+understand that consumption and production objects are separate and must be agreed upon
+others separately. 
+Pia clarified that this situation still needs to be described in the proposal and solution
+cast along. The event must go if the seller is the same, but the customer is different. 
+Marko and Laura said that this will be further specified in the presentation and need
+its possible effect on the cost estimate is still being investigated.  
+Next, the members' view of the proposal and its progress was reviewed: 
+Kari: supported 
+Mia: supported 
+Summer: supported 
+Niina: supported 
+Jari: supported 
+Kirsi: supported 
+ 
+Minutes 
+ 
+6 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Pia: supported 
+Pekka: supported 
+Päivi: supported 
+The development working group unanimously supported the proposal with that refinement 
+to the solution description, that the DH-311-4 will not start if both the seller and the customer are
+mats in places of consumption and production. 
+• 
+Development proposal #160 
+Jenni Mäkinen presented the development proposal and its solution description. 
+Suvi commented that basically, when we change the operation so that the processing 
+moves from e-mails completely to the system, proposals must also be reviewed 
+in the sub-working group. This will also require changes in the systems of the parties, 
+therefore, comments and observations on workload and impact should also be collected systematically
+from editors. There is also a need to write down how the operator's cancellation goes pro-
+in the session mind and how the parties must interpret this. For example, in which situations 
+will the previous agreement be reinstated? Now the e-mail contains all the necessary information explana-
+can be done, but how do the situations correspond to the interpretation of the message. Will it be needed in the future? 
+however, check separately from the user interface. The hope would be that no review would be needed 
+separately, but the message would cover everything needed. 
+Jari, asked if it is a problem that will go away and if the quantities will decrease? 
+Jenni commented that at first it was thought that this would only apply to migration
+many contracts. However, this has not been the case. Almost half of datahub's customer service
+the daily work of velu consists of dealing with these situations. 
+Pia also commented that as a temporary relief to the situation, it is hoped that
+I will provide clearer instructions in situations of contract cancellation and termination. Soon 
+commented that, at least in their system, customers can go themselves
+to move out, but this has now also been incorrectly used for cancellations. 
+This causes false terminations and cancellations and thus leads to ticket data-
+to the hub. 
+Jenni commented that answers to detailed questions were received from ET last week.
+regarding certain cancellation situations. These will be taken into account in the guidelines
+in the near future. 
+Next, the members' view of the proposal and its progress was reviewed: 
+Päivi: I understand the need and the matter should be handled well, we support it 
+Pekka: absolutely necessary and will have an impact on the parties' systems 
+review in the sub-working group, is supported 
+Pia: it is supported and the effects on the systems of the parties must be ensured  
+Kirsi: supported 
+ 
+Minutes 
+ 
+7 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Jari: We support and it is important that the proposal is discussed in a sub-working group 
+Niina: Good change and supported, should be reviewed in the sub-working group 
+Summer: supported and should be reviewed in the sub-working group 
+Mia: supported 
+Kari: supported 
+Marko also stated that the sub-working group's proposal is still being prepared and refined 
+for processing. This will be forwarded to the sub-working group. 
+The development group supported the proposal unanimously. 
+• 
+Development proposal #140 
+Marko presented the development conditionand its solution description. To the development proposal 
+there were no further questions or comments from the group. 
+Pia asked if the report in question is also available to the parties? Marko said, 
+that basically the report is created only for datahub's needs, its visibility 
+the parties did not know how to verify this point and the matter will be returned later
+hell 
+Suvi commented that size class vs. impact does not meet in this proposal. 
+Marko added that it is a small size class 2 or a large size class 1 
+change. Suvi commented that more detailed instructions are coming from the Energy Industry
+situation in which the seller's activities stop completely. Would this proposal 
+go through only in this context? 
+Marko added that the draft of the instruction in question has been taken into account as part of the solution criteria
+and is taken into account as part of the totality of the situations in question.  
+Pia comments on whether mass functionality is used here only in situations where 
+when a party goes bankrupt? Marko comments that yes, this is operationally
+the mouth would basically be used only in these situations. Pia commented if she could 
+this is also used in situations where a party sells its operations and they would combine
+with another operator? Marko stated that there is no direct answer to this and this 
+can be further specified and clarified. Checked after meeting: 
+This has been discussed in a previous process working group and it was concluded that 
+mass termination is used in sudden fault situations. Otherwise, we proceed to
+contrary to the basic principles of the country's data hub and a decision is made between the parties 
+on behalf of.  
+ 
+Suvi commented that this proposal is only related to producing the report better 
+information, and does not directly affect the conclusion of the contracts themselves. Marko added that 
+holds its place and the actual decision-making has its own separate proposal (#141). 
+ 
+Minutes 
+ 
+8 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Niina stated that Pia's previous comment was good and making decisions 
+mass driving would facilitate operations in these situations as well. Customers would have more 
+time to enter into possible new agreements when the decisions are made in time. 
+Next, the members' view of the proposal and its progress was reviewed: 
+Kirsi: The price for the development of the report alone is high, be careful if you get
+to be included as part of a larger development 
+Pia: Now the proposals related to the larger whole have been broken down into smaller
+silicon parts, are the proposal separate at all functional? Shall we make fear-
+with this report, nothing if the proposal regarding the decision itself is not successful? Va-
+very nice yes. 
+Marko added that the matter will be dealt with as a whole, the individual eh-
+grants move the whole thing forward step by step. 
+Pekka: careful yes. Basically, tools are needed that can be used 
+handles mass drives, business bankruptcies and deals. As a separate proposal 
+the development of one report gets a lot of attention. Careful yes, but the point 
+must act as a whole. 
+Päivi: Careful, yes, now it makes it difficult to visualize the whole, when 
+things broken into parts. As a whole, these should be carried forward. 
+Kari: careful yes 
+Mia: careful yes 
+Summer: not recommended, the workload of the report alone is large, the need for use and
+ratio does not match. The correction of the report could be implemented, for example, simply by 
+robot, and there would be no need to change the code behind the report itself. 
+Niina: It's difficult to comment as a single separate proposal, things 
+in principle, you should act in these situations, but be careful 
+Jari: It's important to see the whole thing first, the total cost and how 
+changes can be bundled here. Could you just fix the report 
+fixed by a robot? Careful yes. 
+The development working group gave cautious support to the proposal, but it is still needed 
+a more accurate total cost estimate.  
+Marko stated that the issue is being promoted through the whole and we are trying to get more 
+cost estimate, so that the whole of the changes can be understood better.  
+Jari stated that it would be good to go through the possibilities of using the robot in other ways
+in some situations, you don't go primarily to make changes to the code of the reports themselves 
+double cloth. 
+• 
+Development proposal #141 
+ 
+Minutes 
+ 
+9 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Laura presented the development proposal and its solution description.  
+Pia asked if the contract is terminated with the reason "End of activity of the seller", if it prevents 
+this thatcanceling any future contract does not restore the previous one 
+terminated the seller's contract? Laura said, yes, that's how it would work. 
+Pia commented that this did not come out directly from the solution description. Laura full-
+densi to add this even more precisely to the solution description. 
+Pia also asked if there is a corresponding 14-day period for the next one 
+regarding the seller's contract? Laura also stated that yes, here the nor-
+goals process deadlines. 
+Suvi also comments that it is difficult to grasp the whole when the potential for change
+the allowances are separate. Is it possible to visit the whole for these yet 
+through and also look at its price tag? 
+Marko said that a total of five have been noticed regarding the seller's sudden termination 
+separate need for change. These will be reviewed as a whole and
+I guarantee a more accurate cost estimate with each proposal.  
+Suvi also said that going through this whole thing in this group is important, 
+in order to better understand the changes required by the case as a whole and whether 
+possibly some other things that should be included. 
+Pekka also commented that there are other possible variations than business
+bankruptcies or transactions that would be considered here? Will cover these changes as well 
+other possible situations where mass functions may be used. Soon 
+added that there was a case in the fall where the party did not immediately stop the full
+sest, but first told the customers to get a new salesperson, because they are going to stop-
+terrestrial. 
+Niina asked whether it is available, even though messages are sent to network companies about decisions 
+also a report on the objects for which the decision has been made in these situations? Network port-
+it would be necessary to get a separate report from nalta on these items. otherwise decisions 
+can get lost among other termination events. Also customer contact
+acting in these situations would be easier based on the report. Report on decisions and 
+of the canceled items would be necessary in this situation. 
+Suvi also comments that when ET's instruction on acting in termination situations comes, pi-
+to examine whether these changes meet the needs presented in the instructions in all respects. 
+For example, would there be other reports that would be necessary here?  
+Marko commented that the whole has already been examined according to ET's proposed guidelines
+against nature, but we will still verify that all the necessary actions
+nalities and reports can be implemented. 
+Jari stated that these changes are absolutely necessary. Also the overall
+the price tag should become known so that the need for changes can be evaluated
+bomb against this too. We definitely want to eliminate manual work 
+in these situations. If, on the other hand, the price tag becomes large, the amount of work will increase 
+ 
+Minutes 
+ 
+10 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+evaluate against this as well. In addition, when thinking about the implementation, you should think about the
+does the code need to be changed or can things be fixed with a robot as well. 
+ 
+The lunch break started at 11:45 and the meeting continued from 12:20. 
+• 
+Development proposal #164 
+Laura presented the development proposal and its solution description.  
+Suvi asked what history is behind the current delimitation? 
+Laura said that the exact history of this cut is not known. 
+Next, the members' view of the proposal and its progress was reviewed: 
+Jari: A clear error in operation, supported 
+Niina: ok, we support it 
+Summer: ok 
+Miia: ok 
+Kari: ok, no unnecessary restrictions 
+Pekka: ok 
+Day: ok 
+Pia: ok 
+Cherry: ok 
+The development group supported the proposal unanimously. 
+The following development proposal has already been discussed in the group a couple of times before. The suggestion is 
+once discussed in the sub-working group as well. The proposal requires discussion in a working group, 
+how do you want to solve the next development proposal, do you want to introduce a new sa-
+nama. In the attachments "Datahub change requests 20221202" and "Change proposal #57 message" 
+basis for discussion:  
+• 
+Development proposal #57 and #104 (contract process, related to #57 discussion) 
+Laura presented the development proposal and its solution description. Marko completed 
+also that the goal is certainly that the information is up-to-date and that automation is used
+as far as possible. 
+Pia comments that, basically, the new message is not a good thing. This subject-
+guarantees work in the parties' own systems, which takes more time. Summer full of
+densi, that the idea of ​​the original solution proposal for this development proposal was 
+only changing the logic in the background, and the change would not cause additional actions on the part of the parties. 
+Now, however, the proposal has changed a lot compared to this, when presented in full 
+ 
+Minutes 
+ 
+11 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+new message. The addition of a new message would also require processing by the development team 
+in the sub-working group. 
+Pia and Suvi both commented that the proposal has now escalated from the original
+from that idea of ​​change. Pia hoped that instead of a new message, they would return to the idea 
+about the addition of new state information for renovation sites. 
+Suvi comments that, compared to the previous one, it has now gone further when it is presented 
+new message. Based on the last discussions, at first it was only necessary to specify 
+and complements the presented logic regarding the processing of the contract's start date. 
+Piia added that based on the last review, there was no need for new ones 
+for messages. 
+Laura stated that the background for the idea of ​​a new message was that the party cannot 
+now information about the contract date change. The party does not receive information where 
+in situations where there is a change of status in Structures → Connected has changed the start date of the contract
+flow and where not. This is presumably essential information for the parties if the state
+the change will cause a change in the start date of the contract. 
+Marko also asked how information about the change would be updated for the parties? Summer comment
+brought that the changes would come to the attention of the parties in the same way as in the current pro-
+sessions and at least they have built their own reasoning for this. Marko stated that 
+the same reasoning could be done with a new message for all parties involved in the operation of the data hub
+place. In this way, uniform action would be ensured for all parties. 
+Miia commented that for them the addition of the new message did not affect the preliminary
+from a large increase on the basis of teasing. Marko also stated that if necessary say-
+implementation/commissioning can be staggered to a later date if necessary, i.e. not
+so the change of the head of the datahub is made. 
+Suvi also brought up under-construction places of use regarding the fact that datahub 2.0 
+in the version, the validation of the measurement data has changed for the under-construction objects 
+regarding and currently no measurement data is accepted for them at all. This already leads 
+now to the fact that the items temporarily under construction will be billed 
+to fail because measurement data cannot be delivered to them. The organization of the parties
+the terms require measurement data for the entire contract period so that the items can be calculated
+to itch. 
+Minna Luojus added that the validation in question has come in the datahub 2.0 version, 
+but the validation should have been included already in the 1.9.0 version (but it is incorrectly 
+missing). In addition, there have been suggestions and comments on the subject in both directions
+so, some networks do not wish to deliver measurement data to objects under construction, 
+for some this is ok and necessary. For items currently under construction
+Of course, there is no measurement data for you, but there is for them in such situations 
+generated a series of zeros. 
+Suvi commented that already due to the change in the start date of the contract
+brings similar invoicing problems, because measurement data is now not available for the entire contract
+for its first day, but the connection from the moment. 
+ 
+Minutes 
+ 
+12 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Pia commented that the matter should also be examined from the point of view of the restructuring situation. Now 
+measurement data cannot be provided for objects under construction. For renovation participants,
+you need to get a set of zeros so that the items can be invoiced and the measurement data is full 
+for the duration of the contract. Processing of an object under renovation in different processes 
+and in terms of measurement data should be looked at even more closely. Under construction - order -
+the processing of that object would remain as it is now, and this would correspond to the concept of new objects
+hit what it was designed for in the first place. 
+Pekka commented that for case 3, a new 'under renovation' status will be added. 
+The other cases presented would work with current processes. Pia emphasized that say-
+in raus there is a need to add status information that really describes it. However, here it remains 
+it is still possible that the under construction status is still being misused. Update the situation 
+clearly descriptive status information is necessary and clarifies the operation. Here you can 
+still instructs separately on the use of correct status information. 
+Päivi commented that everything possible has been postponed under the "under construction" status 
+variations, but in practice it has now been noticed that this does not work. 
+Minna and Marko asked if the need for delivery of measurement data should be reviewed again 
+for the first day of the contract, when the place of use is moved under construction -
+from switched on? Such as thesemeasurement data cannot now be delivered to these targets for the entire agreed
+for the first day, but from the moment of connection onwards.  
+Suvi commented that they have created measurement data in such situations, such as
+for the days in Konais, i.e. for the subject under construction, a series of zeros has been generated 
+as necessary so that the items can be invoiced. Marko commented again, whether he would 
+in these situations, it is possible to produce the necessary zero series by the data hub. 
+In addition, there is a need to find out how many parties invoicing require measurement data 
+for whole days during the entire contract period. Are we talking about everyone or e.g.
+find only one system supplier. 
+Päivi comments whether the validation that has now been imported can be canceled, i.e. would it be possible-
+also delivery of measurement data to still-under-construction sites? Minna com-
+brought that in practice this would only be the removal of this one validation rule, i.e. complete
+that's a possible solution if that's what you want. Let's find out the background to this in more detail 
+for the validation rule and the possibilities for its deletion. 
+Marko stated that the proposal will be taken to the sub-working group for processing the new one presented 
+with regard to the status information 'under renovation' and is still considered an alternative solution 
+update of the change logic of the contract start date and the presented new sa-
+noma for notification of change. We also carefully go through the validation of the measurement data 
+in different situations, as well as the need for measurement data to be brought in 'under construction' situations as well
+for that item, for the first day of the contract. 
+Mia commented that it is important to take the presented solutions and alternatives to the sub-working group 
+for processing. 
+The following development proposals were given to the development team (datahub internal development
+ty), applies to the following items in the development proposal list, the solution proposal in the appendix "Datahub 
+change wishes 20221202": 
+ 
+Minutes 
+ 
+13 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Development proposal #182, (Fingrid) 
+Minna presented the development proposal and its solution description. No to the proposal 
+received comments or questions from the group. 
+• 
+Development proposal #183, (Fingrid) 
+Minna presented the development proposal and its solution description. 
+Pia asked if, in practice, there has been a child's process definition in these
+regarding the situations? Minna and Marko commented that yes, no in the definitions 
+all different situations have been taken into account sufficiently precisely and thus the concept of the balance sheet agreement
+tely has still remained incomplete in certain situations. 
+3  
+Change - 5 min 
+• 
+Streamlining the tools/practices related to the work of the development team 
+Marko went through the work to be started, the aim of which is to smooth the development
+the working group's activities and make it more transparent. Meetings are arranged for the parties
+nin's interview regarding the group's activities and the development of its activities. Over here 
+three industry members of the group will be included and can indicate their willingness 
+For Marko later. 
+• 
+"Timely" delivery of materials to the development team one week before the meeting
+whence 
+It is suggested that in the future the materials be delivered a week before the meeting. 
+The group supported the proposal, they have time to go through the material in a week, but this time-
+the limit must be adhered to. 
+Suvi also asked when the action for the group regarding the quality of customer data 
+start? Marko answered that internal preparation has started and this will be put into motion
+in January 2023 and invitations to the group's meetings will be sent
+as soon as possible, so that it can also be included in the members' calendars on time. 
+• 
+Netting included at the beginning of the year (Summer) 
+Suvi also pointed out that they hope for more detailed instructions for netting and production
+in connection with notifications of contracts for high-quality products. The matter is taken into account and this is
+with detailed instructions. 
+The place of production use can only be included in the netting in parallel with the place of use
+from the day following the notification of the event. It would be good if you also use
+the workplace agreement would start on the same day as the netting. Otherwise, the contract has 
+days when netting is not valid. 
+• 
+Cost estimates for development proposals (Mia) 
+Mia brought up the wish that had already been raised in the development group earlier, that the cost value
+the fault would be refined and possibly more steps would be added in the future 
+ 
+Minutes 
+ 
+14 (14) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+20/12/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+for costs. This would clarify the evaluation of the costs of the proposals to the current col-
+compared to a stepwise scale. We considered an option where2 and 3 of the current ones 
+a new dividing level will appear between the levels. 
+Pekka comments on whether it is possible to get a view and follow-up of the development group
+about the costs of the change proposals I support. Marko comments that this
+law can begin to be formed, it must always be noted that it is always a matter of
+estimate, and it is not yet the actual costs. In addition, the cost 
+will not go immediately from that year's budget, probably only when the change progresses 
+and it will be carried through in practice. In addition, changes can of course still trickle down
+fuck off. 
+4  
+Next meeting times - 5 min 
+• 
+Let's agree on the following meeting times until 06/2022 
+A meeting of the development work group was arranged for March on 21 March 2023 from 10 am to 2 pm. 
+A meeting was arranged for May on May 11, 2022 from 10 a.m. to 2 p.m.  
+The aim is to make the meeting times visible as soon as possible also in the Datahub Pal-
+velut to the portal. 
+5  
+Closing the meeting 
+Marko ended the meeting at 13:40 and everyone was wished a Merry Christmas.

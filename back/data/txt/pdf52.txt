@@ -1,0 +1,135 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+26/04/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 7 
+Time 
+11.05.2023 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+• 
+Going through the memo of the previous meeting - Marko Juslin 5 min 
+2  
+Current overview of the data hub - 10 min 
+• 
+Development team, disaster recovery action plan - Elina Konttinen 10 min 
+3  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+The recommendation from the working group (whether to recommend items further in the process), applies to
+the following points in the hit proposal list, the solution proposal in the appendix "Datahub muutos-
+wishes 20230426”: 
+o #178 (Fingrid), measurement data process,  
+o #163 (Greetta Arha Leppäkoski Group Oy), customer information management,  
+▪ 
+#31 (Suvi Manninen Caruna Oy), customer information management,  
+▪ 
+#53 (Fingrid), customer information management,  
+▪ 
+#75 (Fingrid), customer information management,  
+▪ 
+#103 (Fingrid), customer information management,  
+▪ 
+#150 (Fingrid), customer information management,  
+▪ 
+#267 (Fingrid), customer information management,  
+▪ 
+#268 (Fingrid), customer information management,  
+▪ 
+#269 (Fingrid), customer information management,  
+▪ 
+#270 (Fingrid), customer information management,  
+o #116 (Suvi Manninen Caruna Oy), customer information management,  
+o #119 (Fingrid), customer information management,  
+o #131 (Fingrid), contract process,  
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+26/04/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In the appendices "Datahub changes
+veet 20230426" and background for the discussion and questions:  
+o #202: Discussion of possible temporary deviant action-
+only for spring/summer 
+o #203 (Fingrid), Connection/disconnection process,  
+o #136 (Fingrid), customer information management,  
+4  
+Instructions on preparing for emergency situations - 10 min Marko Juslin 
+5  
+Future change needs - 10 min Marko Juslin 
+6  
+Other - 10 min 
+• 
+ 
+7  
+Next meeting times - 5 min 
+• 
+Meetings of the development working group at the end of 2023 
+ 
+8  
+Closing the meeting

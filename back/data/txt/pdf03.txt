@@ -1,0 +1,75 @@
+Agenda 
+ 
+1 (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+30.3.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group sub-working group meeting 3 
+Time 
+13.04.2023 12:30–14:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Presentation of development proposals and recommendation decision – 1 h 45 min 
+• 
+It requires a discussion in the working group, preliminary questions and alternatives to be clarified-
+and how the following development proposals are to be resolved. In the appendices "Datahub 
+wishes for changes 20230330" and background for the discussion and questions:  
+o #57, (Fingrid), point of use process, 
+▪ 
+more information in the appendix "Amendment proposal 57 - options 1 and 2" 
+o #176, (Fingrid), point of use process, 
+o #33+#114, (Fingrid), contract process, 
+▪ 
+more information in the appendices "Development proposal-33 - review" and "Development condition-
+sockets 33 and 114" 
+• 
+For the information of the development working group, the preparation situation applies to the list of development proposals
+rough points in the appendix "Datahub changes requests 20230330":  
+o #160, (Fingrid), contract process, 
+o #178, (Fingrid), measurement data process. 
+3  
+Change - 5 min 
+• 
+ 
+4  
+Next meeting times - 5 min 
+• 
+There will be 2023 meetings of the sub-working group of the development working group 
+• 
+The proposal from the meeting of the development work group on June 13, 2023  
+5  
+Closing the meeting

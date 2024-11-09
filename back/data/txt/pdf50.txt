@@ -1,0 +1,406 @@
+Memorandum 
+ 
+1 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Authorization development 
+sub-working group 
+Fingrid Datahub Oy / Laura Koskikallio 
+17/09/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub authorization processing sub-working group workshop 1 
+Time 
+10.09.2024 9:00–12:00 
+ 
+Place 
+Teams 
+ 
+In 
+Sami Kajasranta 
+ 
+Nuuka Solutions Oy 
+Kari Iltola 
+ 
+ 
+Eg Software Finland Oy 
+Risto Moilanen 
+ 
+Akamon Innovations Oy 
+Miika Holttinen 
+ 
+FIMX Oy 
+Pekka Eerikainen 
+ 
+VENI Energia Oy 
+Ari Kokkonen 
+ 
+Rejlers Finland Oy 
+Jari Aurojärvi  
+ 
+PD Power Oy 
+Tommi Kotikangas 
+ 
+Vihreya Älyenergia Oy 
+Atte Karppinen 
+ 
+Omg 
+Kari Junnola  
+ 
+Imatran Seudun Sähkö Oy 
+Marika Vepsäläinen 
+ 
+KSS Energia Oy 
+Kia Räihä 
+ 
+ 
+Fortum Markets 
+Nisse Rimpilä 
+ 
+Pohjois-Karejalan Sähkö Oy 
+Tapio Heinonen 
+ 
+Smart Energy Services 
+Matti Hällfors  
+ 
+Sallila Sähkönsiirto Oy 
+Nora Kärki  
+ 
+Caruna Oy 
+Kari Sipilä 
+ 
+ 
+Oy Herrfors Ab 
+Laura Koskikallio 
+ 
+Fingrid Datahub Oy 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+Marko Juslin  
+ 
+Fingrid Datahub Oy 
+ 
+Away 
+Tomi Paasonen  
+ 
+Envare Solutions Oy 
+ 
+ 
+  
+ 
+1  
+Welcome and introductions 
+Marko Juslin reviewed the competition law guidelines for working groups. 
+The participants of the workshop introduced themselves in turn and briefly described how to use authorizations.
+manners. 
+2  
+Changes planned for Datahub's authorization processing and their backgrounds 
+passage 
+Laura Koskikallio presented the plan for the changes in datahub's authorization processing (Lii-
+content shared in tea 1 preliminary task). 
+3  
+Facilitated discussion about the plan and its effects on the activities of the parties
+minta and specification of the plan together 
+The discussion took place with the help of a workshop template created in the Figma tool, so that the participants 
+were first allowed to write down their requested thoughts under the questions as a preliminary task. 
+ 
+Memorandum 
+ 
+2 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Authorization development 
+sub-working group 
+Fingrid Datahub Oy / Laura Koskikallio 
+17/09/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Next, we divided into smaller groups, where we discussed the points raised by the participants
+observations, and finally the groups shared the results of the small group discussions together
+damn it. 
+Summary of the discussion: 
+What's good about the plan? 
+• 
+The following were brought up as general issues: 
+- 
+Widely considered use cases and needs that are not met in the current state 
+- 
+Authorizations through integrations are well taken into account 
+- 
+The blank is in the right direction, we need a proper roadmap for different needs. Mass needs 
+vs. individual authorization needs are completely different challenges. 
+- 
+Extensive participation of various parties in the handling of the case is ok 
+• 
+Individual development issues were particularly considered to be good: 
+- 
+Authorization valid for the time being 
+- 
+Authorization service to be integrated 
+- 
+Authorization of several places of use at once 
+- 
+Termination of authorizations by the party 
+- 
+Sending an authorization request 
+What is missing from the plan? What else are you waiting for? 
+• 
+Desirable details of the plan: 
+- 
+The transition to a new process must be planned: how to handle the existing ones vs. 
+the coming authorizations according to the new model and what the transition period will be like. 
+- 
+Schedule 
+- 
+Clarifying the use of suomi.fi authorizations: what is the relationship between suomi.fi authorizations 
+datahub's authorizations and the strong identification of the party's own service. 
+- 
+Use case 1: in the authorization service, authorizations and user
+for location search and for the search for measurement data of existing locations, since
+loin customer logs in only once. The location search can also be used
+soon for the authorization of new places of use. The process could also start in part-
+on behalf of, who requests authorization both for the application location search and for all existing ones 
+existing authorizations. 
+- 
+Use case 2: the customer has the option to choose "I give the party permission to apply 
+all my places of use and their measurement data" 
+ 
+Memorandum 
+ 
+3 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Authorization development 
+sub-working group 
+Fingrid Datahub Oy / Laura Koskikallio 
+17/09/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+- 
+Different types of cases and variations should be opened up and clarified more, so that different
+those needs come to the fore and the solution(s) can be designed to be functional and smooth 
+from the customer's point of view. The basic solution must be easy, but even the most demanding
+be able to support. 
+• 
+New thoughts: 
+- 
+Search for valid authorizations via the interface 
+- 
+Issuing authorizations without entering an address- authorization request “on the fly” 
+for all usage points from which the customer selects the desired one in the authorization service 
+- 
+If you know the usage point or address, but not the contract maker/holder, how could you 
+apply for it? 
+- 
+Development of authorizations for other information, MGA amounts between networks, MGA amount for the entire network, total consumption of the entire network, total production, etc. 
+What concerns and questions does the plan raise? 
+• 
+Schedule 
+• 
+Customer communication, communication plan. 
+• 
+What if there is no response to the authorization request? Pending requests should be notified by 
+email so that they do not remain internal to the service, because customers may not 
+use the Datahub service often. 
+• 
+How can authorizations and the authorization process be made as 
+easy and understandable as possible for the customer? 
+- 
+Without writing addresses, all usage locations/contracts based on the business ID/business ID 
+- 
+Granting multiple authorization types at once, kp search, measurement information, contract information 
+- 
+Easy approval of pending authorization requests 
+- 
+Smooth user/customer transition between the authorization service and the party's service 
+- 
+The service provider has the opportunity to initiate the process on behalf of the customer. 
+• 
+Authorizations for corporate customers 
+- 
+Who can issue and who has the legal right to issue authorizations? Who can issue an authorization from the company and who, for example, from property management agencies? 
+Can authorizations be chained, => As Oy end user => Property manager => service provider? 
+- 
+How to enable authorizations issued by foreign business decision-makers? 
+
+Memorandum 
+
+4 (5) 
+
+Authorization Development 
+Sub-working Group 
+Fingrid Datahub Oy / Laura Koskikallio 
+17.9.2024 
+
+Fingrid Datahub Oy 
+Street Address 
+Postal Address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+- 
+Does it employ or facilitate decision-makers? 
+• 
+Authorization validity 
+
+- 
+Can Datahub automatically notify the service provider about the expiration/approval/rejection of the authorization? 
+- 
+How to get a notification about an expiring/expiring authorization? 
+- 
+What would be the optimal authorization validity? 
+- 
+Get rid of the backlash from authorizations, since there is no legal basis for it. 
+It is better to sanction authorization errors in the termination of authorizations than to create a massive hassle of re-authorization. 
+• 
+Suomi.fi authorization usage: 
+- 
+Does Suomi.fi get a function directly through authorization processing? 
+- 
+Could the suomi.fi service directly drive authorization information, integration into the DVV service? 
+- 
+Can a separate authorization service provide interfaces through which the service provider can reject/approve authorization on behalf of the user, e.g. based on the suomi.fi identifier that the service provider has already received from the consumer? 
+• 
+Authorization given to the seller in the future: could the authorization cover the entire history of the point of use (not just the latest agreement)? 
+• 
+Agreement information with authorization to a 3rd party: Is there a risk that someone could misuse the authorization? E.g. would the service provider offer the seller a service where the price would be affected by information about the current agreement? 
+• 
+More use cases are needed, at least options within them. 
+• 
+Hopefully, the current authorization mechanism via the portal will be maintained. Requests and authorizations via the user interface should be maintained. 
+• 
+The adequacy of Datahub's performance, if, for example, long-term consumption of several locations is requested. 
+• 
+Message changes 
+
+4 
+Summary of the day and agreement on the next steps 
+As a summary, the participant was asked to tell/record how they would like the working group to work in the future. Summary of the answers: 
+- 
+Let's continue working on the issue and gradually go into smaller details. 
+This time, a wide range of different actors were involved, which helped to understand the issue 
+
+Memo 
+
+5 (5) 
+
+Authorization development 
+sub-working group 
+Fingrid Datahub Oy / Laura Koskikallio 
+17.9.2024 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+extent. Meetings remotely and sufficiently short (max 3 hours) keep the entities to be discussed sufficiently small. 
+- 
+It is good that users are consulted so well and consistently already in the planning phase. Only in this way can the most functional service and system be developed. 
+- 
+In the future, it would be good to know in which direction the development is going and to provide feedback on them. 
+- 
+The need to map the needs of different actors and use cases in detail and define what different solutions need to be developed so that authorization 
+and maintenance is smooth for all types of users 
+- 
+A clearly run workshop. Have a good weekteasing.  Schedule details are good 
+I drove to the information. More detailed plans to discuss next. 
+- 
+Let's put together, summarize, think about a roadmap towards implementation. The needs are multi-
+set, so maybe it's worth dividing into small groups because each type of party has its own challenge
+in front of his tea in his own way. 
+- 
+Now with IT professionals and experts from business, there is a point somewhere 
+reason to say that now the solutions are so-called clear and will be transferred to IT to implement. 
+- 
+A realistic, rough schedule with transition times. 
+Attachments 
+Appendix 1 Advance assignment

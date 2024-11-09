@@ -1,0 +1,364 @@
+Minutes 
+
+1 (5) 
+
+FGDH/ Marko Juslin 
+22.6.2022 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Datahub Development Working Group 1/2022 
+Time 
+22.6.2022 at 13:05-15:40 
+
+Place 
+Fingrid Datahub Oy – Läkkisepäntie 23, Helsinki 
+
+Present 
+Marko Juslin 
+
+Fingrid Datahub Oy (chair) 
+Elina Konttinen 
+
+Fingrid Datahub Oy (director) 
+
+Minna Luojus 
+
+Fingrid Datahub Oy 
+
+Laura Markkanen 
+
+Fingrid Datahub Oy 
+
+Jenni Mäkinen 
+
+Fingrid Datahub Oy 
+Suvi Manninen
+
+Caruna Oy 
+
+Mia Nyman 
+
+Herrfors Nät-Verkko Oy Ab 
+
+Niina Leikas 
+
+Keravan Energia (remotely from 13:10) 
+
+Greetta Arha 
+
+Leppäkosken Sähkö 
+
+Jari Arve 
+
+Sallila Energiapalvelut Oy (remotely) 
+
+Pia Aaltonen 
+
+Fortum Markets 
+
+Päivi Karppanen 
+
+Helen Oy 
+
+Kirsi Jylhä 
+
+Pohjois-Suomen Energiatieto Oy 
+
+Pekka Eerikäinen 
+
+Veni Energia Oy 
+
+Kari Iltola 
+
+Enerkey Oy 
+
+Absent 
+
+1 
+Opening of the meeting, confirmation of attendees and agenda 
+Marko opened the meeting at 13:05 and stated that the minutes of the retail market development group 04/2022 submitted by Greetta Arha can be reviewed under the agenda item 
+of the development team's 
+current affairs. 
+2 
+Fingrid's competition law guidelines – Marko Juslin 
+The chairman reviewed Fingrid's competition law guidelines. 
+Chairman's presentation attached (Appendix 1). 
+3 
+Development working group mandate – Marko Juslin 
+The chairman reviewed the customer care model and the tasks of the development working group in accordance with a separate 
+presentation (Appendix 2), based on which a discussion was held, which highlighted: 
+• 
+Pia Aaltonen asked how to ensure that system suppliers are familiar with the 
+business definitions and use cases of market parties? 
+• 
+Suvi Manninen asked about the development proposal list (excel): Should the companies from which the 
+change request has been received be removed before the list is published to the entire industry => Fingrid 
+removes the company and person from the list. 
+
+Minutes 
+
+2 (5) 
+
+FGDH/ Marko Juslin 
+22.6.2022 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+4 
+Introduction of the members of the development working group 
+The members of the development working group introduced themselves. 
+5 
+Current review of Datahub 
+5.1 
+Customer service – Jenni Mäkinen 
+Jenni Mäkinen reviewed, in accordance with a separate presentation (Appendix 3), how customer service is going, based on which shortcomings emerged that Fingrid promised to start improving: 
+• 
+Pia Aaltonen, Suvi Manninen and Päivi Karppanen brought up open tickets from February-March and asked for feedback from Fingrid on whether they have progressed. 
+• 
+Pia pointed out that there is room for improvement in the ticket system user interface (requesting a ticket is challenging, the name of a market participant came as a commentator). 
+• 
+Suvi Manninen commented that the ticketing instructions are outdated (e.g. is there still a need for service request in the title?). 
+5.2 
+Development team – Marko Juslin 
+Marko introduced the development unit personnel in accordance with a separate presentation. (Appendix 4) 
+The development unit is also supported by many other parties, such as CGI's support and maintenance team, 
+Fingid DoIT, external consultants, CGI's product team and the Development Working Group, 
+on the basis of which a correction proposal was raised for Fingrid: 
+• 
+Pia Aaltonen commented that the slides are missing, that the datahub is invisible to the 
+end customer / Marko said that the comment will be taken into account. 
+Marko also emphasized that the purpose of the development working group is to evaluate the added value of the development proposals to the sector, when the cost level of the development proposal is known. 
+6 
+Review of the operating model – Marko Juslin 
+Marko reviewed the development working group's operating model in accordance with a separate presentation. (Appendix 2 and 
+Appendix 7). 
+During the review, the following observations were raised: 
+• 
+Pia commented that the processes are not described clearly enough in the 
+market documentation. The text still needs to be clarified and clear 
+terms used. 
+• 
+Pia said that there are still challenges in updating contract information for large customers. Notifying several new contracts to the same 
+customer at the same time results in an error. 
+• 
+Suvi said that too many errors are allowed when updating customer information: 
+e.g. the system allows a hyphen in the last name, the official 
+names of companies are not used, etc. => doubts were raised whether Datahub contacted the sources of incorrect information. 
+
+Minutes 
+
+3 (5) 
+
+FGDH/ Marko Juslin 
+22.6.2022 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+• 
+Greetta asked for clarification on the development topic instructions: how to 
+specify in the ticketthat it is a development proposal. Elina stated that she can at the moment 
+act so that the word "Development proposal" is written at the beginning of the title. 
+• 
+Pia raised a point regarding the handling of errors - should there be a chat or a common one 
+a forum where you can discuss errors detected even at a small threshold (e.g. 
+not everyone can access the Teams channel) – could you ask the parties? 
+Greetta asked through which different channels development proposals can be raised. Marko said that 
+all development proposals from outside Fingri must be raised as tickets. Also 
+the new development proposals that may come in the meeting of the development team will come 
+withdraw as tickets and that's how they enter the processing process. 
+The development group is not supposed to go through troubleshooting tickets, but to make development proposals. 
+Of course, there can be a gray situation, when an existing problem is fixed by changing 
+method of operation and in these cases the matter should be brought to the attention of the development team 
+for processing. In any case, in all meetings of the development team, 
+to reserve some time also for the current datahub situation and key issues 
+for informing about problems and faults. The main focus in the meetings of the development work group is 
+however, in the processing of development proposals. 
+There was a discussion about the minutes of the retail market development group, which Greetta 
+Arha had delivered to the development team. Greetta initiated the activities of that group and 
+to the protocol delivery development group (Appendix 5). Markon told the different problems of the protocol
+about the situation of tickets raised for topics, which is being corrected in version 1.9.0 (update 
+planned for production in September 2022) and which are still in progress. There are two fixes 
+coming to a non-contractual situation to problems related to the place of use. Another one of these 
+corrections were also related to challenges with balance sheet agreements. Missing measurement data 
+regarding the reminder, a correction is coming in version 1.9.0. 
+The clarification of the problem related to larger searches related to places of use is in progress (ticket 
+can be found). 
+There was a discussion about the challenges related to correcting the contract dates. Pia told 
+that the situation from the seller's point of view is impossible, decades old 
+contracts should be cancelled, invoices refunded, invoiced again, etc. so that it is possible 
+report the contract again to datahub on the correct start date. Pia also suggested that 
+a new status "Under renovation" would be brought to the place of use so that the start dates are known 
+changes could be avoided. There is no ticket for this yet. 
+There are three development proposals related to the challenges caused by updating customer data 
+from the industry on the development team's list to be processed. In addition, the customer data master -
+regarding information management, Fingrid is already considering various ways to make it easier 
+problem. These are intended to be brought to the next meetings of the development group for processing. 
+Marko also pointed out that a ticket has not necessarily been created for all problems, so 
+it is necessary to make sure that the ticket can be found. 
+The discussion brought up the following considerations, questions and needs for corrections for Fingrid 
+to consider: 
+ 
+Minutes 
+ 
+4 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+22.6.2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Greetta pointed out that it is discussed in two different development work groups (FG and ET). 
+datahub/industry guidelines/development, even though they are separate from each other 
+instances... i.e. how to make them serve each other better. Why ET isn't 
+involved in the development team? / Fingrid finds out. 
+• 
+Pia stated that practical use cases in the instructions would help 
+to understand which practice works, e.g. in cancellation situations. 
+• 
+Pia asked why datahub gives instructions that the parties cannot 
+implement (e.g. changes in the dates of contracts)? 
+• 
+Greetta brought up the instructions to clarify ET's retail market 
+from the meeting: "processing of cancellations in the data hub. It was discussed whether ET's 
+procedural instructions and data hub instructions consistent and sufficiently clear. ET's 
+in the procedure manual, the issue is discussed in chapters 3.3.4, 3.3.5 and 3.3.7 and datahub 
+in the process instructions in chapter 3.2.5.1. " 
+7  
+General introduction and management of open development proposals in practice - Marko 
+Juslin 
+Marko gave a general presentation of open development proposals according to the attachment. (Appendix 6). We went 
+a discussion that suggested: 
+• 
+Suvi asked how to make sure that the desire for change is no longer current and should come 
+remove from the list. 
+  
+8  
+Next meeting times 
+The following meeting times are on Fingrid (including Teams connection):  
+• 
+Tue 6.9. from 10:00 to 14:00 
+• 
+Tue 4.10. from 10:00 to 14:00 
+• 
+Wed 2.11. from 10:00 to 14:00 
+• 
+Tue 13.12. from 10:00 to 14:00 
+ 
+9  
+Closing the meeting 
+The meeting was closed at 15:40 
+ 
+ 
+ 
+ 
+ 
+Minutes 
+ 
+5(5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+22.6.2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Attachments 
+Appendix 1 - Presentation sheets - Competition law guidelines for FG committees and customer bodies  
+Appendix 2 - Operating principles and mandate of the development working group 
+Appendix 3 - Datahub kaspalvelupa_asiakastoimikunta_09062022 
+Appendix 4 - Current affairs of the development unit - customer committee 20220609 
+Appendix 5 - Retail market development group protocol 4_2022 draft 
+Appendix 6 - Datahub Change requests 20220613 
+Appendix 7 - Datahub industry work model 
+ 
+Distribution 
+Development team members and industry

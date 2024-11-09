@@ -1,0 +1,430 @@
+Minutes 
+ 
+1 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+7/3/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Meeting of the Datahub Development Working Group and its sub-working group on February 17, 2023 
+Time 
+17.2.2023 at 9:00 – 11:00 
+ 
+Place 
+Fingrid Datahub Oy office / MS Teams 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal) 
+ 
+Minna Luojus 
+ 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (siht) 
+ 
+Greetta Arha  
+ 
+Leppäkoski Sähkö 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets 
+ 
+Päivi Karpanen  
+ 
+Helen Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+ 
+Kari Iltola 
+ 
+ 
+Enerkey Oy (from 9:17 a.m.) 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy  
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy  
+Niina Leikas  
+ 
+Kerava Energy 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+Jan Loman  
+ 
+CGI Finland Oy (Datahub CMS) 
+Jaakko Timonen 
+ 
+CGI Suomi Oy (Hummingbird) 
+Sari Savikoski 
+ 
+Enerim Ltd 
+Christian Rautjärvi 
+ 
+Hansen Technologies Oy 
+Samuli Saine  
+ 
+Rejlers Finland Oy 
+Tarja Teroheimo 
+ 
+Solteq Oyj 
+Petri Juhala  
+ 
+Synerall Finland Oy 
+Jani Pasanen 
+ 
+Tietoevry Oy 
+Sami Pelkonen 
+ 
+Wapice Oy  
+Pasi Kangasniemi 
+ 
+S2B Energia Oy 
+ 
+ 
+Away 
+ 
+Elina Konttinen 
+ 
+Fingrid Datahub Oy 
+Suvi Manninen 
+ 
+Caruna Oy 
+ 
+ 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 9:02, and went through the agenda of the meeting. No agenda 
+received comments or additions.  
+2  
+Transmission of the information required for the refund of installment 2 of the electricity subsidy from the data hub, 
+plan and file format 
+Pia asked at the beginning how much she had to do with the authorities. Pia heard 
+there is a rumor that there is not going to be a similar arrangement for the next two, as it was before 
+ 
+Minutes 
+ 
+2 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+7/3/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+discussed. As a company, Fortum has tried to run a different model than it was in the beginning 
+suggested. Marko stated that there have been rumors, but since no official information has come, 
+so we proceed according to the current model.  
+Marko reviewed the material of Wednesday's webinar and the scheduling of electrical support. Peter 
+Juhala asked if there was no mention in the article that "at last" in the April installment, are 
+prepared for the fact that they can pay the first installment as soon as the law enters into force. 
+From Syneral's point of view, this would mean that the first batch would be able to be exported 
+through in March, which would mean that the second installment should be passed in April, which 
+DH's schedule plan is currently not possible, so it's a wording difference 
+Regarding DH's materials. Marko comments that there is a discussion about the 2nd installment 
+regarding the schedule, how it could still be adjusted.  
+Marko stated that the definition has started and the goal is to complete the implementation 
+around mid-March for FG's internal testing. In Wednesday's webinar 
+there was a wish that it would be good to be ready for production use already 1–2 weeks earlier than now 
+completion assessment. Marko emphasized that trial use is nevertheless important with production information, 
+because it is still impossible to go through all possible test scenarios internally 
+in the tests. Petri commented that there is no comment on the schedule, there is on the implementation model 
+a lot to comment on. 
+Jani Pasanen would like to ask if someone needs a specific role in relation to requesting a report 
+from the datahub or will the usual seller roles work? Can, for example, the system provider 
+to apply, or does the seller have to apply and pass on? Marko stated that it is now 
+designed so that the seller applies and forwards as needed. Jani asked 
+about trial use, whether it is done with real production data? Marko commented that yes, this 
+is the easiest way to find out the different scenarios and their functionality. Jani commented 
+regarding the schedule, that if the production is received on 1.5. from the materials, so it is quite 
+short time for invoicing, which is usually done approx. by the 5th of the month, 
+Jani supports the possibility of bringing the schedule forward. Marko commented that the schedule 
+is already tough, but goals can of course be set. 
+In the materials, Marko went to the format of the csv file, not the format itself 
+received comments. Petri wondered why it is not possible to search for information through the interface 
+this was such a big development effort. There is resource consumption when searching manually 
+by the seller, is really employment. Petri thought that it would have been possible, for example 
+with authorizations to search for time series of certain moments when the sales company's resources would not be available 
+had to use tto courage. Marko asked Jan Loman about the workload on the interface, Jan 
+comments that it sounds reasonable, but can't say yet about the workload. Peter stated, 
+that you don't want to go and push through anything, but let's go with what is given, but 
+so this is one option. Samuli Saine commented that someone from Datahub stated that this 
+there would be no time series data, i.e. rotation through the measurement database is not possible, 
+has it turned out that there would be hourly data? Marko comments that nothing has changed. 
+Samuli stated that it does not make much sense to recycle through the measurement information system. 
+Marko stated that we will go according to the terms of the schedule, but the interface can be evaluated 
+possible impact on workload. 
+Marko reviewed the structure and content of the report. Pia asked what if the customer is still there 
+co. in the seller's sale, but the contract ID has changed along the way? These will be 
+when contract corrections have to be made. In Pia's opinion, this is very basic, 
+ 
+Minutes 
+ 
+3 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+7/3/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+which must be able to be processed. Christian commented that at that point there should be time series 
+already okay. Pia commented that if the customer changed to the seller for January 
+between, currently the refunds for the second set are determined from November to December. Marko 
+comment that yes, the energies come from there. Pia stated that the seller still needs 
+the energies of November-December, that you can refund them to the customers of batch 2. Could it be that 
+does the change in the contract ID mean that the hub no longer recognizes this? Laura said, 
+that the idea is based on the seller at the end of January, in which case the material would arrive at the end of January 
+according to the contract code. Pia stated that these can be used with a location code 
+target, but brings a challenge when the location ID and contract ID combination 
+no longer face each other. Pia commented that because of GDPR issues, apparently here 
+personal identification number cannot be used. Pia stated that of course she doesn't want a refund 
+refers to a contract that has already ended, but must be concluded on the contract that is 
+valid at that time. Pia directed the question to the system suppliers. Christian 
+comment that anything extra adds work, but presumably these 
+(changes in contract codes) there is not a huge amount. Pia referred to it 
+to the discussion that took place in the development group (emigration-talking), so no more 
+talk about individual contract corrections, but the customers do these themselves. Very 
+it would be easiest to join Pia if the personal identification number and 
+location ID.  
+Jani asked what if the customer has already moved out, how does this work then? What 
+then, if the customer has two different sellers, i.e. term, who does the report go to? What if 
+have there been several contracts for the same or different seller? What if there is no longer a seller on 31.1. 
+day (moved out and left without a seller)? Marko stated that it is preliminary 
+the logic for various scenarios has been considered, but the logic has not yet been reviewed 
+prepared in this working group. Laura stated that the presentation has described all the 
+solution for situations. Pia stated that some customers may not have a salesperson on 31.1. 
+day at all (has announced moving out on, for example, 28.1.), but the seller is on, for example, 1.2. 
+on the day Marko stated that such a customer is excluded from these refund situations. Laura 
+your sum to collect all the scenarios in one list.  
+Tarja Teroheimo thought that the customer has several contracts for several different places of use 
+with sellers. The data is supposed to be specific to the place of use, shouldn't the situation be 
+so be relatively clear if there are several contracts for places of use. Laura stated that 
+cases where the place of use is the same in November/Christmas/January are clear, but 
+more complicated are the cases where the place of use has changed in the meantime and 
+at the end of January there are more sellers. In this case, more reasoning is needed for compensation 
+to the selection of the seller. Tarja asked about the implementation method for several places of use, 
+Laura answered that if the place of use has remained the same, this is a clear king, ie 
+compensation is made by 31.1. seller of the day. Jani asked if there would be refunds 
+by location? Laura stated that yes. Jani asked if there would be compensation in that case 
+for one customer from many sellers? Laura stated that this is exactly the case if the customer has 
+more places of use and different sellers on 31.1., then the compensation will come 
+from different sellers depending on the place of use.  
+Jani asked about the energy consumption, is the whole amount per month? So it would be searchable 
+the entire amount to be reimbursed? Marko stated that yes, regarding the validity of the contract 
+heycalculated, i.e. if the contract is not valid for the whole month, then of course the full amount will not be paid 
+month's amount. Samuli asked, doesn't it only apply to places of consumption? So it isn't 
+ 
+Minutes 
+ 
+4 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+7/3/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+possible that there would be production jobs? Laura stated that it applies 
+places of consumption.  
+Mia Nyman asked that if there is a change, that the refund would include January's consumption, 
+how about the netted data if there is small production? Samuli stated that this should not be the case 
+be relevant, because even now it can be netted for November-December, in which case the network is 
+made a netting. Mia specified that from January, according to the law, there will be a data hub 
+netting. Marko stated that we should come back to this later. 
+Tarja returned to Pia's suggestion that the personal identification number be included in the material. 
+This would make it easier in many ways, and in this case there is no need to go to the trouble of this customer 
+according to the places of use vs. the terms of validity of the contracts. Has this already been considered and this is it 
+completely out of the question? Marko stated that TEM has been contacted and this is now the case 
+aligned in terms of data protection, personal identification information cannot be put in the file. 
+Jani asked about price information. The report doesn't show these, but is there any information if they should be there 
+basic fees included, these were not in the examples. Marko comments that the price information does not 
+come from datahub. It was noted that the refunds include the basic fees and the energy fee. 
+Pia stated that this is also how they have interpreted it. Christian comments that now that 
+the total consumption amount is submitted, the legal text speaks of 24-hour-market-Finland 
+the average price of the regional price, however, the articles say that the price of the second lot 
+the seller who was 31.1. as a seller. The seller in question calculates 
+the average price of the month from the period when I was a seller. So this will clear up then, 
+if/when the project goes through. 
+Mia Nyman comments on day/night divisions, whether or not 10 cents is exceeded is also needed. 
+Here, it is not enough to be polite, but you have to start sharing the lesson series. Pia stated that 
+when there is that ten cent price limit, i.e. those with high prices, could it be that 
+the share of the night is less than 10 cents. Mia stated that they have exactly such a situation.  
+Marko summed up that there were three major comments: the personal identification number situation, can it be done 
+producing the material mechanically and opening the logic itself. Sari Savikoski thought mechanically 
+- comment, originally the suggestion was that the seller download the report. Gladly, if 
+let's go to do the mechanical possibility, could it be both? 
+opportunities (both machine and report). Marko stated that we are still thinking about these, 
+culminates in the workload itself, we aim to progress while ensuring the schedule. 
+ 
+3  
+Change 
+Tarja asked about the situation of the datahub 2.1 version, the confirmation of the content and the schedule. 
+I understand that the electricity subsidy issue has come in between and may affect the content of 2.1, but 
+what does the content and schedule look like? Marko stated that this has been thought about a lot and next week 
+it is intended to get more information about this on the portal. However, this is where the electricity support issue comes in 
+influence, and the development proposals will therefore be a narrower group 
+implemented as in the version. The content of the version will be confirmed in practice in May, but now 
+is already a pretty good estimate of which changes/improvements can be achieved with a large one 
+with probability according to the version. 
+ 
+Minutes 
+ 
+5 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+7/3/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+4  
+Next meeting times 
+Marko proposed a meeting for week 10, weeks 8-10 are all winter holiday weeks and in week 10 
+least absentees. Tarja Teroheimo stated that such a time that is 
+important for the whole. Marko suggested 7.3. days at 2 p.m., this suited the participants 
+(excl. those on winter holidays in Northern Finland).  
+On April 13, 2023, the purpose is to go through other proposals that have gone through the development work group, which 
+need guidance from the sub-working group.  
+ 
+5  
+Closing the meeting 
+The meeting was closed at 9:58 
+ 
+ 
+Attachments 
+Appendix 1 Datahub Delivery of information required by batch 2 of Sähkötute 20230217  
+ 
+ 
+ 
+Distribution 
+Development team members and industry

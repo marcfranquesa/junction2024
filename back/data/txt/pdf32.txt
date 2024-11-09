@@ -1,0 +1,712 @@
+Minutes 
+ 
+1 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 14 - 06/2024 
+Time 
+13.6.2024 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy  
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (director) 
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy (site).  
+Suvi Manninen 
+ 
+Caruna Oy 
+Mari Lehikoinen 
+ 
+Väre Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets  
+ 
+Hanna Surakka  
+ 
+Helen Oy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Tomi Mäkelä  
+ 
+Elenia Verkko Oy 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab  
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+ 
+ 
+Away 
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy 
+Mikko Vähäsaari 
+ 
+Savon Voima Verkko Oy 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting and noted those present and absent. We went through the previous
+kous' memorandum. Marko reminded about the industry survey, which is now open. As a plus, it also 
+that the user group and annual usage estimate will also, as instructed by EV, be the final
+as a criterion for the user's comparison group classification, also for the Statistical Center option
+from where related to the topic will continue. 
+2  
+Current overview of Datahub 
+Customer service news 
+Didn't go through this time. 
+Current affairs of the development team 
+Didn't go through this time. 
+ 
+Minutes 
+ 
+2 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+3  
+Presentation of development proposals and recommendation decision  
+3.1  
+Recommendation from the working group (whether items are recommended for further development process
+in), applies to the following points in the list of development proposals, the solution proposal attached
+in you Appendix 1 and "Appendix 2 Datahub change requests 20240527": 
+3.1.1  
+Development proposals related to the authorization process (#406, #337, #336, #184, #335, 
+#39, #81, #216, #377, #80, #394, #298, #339, #381, #411) 
+Laura K reviewed the concept presentation related to authorization changes (Appendix 1 KTR14_Authorization-
+muutosten_konseptointi), which contains development proposals related to authorizations 
+as a whole. The guiding factor for the development of the authorization process is the EU Commission's
+implementation decree 2023/1162, whose deadline is January 5, 2025. Implementing Decree-
+the reference model it contains brings the following development needs to datahub: 
+1. The identified end customer must identify the party to whom the authorization is given, 
+and authorize it. In Datahub's current process, the party has the right to send business
+akka's authorization to the datahub on behalf of the customer, but this will no longer be possible in the future 
+to do, but also the business customer must give authorization directly to Datahub. Five-
+according to the model, the party to be authorized can, however, send the authorization
+a request that the client can accept (development proposals #406, #337). 
+2. The party meeting the requirements (authorized party) must be able to decide for himself 
+authorization, for example when the customer relationship ends. Currently, consumer customers 
+authorizations cannot be decided by the party in datahub, but this 
+is only up to the customer himself. In practice, the necessary change is that the
+decisions are allowed for all parties, both the interface and the user interface 
+through (development proposals #336 and #184).  
+3. The licensee (i.e. Datahub) must provide the end customer with a log of all data transfer
+(development proposal #335). 
+According to the authorization concept, in addition to the development needs arising from the previous reference model 
+datahub's authorization process is proposed to be developed with the help of the following entities
+either: 
+• 
+A separate authorization service will be implemented, to which the party could be directed as part of the customer 
+digital process or through a link to give/accept authorization (development
+suggestions #39, #81, #216 and #377)  
+• 
+Customer-level authorization, in which case it is possible to apply for all the customer's places of use 
+and sends the authorization to several places of use at a time. Customer-specific authorization
+there has been a discussion with FG's legal department, according to the customer's position
+nor can the authorization given by the customer apply to the customer's future places of use, because the reference model
+according to li, in connection with the granting of the authorization, the customer and the place of use must be able to
+to distend. According to the legal department, the "light authorization" presented in the concept, whose basic
+it is possible for the party to retrieve a list of the customer's moments from the data hub 
+of places of use without a place-of-use authorization is possiblestandard operating procedure 
+(development proposals #80, #394, #298, #339, #381). 
+ 
+Minutes 
+ 
+3 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Re-examination of the validity of authorizations, "for a maximum of 2 years" -may-
+there is no legal basis for the mass condition, but it has been decided in the planning phase to limit the
+most often based on discussions with ET (development proposal #411). 
+The group commented that getting authorization from customers who have even thousands 
+places of use, is really challenging in practice. The possibility of a solution was brought up, 
+where the customer could give the authorized party suomi.fi authorization to act as a customer
+also on behalf of, i.e. in practice the customer authorizes the party to act on behalf of the data
+in the direction of the hub, i.e. to accept authorizations. The practice is common e.g. financial management
+in which the customer authorizes the financial management partner to handle financial affairs on behalf of
+i guarantee. This would allow the authorization processes to scale. 
+The group commented on the border point authorizations and that they can only be done for a maximum of
+dex, it takes a lot of work in companies to keep track of deadlines for the year. It was agreed that the border
+related development proposals will be brought to the next development work group. 
+Removal of the time limit for authorizations, i.e. the possibility of authorizations that are valid until
+dolling, got support in the group. It was seen that the person giving the authorization should himself 
+determine whether the authorization is temporary or indefinite. Authorizations can be
+to be audited on behalf of datahub and with process improvements to improve authorization management
+taa (e.g. deciding) in practice. 
+It was also discussed that the change in the authorization process applies to both third parties and 
+sellers in the tender situation, both that and the relationship of existing authorizations
+it has not been thought about yet, but will be specified as the planning progresses. The group was brought out 
+European digital identity, which was also discussed at the Säti days. This has been addressed 
+in the datahub internally, and we intend to come back to this later. 
+The group also pointed out that the service provider should be authorized 
+also in more detail to the contract information. Marko stated that there are development proposals related to these 
+intended to be reviewed at the next meeting. 
+Summary: Let's move forward with proposals for changes related to the authorization process-
+in accordance with the concept description presented opposite. To be investigated as part of the work suomi.fi authorization
+the use of The implementation schedule of the authorization functionalities will also be announced
+hemmin, but they won't be included in versions 2.3 or 2.4 yet. 
+3.1.2  
+Development Proposal #129, Authorization Process 
+It was found that this is the same need as the previously reviewed development proposal #55. 
+3.1.3  
+Development Proposal #353, Authorization Process 
+Laura M went through a flaw in the hookup process. When the under-construction site of use uses
+anyone, the date of the existing authorization is moved to match in datahub 
+date of connection. There is currently no notification of this to the authorized party. 
+It is implemented by adding a corresponding message about the change of authorization to the process, which here 
+is currently sent to the authorized party in other processes.  
+Summary: Let's take the development proposal forward. 
+ 
+Minutes 
+ 
+4 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+3.1.4  
+Development Proposal #356, Authorization Process 
+The third party currently does not have access through the datahub user interface to the border
+to the points, and therefore not to their measurement data. Can be extended by third parties 
+access rights also apply to those border points and their measurement data to which the party 
+is authorized. 
+Summary: Let's take the development proposal forward. 
+ 
+3.1.5  
+Development Proposal #376, Authorization Process 
+In the contract termination cancellation process, it has been noticed that when returning the status
+net, which was at the place of use before termination, authorizations are currently not returned 
+into force as it should. In the implementation, the contract would be reinstated 
+authorizations decided and canceled in connection with the application, if they have been used
+calla before deciding. 
+Summary: The group saw this as a bug fix that needs to be fixed. Let's develop
+proposal forward. 
+3.1.6  
+#382 (Fingrid), customer information management  
+Nelli went through a development proposal related to a situation where the customer's data remains 
+to the history as incorrect when the customer has been notified of an updatee.g. for an incorrect name
+to me, and which are then repaired. In the proposal, retroactives would be enabled for the operator 
+customer data error corrections. The corrections would also send messages to the parties. I use-
+an "update - vendor" button would be implemented in the user interface for operator use.  
+The group commented that the functionality would be extremely good, because in certain ti-
+in lanti, the seller doesn't even know what the correct customer information is, and the operator can access it 
+always see the entire update history. It was also said that repair needs will be updated
+full, and thus these could be repaired directly with one tick. It was also found that the operative
+should be able to make all kinds of repairs. In addition, it was reminded that just
+the cause of errors should always be corrected first. 
+Summary: Let's take the development proposal forward. 
+3.1.7  
+#365 (Fingrid), end user interface 
+Nelli reviewed the development of the customer portal and energy reporting authorizations 
+development proposal. Energy reporting-type authorization can only be given by a 3rd party
+lelle, but the customer can currently also select sellers and networks from the user interface
+in addition to other parties, the ordinary end customer does not know in which role which company
+mii as a service provider.  
+Summary: The group saw this as a bug fix that should be carried forward. Thing-
+the issuing of the kasportal authorization must be changed so that it is not possible to choose part-
+side and authorization type, which cannot be given to a party. 
+ 
+Minutes 
+ 
+5 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+3.1.8  
+Development proposal #388, calculations 
+Suvi initiated the development proposal related to energy community calculations. About the results of calculations 
+accuracy is not defined separately in the documentation, such as measurement data, and datahub 
+deliver the results of the calculations unrounded.  
+The group commented that in practice the party must always know how to round themselves 
+results after their receipt, and the results cannot therefore be used as such.  
+Summary: The accuracy of the calculations in the data hub should be changed to the same when it is determined
+tented for measurement data. Let's take the development proposal forward. 
+3.1.9  
+Development Proposals #403 and #409, Product Process 
+Marko said that the user interface change needed for the VAT change is being aimed at 
+to get into production early enough, no later than August 1, 2024. Through the B2B interface, the price
+jen update is already successful at this moment. 
+The group commented that the industry needs better information about the VAT change. 
+Currently, it is not known that any party uses the product data stored in the data hub
+information in their own invoicing, but as soon as you use it, there are problems when the products and 
+their prices do not match. We would like instructions for the newsletter and a link on how to
+half know how to make these corrections, because updating the prices is not necessarily
+also done. 
+The need to temporarily remove the normal time limit for the update process was discussed 
+(30 days). Nelli said that the price update has been reviewed today in the topical webinar 
+and the information will also go out in the next newsletter: the 30-day time limit will be removed in August
+for a month.  
+Summary: The change proposal is already being implemented, and the guidance of the parties is being improved. 
+3.1.10  
+#404 (Fingrid), Measurement data management,    
+Development proposal for a new measurement data reminder, where once a month a reminder would
+notice, if the party has missing measurements going back a year.  
+The group saw a need for a reminder, because currently sellers have to ask questions 
+after the missing measurements several times and they are also received with Excel in order to get
+I give the customer an invoice. 
+In the discussion, it became clear that the quality view of the datahub user interface does not display reliably 
+information. It was agreed that we would come back to this matter later. In addition to the quality view, reminder
+there is a need for it from the point of view of the networks, but a month is too short a reminder interval, 
+because the sellers already have time to ask for the missing ones in between. 
+The group commented that the reminder should not just generate more spam. Suggestions-
+a survey was conducted for the industry, both networks and sellers. It was also seen that the number of reminders
+it is easier to see who is missing measurement data, possibly con-
+image, and through that, measures can be taken. 
+ 
+Minutes 
+ 
+6 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Togetherveto: The development proposal was seen as good, but we will still conduct a survey on the need
+to the sector where the need is ensured. In any case, the reminder interval should be less than a month
+empi. 
+3.1.11  
+Development proposal #407, Measurement data management    
+Laura M initiated a proposal according to which a notification would be sent to the network, while not to the seller 
+corrected time series will no longer be sent 6 weeks after the end of the contract, and the network 
+the share of sales should be corrected. We discussed how this proposal is seen in relation to
+to development proposal #167. The group saw that #167 should be implemented as possible
+as quickly as possible, and this proposal can be implemented separately later.  
+There were different opinions among the group about the need to implement the development proposal. On the net 
+has its own implementations for handling situations. The group commented that the underemployed
+who could you ask about the capabilities of the systems and the opinion of the main user forum. 
+Summary: Let's keep the development proposal still on the list and start promoting the main use-
+through the jäforum and sub-working group. 
+3.2  
+It requires a discussion in the working group and preliminary questions to be clarified, mi-
+we want to proceed with the following development proposals. In the appendix "Appendix 2 
+Datahub changes wishes 20240527" background for discussion and questions
+it:   
+3.2.1  
+Development proposal #96, reporting,    
+Laura M introduced the proposal. In version 2.1, a search for business messages has been implemented, where 
+can search for messages by channel and what are the events that have passed through the user interface
+darkness. The person taking the ticket is assured that it is exactly the need that has already been implemented.
+wash off. 
+Summary: It was jointly stated that the current development in version 2.1 is sufficient and not 
+this needs to be promoted. 
+3.2.2  
+Development Proposal #307, Calculations,    
+Development proposal for dividing balance sheet error calculations according to tax rates. The group was one-
+minded by need. 
+Summary: The operator runs the following balance error calculations in accordance with the development proposal
+in installments. 
+3.2.3  
+Development proposals #326 and #415, contract process  
+Laura K introduced the proposal that a new reason code (AR07) is needed for cancellation. 
+ET's future instructions "Termination of electricity supply due to reasons attributable to the seller" 
+the corresponding action requires in canceling the use of the code. A new cancellation is introduced 
+also in mass cancellations made by the operator. The previous agreement will never be returned
+effective in these cancellations. 
+ 
+Minutes 
+ 
+7 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The open questions were reviewed: 
+1. Can the cancellation be made retroactively? Retroactive cancellation is required e.g. con-
+in course cases, because the bankruptcy date may be a few days in the past. 
+In practice, the procedure with time limits is the same as the seller's cancellation. 
+2. Will the online contract be left in effect in the data hub? Yes, we will leave it, because the network will remain 
+the obligation to supply the customer with electricity for 3 weeks. 
+3. Are notifications from non-seller locations also blocked from cancellation events? 
+Yes, it is blocked in the same way as in those concluded with reason AN05. 
+4. Will authorizations be revoked? However, when the online contract remains, the customer can
+mass. Authorizations are not revoked. 
+5. According to ET, the new termination and cancellation codes should not be used for fusion status
+in the roads. What are the practical use cases? Bankruptcy cases or if any seller 
+terminate the sale without a merger.  
+Summary: The development proposal can be refined based on the discussion and 
+let's move forward. 
+3.2.4  
+Development Proposal #389, Contract Process,    
+Nelli reviewed the change proposal related to the documentation of retroactive contract exchanges. 
+Would 3.5 years retroactively be allowed also for this reason for starting the contract? Yes.  
+Summary: The guidelines are being clarified so that retroactive changes of contracts are possible
+list to make a maximum of 3.5 years retroactively. 
+3.3  
+For the information of the development team (datahub internal development), concerns the development
+the following points in the dotus list, the proposed solution in the appendix "Appendix 2 Datahub 
+wishes for change 20240527 
+3.3.1  
+Development proposal #390, calculations, 
+Marko presented a development proposal for controlling the size of outgoing time series data. Tu-
+instructions regarding newspaper sizes, which will be limited with this, so that 
+large files would not cause any challenges. 
+There was also a discussion about the size and quantity limitations of incoming messages. At this moment-
+the clock only has a limited size of 100MB for a single incoming message. development group
+it also proposed possible guidance on the number of messages, e.g. how many ku-
+the jacket's message type can be sent in a certain time window with indicative accuracy. 
+4  
+Version 2.4 design – Appendix 3 
+Marko introduced those in the development queue tentatively planned for version 2.4items (Appendix 3 
+Datahub version 2.4 planning). Necessary changes are planned for the version, 
+which should be included in the version: #316, #384, #347, #390. Marko visited them 
+ 
+Minutes 
+ 
+8 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+arguments through. In addition, there are many items in the development queue and not all of them are possible
+list version, however, so we have to prioritize what we see as the most important
+why. 
+ 
+The group clearly took the position that the improvements identified through customer information management
+set should be included in version 2.4 in its entirety. After that, the most important
+made the following development proposals in this order: #382, #326, #276 #156+#186, 
+#110. Regarding the others, it was stated that it is possible to live, even if they are not available in version 2.4. 
+ 
+Marko also asked how the group sees datahub's version delivery cycle in the future. Group 
+saw that the major version delivery twice a year for those with direct industry impact is 
+suitable, if only the version would get more content/changes than what is there now 
+received. It was pointed out that the testing and review of each version is its own small project and 
+laborious efforts, which will also incur significant costs, and one does not want the data
+the hub's version testing is constantly on. In that sense, it would be important to get a bigger one 
+scope of changes at once, while testing is carried out for each version. For some 
+group members would have the opportunity to deliver several times a year. 
+5  
+Other things  
+5.1  
+Development proposal #176:  
+Suvi asked about the status of the agreed industry survey regarding development proposal #176. Marko stated, 
+that he hasn't been forgotten, but he has had to prioritize other things over this. Let's try 
+to process it during autumn 2024. 
+ 
+5.2  
+Quick couplings 
+Pia said that there has been a discussion in the ET group regarding the connections of the places of use, and 
+found out that some of the network companies gave up quick connections. Problems are caused by the fact that 
+some sellers direct customers to the networks if the electricity is cut off at the place of use. It is proposed to 
+that in DHP you could see the connection table without logging in, in which case the network company 
+connection times, prices, etc. would be more readily available. You don't want to give access to everyone
+login prompts. The company's contact information is behind the login, and it should be, 
+but the connection table would be better served if it were publicly available. 
+Marko stated that the proposal will be written down and an internal discussion will be held. 
+5.3  
+Greetings from Säti days 
+Pia gave feedback from the Säti days:  
+• 
+In the field, it is generally felt that the development is slow for the data hub, but also for its own ATJ 
+regarding.  
+• 
+Regarding guidance needs: Customer information has changed, but there is no information on who to ask 
+to fix. If another seller updates the information of a common customer, no update 
+the recipient has no information about who made the update. At worst 
+the web bombards the wrong seller. The end result may be that someone has to 
+ 
+Minutes 
+ 
+9 (9) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+to pay compensation to the customer if the electricity is cut off. Let's hope in general 
+guidelines common to the industry on how to deal with such situations in order to 
+all parties would not have to think about the most reasonable course of action on their own. These 
+take up a lot of time in a relationship. Subjects for these instructions at least: incorrect 
+correction of customer data and changes made to the wrong place of use, which must be kept 
+to retroactively fix.  
+• 
+A request to organize datahub training on user interface processes. Could 
+to have a special day for the networks and then a special day for the sellers. It can also be a couple of hours 
+teams meeting. 
+5.4  
+Energy community calculations and spaces for use under construction 
+Marko and Laura M initiated an issue that is under development, which is related to community accounting's other
+included, when the place of use belonging to the community is under construction in the space. The development
+where the question has arisen about possible members of the community in a disconnected state, 
+for which no measurement data is supplied (0 series). Datahub's system provider has suggested, 
+that these targets would be forced to deliver a series of 0, followed by a community census 
+would also be carried out for these. The group's view on this was asked. 
+According to the group's view, the delivery of the 0 series to the disconnected location of use is mit-
+contrary to the principles of the foundation, and this is not how we want to act. A more correct way would be that the calculationa 
+would know how to manage these members in a disconnected state. 
+Laura M stated that, based on this feedback, we will continue the discussion about CGI as well 
+with. 
+ 
+6  
+Next meeting times  
+The following meeting times were decided: 
+• 
+Tuesday 3.9. 
+• 
+Thursday 31.10. 
+• 
+Monday 9.12. 
+ 
+7  
+Closing the meeting 
+Marko closed the meeting at 14:00. 
+ 
+Attachments 
+Appendix 1 Appendix X KTR14_Authorization changes_conceptualization 
+Appendix 2 Datahub Change wishes 20240527 
+Appendix 3 Datahub version 2.4 design

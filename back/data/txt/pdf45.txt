@@ -1,0 +1,428 @@
+Minutes 
+ 
+1 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+21/09/2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Meeting of the Datahub Development Working Group and its sub-working group on 21 September 2022 
+Time 
+21 September 2022 at 14:30-15:30 
+ 
+Place 
+Remote meeting (MS teams) 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal) 
+ 
+Minna Luojus 
+ 
+Fingrid Datahub Oy (siht) 
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+Elina Konttinen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy 
+Suvi Manninen 
+ 
+Caruna Oy 
+ 
+Greetta Arha  
+ 
+Leppäkoski Sähkö 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets 
+ 
+Päivi Karpanen  
+ 
+Helen Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy  
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy  
+Niina Leikas  
+ 
+Kerava Energy 
+Jan Loman  
+ 
+CGI Finland Oy (Datahub CMS) 
+Jaakko Timonen 
+ 
+CGI Suomi Oy (Hummingbird) 
+Sari Savikoski 
+ 
+Enerim Ltd 
+Mika Vuori 
+ 
+ 
+S2B Energia Oy 
+Samuli Saine  
+ 
+Rejlers Finland Oy 
+Tarja Teroheimo 
+ 
+Solteq Oyj 
+Petri Juhala  
+ 
+Synerall Finland Oy 
+Jani Pasanen 
+ 
+Tietoevry Oy 
+Jukka Hämäläinen 
+ 
+Wapice Oy (remotely from 15.13) 
+Pasi Kangasniemi 
+ 
+S2B Energia Oy 
+ 
+ 
+Away 
+ 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+Johan Waaramäki 
+ 
+Hansen Technologies 
+ 
+ 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 2:30 p.m., everyone present introduced themselves and took turns 
+through the agenda of the meeting. There were no comments or additions to the agenda. Marko 
+also briefly explained the operating model of Datahub's industry work in terms of the day's program. 
+ 
+Minutes 
+ 
+2 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+21/09/2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+2  
+Development proposal #57 – Changes to the status information of the site under construction 
+Laura Markkanen presented the development proposal (Appendix 1) and the group members were asked 
+comments on the proposal as well as possible additions, what other spaces might be needed 
+observe. 
+Pia Aaltonen: From the seller's point of view, it is a difficult situation if the dates in the contracts change. 
+Additions of status information also give the seller additional information and a better picture of the object 
+of the real situation. 
+Greetta Arha: I can't think of any other spaces that would fit here, in addition to the spaces shown 
+observe. Renovation and Liittymä uppåppidolla statuses describe the places of use well 
+situation, the "Under Construction" mode alone does not cover everything necessary. 
+Jari Arve: The additional facilities will clarify the situation and the change is supported. 
+Kari Iltola: Based on what we have heard, the change sounds clear and necessary. 
+Päivi Karppanen: A change is needed, I can't think of any other facilities that should be added. 
+Kirsi Jylhä: The addition of premises clarifies the operation and is a necessary change to the process. 
+Suvi Manninen: No addition, change is necessary. 
+Niina Leikas: A necessary change so that the start dates of the contracts do not change. 
+As a representative of the selling company, I consider that the change is beneficial, but the distribution network company 
+as a representative, I am worried about whether this will require a lot of changes to the work regulations as well 
+and background systems. 
+Pekka Eerikäinen: A clear need for change. 
+Samuli Saine: The effect of new facilities on reminders of measurement data should also be taken into account, 
+this is not yet included in the material. 
+Fingrid will also conduct a review of the impact of the new facilities on measurement data 
+for reminders. 
+Tarja Teroheimo: a position should also be taken on the delivery of measurement data, new state data 
+regarding, i.e. whether measurement information is required for new facilities and what kind of reminders are sent from these. 
+Jani Pasanen: The new facilities are useful. The root cause of the change is the contracts 
+change of start dates, whether the possibility of changing the logic has been investigated 
+regarding contract date changes? In other words, new premises would not be added 
+the logic by which the start date of the contract is changed for Rakenteilla employees would be changed 
+in terms of places of use. 
+Pia: As an alternative to the fact that moving the space from Structured to Connected would not change the contracts 
+start date would have been that the seller cancels the old contract completely and creates 
+in accordance with the connection date of the new contract. This would be especially the case with large ones 
+caused a huge amount of manual work for sales companies. 
+ 
+Minutes 
+ 
+3 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+21/09/2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Päivi: The withdrawal soon is essential and this change in the start date of the contracts was necessarypresent, 
+because otherwise it would have meant the cancellation of contracts and re-announcements. 
+Tarja: The addition of new facilities at the place of use is a big change in the system and affects several 
+in processes. The need for the under renovation space is clear. It is important to always look at 
+how easily new spaces are created and whether more of these will be created in the future as soon as 
+does the need arise? The addition of new status information is not always clear-cut and adds complexity. 
+Sari Savikoski: Many things affect the whole and it is a degree more complex to export 
+forward change with regard to new state information. The creation of new spaces should always be considered 
+effect and examine whether it is possible to make new changes, e.g. on the Datahub side 
+instead of premises. 
+Suvi: Is it easier to implement additions to the contract status information in the changes? Could you 
+for example, tackled with these and by examining the contract processing logic of the Under Construction mode 
+an increase in the premises of the place of use? 
+Greetta: Basically, it's best to always go forward with a solution that 
+causes the smallest change and does not require major measures. Effect of changes 
+to be looked at as a whole, without making the heaviest changes of all. We will take note 
+also the costs on Datahub's side and for each system supplier. 
+Laura continued to review the development proposal and the impact of the new facilities on the contracts 
+to the conclusion and the start of delivery. There were no comments on the presented effects. 
+No position was taken yet on the process of measurement data reminders DH-212, but this 
+the effect of new status information on these will be reviewed and added. 
+Laura recounted the impact of the new state information on processes DH-121 and DH-122.  
+Jani: Under construction status should be removed for allowed status updates, if under construction status 
+reserved only for new properties. It should not be possible to reach the target again 
+Under construction mode. The possibility of moving the place of use back to Under Construction mode would break it 
+this logic regarding the use of new premises and would thus also affect the contracts 
+to start. 
+Niina: It should be clear how changes can be made to the different facilities when the new ones 
+status information is included. 
+Jari: It would be good to have, for example, a table to which space something can be moved. That would clear it up 
+activities for different premises. 
+Laura continued to review the development proposal and the mandatory information required for the new premises 
+regarding. 
+Jani: The meter may, in some situations be removed with Renovation items, in others maybe not. 
+This should be taken into account for mandatory information. 
+In principle, the same requirements are required for new Renovation and Connection maintenance facilities 
+mandatory information, which also in the Under construction mode. You can submit comments and 
+pay more attention later. 
+ 
+Minutes 
+ 
+4 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+21/09/2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Laura continued the impact of the new facilities on the processes for DH-13X and DH-412. Members don't 
+other processes emerged that should be taken into account. Previously mentioned measurement data 
+the process of reminders DH-212 will still be reviewed in terms of new premises. 
+Summary of the proposal and its promotion: 
+• 
+Let's move this proposed solution forward. We'll look into it some more 
+a proposal where a change would be made to the logic by which Datahub changes with Structures -
+the beginning of the contracts for temporary use. The possibility of this option and 
+the requirements are clarified. Let's find out the options and the scope of these changes 
+between the two presented solutions. 
+• 
+We are trying to bring the change either in datahub 2.1 version in spring 2023 or then in 2.2 
+in the version in the fall of 2023. But we can only get to a more detailed schedule planning 
+when the solution method and its details become clear. 
+3  
+Development proposal #X – Production equipment power data 
+Laura presented the development proposal (Appendix 1) and its proposed solutions. 
+Pia: If the place of use is under construction (or renovation, maintenance), is it even? 
+is it possible that such objects could be notified of the power data of the production device? Is it 
+this kind of thing known to these? 
+Niina: At Kerava, with regard to new production equipment, everything presented will be announced immediately 
+information. 
+Samuli: The same lift as Pia, is it even available for the Rakenteilla site? 
+this information. Is it challenging for Datahub to implement validation independently? 
+from the state of the place of use? 
+Laura commented that when reporting first only the production site without device and power data, 
+there remains the possibility of not adding the required information to the place of use later. This 
+would affect the netting, and later there may be challenges in reporting the information. 
+Pekka: Power information should come with the production device. 
+Suvi: The only case encountered where the power data of the production device has been missing isbeen 
+user error. By default, a production device is not reported without power information. 
+Samuli: The power should always be declared at the same time as the production device. 
+Tarja: Power information should always be reported for the production device. However, it is 
+possible to declare a parallel production location without a production device? When 
+the production device is reported, the power data is also reported.  
+Laura commented that it is possible to declare a parallel production location without 
+production equipment. 
+Päivi: It makes sense to report all the information at once. 
+ 
+Minutes 
+ 
+5 (5) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+21/09/2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Kirsi: The production device and its power data should be reported at the same time. 
+Jani: In what situation could a parallel use location be declared without a production device? 
+It is possible that the netting information is activated and the parallel information should be removed 
+temporarily so that the production device can be added later. 
+Tarja: There are possibly items that you don't want to include in the netting, in which case they would be left out 
+production device unannounced. However, we want the information to be reported according to the processes, 
+in which case Jani's challenge may come to the fore. 
+Laura: The challenge in question exists and really requires parallelism 
+temporarily so that the data of the production device can be added later. 
+Samuli: Is it possible to perform validation when confirming the measurement data? Or 
+it is validated that the production site, to which the information is delivered, has power information and not 
+would allow delivery of measurement data to a production site that lacks power data. 
+Greetta: If simpler solutions are feasible, these options should also be used 
+view.  
+Samuli: Partly a bit off topic, but is it possible that 
+the series formed by the netting calculation would not be the information used in invoicing? This thing 
+has been busy.  
+Minna Luojus: Suddenly, I can't think of situations where this wouldn't be the case. This is coming 
+to take a closer look and come back to the matter later. 
+Summary: 
+• 
+Regarding the validation of power data of production equipment, the change will be carried forward 
+without having to take into account the space in the construction of the place of use, i.e. the rule becomes:   
+Proposal for new validation rules in DH-121/122/124 processes: 
+1. Maximum power is mandatory for production equipment, 
+2. The maximum power unit is mandatory for the production device. 
+• 
+The validation change of the power data of the production device (mandatory power data) is 
+with the aim of bringing into production 11/2022, i.e. before the 2.0 update. 
+4  
+Closing the meeting 
+We will specify later, with what composition these development proposals and their 
+solutions will still be processed. The meeting was closed at 15:39. 
+Attachments 
+Appendix 1 Datahub Development working group and sub-working group 21092022  
+ 
+ 
+ 
+Distribution 
+Development team members and industry

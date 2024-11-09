@@ -1,0 +1,903 @@
+Minutes 
+ 
+1 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group sub-working group meeting 4 
+Time 
+13.06.2023 09:00–11:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki / MS Teams 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal) 
+ 
+Pauliina Himanen (from 9:47 a.m.) 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen  
+ 
+Fingrid Datahub Oy 
+ 
+Elina Konttinen  
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (siht) 
+ 
+Greetta Arha  
+ 
+Väre Oy (remotely)  
+ 
+Jari Arve (from 9:18 a.m.) 
+ 
+Sallila Energiapalvelut Oy (remotely) 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets (remotely) 
+ 
+Päivi Karpanen  
+ 
+Helen Oy (remotely) 
+ 
+Pekka Eerikainen  
+ 
+Veni Energia Oy (remotely)  
+Suvi Manninen  
+ 
+Caruna Oy (remotely) 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab (remotely) 
+Kari Iltola 
+ 
+ 
+Enerkey Oy (remotely) 
+Petri Juhala  
+ 
+Synerall Finland Oy (remotely) 
+Pasi Kangasniemi  
+ 
+S2B Energia Oy (remotely) 
+Niina Leikas   
+ 
+Kerava Energy (remotely) 
+Jan Loman   
+ 
+CGI Suomi Oy (Datahub CMS) (remotely) 
+Jaakko Timonen  
+ 
+CGI Suomi Oy (Kolibri) (remotely) 
+Jani Pasanen  
+ 
+Tietoevry Oy (remotely) 
+Christian Rautjärvi  
+ 
+Hansen Technologies Oy (remotely) 
+Sari Savikoski  
+ 
+Enerim Oy (remotely) 
+Tarja Teroheimo  
+ 
+Solteq Oyj (remotely) 
+ 
+Away 
+ 
+ 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy 
+Samuli Saine  
+ 
+Rejlers Finland Oy 
+ 
+ 
+ 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+Marko opened the meeting, reviewed the agenda and the attendees. 
+2  
+Presentation of development proposals and recommendation decision – 2 h 
+o #178, (Fingrid), measurement data process,  
+Marko initiated the change request based on Appendix 2. Greetta comments on the topic Energy industry
+on the basis of the development team (several companies and their representatives were present). 
+ET's position was that in the long term we should aim for a unified model, but now that ti-
+the loin is on and we are in trouble, we would advocate going back to the DH 1.0 model. 
+ 
+Minutes 
+ 
+2 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+If FG does not start to generate zero until the target is connected -state, it would be
+damn problems, that there is an intermediate model in use. Return to the operating model according to the 1.0 model 
+would be best and later we would think about a longer-term model. ET wished he could 
+DH is still figuring out his own role and would, for example, start delivering zero. Marko asked, 
+whether the majority of ET's group had challenges with the current model. Greetta stated that 
+yes, because of this it was hoped not to continue with this current model. Suvi Manninen asked, 
+how does the current 2.0 model work for standard consumables (e.g. light poles), is it capable of these 
+today to deliver measurement data in any way. Do I have to come up with a measuring device for these? 
+to a datahub that does not exist in your system? Marko asked if these are 
+always under construction. Jani Pasanen commented that these cannot be connected. 
+Greetta comments that for these situations a virtual measurement has been created for the system
+devices. Mia stated that they also have this way of working.  
+Jari Arve joined the meeting at 9:18 
+Marko continued the presentation of the proposal and told about what was discussed on 11 May 2023
+in the development work group.  
+Marko asked who owns the measurement data, if the datahub processes the measurement data here
+in addition. Sari Savikoski stated that this option (4) has not been included in the internal discussion
+carry in the bones. Tarja Teroheimo asked whether the evaluated status belongs to strong or weak
+to hin statuses. Marko stated that there should be a strong status. Tarja stated that in this case
+it could be good for datahub to generate these with an estimated status. Tarja stated that 
+it is not possible to take a position on the issue of ownership of measurement data. Jani Pasanen commented that the data
+hub has already taken ownership of billing information in netting and community items and if you think about it 
+that this would only be datahub's new invoicing information (i.e. zero would be billed) this does not harm
+I guess. Petri Juhala stated that if these enter the systems with the status evaluated, then this one 
+would be a good thing.  
+Marko asked about invoicing for less than a day, who hasn't been able to do it yet, how big 
+group members see the change.  
+• 
+Christian: It doesn't really matter, there is work anyway. We deliver an estimated
+be set to zero for the portion that is not metered. Maybe at that point you can com-
+to mentor more when we end up thinking about alternatives. Preferably permanent 
+solution, like echesty demolition solutions. Managing to get in part-time, at the moment 
+the hourly values ​​are stored in batches of 24, if there are changes to this, then it will
+to war based on it. 
+• 
+Jani: It's some kind of workload to get the series of lessons complete, let's take a stab at it 
+believes that a full day will be added to the invoicing system. Missing values ​​can be
+hut in different positions. 
+• 
+Pasi: At work, it's going pretty smoothly.  
+• 
+Petri.
+also We need work. I can't say what the job is like.  
+• 
+Sari: Needs development, the opportunity to fill in with zero series, would require development.  
+ 
+Minutes 
+ 
+3 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Tarja: We can live with the matter at the moment and the invoicing can be done
+for about a day, but not the best possible solution. If there is 
+a model that remains permanent, measures are required to get everything 
+a fully functional and reasonable solution.  
+• 
+Jaakko: We are able to bill for less than two days, there are no problems here or there 
+require additional work. 
+Marko continued going through the material. A shift has occurred - has the invoicing management
+in relation to the watch, something that causes changes in the system? Or is the val-
+does it exist to be billed based on the quarter?   
+• 
+Christian: The concept is ready on the development side, it has not been developed yet-
+terrestrial. Will come at some point (when customers need it). 
+• 
+Jani: Basically, for those systems where the systems have a quarter/hour level, 
+support has been built but not yet deployed. 
+• 
+Pasi: It's being worked on, hasn't been put into use yet 
+• 
+Petri: Invoicing has not been introduced. Plans for this are to be-
+mass, but there has been no need to tune it up 
+• 
+Sari: Something on the roadmap.  
+• 
+Tarja: With a roadmap, more detailed plans and implementation are missing. In the plans 
+is when there is a need and demand.  
+• 
+Jaakko: Along the same lines, we are waiting for the need and demand, there are plans.  
+Marko continued with the introduction of different options. How much option 1 (continue the 2.0 model 
+accordingly) requires that there be proper support for this?  
+• 
+Christian: There is a discharge solution (we deliver zero so that we can calculate
+tua), when there is no all-day hourly information. You have to get rid of the liquidation solution, if 
+we want it to work properly. 
+• 
+Jani: More systems are tuned here, there is no problem with new systems, 
+but the older ones have detunings. If you wanted to get rid of the can, there is no need
+who knows what it would take.  
+• 
+Pasi: There is a proper solution in the works, which is being done all the time. Probably a few 
+coming into use in a month. 
+• 
+Petri: Somehow it can be solved, but not a smart model for these. Must be employed with this 
+at the moment, no bigger solutions have been thought of, but it has been expected that
+here is the solution of what to do (get it right at once or a temporary solution). 
+In terms of schedule, it can be done quickly when the decision comes. 
+ 
+Minutes 
+ 
+4 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Sari: A demolition solution exists, but a larger implementation has not been done. If to this 
+let's go, let's wait to see what the final model is. 
+• 
+Tarja: Very much the same situation as the previous couple, mostly works, final 
+the solution would require doing, waiting for DH's decision on what will be done. Toi-
+I could that the solution is not this option (1). 
+• 
+Jaakko: It works just fine for us, I don't recognize it as a teardown solution. There are no bigger ones 
+plans to fix or improve, works well. 
+Marko went through option 2 (let's go back to the 1.0 model). It would be received in January at the earliest 
+2024 for production. Marko asked if it causes pain that there are two different operating models (some
+measure, some do not provide measurement information). 
+• 
+Christian: Here is a solution to the second option and the readiness for the other
+raan. This would be suitable as a temporary solution.  
+Pauliina came to the meeting at 9:47 
+• 
+Jani: Bad, because there is a lack of a unified operating model. It must be in the seller's head 
+old system or unloading system, so that even half the days can be invoiced. 
+In any case, we have to make two different solutions. 
+Greetta stated, based on the discussion in ET's development group, that a return to the old 
+the model is supported by a large part of the operators. 
+• 
+Pasi: There is a technical implementation for both, that's fine. 
+• 
+Petri: Maybe ochallenges these days, there may be detuning and non-detuning
+ty, I can't say directly what kind of challenges it can cause. 
+• 
+Sari: It could be a good temporary operating model until a longer-term
+lin's operating model. Of course, the problem here is that there is no unified operating model. Interim
+as an operating model, this could be good. 
+• 
+Tarja: Also good and profitable for us as an interim model. Longer-term mal-
+Li would be given more time (if this is done on a relatively quick schedule). 
+would be reached). Does not cause major changes. 
+• 
+Jaakko: We can manage with both. 
+Marko went through option 3 (sending the measurement data is mandatory). Let's go over what 
+system suppliers agree with this option. 
+• 
+Christian: The weakest option for us, it won't be a quick solution because there will be 
+to demand development. It is by no means our recommended version, but of course
+I guarantee the market participants' position on this. 
+ 
+Minutes 
+ 
+5 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Jani: It would be possible to send measurement data for classes under construction, but it is not
+also a very good option. It would unify the operating method, but what is the long term 
+term solution. Not our favorite option. 
+• 
+Pasi: Technically, there is no change for us, there is a change for the measurement data partner. 
+Market participants decide whether this is a good option or not. 
+• 
+Petri: It's not about us, it's about measurement data solutions. I won't take a stand. 
+• 
+Sari: We had business experts from both the product side and services, who com-
+mentioned this and the service business supported this option. In this context 
+it was raised (and in option 1) that how the effects of other systems
+from the corner would be. Unity here was a good thing. Somewhat requires system-
+on the side of (network) system development. 
+• 
+Tarja: This option did not cause applause and cheers, the whole and 
+considering the schedule is not considered the best possible model. Tasks available 
+yes, it would require a little work, but considering the whole, it was not seen as reasonable and 
+as an aspirational model. 
+• 
+Jaakko: Same as Petri, nothing to comment on as a customer information system. 
+Marko asked Sari (who supported option 3), which entity would impose on network companies the obligation to
+to send measurement data to under-construction participants. Sari has nothing to comment on this. Not either 
+comments from others. As a background, Marko stated that FG has a statutory responsibility and business
+the purpose of standard definitions is to guide and instruct the operation. 
+• 
+Pia: I see that it would be good to have a solution that supports future goals, no sense 
+to pack up and bring development that will take a long time. Have to drive a long time-
+interim solution. 
+• 
+Jari: A final solution must be sought. 
+• 
+Greetta: It's not really a problem for us, as Jaakko stated, I rely on that 
+what ET's team said because some had big challenges. Could you go find out? 
+DH's role in this, a unified solution would be obtained. DH would direct this doing. 
+• 
+Kari: It doesn't directly concern us, but the final solution should be thought through.  
+• 
+Päivi: Nothing new to add, agree with others (long-term solution).  
+• 
+Suvi: A special suggestion on whether to force or not. Crazy would help with that, 
+that sellers have billing information. As a network, these are seen as growing e-mail
+as surveys, relaxations would reduce work. 
+• 
+Mia: I agree with Suvi. If you ask about the party, then this is DH's matter. 
+• 
+Niina: No for option 3. I lean towards what Greetta also said, but it would be good, 
+if there was a long-term solution, but also the possibility to deliver if desired 
+measurement data. Over a longer period of time is a matter for DH. 
+ 
+Minutes 
+ 
+6 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Pekka: Doesn't touch us. I am in favor of a long-term solution. DH thing 
+ultimately say what to do. 
+Marko went through option 4 (2.0 rules, but datahub returns missing values 
+to the seller). What do system suppliers think about this option? 
+• 
+Christian: The alternative requires the most discussion, maybe not the most favorable option. Pit-
+the long-term solution requires some sort of development if the network supplies measuring
+room for the whole day. Maybe this depends on what the emphasis is here, good discuss-
+scapegoat, if FG goes to deliver these, it will also work, but it also requires something. 
+Almost every option requires something ifwe want to get rid of demolition solutions. Pi-
+to think about what the market participants want, which solutions are the easiest hi-
+from its point of view and within its framework, a solution will be made. A longer term solution 
+is the most important. 
+• 
+Jani: Would it also be in the transmission of measurement data that datahub supplements, i.e. pis-
+would you like the additions to the forwarding message? 
+ 
+Laura stated that this would only apply to searchable information, i.e. in mediations no supplemental
+would. 
+ 
+Jani: If necessary, the seller will search for the whole day's time series from the data hub.  In that man-
+it would be good if the measurement data / billing values ​​could be retrieved from datahub, no 
+would need its own disassembly solution. This solution is absolutely possible for us, it requires 
+some work though. 
+• 
+Pasi: Technically it would work for us already. 
+• 
+Petri: From our point of view, if we get strong values ​​for invoicing for something, yes 
+that's a plus. If you think about the long term, I don't see that this is the best change-
+a condition From our point of view, development is not required, but some other alternative than 
+this, is better. 
+• 
+Sari: Good comments from Petri, can't say which is really good and 
+what a bad thing. Option 4 was not supported by us, probably a small ke-
+a hit is needed. Regarding option 4, the point is that whether the search for measurement data -
+from event new process to site processes good? Good luck to everyone
+a nice solution would be the best. 
+• 
+Tarja: Good reflections on whether this would be a reasonable model in the longer term. 
+From our point of view, technically it can be done with reasonable work, but is it longer
+in that time frame, a direction worth going to.  
+• 
+Jaakko: It works technically. I'm not taking a stand on whether it's a good or bad solution. 
+Marko continued the conversation. What is the desired long-term operating model?  
+• 
+Pia: If you think about the end customer's point of view, the situation is that in the construction stage 
+there is no 0 usage at the usage location. In my opinion, crushing the artificial zero 
+ 
+Minutes 
+ 
+7 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+systems is not good in the long run. Invoicing must be possible 
+also in less than a day.  
+Marko: so you are flagging option 1? Pia: If the temporary model comes in a month and a half
+after that, I support option 1. Marko: option 2 would come in January 
+2024. Pia: However, the final decision should be made by the end of 2024 
+by.  
+• 
+Jari: Along the same line as Pia. The final solution should be one that
+at the end of 2024, preferably even in the middle of the year. Option 1, no 
+temporary solution.  
+• 
+Christian: That's the direction (option 1) you should go. I have to start developing 
+so that the systems understand partial days. Gotta start developing what 
+the sooner the better. The end of 2024 as a schedule sounds possible, 
+may be even a little earlier. It depends on what kind of solution is obtained from this. 
+• 
+Greetta: Nothing more to say, we haven't had this relationship in the system
+I do challenges. Of course, ET's position was included in this (with some big challenges). Nothing new 
+to add. Option 1 would be a long-term operating model. good transfer until the end of 2024
+time to sleep. 
+• 
+Jani: The goal is to get to the 2.0 operating model (option 1) as soon as possible
+man quickly. The end of 2024 can be done on schedule. 
+• 
+Kari: Along the same lines as earlier (option 1). Systems must be able to 
+to manage the few days, can't come up with values ​​there. 
+• 
+Päivi: Along the same lines as before (option 1). 
+• 
+Summer: Preceding the trip, 1 option is where to go in the long run
+I see. However, a transition is needed, a relaxation is needed first. 
+• 
+Mia: Option 1, the quantities are so small and there are no problems at the moment. 
+• 
+Niina: We also use our own unpacking solution, which we can manage with. Far 
+in sight, option 1 sounds good. 
+• 
+Pasi: Everyone has a technical readiness. Option 1 until the end of 2024 is ok. 
+• 
+Pekka: As a third party, we are not affected, but the final solution may
+as soon as possible. Not significant for us as a technical matter. 
+• 
+Petri: We do what the market wants. If customers comment on the option 
+1, then that's it. The end of 2024 is a long time for system development 
+as system suppliers to look at our operating model, should be able to answer 
+to problems even faster. 
+ 
+Minutes 
+ 
+8 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+Sari: Option 1 and oroption 3 both received support. For longer
+during war, you have to be able to manage invoicing even in a shed. I tick option 1 
+on behalf of and the end of 2024 as a schedule ok. 
+• 
+Tarja: As mentioned earlier, thoughts have arisen and changed this mid-
+during wetting. At this point, I would strongly think that option 1 is pi-
+the most reasonable solution in the short term. There is some kind of excitement around the matter, that is 
+requires us to unwind the current tension and implement a final solution. 
+Transition period until the end of 2024 ok. 
+• 
+Jaakko: All options work, and it doesn't affect us. The most effective is to take 
+taking into account the opinions of others. 
+Marko continued the discussion on how to proceed with the matter. Option 1 got 
+as a long-term model of support, but what are the needs of a temporary solution
+i do 
+• 
+Pia: I hope that our system supplier would be able to handle the dismantling, that is, that there is no need
+maybe even a separate temporary solution. However, it's been half a year already 
+manage and should continue to manage before even getting a temporary solution.  
+• 
+Jari: I would put all my efforts into making a final decision as soon as possible
+soon and we'll just make do with the current solution. How can development even take 
+for so long (until the end of 2024). The issue should be prioritized in such a way that we get no-
+soon done. 
+• 
+Christian: I'll beat Pia. We will be able to develop some solution and we have to leave 
+to investigate how quickly a permanent solution for next year can be obtained and what is required
+I'll unpack it first. Option 1 is ok for us. The system 
+missing values ​​could be delivered inside in connection with invoicing, I don't know 
+what a big job, but it may not be a big job. 
+• 
+Greetta: Nothing to add that hasn't already been said. The system can be sent via
+to slow even faster than by the end of 2024. Would it be the beginning of 2024 
+better? 
+• 
+Jani: Temporary solutions have already had to be structured in order to be able to invoice
+tua Option 1 alone is the best, there is no need to go to the data hub to build a
+solution because of the year. 
+• 
+Suvi: I don't understand the wording of the question, the end of 2024 was if we make an interim
+reed solution.  
+Laura elaborated: If we do not start with a temporary solution, the year 2024 is not a
+reading question, because now we have to act in some way in accordance with 2.0 - for this we already have
+mass demolition and other solutions to cope with the situation. On the side of the parties 
+the invoicing is somehow already being processed. Marko stated that as a long-term option 
+1 was found to be the best, and if we didn't even go to a temporary solution at all, 
+so what timetable would be used to reach the final solutions supporting the 2.0 model for the parties
+ten systems. Pia asked if the problem wasn't that after 2.0 came 
+everyone should be able to bill for less than two days. These are not 
+ 
+Minutes 
+ 
+9 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+the parties and system providers understood and contacted each other at this point 
+to datahub that they cannot bill customers. Suvi stated that, in its current state, the problem
+The trick is that end customers are led to call network companies, when everyone else 
+there are no mentioned jars in use. 
+• 
+Kari: Nothing to add to the previous ones.  
+• 
+Päivi: I hope and feel that the invoicing can be handled with the help of the demolition and possible
+a final solution would be reached as quickly as possible.  
+Marko: so a temporary solution is not necessary?  
+Päivi stated that, according to the system provider, we will manage until we get the final
+linear solution. Option 1 is the best solution. 
+• 
+Suvi: I still agree with ET that a solution is needed in the interim. No 
+it can be assumed that by dismantling everything will be made to work. Option 2 for the interim period and 
+after this, option 1 as the goal. 
+• 
+Mia: Let's get by with the current model, everyone needs to get the invoicing working. I can't sa-
+noa, which systems don't bend and how long it takes to get teardown solutions. 
+• 
+Niina: We ourselves have a demolition solution and we can manage with it. It's not an easy thing, 
+for many there are difficulties here, but if there is a final solution that we are
+nossa, a temporary solution in the meantime does not make sense from DH's point of view. 
+• 
+Pasi: Nothing to add, I can't say anything about temporary. We talked about other-
+from the same month, when the implementation could come as early as 2024. 
+• 
+Pekka: It is emphasized that the final solution should be able to be rushed and resolved 
+situation for everyone. Until then, there are no good alternatives, but you have to go to the
+with its own demolition solutions. 
+• 
+Petri: From our point of view, as long as it's black on white (that 1 is what 
+let's go), then let's push the implementation lnot this year. 
+• 
+Sari: Option 2 was our recommendation as a temporary option. Exchange-
+of the final schedule of condition 1, what the implementation of the DH 2.2 version is concerned with 
+requires system development. I can't say that at least 2024 would be the beginning 
+alright. 
+• 
+Tarja: From my point of view, I would prefer to only turn to option 1, i.e. the final model 
+half. To what kind of actions it requires from us in order to get it permanently 
+to be resolved, I can't take a stand. If we conclude that there is no interim solution
+sua, the operators will work towards the final model as quickly as possible. Every 
+the system supplier, in discussion with its own customers, strives to build
+settlement of the country as quickly as possible. 
+Jari left at 10:41.  
+• 
+Jaakko: We don't need any changes. We are also waiting for the contents of version 2.2 to
+by the way.  
+ 
+Minutes 
+ 
+10 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Marko summed up that I would be able to manage almost everything in the situation. Marko 
+asked Suvi if there should be a survey of the industry to verify the situation, or 
+shall we go with this group's decision? Suvi stated that it is now necessary to act on these me-
+with netelami in the datahub, we should not aim for the beginning of 2024, but work as much as possible 
+quickly. Pia stated that now that the matter has been discussed in the development group, it should 
+to inform the industry on the subject. Even the fastest would get a temporary one in the data hub 
+unboxed model only at the beginning of 2024. Now we have also discussed the topic of system administration
+with the surveyors in the sub-working group, and now it is decided that everyone strives to get an orderly
+to get it in shape as quickly as possible to conform to the 2.0 model without a temporary one 
+solution. Suvi stated that the sellers will therefore be provided with insufficient information from now on as well. 
+Suvi also summed up that this has now been the decision of the development team and this is the way to go.  
+➔ Summary of the development proposal recommendation: 
+Marko summed up the discussion: The group recommended that the current model be kept and not adopted 
+temporary model for use. Let's start documenting this better and send it 
+newsletter on the subject and informed about decisions.  
+ 
+3  
+Change - 5 min 
+• 
+Marko stated about the development proposal, which concerned the netting calculation under construction status 
+correction of object processing history (development proposal #281) that we are 
+close to getting a proposed solution and informing the development work
+group separately. 
+• 
+Tarja asked when and to what extent the content of version 2.2 would be known. Marko 
+stated that there will be information in the next few weeks about matters that are sure to
+lot and also about potential changes. 
+• 
+Tarja commented on the com-
+ment in the working group. The everyday life of system suppliers is that plans are published
+the swamp is made for the long term. If there are new changes, new systems will have to be
+gestures to make and open the contents of the publications again. There are schedules 
+very difficult to move. If the system supplier has several customers
+for those who have already had to be informed of publication schedules, all changes
+those who wave these plans are challenged. For example, a change in the law
+such as electricity credits etc. affect the plans. Marko stated that 1.5 
+at the end of a year is a long shot, but the time window of half a year is starting to ah-
+das. Here you should reach somewhere in between (0.5v – 1.0v).  
+4  
+Next meeting times - 5 min 
+• 
+Agreed on the next meeting date as 4 October 2023 
+5  
+Closing the meeting 
+The meeting was closed at 11:11.  
+ 
+Minutes 
+ 
+11 (11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+13/06/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+ 
+6  
+Attachments 
+Appendix 1 Datahub Change requests 20230529.xlsx 
+Appendix 2 Development proposal 178.pdf 
+ 
+Distribution 
+Development team members and industry
