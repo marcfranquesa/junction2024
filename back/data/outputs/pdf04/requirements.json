@@ -1,0 +1,37 @@
+{
+    "resp": [
+        {
+            "type": "Functional requirements",
+            "requirements": [
+                "The system must support the measurement data process.",
+                "The system must handle the transition between different operating models (e.g., 1.0 model and 2.0 model).",
+                "The system must be able to invoice for less than a day.",
+                "The system must support the generation of zero values for invoicing.",
+                "The system must support the delivery of measurement data.",
+                "The system must handle the delivery of missing values to the seller.",
+                "The system must support the final operating model by the end of 2024."
+            ]
+        },
+        {
+            "type": "Non-functional requirements",
+            "requirements": [
+                "The system must be reliable and able to handle various operational scenarios.",
+                "The system must be scalable to support future growth and changes.",
+                "The system must be user-friendly for end users and system suppliers.",
+                "The system must be able to manage the transition period effectively.",
+                "The system must be flexible to accommodate different industry requirements."
+            ]
+        },
+        {
+            "type": "Technical constraints",
+            "requirements": [
+                "The system must comply with legal and regulatory requirements.",
+                "The system must be compatible with existing systems and infrastructure.",
+                "The system must be able to handle data from various sources.",
+                "The system must be able to integrate with other systems and platforms.",
+                "The system must be able to handle large volumes of data efficiently.",
+                "The system must be secure and protect sensitive data."
+            ]
+        }
+    ]
+}

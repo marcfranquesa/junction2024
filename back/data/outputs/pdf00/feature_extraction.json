@@ -1,0 +1,100 @@
+{
+    "resp": [
+        {
+            "Feature ID": null,
+            "Feature name": "Datahub availability",
+            "Brief description": "The availability of Datahub has greatly improved usage after the first three months",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "B2B interface response times",
+            "Brief description": "Datahub's B2B interface response times are comparable and stable",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Big end customer contracts processing",
+            "Brief description": "Response times increase when the datahub processes big end customer contracts, especially if the same customer contracts are processed in parallel",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Timeouts",
+            "Brief description": "Timeouts occur from time to time, but there are no known situations where it is not possible to get through an individual agreement",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Service requests",
+            "Brief description": "The number of open service requests has decreased and service request response times have improved",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Customer portal unreliability",
+            "Brief description": "Intermittent unreliability in the process related to the customer portal",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Background process stuck",
+            "Brief description": "The background process sometimes gets stuck, which results in the contract information not being uploaded to the portal",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Portal use monitoring",
+            "Brief description": "Monitoring of the use of the portal has been enhanced to minimize user inconvenience",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Customer and address information quality",
+            "Brief description": "The quality of customer and address information is not at a sufficient level",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Unnecessary updates",
+            "Brief description": "Plenty of extra and unnecessary updates to customer and contract information",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Database filling",
+            "Brief description": "Unnecessary data rows cause the datahub database to fill up faster than expected",
+            "Status": "existing"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Datahub 2.0 delivery",
+            "Brief description": "Ensuring the delivery of Datahub 2.0",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Patch version 1.9.0 delivery",
+            "Brief description": "Delivery of patch version 1.9.0 in September",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Software bug repair",
+            "Brief description": "Repair of software bugs in the backlog",
+            "Status": "modified"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Change needs planning",
+            "Brief description": "Planning the implementation of change needs",
+            "Status": "new"
+        },
+        {
+            "Feature ID": null,
+            "Feature name": "Service request processing improvement",
+            "Brief description": "Improving the processing of service requests",
+            "Status": "modified"
+        }
+    ]
+}

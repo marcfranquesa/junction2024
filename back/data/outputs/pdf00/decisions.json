@@ -1,0 +1,28 @@
+{
+    "resp": [
+        {
+            "decision_description": "Ensuring the delivery of Datahub 2.0",
+            "context_rationale": "Priority for the autumn season to ensure the continued development and delivery of Datahub 2.0.",
+            "stakeholders_involved": [
+                "Fingrid Datahub Oy",
+                "Marko Juslin"
+            ]
+        },
+        {
+            "decision_description": "Delivery of patch version 1.9.0 in September",
+            "context_rationale": "Addressing software bugs and implementing necessary changes as part of the ongoing development process.",
+            "stakeholders_involved": [
+                "Fingrid Datahub Oy",
+                "Marko Juslin"
+            ]
+        },
+        {
+            "decision_description": "Improving the processing of service requests",
+            "context_rationale": "Enhancing the efficiency and reliability of service requests to reduce response times and improve user experience.",
+            "stakeholders_involved": [
+                "Fingrid Datahub Oy",
+                "Marko Juslin"
+            ]
+        }
+    ]
+}

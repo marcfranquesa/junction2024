@@ -1,0 +1,22 @@
+{
+    "resp": [
+        {
+            "Description": "Review of the operating model",
+            "Assigned to": "Marko Juslin",
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "General introduction and management of open development proposals in practice",
+            "Assigned to": "Marko Juslin",
+            "Due date": null,
+            "Priority": null
+        },
+        {
+            "Description": "Determine next meeting times",
+            "Assigned to": null,
+            "Due date": null,
+            "Priority": null
+        }
+    ]
+}
