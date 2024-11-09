@@ -1,5 +1,0 @@
-services:
-  db:
-    build: ./db
-  py:
-    build: ./py
