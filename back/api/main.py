@@ -101,7 +101,6 @@ def feature_detail(
 
     features_query = select(m.Features.feature_id, m.Features.name)
     features_result = session.execute(features_query).all()
-    print(features_result)
     features_dict = {feature[0]: feature[1] for feature in features_result}
 
     feature_counts = {}
