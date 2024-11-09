@@ -1,22 +1,31 @@
+// +page.server.js
 export const load = async ({ params }) => {
 	const client = {
 		id: 101,
-		email: 'example@example.com' // Get it from the user
+		email: 'example@example.com'
 	};
 
-	const response = await fetch(`http://localhost:8000/featurelists?user_id=${client.id}`, {
-		method: 'GET'
-	});
-	const features = await response.json();
-	if (!features) {
+	try {
+		const response = await fetch(`http://localhost:8000/featurelists?user_id=${client.id}`, {
+			method: 'GET'
+		});
+
+		if (!response.ok) {
+			throw new Error(`HTTP error! Status: ${response.status}`);
+		}
+
+		const features = await response.json();
+
 		return {
-			status: 404,
-			error: new Error('Feature not found')
+			features,
+			client
+		};
+	} catch (error) {
+		console.error('Error fetching feature list:', error);
+		return {
+			features: [], // Provide empty array as fallback
+			client,
+			error: 'Server error occurred while fetching feature list'
 		};
 	}
-
-	return {
-		features,
-		client
-	};
 };

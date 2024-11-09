@@ -1,50 +1,64 @@
 <script>
     import Feature from './Feature.svelte';
     export let data;
-    const { features } = data;
+    const { features, error } = data;
     let searchQuery = '';
-    $: filteredFeatures = features.filter(feature => 
+    $: filteredFeatures = features?.filter(feature =>
         feature.tag.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        feature.client_list.toLowerCase().includes(searchQuery.toLowerCase()) ||
         feature.status.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    ) || [];
 </script>
 
 <div class="container">
     <h1 class="title">Features Dashboard</h1>
-    
-    <!-- Search Bar -->
-    <div class="search-container">
-        <input
-            type="text"
-            bind:value={searchQuery}
-            placeholder="Search features, clients, or status..."
-            class="search-input"
-        />
-        {#if searchQuery}
-            <button 
-                class="clear-button" 
-                on:click={() => searchQuery = ''}
-                aria-label="Clear search"
-            >
-                ×
-            </button>
-        {/if}
-    </div>
 
-    <div class="features-list">
-        {#each filteredFeatures as feature (feature.feature_id)}
-            <Feature {feature} />
-        {/each}
-        
-        {#if filteredFeatures.length === 0}
-            <div class="no-results">
-                No features found matching "{searchQuery}"
-            </div>
-        {/if}
-    </div>
+    {#if error}
+        <div class="error-message">
+            {error}
+        </div>
+    {:else}
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input
+                type="text"
+                bind:value={searchQuery}
+                placeholder="Search features, or status..."
+                class="search-input"
+            />
+            {#if searchQuery}
+                <button
+                    class="clear-button"
+                    on:click={() => searchQuery = ''}
+                    aria-label="Clear search"
+                >
+                    ×
+                </button>
+            {/if}
+        </div>
+
+        <div class="features-list">
+            {#each filteredFeatures as feature (feature.feature_id)}
+                <Feature {feature} />
+            {/each}
+
+            {#if filteredFeatures.length === 0}
+                <div class="no-results">
+                    {searchQuery ? `No features found matching "${searchQuery}"` : 'No features available'}
+                </div>
+            {/if}
+        </div>
+    {/if}
 </div>
+
 <style>
+    .error-message {
+        color: #dc2626;
+        background-color: #fee2e2;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
     .container {
         max-width: 1200px;
         margin: 2rem auto;
