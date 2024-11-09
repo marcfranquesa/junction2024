@@ -1,0 +1,504 @@
+Minutes 
+ 
+1 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 15 - 09/2024 
+Time 
+3/9/2024 10:00–13:40 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy  
+ 
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy (director) 
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy (director)  
+Suvi Manninen 
+ 
+Caruna Oy 
+Mari Lehikoinen 
+ 
+Väre Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy (remotely) 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets  
+ 
+Hanna Surakka  
+ 
+Helen Oy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Tomi Mäkelä  
+ 
+Elenia Verkko Oy (remotely) 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab  
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+Mikko Vähäsaari 
+ 
+Savon Voima Verkko Oy (remotely) 
+ 
+Away 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy  
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting and noted those present and absent. We went through the previous
+minutes of the meeting. The group brought out the agreed questionnaires to be sent to the sector and their
+holiday schedule. 
+2  
+Competition law instruction 
+The competition law guidelines could be bypassed because there were no new people in the group and 
+the instructions had been reviewed recently. 
+3  
+Current overview of Datahub 
+Current affairs of the customer service - appendix 1 
+Nelli told the working group about the current affairs of Datahub's customer service. Customer service 
+the service level had remained good during the summer, and the average resolution time for tickets is 
+been 3 days. Personnel changes have taken place in the customer service team, and new recruits
+activities are in progress. The implementation of the VAT change regarding datahub's service invoices is work 
+below and will be completed before the September invoices are sent at the beginning of October. balance error-
+the calculation is carried out in mid-October, and customer meetings start in September
+in the month. 
+Current affairs of the development team - appendix 2 
+ 
+Minutes 
+ 
+2 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Marko presented to the working group the formation process of the comparison groups that bring the end-customer portal
+rites. The annual usage estimate will be used to form the comparison groups and
+group of actors. In the breakdown of the annual usage estimate, the breakdown used by Eurostat will be used
+play. In the future, the same comparison group information will be used in open data as well 
+in other reporting. 
+The group was reminded of the promised instructions regarding annual usage estimates and user
+group updates. 
+4  
+Presentation of development proposals and recommendation decision  
+4.1  
+Recommendation from the working group (whether items are recommended for further development process
+in), applies to the following points in the list of development proposals, the solution proposal attached
+in "Appendix 3 Datahub change requests 20240816": 
+4.1.1  
+Development Proposal #113, Authorization Process 
+Third parties do not currently have the right to receive sales contract information via data
+from the hub, even if authorization had been received from the customer.
+snow providers than other parties, when information needs to be inquired from the parties outside the datahub
+side. The group agreed that development is necessary, and must be quickly
+same back to itself when the queries decrease. It was brought out from the group that we have to strive 
+to implement this so that the customer can easily give different types of authorizations 
+at one time. It was concluded that functionality is necessary for both business and consumer customers.
+to the quays. 
+Summary: The development working group recommended that the development proposal be taken forward. 
+4.1.2  
+Development Proposal #418, Authorization Process 
+Datahub terminates the authorizations in some situations when the sales contract ends, for example 
+the online contract would remain in effect. In the new implementation, this would be changed so that the authorized
+tus remains in effect until the customer has no valid contract at the place of use. 
+The change affects the contract cancellation and termination processes. The group supported it 
+change, although the implementation estimate was found to be expensive. The aim is to control the cost
+country by implementing other similar changes to the same version. In connection with the authorization process
+tyve datahub's roadmap for version updates will be published when it is known. 
+Summary: The development working group recommended that the development proposal be taken forward. 
+4.1.3  
+Development proposal #37, on/off process 
+The development proposal concerned connection/disconnection notifications received by the seller, where no 
+at the moment there is no information whether the network has sent a notificationt in response to the seller's request 
+or from their own starting points. The seller needs this information as part of their collection process. go-
+was discussed whether adding the identifier of the seller's original message is sufficient for the network's
+noma It was concluded that the reference of the message and plain language could be brought into the new field 
+text that says that the message sent by the network is a response to the seller's request. 
+ 
+Minutes 
+ 
+3 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Summary: The development working group recommended that the development proposal be moved forward tomorrow
+comments from the group. 
+4.1.4  
+Development proposal #94, on/off process 
+It is not possible to report connection to Datahub if there is an open connection or cut-
+hug request and the contract has ended without the requests being answered. The development proposal is 
+fixed as a bug fix and the fix will go into production in version 2.3. This was brought to the notice 
+to the group and verified that the bug fix solved the original problem. 
+Summary: A patch coming in version 2.3 will resolve this development proposal. 
+4.1.5  
+Development Proposal #153, ​​Place of Use Process 
+The development proposal concerned changes in the status of border points, which are currently subject to the same
+nöt as places of use This is not the desired functionality, because for border points no 
+use DH-400 processes for state changes. As a solution, it is proposed that validation rules 
+is changed for border points so that the state of the border point can be changed by updating. 
+The group was unanimous about the need for change. 
+Summary: The development working group recommended that the development proposal be taken forward. 
+4.1.6  
+Development Proposal #169, Place of Use Process 
+The development proposal concerned the search for a place of use through the interface, where there is no possibility 
+specify that the address of the requested use place must have stairs and apartment information 
+blank. The problem is mainly encountered when applying for real estate use for housing associations.
+of nights with more than 50 apartments. The group concluded that the problem has been learned to circumvent the
+search through the CMS user interface. 
+Summary: The development team recommended that the development proposal be rejected. 
+4.2  
+It requires a discussion in the working group and preliminary questions to be clarified, mi-
+we want to proceed with the following development proposals. In the appendix "Appendix 3 
+Datahub changes wishes 20240816" background for discussion and questions
+it:   
+4.2.1  
+Development proposal #192+#205, authorization process 
+The development report concerned the contract information obtained with the tender authorization and, more precisely, the
+the end date of the period through the information interface. The group discussed that the initial
+from the text of the development proposal, you get the impression that it has not been recognized that the get the information 
+with a tender authorization and using the DH-133 search already at the moment from datahub. 
+Summary: Let's verify from the author of the development proposal whether the need for a DH-133 application is met 
+using, and returned to preparation if not. 
+ 
+Minutes 
+ 
+4 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+4.2.2  
+Development Proposal #342, Authorization Process 
+The development proposal concerned the reporting of authorizations. The group discussed that since val-
+major changes are being made to the translation process, it is worth developing reporting 
+only after these changes, when it becomes clear how the process as a whole has changed
+bring 
+Summary: The development working group recommended that it be taken to the authorization development sub-working group 
+for further processing. 
+4.2.3  
+Development proposal #351+#357+#364+#385+#386, authorization process (limit points) 
+We went through all the development proposals related to rapa point authorizations in proposal #364 
+through which all development needs are compiled, and other individual eh-
+subsidies are included in sections 1-8 hereof. 
+The group concluded that the current solution employs a lot of parties, so that the authorizations 
+can be renewed, and measurement data cannot be obtained from the last day of the authorization. In addition, that
+production units should receive similar authorization processing as for border points, because the production unit
+a lot of energy goes through pigs and it's about big money. 
+The most important thing was felt to be changing the validity limit of border point authorizations to the current
+from that year, so that the authorization can be valid indefinitely or as agreed by the parties 
+deadline (point 2). Temporary authorizations must be able to be extended before authorization
+its termination (section 3). The visibility of border point data (section 5) was already discussed in another section 
+through the proposal at the June meeting of the development committee and got approvalbaby group
+it was stated that points 1, 6 and 8 of the proposal are not necessary when the aforementioned 
+can be implemented. The possibility of the non-measuring party to be authorized (para 
+4) was found to be problematic because these are not always parties to the datahub, so the group 
+does not recommend proceeding. We will come back to the needs for changes in reporting (section 7) when the above-mentioned
+necessary changes will be implemented. 
+Summary: The development working group recommended that points 2, 3 and 5 of the proposal be taken forward-
+towards and return to point 7 at a later stage. Regarding point 4, the development group 
+did not recommend proceeding and points 1, 6 and 8 are not necessary when points 2, 3 and 5 are implemented
+i guarantee. 
+4.2.4  
+Development Proposal #395, Authorization Process 
+The development proposal concerned the challenge of information transmission, which arises when the authorization expires and the
+tahub's transmission of information to the party ends on the same day. In practice, authorization 
+the measurement data of the end date are always not received, because they arrive at the data hub after
+on a raw day. In the same way, any remaining after the end date of the authorization
+ke's incoming corrections to the measurement data. 
+The group stated that this also applies to border point authorizations. The group suggested that 
+transmission of measurement data would be continued for six weeks after the end of the authorization 
+(such as measurement data to be forwarded to sellers), and the forwarding would be limited to the validity of the authorization 
+for early measurement data. 
+ 
+Minutes 
+ 
+5 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Summary: The development working group recommended that the development proposal be forwarded to the group 
+in accordance with the proposal and as necessary will be brought up for reconsideration. 
+4.2.5  
+Development proposal #261, customer information process 
+The development proposal concerned the y code and the spaces at the beginning and/or end of it
+mia error situations. The group suggested that a validation rule could be built for this and 
+the same rule could also be attached to other datahub fields of the same type, such as measurement
+row number 
+Summary: The development working group recommended that the price estimate for the inspection be clarified as follows 
+that in addition to the y-identifier, other similar fields that are easily accessed are also added to it 
+same mistakes. 
+4.2.6  
+Development proposal #267, customer information process 
+The proposal returned for processing, which concerned the technical format check of y-identifiers. Working group
+was informed that the review cannot be built as planned, because the y-identifier (bu-
+siness id) field can also store VAT IDs of foreign companies. We went 
+discussion about options to separate y codes from other codes, but it was decided that
+until the revision of the development proposal #261 is enough for the y-ID field. 
+Summary: The Development Working Group recommended that the proposal be rejected 
+4.2.7  
+Development proposal #116+#136, customer information process 
+A proposal was returned for processing to check the name+name combinations entering the datahub
+because these provide a lot of employment for all parties, and previously the trade union
+driving the recommended law change is a long way to go.  
+It was re-evaluated whether the datahub could check the incoming data already existing 
+information, and sends a notification to the party if discrepancies are found. It was discussed 
+about the possibility to build the code so that e.g. names in different first name fields or 
+name changers cause "unnecessary" notifications and thus
+tyy unreasonable amount of work. The group came to the conclusion that, with the change in the law, the data hub
+nett right to check official sources is the only reasonable way to improve the situation. 
+Summary: We will proceed as the working group has previously recommended, i.e. the aim is to bring legal
+change forward. 
+4.2.8  
+Development Proposal #117, Contract Process 
+The development proposal concerns a situation that may arise on the start date of the contract
+when changing the contract, when there is no time to cancel the online contract before the announcement of the new contract
+enter the data hub. As a result, the contract notification ends with an error. Code 
+there is an illogicality in the definition that must be corrected and the implementation changed accordingly
+damn it. The working group identified the situation, and it was seen that the reasoning should be changed 
+more logical. 
+ 
+Minutes 
+ 
+6 (7) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Laura Koskikallio 
+3/9/2024 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Summary: The rules for how the data hub should review the initiation of the contract are revised
+its cause and the existing time limit, and let's move forward with the development accordingly-
+towards. 
+4.3  
+For your information, the development team(Datahub internal development), concerns the following items in the development proposal list, the proposed solution is in the appendix “Appendix 3 Datahub change requests 20240816” 
+4.3.1 
+Development proposal #384, reporting 
+The working group was informed of the eSett code changes, which should be in use by the end of H2/2025. 
+4.3.2 
+Development proposal #419, reporting 
+The working group was informed of the open data change, which has already been implemented in summer 2024. 
+5 
+Other matters 
+Pia inquired about the instructions for using the data protection form presented at the main user forum meeting. Nelli reported that the data security label form reform presented at the main user forum event is being revised and the process is being reviewed. More information will be provided when this work is completed. Pia shared a list of questions related to the topic so that these can be taken into account. 
+Suvi also brought up the topic of when development proposals will be added to the development proposal list. 
+It was discussed that development proposals are processed internally approximately once a month, 
+after which the ticket is notified of the development proposal number. Those on the development proposal list with the status “new” have not yet been reviewed internally. When the status is “initialized in”, the development proposal number is permanent. There have been delays in the reviews of new development proposals during the summer of 2024. 
+Tomi asked about balance sheet error calculations and how the VAT change has been taken into account in the following reports. Pauliina reminded that it was decided at the last meeting that the following calculations will be made according to the tax rate, i.e. the October calculation is intended to be done in 4 installments. The instructions will be included in the newsletter and the matter will also be discussed in a current affairs webinar closer to the calculation date. 
+6 
+Next meeting times 
+Previously agreed meetings: 
+• 
+Thursday 31.10.2024 
+• 
+Monday 9.12.2024 
+7 
+Closing the meeting 
+Marko closed the meeting at 13.40. 
+
+Minutes 
+
+7 (7) 
+
+Development working group 
+Fingrid Datahub Oy / Laura Koskikallio 
+3.9.2024 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Appendices 
+
+Appendix 1 
+Current news in Datahub customer service 03092024 
+Appendix 2 
+Current news Datahub development team 03092024 
+Appendix 3 
+Datahub change requests 20240816

@@ -1,0 +1,989 @@
+Minutes 
+ 
+1 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group sub-working group meeting 3 
+Time 
+13.4.2023 at 12:30 – 14:30 
+ 
+Place 
+Fingrid Datahub Oy office / MS Teams 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal) 
+ 
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Elina Konttinen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (siht) 
+ 
+Greetta Arha  
+ 
+Väre Oy (remotely)  
+ 
+Pia Aaltonen  
+ 
+Fortum Markets (remotely) 
+ 
+Päivi Karpanen  
+ 
+Helen Oy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy (remotely)  
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy (remotely) 
+Suvi Manninen 
+ 
+Caruna Oy (remotely) 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab (remotely) 
+Petri Juhala  
+ 
+Synerall Finland Oy 
+Pasi Kangasniemi 
+ 
+S2B Energia Oy (remotely) 
+Jan Loman  
+ 
+CGI Suomi Oy (Datahub CMS) (remotely) 
+Jaakko Timonen 
+ 
+CGI Suomi Oy (Kolibri) (remotely) 
+Jani Pasanen 
+ 
+Tietoevry Oy (remotely) 
+Sami Pelkonen 
+ 
+Wapice Oy (remotely) 
+Christian Rautjärvi 
+ 
+Hansen Technologies Oy (remotely) 
+Sari Savikoski 
+ 
+Enerim Oy (remotely) 
+Samuli Saine  
+ 
+Rejlers Finland Oy (remotely) 
+Tarja Teroheimo 
+ 
+Solteq Oyj (remotely) 
+ 
+Away 
+ 
+ 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy 
+Niina Leikas  
+ 
+Kerava Energy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 12:32, and went through the agenda of the meeting. No agenda 
+received comments or additions. Those present and absent were noted. 
+2  
+Presentation of development proposals and recommendation decision – 1 h 45 min 
+Marko explained the procedure for reviewing development proposals. Marko stated that 
+the pre-distributed materials are not carefully reviewed, but each issue is reviewed 
+possible clarification needs and comments before open questions 
+everyone's opinion is requested separately. 
+ 
+Minutes 
+ 
+2 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The development proposals under consideration were reviewed in the working group according to the agenda in Appendix 1 
+Based on "Datahub change wishes 20230330". 
+o Proposal #57 site of use process 
+▪ 
+more information in appendix 2 "Amendment proposal 57 - options 1 and 2" 
+Marko initiated amendment proposal #57 with alternatives to pre-given materials 
+based on this, let's take a look at the comments of the group on the open questions in the material 
+from members through.  
+Option 1 
+Laura was the first to present different scenarios regarding option 1 from the materials 
+and open questions. The first question was whether the "subscription is under maintenance" 
+still necessary space for the parties? 
+Pia Aaltonen commented that this is still important information for customer service, 
+the customer should be instructed in a different way depending on the customer service situation 
+of the state of the place of use. Greetta Arha also stated that connection with maintenance would be important 
+supplement, on the same basis as Pia. Connections are very often in maintenance mode and 
+there are a lot of these in number - it would be good if these could be differentiated 
+from other premises. Jani Pasanen commented that if the premises start to be moved, yes 
+all necessary spaces are added at the same time. Sari Savikoski and Mia Nyman were the same 
+mind.  
+Other: 
+o Kirsi Jylhä: I agree, all proposed facilities for use. 
+o Pekka Eerikäinen: I agree. 
+o Tarja Teroheimo: Are we voting on the alternatives or not 
+maintenance,  
+Marko clarified that here only this "subscription with maintenance" section is encountered 
+will be voted on. 
+o Suvi Manninen: I agree, if we end up with 1 option, we will bring it 
+at the same time other facilities. 
+o Tarja Teroheimo: I am questioning option 1, but if not 
+there is still a vote on it, so if we are going to add more premises, we will add more 
+everything possibly necessary at once. 
+o Christian Rautjärvi: Let's inject everything at once if we decide to increase the facilities. 
+o Pasi Kangasniemi: I agree. 
+o Sami Pelkonen: I agree. 
+ 
+Minutes 
+ 
+3 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o Samuli: As a service provider of measurement data with the number of premises 
+doesn't really matter, but I would point out that negative acknowledgments, 
+which come in the sent measurement data, the acknowledgments should be 
+more unambiguous, and not so generic. Not exactly jamming or sharing 
+to the question of the premisesfrom thoroughness. 
+o Sari Savikoski: If we end up with option 1, then both spaces are ok. 
+o Jaakko Timonen: If "under maintenance" is the same as "under construction" processes 
+regarding, would it be better if there was only one space when they are responsible for the processes 
+each other. However, I understand after the conversation that both of these 
+is needed. 
+o Päivi Karppanen: If we end up with option 1, then both spaces 
+for the use of. 
+o Petri Juhala: I agree. 
+Summary for "subscription under maintenance" status. The recommendation is that ko. space is included, 
+if we end up with option 1. 
+Laura continued priming the next film (page 3 of the material). Laura elaborated, 
+that this description has already been reviewed the previous time and this has been filled in 
+in terms of measurement data, what the change means. There were no comments about this film. 
+Laura continued the presentation (pages 4-6) regarding the proposed changes to the processes. 
+A question arose for the group: is the update still allowed back under construction-
+order from renovation/maintenance premises? 
+o Päivi: What kind of errors are involved, if the space should be reclaimed under construction-
+space, or can the repairs be done so that the space does not need to be updated? 
+But if it is stated that this change is needed, I don't know why it should be 
+resist. We prefer to ask the system suppliers about the situation 
+initially.  
+o Pia: Can there be a situation in connection maintenance where the meter has been removed, 
+but it has not yet been connected, in which case it would need to be in the under construction state 
+and the contract start date should change accordingly when the object 
+let's hook up?  
+o Summer: Everything is possible in repair situations, with subscription maintenance status 
+should behave in the same way as the under-construction state, i.e. nothing 
+should intervene because of this. Can something go wrong if we allow it? 
+making a change?  
+Marko asked if this functionality (making a restriction from one state to another) is therefore 
+Soon as necessary, Pia stated that no. 
+o Cherry: If the space has been accidentally changed from renovation to under construction, 
+but otherwise it didn't occur to me. a situation where this should be possible 
+make. 
+ 
+Minutes 
+ 
+4 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o Mia: I can't remember the situation, but I can't remember why it should be prevented, if 
+sometimes needed for a repair situation. 
+o Pekka: as a third party, this is not our core competence, decision 
+to other parties. 
+o Greetta: Personally, I would allow changes in all spaces, something can always happen 
+weirder repair situations and it would be good if we get the repairs 
+done by yourself, and not through a separate ticket. It would be given to network companies 
+possibility / power to update without any separate rules.  
+o Christian: Why would you start blocking? Maybe this question 
+in the direction of the data hub. Is it a data thing again, to keep data 
+more precisely, etc. because of which the room could not be changed. I don't see that we should 
+no problem if you need to change rooms.  
+o Jani: From the system's point of view, it is not necessary to block the update 
+back to under construction status. 
+o Pasi: You can't prevent it, it's easier this way, if you need to prevent it, that's fine 
+realizable. 
+o Sami: There is nothing to add, everything works. 
+o Samuli: As mentioned in several comments, human ones 
+errors appear from year to year and are completely based on guesswork 
+quantitatively. I support if anything is restricted as little as possible 
+corrective measures. No restrictions.  
+o Sari: Along the same lines, I wouldn't put any restrictions on this, we have a bit of that situation, 
+that you are not terribly focused on option 1.  
+o Tarja: No new perspective on what has already been mentioned, no need to limit it. 
+o Jaakko: There is no reason to limit. 
+o Petri: There is no need for restrictions, these things are business needs and they 
+see best what is needed. 
+Summary for the limitation of facility changes: There is no need to limit what 
+spaces can be changed to any space. 
+Laura continued with regard to the mandatory information, which information is read from the renovation status 
+mandatory? 
+Pia asked if there are even meters at the "renovation" events? Mia stated that it may or may not be 
+may not be. Jani commented that it could work in the same way as under construction-
+in the state that there is no need to build separate validation rules, Christian and Sari were too 
+of one mind.  
+ 
+Minutes 
+ 
+5 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Marko asked if there is something different about the mandatory information for the "Renovation" mode 
+vision. No one presented a different view. Summaryto mandatory information 
+regarding: The "Renovation" mode has the same mandatory information as the "Construction" mode. 
+Laura continued going through option 1 and the workloads of option 1 were summarized and 
+industry impact. 
+Option 2:  
+Laura initiated the possible implementation of option 2. Jani asked about case 3a, when 
+the start date is not moved, and when the parties are not notified of the move, then the seller 
+would you be able to conclude that the date does not move? Suvi comments the same as diagram 3a 
+requires clarification. Jani comments that the description does not take a position on whether this is 
+the same seller or a different seller, if the same seller, then the information can be mined from your own 
+systems. If a completely new seller with customer B, then the history is nowhere to be found.  
+Laura went through the options (page 12) and on what basis the parties would be able to 
+to know that the information (contract start dates) will change. 
+Two options have means for this (either email/option 1 or 
+message/option 3) or alternatively information about contract date changes 
+not sent at all (option 2).  
+Pia stated that this is a problem for the sellers - they can't count on getting it 
+built-in reasoning on whether the date should change in some case or not. 
+Pia also stated that, as a seller, she does not want this to be an email, but that she needs the information 
+come by saying according to which the contract is either updated or not updated. That would mean 
+that a new message would be needed for this. Sari comments that option 3 is the best, 
+should come by saying information about the change.  
+Pia asked if it is intended that this be discussed in general, the intention is that 
+can be put into production quickly, which option is more difficult to implement, which one 
+can be obtained faster, which can be obtained cheaper? Marko stated that this is happening 
+through in a moment, but first let's discuss the will state, which information option 
+is recommended for option 2.  
+o Summer: Cases 2 and 3 do not cover all use cases, e.g. new site, 
+which has received several new contracts. So none of these are ready 
+to be implemented. 
+o Jani: Missing e.g. the scenario that there is a gap between the contracts, how then 
+will be carried out if there is a place of use under construction. 
+Suvi clarified that there is a lot of variation missing. Marko asked if this could still be done 
+through? Marko also asked if there is anyone who opposes the 3rd option? Suvi asked, 
+will there be a discussion about whether the network company finds these necessary, or how 
+sellers find these necessary? Jani commented that we really need something new 
+message and whether, for example, it is possible to add to existing connection messages 
+information about the date. 
+Marko summed up that apparently option 1 (of these three options) is not allowed 
+support, option 3 needs to be taken further and defined / supplemented further. 
+ 
+Minutes 
+ 
+6 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Suvi comments that nobody wants option 1 and Marko comments that 
+through option 2, no one would get information about the change, which is also not wanted.  
+Jan commented in his role as datahub's system administrator that it doesn't affect 
+a lot for the price estimate, if there aren't terribly many more different scenarios. Pia commented that 
+often there is a situation where first a contract is made with the developer and then 
+to the end customer. Suvi stated that the problem culminates precisely in the fact that the seller has to 
+difficult to interpret which contract dates are transferred in which situation. Soil frost 
+comments that often the building society is still involved before the final decision 
+customer in this figure. In this situation, three different customers can have three different ones 
+seller. 
+Finally, there is a discussion about which of the implementation methods is the one with which 
+let's move on:  
+What the different options (option 1 and option 2) mean 
+from the point of view of the system supplier?  
+o Christian: I didn't have time to investigate the 2nd option more, but I think so 
+which would cause that challenge. 
+Pia asked what is easier/cheaper from the point of view of system suppliers 
+implement. A completely new message or an additional stab at the connection message? Or that 
+a new status will be introduced to the information of the place of use, according to which certain things would be done 
+reasonings. 
+o Christian continued: Even more, I would take a stab at the old message and 
+to give it an understanding of what the event does. / Marko asked that if 
+let's choose option 1 and 2, which one is more laborious? / Christian: both have 
+work, no mentionable difference, I'm more interested in what would be here 
+in terms of the seller's business and in terms of the network and data hub 
+most reasonable. Both options are equal. 
+o Jani: If we only think about the workload for the system of changes 
+to implement,the easiest would be a change to the content of the connection message, the most 
+would benefit from new facilities, option 1 is better. 
+o Pasi: The amount of work is more or less the same in both and the facilities if there are any of them 
+benefit, then it would be a more pleasant option. (option 1).  
+o Sami: As a third-party representative, I can't say anything about this.  
+o Samuli: Practically nothing matters to us, neither causes 
+variation in our system development work. 
+o Sari: Option 2 would be smaller for us in terms of workload and such 
+Jani said, for the network it is not essential to get that information, only for the seller 
+there is. Stabbing the connection message would sound better. 
+o Tarja: In our case, option 2 is smaller and 
+in favor of it, originally we had considered that the new messages that were on display 
+ 
+Minutes 
+ 
+7 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+would have been good, but now that one has listened to the conversation, it would sound like that 
+preferably if an existing message is used for the date 
+for reporting. 
+Sari elaborated that if we are going to stab the existing message, we should 
+for the seller to be clear about the date of the contract 
+moving. Suvi stated that in this case datahub should take over 
+of the network connection notification and informs the seller about this with reasoning, if 
+need requires. Sari continued that if stabbing an existing message is not possible 
+to use, preferably then a new message. You need to know what the agreement is 
+updating and for which day, these must be clear.  
+o Jaakko: Option 1 is easier to implement and less work. 
+o Petri: Option 2 and new messages, but option 1 is also ok 
+o Päivi: Regarding option 1, the facilities would be so clear, but I understand very well if 
+Option 2 is easier and cheaper to implement, so option 2 is also ok 
+and perhaps reasonable to end there.  Option 2.  
+Marko commented that, from the point of view of datahub, the workloads for the alternatives do not differ 
+a lot, and from the point of view of system suppliers, they seem to be pretty much the same 
+workers, so when weighing the options you should think that when you start this 
+change, so they will be used for years to come.  
+o Pia: Doesn't matter, as long as we get the correct dates into the system without 
+that interim agreements etc. must be done due to repairs 
+o Greetta: The most important thing is that during the renovation, the contracts for the places of use 
+don't break, in terms of customer service it would be nice to have new facilities, but 
+cost and schedules are the realities that have to be followed, when 
+we go with option 2. I personally think that option 2 is a smaller change. 
+However, it is not absolute, it is enough that everyone understands what is changing. 
+o Kirsi: with two stages, I would have voted for option 1, the others have been that 
+think that too many (space) options can be a big risk. This is why I convert 
+to option 2.  
+o Suvi: I support option 2, because in option 1 the whole existing one 
+changing the user base to the right mode is laborious. Option 2 
+there is still a lot to be done, it is necessary to define what information is transmitted, 
+whether forwarded to the seller or the network or just to someone else and all those use cases 
+what to consider here.  
+o Mia: Along the same lines, option 2 is better. At first I was option 1 
+side, but what we have discussed now, I prefer option 2.  
+o Pekka: Based on what I heard, 2 as a whole sounds reasonable, but 
+as a third party, this does not matter to us.  
+ 
+Minutes 
+ 
+8 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Päivi asked how quickly this would be put into use? Marko commented that 
+this depends on how the wish is prioritized with other changes this year 
+the change is not coming in any case, it may not be until next year 
+in the latter major version.  
+Marko thought about how to achieve the different scenarios of option 2 most efficiently 
+to the industry for comment, whether they are defined in the business process documentation 
+or how. Datahub is thinking about this in more detail. 
+➔ Summary of the proposal and its promotion: Marko summed up that we are in option 2 
+ending. You have to define whether the cases missing from the option are even more detailed.  
+o #176, site of use process, Laura introduced the development proposal and it 
+solution description 
+Laura grounded the desire for change, i.e. the transfer of netting calculation information to JVH, 
+after the datahub sets the netting tihis own reasoning for the place of use of edo 
+based on A message will be sent to the seller, but with the proposal, the message would also be sent 
+to the network. Alternatively, the acknowledgment message received by the network would be used 
+about updating. Option 1 = new message, option 2 = acknowledgment message 
+exploitation. 
+How do you see these two options, is one of them clearly better than the new ones 
+messages or acknowledgment message?  
+o Petri: We were in Kuuittassanoma's position, so option 2 is better.  
+o Christian: I will continue on the same track, I would stab the acknowledgment message 
+rather than creating a new message.  
+o Jani: Does the network not understand when the point of use is netting?  
+Laura elaborated that yes, we wanted information from the datahub, whether there is a datahub 
+set the item to netting or not. Jani asked how this is different for herself 
+about the acknowledgment of the event, Laura specified that parallelism does not always mean, 
+that the netting is on, i.e. nothing can be done directly from the current receipt 
+deduce. Jani recalled that this had been discussed before the 2.0 version, that 
+does the network need such information. Then it was stated that the network already knows these 
+data, in this case datahub does not have to certify that "we agree 
+on the subject". 
+Tarja stated that there have been situations where datahub disagrees with 
+our system, when such information would be considered important 
+also towards the network operator, in which case the network operator and the seller get the same 
+the same information about the place of use. Jani asked if there would be information in advance that 
+the item will be netted in a couple of days, but the situation can still be improved 
+shift? Laura comments that the netting information can only change for DH-126-/127-
+with the messages. If an update of the usage location data is attempted, which should 
+change the netting information, then they will not be allowed through. Tarja stated that netting information 
+is information that significantly affects invoicing, so it is considered important that 
+these exceptional situations could be excluded with this announcement. 
+ 
+Minutes 
+ 
+9 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o Tarja: I would support option 1, new messages would be used on the matter 
+for communication.  
+o Pasi: I suddenly can't say which option is better. I vote blank, 
+I'm not against change. The industry decides whether to make a change or not.  
+o Sami: There is no position on this. 
+o Samuli: Both options are bad, netting calculation 
+there are two cases in the regulation when netting cannot be carried out 1) 
+limitation related to the size of the equipment 2) the case outlined by the Energy Industry Association, 
+where the place of use is equipped with two measuring devices. The setting does not allow 
+deviate from this netting, and because of this to the datahub's process logic 
+there are certain legalities, when the netting is set on or not 
+on. A possible conflict in the network and data hub information is difficult 
+explain to the end customer. 
+Marko asked if you don't want both options? Samuli stated, 
+that the change is in order, but neither option is the current one 
+correct the situation. The network should know if the target is netting or not. 99% 
+items must be netted, and when this is not the case in the data hub, it should be 
+this is nice to know. This does not remove the (fact) that netting should still be done 
+run.  
+o Sari: The network should find this out from datahub, option 1 would be ours 
+our suggestions, our experts' comments about this did not go 
+even more strongly in favor of either option. 
+o Jaakko: It wasn't clear which would be the better option, I'm going to abstain.  
+Marko asked if we are in favor of this development proposal at all? 
+Jaakko commented that he didn't see this as important, but for some others 
+systems may be more important. 
+o Jani: Let's make 1 option then with a new message type, if this is the case 
+the change is starting to be made. 
+o Pia: Based on the comments, I was left wondering if the problem is just that 
+in certain systems. Suvi agrees that it was originally wanted 
+to know from the system suppliers whether there is a need for this or not. Experience 
+system suppliers, whether it is necessary and mandatory to have, or whether it is 
+necessary to make other developments. As a party, you cannot take a position on this. 
+Pia continued asking if this ticket is old, if this is even necessary anymore 
+change. Marko stated that the ticket came six months ago. Tarja stated that 
+the situation has only started to show itself after the turn of the year and this is 
+quite appropriate and necessary change. Tarja also comments that no 
+would be happy to ignore this and state that no change is needed. 
+o Suvi: I give authority to the system suppliers, whether they feel it is necessary 
+or not.  
+ 
+Minutes 
+ 
+10 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal addressese 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Tarja stated that it has not been fully clarified why some people have it 
+different knowledge of the netting situation. You can't say that there is only your own system 
+fault, Sari agreed that change is needed. 
+Greetta stated that, yes, it is still possible to search for deviating information, it has been run, e.g. 
+separate error lists. For example, the network thinks that the object belongs to netting, 
+but it is not heard in datahub. The network should know and find the errors itself. 
+Greetta asked if it would be possible to retrieve this information from the CMS reports, that 
+the item is not netting, even if the item has a parallel use location 
+exist? Jan stated that such a report should not be a problem.  
+Sari commented that if datahub does netting reasoning, and in its own 
+there is no corresponding information in the system and the information must be forwarded to a third party 
+into the system and somehow it should be concluded whether the object is netting. Pia asked, 
+shouldn't everyone be netting if there is only one meter? Samuli stated, 
+that this is the basic problem he referred to earlier. By default 
+the object should be in netting, but the current processes do not support errors 
+correction, items cannot be corrected retroactively. Samuli commented that 
+we have often had cases where the item has been netted and then 
+the data is changed and this is excluded from the netting calculation. Samuli continued that he should 
+stumble so much that this is also a problem for them in that sense, when 
+the network receives netted information about the measurement from the data hub, but does not 
+non-net information about the measurement, in which case there will be a lot of interpretations that you should now 
+sends a raw measurement to a clip.  
+Pia stated that, in the big picture, it would make more sense to make a report on this and 
+it would be thought that information about the place of use would be possible in a repair situation 
+fix. Suvi agreed, time limits are a problem, which manifests e.g. 
+in datahub malfunctions. The fault is not necessarily on the party's end, but 
+for example, the event has never been forwarded to the data hub. Pia stated that 
+a report could be useful showing that an error has occurred and the error 
+could be fixed. Suvi commented that the report would be easier than that 
+new messages would be built for use by the parties. Pia commented that 
+certain information should be able to be corrected retroactively. Samuli agreed, 
+that after 2.0, certain things cannot be fixed retroactively. Laura commented, 
+that if retroactive corrections are made, the calculation will not take it into account 
+these, because the calculation only takes place in connection with the delivery of measurement data. 
+Because of this, the changes are only planned for the future. Samuli 
+stated that in this case the measurement data could be sent again, to the network 
+should just send a reminder message that "send the measurement data again".  
+Päivi asked if Sari and Tarja think that a report could solve the problem 
+this problem? Tarja stated that she herself cannot say this suddenly. Flashbacks 
+the changes have to be seen in the report, which Tarja stated is not quite this 
+convinced, because it means that the data should be corrected manually. 
+With retroactive repair possibilities, things would start to improve. Sari said no 
+even sitting here, you can take a stand on this.  
+Let's finish the comments: 
+ 
+Minutes 
+ 
+11 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o Päivi: We have to consider how big the problem is, for how many and how 
+many cases are related to this. The problem may be genuine, but there are parties, 
+for whom this is not a problem. Would it be possible to work together to find the reason for this, 
+that why this doesn't work for everyone and with that find out if this 
+the right need for change. You have to think about what should be done and what 
+there are options.  
+Marko stated that one option is to leave it on the table and think about it 
+options beyond. 
+o Summer: No continuation, because it only applies to certain parties and certain parties 
+system suppliers. It's also okay to think about only certain ones 
+for the parties, more. 
+o Mia: I agree, it hasn't been a problem for us, and I'm not in favor of continuing if 
+there will be no compelling need. 
+o Pekka: There is not enough information to be able to defend, will require additional explanations, 
+why some systems have a challenge. 
+➔ Summary of the proposal and its promotion: Marko stated that the development proposal will be continued 
+clarification and repair possibilities and we will go through the case separately with Tarja and Sari 
+more specifically. 
+Greetta left at 14:09 
+o #33+#114, contract process, Jenni presented the development proposals and thesesolution descriptions, as well as the reason why this was brought to system vendors 
+to discuss. 
+▪ 
+more information in appendices 3 "Development proposal-33 - review" and 4 
+"Development proposals 33 and 114" 
+o Jani: (referring to section 33 of the Development Proposal in the appendix, where it is mentioned that 
+the reasons for ending and starting the contracts must be the same) Is it necessary 
+to check whether the reason codes are the same if there is a move-in and for the old one 
+does the customer inform the seller that the contract is ending? If the customer puts 
+wrong reason in the online service, or vice versa. Or if in the future 
+there will be a change of seller, so the old seller will not be allowed to move out anymore. Marko 
+stated that this will be taken into account in further planning. 
+o Pia: Do the systems tend to the fact that if the contract already has information that 
+the contract is already ending with moving out - how can it be in the system 
+announce the end again? 
+o Christian: It's challenging to start building this. 
+o Jani: Re-sending the decision to the same day succeeds. 
+o Pasi: I have to implement it, it hasn't occurred to me yet why it couldn't be done 
+to implement. 
+ 
+Minutes 
+ 
+12 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o Sami: Nothing to say about this, nothing to do with this. 
+o Samuli: As a representative of measurement information, it is not important for us. 
+o Sari: Yes, it can be done. 
+o Tarja: Not possible at the moment, but can be done with a little work. 
+o Jaakko: I can't comment on this. 
+o Petri: It's not possible at the moment, but it's not a big development task. 
+Marko summed up that there are no obstacles on the part of the system suppliers to the #33 development proposal 
+for moving forward. 
+Jani also comments on the wording that "the network company can respond", 
+is the network company also able to start the decision chain, Jenni stated that 
+option #33 already mentions that the network company can also start, 
+but let's elaborate on proposal #114 in this regard.  
+o Suvi comments that these are now being corrected retroactively and should be able to do this 
+emigration to register. A party should have the ability to ensure that 
+the customer's contract actually ends when the customer has notified this. 
+o Pia: Let's continue if this reduces repairs by a large part. 
+o Mia: Let's continue. 
+o Päivi: Let's continue. 
+o Kirsi: Let's continue. 
+o Pekka: Let's continue 
+➔ Summary of the proposal and its promotion: Let's go ahead with proposals #33 and #114 
+ahead. Some of the system suppliers are ready for this, and some have the opportunity with a little effort 
+implement the change. 
+ 
+o For the information of the development working group, the preparation situation applies to the list of development proposals 
+the following items in appendix 1 "Datahub change requests 20230330":  
+o #160, contract process, Jenni presented the situation of the development proposal and that 
+the proposal is more complicated than previously considered, let's continue this 
+thinking about internally and brought to the table later.  
+The meeting time had been exceeded, and there was no time to proceed with proposal #178.  
+o #178, Measurement Data Process, Annex 5 
+ 
+Minutes 
+ 
+13 (13) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+13/04/2023 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Marko stated that efforts are being made to bring the development proposals brought to the attention of the following 
+for the meeting of the development work group and, if necessary, the development work group's sub-work group. 
+3  
+Change - 5 min 
+o  
+4  
+Next meeting times - 5 min 
+• 
+There will be 2023 meetings of the sub-working group of the development working group 
+• 
+The next meeting of the sub-working group is 13 June 2023  
+5  
+Closing the meeting 
+The meeting was closed at 14:33 
+ 
+Attachments 
+Appendix 1 Datahub Change requests 20230330 
+Appendix 2 Amendment 57 – options 1 and 2 
+Appendix 3 Development proposal-33 – review  
+Appendix 4 Development proposals 33 and 114 
+Appendix 5 Development proposal 178 under construction 
+ 
+ 
+ 
+ 
+ 
+Distribution 
+Development team members and industry

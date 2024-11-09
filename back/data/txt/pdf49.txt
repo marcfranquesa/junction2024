@@ -1,0 +1,71 @@
+Agenda 
+ 
+1 (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+30/05/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub customer information management development sub-working group meeting 3 
+Time 
+06.06.2023 09:00–11:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Summary of previous meetings, open questions – 30 min 
+3  
+Identification of customer data management challenges and development proposals - 1 h 
+45 min  
+• 
+The structure of the customer's name data (data in different fields).  
+• 
+Processing of effective dates for all messages to which customer data applies 
+• 
+Functionality and scope of the customer information model in data exchange 
+• 
+New need (development proposal #248): possibility to indicate a separate billing address 
+to the customer's sales and online agreement.  
+• 
+The survey for the industry related to validations of customer data has been prepared for the sub-working group 
+for viewing. 
+• 
+Any other thoughts on using TEPA to manage the quality of customer information? 
+4  
+Change - 5 min 
+• 
+ 
+5  
+Next meeting times - 5 min 
+6  
+Closing the meeting

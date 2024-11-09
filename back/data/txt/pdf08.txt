@@ -1,0 +1,1125 @@
+Minutes 
+ 
+1 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 9 
+Time 
+09.11.2023 10:00–15:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (CEO) 
+ Laura Markkanen 
+ 
+Fingrid Datahub Oy  
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy (director) 
+Nelli Karjalainen  
+ 
+Fingrid Datahub Oy (director, remote) 
+Greetta Arha  
+ 
+Ripple 
+Suvi Manninen 
+ 
+Caruna Oy  
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab (remotely) 
+Pia Aaltonen   
+ 
+Fortum Markets 
+Päivi Karpanen  
+ 
+Helen Oy 
+Pekka Eerikainen 
+ 
+Veni Energia Oy 
+Kari Iltola 
+ 
+ 
+Enerkey Oy (remotely) 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy (remotely, joined at 10:30 a.m.) 
+ 
+  
+Away 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+Marko opened the meeting at 10:02. The participants in the meeting were noted. It was said that Elina 
+Konttinen has left the development team and a new member Data-
+from the hub's development team. We'll come back to that later. In addition, the writing of the memo was told
+about the sharing of responsibility and the new practice. The new memorandum model received praise from the development group
+Malta. In the new protocol model, the opinion of one person is not emphasized, but that the main
+work is done together. Even in the industry, reading the memo has now been found to be easier
+the max. 
+The agenda of the meeting was reviewed. There were no comments from the members. 
+1.1  
+Going through the memo of the previous meeting 
+Marko went through the minutes of the previous meeting. 
+Regarding the member rotation of the development work group, Marko stated that no one has joined the development work group 
+many applications and that the representation of ET's development group is also taken into account 
+in the new composition of the development team. 
+The version 2.1 update was current at the time of the previous meeting, and it is 
+known that after the introduction of the version there were various challenges that took several vii-
+also received the attention of the Datahub teams. 
+ 
+Minutes 
+ 
+2 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The processing of development proposal #141 continues with development proposal #326, which is
+on the agenda. 
+Marko stated that a later item on the agenda includes a review of parents' development
+about the situation of the dots and a proposal on how to proceed with them. 
+Marko stated that he is not going to participate in the meetings of CGI's development team 
+change, i.e. CGI's representation will continue to be involved only in the sub-working group
+in meetings. 
+Regarding version 2.2, a more detailed schedule has now been published and it is planned to do so soon as well 
+for version 2.3. 
+Commenting on the guidelines related to the quality of customer information, Marko asked whether the
+content directly to the sub-working group for viewing, in which case it would be reviewed together
+in the meeting of the Miku sub-working group, or is it necessary to comment on the guidelines first in the development
+in the working group. The development working group stated that it is a good suggestion to go through the guidelines
+in the sub-working group. 
+Greetta brought the wishes of ET's development group in relation to the matters to be discussed at the meeting 
+to the schedules of the 2024 version and version 2.3 schemes. Marko said that the version update
+its date is October-November 2024. It is intended to tell more about the matter in a couple of weeks
+inside the tank. Regarding the schemes of version 2.3, the schedule will be reviewed later, when the
+the content of the version is specified. 
+In addition, law amendment § 102 was discussed, which will also be on the agenda later today. 
+Marko also reviewed the situation of the development proposals discussed in the previous meeting: 
+• 
+Development proposal #57 is in internal preparation and will soon be received by the industry for comment
+tointi (the only recommended development proposal from the previous meeting). 
+• 
+Development proposal #276 is coming to the next sub-working group (November 21, 2023) for processing. 
+• 
+Development proposal #131 and #160 are in internal further preparation at Datahub. 
+• 
+Development proposal #162 was left unfinished last time and is on today's agenda. 
+• 
+Regarding development proposal #265, problems have still been found, so the measurement reminder limit-
+could not be activated for points. 
+  
+2  
+Current overview of Datahub - appendix 1 
+ Marko told the development team. 
+ 
+CGI development team changes and expansion 
+The actual staff of the development and repair team will be expanded with people from CGI Holland 
+and the size of the author team doubles. The change will enter into force as soon as possible already in March
+pregnant in 2023. 
+ 
+Minutes 
+ 
+3 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy/ Marko Juslin 
+09.11.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+Status of calculation corrections 
+The incomplete status of net calculations was not completely corrected in connection with version 2.1, but in certain situations the result of the net calculation still remains in the “partially missing” status. The problem has been analyzed by the system supplier and is now being corrected. This affects the 
+history correction that had to be run after the installation of version 2.1. However, the calculation must first be fully operational before the history correction can be made. This requires extensive testing and the implementation schedule will be announced later. 
+
+The development team stated that they should be informed whether this will happen this year or whether it will be postponed to next year. Marko stated that the matter is being investigated, but in any case, they do not want to schedule the import of the correction and the history correction close to Christmas and New Year. 
+
+The correction of energy community calculations is also being analyzed, but the solution is not simple and CGI Holland is considering alternatives so that the correction can be included in the 
+2.2 version, as previously announced. 
+
+Planning for Datahub version 2.3 has started 
+The annual clock of the Datahub main versions has been changed so that version 2.2 will go into production on 
+23.4.2024. The purpose is to increase testing time from the industry perspective. The autumn 2024 main version 
+2.3 will be moved from September to October-November. In January, the aim is to provide information to the parties about the content and schema changes in this regard. 
+
+Datahub supplementary version 2.2 to main version 
+Legal changes may have to be introduced with supplementary version 2.2 by 1 June 2024. The preliminary content includes Section 105 Comparative information on electricity consumption and Section 102 Interruption of electricity distribution due to a reason attributable to the retailer. This will be discussed further in agenda item #297. 
+
+Datahub 2.3 version planning comments in the working group 
+Marko reviewed the potential development proposals planned for version 2.3 and the development working group provided its views on the priorities of the development proposals in the development queue. 
+
+The following development proposals were raised to the most urgent group: 
+• 
+#11 
+• 
+#33 (causes a lot of corrections) 
+• 
+#114 (This is paired with proposal #33. These should be brought in as a pair in the same version) 
+• 
+#194 (This is a typical case of incorrect usage location. If these are not handled in time, there will be a mess. This is also the vendor's problem.) 
+• 
+#167 (Causes a lot of work for the parties.) 
+
+The following were raised to the next urgent group (we are trying to get to version 2.3, however): 
+• 
+#54 (AR04 is still used. Datahub should find out how much reason code is still used. Actions will be taken regarding this. Also inform and instruct individual parties if necessary.) 
+
+Minutes 
+
+4 (15)
+
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Telephone 
+Fax 
+Business ID 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. Box 530 
+
+firstname.lastname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+
+• 
+#110 (These are really inconvenient. They should be removed.) 
+• 
+#55 
+• 
+#121 
+• 
+#177 
+
+The following development suggestions were added to the list that can only be included in future versions: 
+• 
+#63 (This is to make the historical data of the balance agreement visible to the parties. This is a daily problem, not critical, but necessary.) 
+• 
+#93 (It would be useful. If this is implemented, there would no longer be a need to create a ticket in Datahub, 
+which would save everyone time and resources. Would reduce the work of all parties.) 
+• 
+#99 
+• 
+#156 (small change but not critical), 
+• 
+#193 (Clarification of the instructions in the documentation. This will be included in the next 
+released version.) 
+• 
+#164 (We can live with this for a longer time.) 
+
+Improvements related to the quality of customer information are planned for version 2.4. 
+
+The development working group discussed the slow progress of development proposals from the working group's processing to production. For example, issues could have been handled six months earlier and the plans are now that they will not be included in the version update that will come in a year. Marko stated that the development queue has not been completed according to the goals. 
+The development working group highlighted that many ATJ providers have moved to a more continuous SaaS model with version updates and asked about the future of Datahub and possible plans to move to a more frequent update rhythm. Marko stated that at the moment version updates are twice a year, but the long-term hope is that smaller changes could be introduced to Datahub with a more continuous model. The matter is under consideration and preparation, but it requires a lot of background preparations to ensure that the conditions are met. Thisa regular version update twice a year is a rare pace, but more frequent
+in this rhythm, it must of course also be ensured that the industry is ready as a whole 
+to a more continuous model. Marko stated that you could think about asking the system suppliers about 
+how fast action would be prepared. 
+ 
+ 
+3  
+Presentation of development proposals and recommendation decision 
+  
+3.1  
+Recommendation from the working group (whether items are recommended for further development process
+in), applies to the following points in the list of development proposals, the solution proposal attached
+in tee 2 "Datahub change requests 20231020": 
+3.1.1  
+Development Proposal #119 + #302 - Incorrect hetu and DH-340 process 
+Nelli presented a proposal for instructions for cancellation situations involving incorrect identification
+nus or reason for starting the contract. The development team did not see the guidelines as clear enough
+year, but outlined the following needs for improving the instructions: The ticket system already
+of those, a new and precise instruction is needed on which ticket type and which queue things belong to. 
+ 
+Minutes 
+ 
+5 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The parties' customer services need very clear instructions, because it is not always possible to identify
+teta, what things affect everything. Instructions need clarity and iron wire 
+on how to act (step-by-step instructions).  
+ 
+The concern was raised in the development work group that instructing the parties does not avoid
+without being sufficient if the parties do not detect errors, in which case the system is possible 
+development could still be necessary. The development team considered the possibilities in Datahub 
+to the changes to be made, but building the implementation was found to be challenging, just because 
+some of the cancellations are related to cases where the Customer Data remains incorrect and should be returned 
+to the former, while in the majority of cases the cancellation is related to other situations
+here. Datahub has no information about the situation in which changes should be made to customer information, 
+and if the return of information were made in all cases, this would result in a large amount 
+pointless updates of customer information and forwarded messages in one direction and another. In addition, information
+in any case, the operator must be informed of the protection cases so that the operator can 
+take the required follow-up actions. VTJ or YTJ could be the only means for Datahub to inspect road
+correctness, but there are no solutions regarding these, at least in the near future. 
+Thus, it was concluded that now we will not start thinking about a technical solution, but rather proceed
+with a twist.  
+ 
+Summary: The guidance is being improved and made clearer and more consistent. 
+If the instructions do not help, the matter will be taken up again. We are not leaving at this point 
+to think about a system solution. 
+ 
+ 
+3.1.2  
+Development Proposal #166 - DH-112 event blocking 
+Laura reviewed the development proposal, the idea of ​​which was to add an inspection rule 
+to the DH-112 transaction so that the transaction cannot be sent if the network has just gone online 
+update of customer information with transaction DH-311-2. The matter in question has also been reviewed by the
+in connection with the investigation of the quality of caste information, and to improve the quality of the information there are more
+instructions on the use of events (for example, the DH-112 event, which will not be 
+send in response to the DH-311 event), and the parties are supposed to be supported by their own
+in identifying problems in the system so that they can be corrected. Hence the proposal 
+was that no validations are added to Datahub in this regard. 
+Summary: The development working group considered the planned measures sufficient, and saw no need
+water for the new inspection rule. 
+ 
+3.1.3  
+Development proposal #267 - Customer identifier: Technical specification of the form of the Y-identifier
+so 
+Laura went through the development proposal, the processing of which had been left in the middle of the development work group's
+in section 7. According to the proposal, a new inspection rule would be introduced to Datahub, which would check
+guarantees that the y-ID is in the correct format when the customer's postal address is in Finland. Co-
+the meeting discussed which type of identifier to use if the customer does not have Finnish
+put in the social security number and the postal address is in Finland, however. It was found that in Finland, for example,
+kiksi roads or foreign representative bodies are not granted a Finnish y-identification and 
+ 
+Minutes 
+ 
+6 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+in such cases, Datahub uses the party's own ID, which consists of 
+party ID + customer number. If the party in question later receives a y-
+nowksen, it should be updated to Datahub.  
+Regarding companies, it was stated that if the identifier type y-id is used in Datahub, such
+löi's y-id must always be Finnish. If it is a company that does not have a Finnish
+enter the y identifier, also in this case the party's own identifier is used as the identifier type. 
+Consequently, it was concluded that there is no need for land demarcation in the inspection rule, but rather
+the format of the y-identifier is always performed when the customer's identifier type is y-identifier. 
+Summary: The Development Working Group recommended the implementation of the proposed inspection rule so that 
+it excludes land delimitation. 
+ 
+3.1.4  
+Development proposal #268 - Customer identifier: The format of the party's own identifier 
+check 
+Laura went through the development proposal for the new inspection rule to modify the party ID
+don for review. According to the instructions, the party's own ID must be
+dosa <seller ID>_<customer number>, but the format is not currently being validated. Co-
+in the meeting, the rule was further specified so that the ID of the seller given in the identifier 
+must correspond to the ID of the seller reporting the event. 
+Summary: The development group concluded that the change is recommended and will go ahead 
+continued with the specification that the seller's ID must match the notifying seller's ID
+go nuts. 
+ 
+3.1.5  
+Development proposal #269 - Street address: no last character in the street name
+eat 
+Laura went through the development proposal for a new inspection rule that prevents the number from being
+as the last character of the last name. The meeting discussed whether Finland has
+mass of street names, where there is a number somewhere, and is there a need to allow a number
+weather towards the street name. The development team was not aware of such addresses, but 
+full certainty was not reached. It was found that blocking the number last 
+as a sign already prevents many erroneous cases, and there is no need to start blocking numbers 
+from the street name entirely.   
+Summary: The development working group recommended promoting the development proposal and it was concluded that
+until the inspection must block the number as the last character in the street name. 
+ 
+ 
+Minutes 
+ 
+7 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+3.1.6  
+Development proposal #270 - Address information does not allow both PO box and street address
+Auntie 
+Laura went through the development proposal for the new inspection rule, which prevents both postal
+I will tell you that the street address is stated in the billing address information of the contract. Equivalent 
+the rule has been reviewed previously with development proposal #31 for the customer's postal address. 
+It was stated at the meeting that the same rules should apply to all addresses.  
+Summary: The development team was unanimous and recommended that this be taken forward like this-
+towards. 
+ 
+3.1.7  
+Development proposal #325 - New inspection rule for the DH-311 process for customer security
+regarding the ban 
+Laura went through the development proposal, the background of which is the lack of notification of the new contract.
+in (DH-311) regarding the customer and the security ban. Security prohibition (Encrypted data data
+bissa) can only be deleted by the customer via the customer portal, and the parties cannot 
+update that information as part of the processes. Due to lack of DH-311 process Datahub 
+however, to remove the entry from the customer's information as a notification of a new contract, contact
+where if the encrypted customer is informed of the contract without information. This requires a new one 
+check rule to prevent that data from being updated.  
+The meeting discussed the proposed content of the error message, which was not seen clearly enough.
+for a while, so that the seller could go over the matter with the customer. Depending on the situation, the seller 
+should know how to add the missing information to the notification or, if the security ban no longer applies to
+baptize, direct the customer to delete the information in question from himself via the customer portal. Note-
+it was raised that if the error messages are too difficult to interpret, this can cause 
+also additional work for datahub operators (however, cases related to this error are fine 
+rarely), when sellers ask about the content of error messages via tickets. 
+However, it was stated at the meeting that the error message cannot directly mention a security ban 
+due to the privacy sensitivity of the information in question, which is why we thought about how else 
+some more detailed information could be included in the error message without the security prohibition
+the glove is mentioned. In the development work group, it was decided to present a clarification to the error text 
+so that a reference to the customer's additional information would be added to it: "A contract cannot be created, 
+because the customer's information does not match the customer information stored in Datahub. Usage
+he reviews the customer information with the customer regarding the customer's additional information." In that case it would be referred to 
+even for additional information, which could make the matter a little clearer.  
+Summary: The development group favorsproposed the proposal in such a way that an attempt is made to get the
+man a clearer addition to the error message. 
+ 
+3.1.8  
+Development proposal #327 - Checking rule for the spelling of consumer customer names  
+A development proposal related to the quality of customer information, which has been raised based on an industry survey and 
+reviewed at the previous development group meeting, where the development group recommended 
+ 
+Minutes 
+ 
+8 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+implementation of the inspection rule. In this meeting, development proposals were only presented for information
+the number it received and the size class information of the change.  
+ 
+3.1.9  
+Development proposal #328 - Corrections to the house number field of the postal address 
+A development proposal related to the quality of customer information, which has been raised based on an industry survey and 
+reviewed at the previous development group meeting, where the development group recommended 
+implementation of the inspection rule. In this meeting, development proposals were only presented for information
+the number it received and the size class information of the change.  
+ 
+3.1.10  
+Development proposal #329 - Checks for the postal address step ID field 
+A development proposal related to the quality of customer information, which has been raised based on an industry survey and 
+reviewed at the previous development group meeting, where the development group recommended 
+implementation of the inspection rule. In this meeting, development proposals were only presented for information
+the number it received and the size class information of the change.  
+ 
+3.1.11  
+Development proposal #330 - Revisions to the Postal address apartment field 
+A development proposal related to the quality of customer information, which has been raised based on an industry survey and 
+reviewed at the previous development group meeting, where the development group recommended 
+implementation of the inspection rule. In this meeting, development proposals were only presented for information
+the number it received and the size class information of the change.  
+ 
+3.1.12  
+Development proposal #246 - Measurement data statuses report for vendors  
+Pia initiated a development proposal for making the report available to sellers as well. A proposal 
+the background is that networks don't always evaluate usage, and sellers don't have visibility 
+to what the situation is at the end of the network. The networks have a report on the measurement data sta-
+monitoring, and it would be good to make this report visible to sellers as well, as it facilitates
+or sellers in monitoring the situation, in which case the sellers would not have to ask the networks by telephone
+mitse/email missing measurement data. 
+Pauliina went through the solution of the development proposal in more detail, according to which the networks
+the use of the current report would also be enabled for sellers. Pauliina asked the development group
+my view on what filters would be needed for the seller's report - is the initial and 
+end date or should the data be able to be filtered by network company? development group
+it was stated that, according to the network company, filtering in addition to time is sufficient here 
+encounter. This is also easy to implement in the data hub.  
+In addition, it was discussed whether the report should be able to select only measurement data or all 
+used in invoicing, i.e. measured, netted and community accounting results. 
+ 
+Minutes 
+ 
+9 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The development work group concluded that the current information, which is also in use on the networks, would be 
+are sufficient. Other information was not found to be useful for this report. 
+Summary: The proposal in question received a recommendation by adding to the seller's report a
+data network company, and let's move the proposal forward. 
+ 
+3.1.13  
+Development proposal #131 - Forwarding the DH-311-4 message to the co-location vendor  
+Laura went through the development proposal left over from the previous meeting, in connection with the development
+the working group had considered open questions related to the necessity of change 
+and to the proposed solution. Some of the members of the development work group were of the opinion that the proposal is 
+necessary and worthwhile. The problem in question causes daily grief when the
+repeat customers do not remember two different places of use and therefore the places of use can live 
+his own life. Therefore, everything that can be done would be necessary. A proposed solution is required
+was set up so that the review should only be done for customer information and sellers of places of use 
+is not relevant, i.e. the message would not be sent if the points of use have the same customer. 
+However, the development work group considered whether the matter is something that should still be taken under
+to the working group for system suppliers to discuss. At least one company's systems
+the meter is against the change and would not like the DH-311-3 messages would be processed in this way
+head. A more detailed reason has been sent to Marko in a message, which we did not have time to go through in the meeting, 
+but based on this, we will still assess whether there is a need to ask others for their opinion 
+from system suppliers. 
+Summary: As a result, it was concluded that we will still find out if the matter is necessary 
+take to the sub-working group for discussion. Otherwise, it was recommended to export the
+to be moved forward so that only the customer information of the places of use is viewed. 
+ 
+3.1.14  
+Development proposal #162 + #310 - Unjustified relocations - appendix 3 
+The development work group returned to the topic left unfinished at the previous meeting to consider
+whether it is necessary to continue the processing of individual alternatives at all. development group
+it was concluded that the topic is important and the extensive preparation of various cases was praised, 
+but a more detailed consideration of the solution had raised doubts as to whether the parties would benefit
+solution and whether the implementation would pay for itself (e.g. small apartment buildings
+not), even if the common goal in the field is to get rid of unnecessary changes. Ta-
+the monitoring of breaks in itself was seen to fit well with Datahub's role and the field of perspective 
+of events, and Datahub would be able to provide top-down surveillance for the industry. 
+However, the parties' own validation rules have already been built for different cases 
+to some extent and in the development group there were also views that this is no longer the case 
+a big problem for everyone if the number of customers is smaller. In addition, the implementation in Datahub should be
+probably in 2025 at the earliest, and it is difficult to predict whether it would then still need
+water. 
+The development work group also discussed the amount of work and the cost for this other
+for that. Marko stated that the preliminary assessment is that if the different cases are done separately, it is 
+ 
+Minutes 
+ 
+10 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+implementation of individual cases of size category 2, but if more are done at once, yes 
+the whole is less than the sum of the individual parts. The development group concluded that 
+the change would be expensive in any case. On the other hand, the view was also brought up that if 
+from the point of view of the system, something can be done, it should be possible to do it, even if
+there would also be a more expensive solution.  
+Due to uncertainties related to the topic, the development work group concluded that it is 
+reason to ask the industry how many people would need the proposed solution or part of it
+hideous It was concluded that the survey should highlight the available options, maybe
+getting a doll implementation in 2025 at the earliest and the costs of this. Exchange
+the presentation and order of the tasks in the survey should be thought about, because points 1 and 5 were seen as possible
+as the most interesting options for the parties, while points 2-4 and 6-8 require
+further investigations on the part of the recipient. It was also stated that because the matter is of most interest 
+sellers, networks and 3rd parties can be excluded from the survey.  
+It was also pointed out in the development working group that development proposals #162 and #310 are in question 
+of different things, so #310 is mistakenly bundled in this connection. At the meeting you decide-
+it was decided that #310 would be prepared separately for a future development group. 
+Summary: Let's start preparing a survey for the industry according to the guidelines given by the working group
+on the basis of You have to think about how to formulate the survey and whether it still needs to be
+ferry from members of the development team. These can be brought to the meeting for consideration
+on the road. 
+ 
+3.1.15  
+Development proposal #280 - Section 105 d Comparative information on electricity use 
+Marko went through the first point of the development proposal regarding the law change, which 
+Datahub must offer end customers the opportunity to compare energy consumption 
+to the previous year in Datahub's end customer portal. End of the comparison to the second point
+the end-user group corresponding to the customer will be replaced when the requirements end
+regarding the definition of the user group are clear. The size class would be 3, when both the
+the first and second points are evaluated together. From point 1 there is already a more accurate cost and that 
+the proportion goes a little to the side of 2. 
+The development group concluded that this must be implemented in any case. To the customer 
+it is also easier to view their data in Datahub if the customer has changed vendors 
+(more contract history). From the seller's point of view, the customer is also easier to guide 
+To Datahub, where you can find more historical information. 
+Summary: Statutory change that must be implemented in Datahub. 
+ 
+ 
+Minutes 
+ 
+11 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Lakkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+3.2  
+It requires a discussion in the working group and preliminary questions to find out how the
+let's proceed with the following development proposals. In Appendices 2 "Datahub changes
+veet 20231020" and background for the discussion and questions:  
+3.2.1  
+Development proposal #309 - Contact information to ensure safe connection  
+Suvi initially developed the development proposal to improve the instructions on which phone number to
+lisi is used to ensure a safe connection when moving. The new contract
+in connection with it, various contact information can be provided and currently Datahub's docu-
+mentation does not take a position on how these should be used. Guidance would be needed in order to
+guys and networks would know how to work in the same way. Currently, information is requested by e-mail
+especially when the parties do not have a uniform operating method and the systems have different implementations. 
+The problem is particularly pronounced with business customers. 
+The development team had a discussion about the topic and the possible need for changes to the data 
+mandatory on Datahub's side and stated that preparing instructions is enough, and not 
+changes to the implementation are needed. Regarding the instructions, it was stated that if safe use
+kennän's confirmation message will not be sent to the phone number in the customer's information, will 
+the contract is notified by a separate contact person with the type of connection manager and for this
+the sea It was agreed that the proposal for guidelines will be brought to the development work group for comment-
+as usual before publication.  
+Summary: Instructions are made so that the number of the connection officer is used, if 
+it has been announced. The person in charge of the connection must be notified, if the verification of a safe connection 
+must be sent to a different number than the phone number provided to the customer. Let's bring instructions 
+still to the development team for review. No need to make changes to the Datahub implementation
+regarding its obligations.  
+ 
+3.2.2  
+Development proposal #271 - Annual usage estimate update 
+Suvi initiated a development proposal related to Datahub's current policy that 
+the annual usage estimate should only be updated when a new contract is announced. Alignment 
+has led to the fact that the annual usage estimates are not updated en masse and the estimates in Datahub can
+must be a couple of years old. This means that if the seller needs an annual
+estimate, the information may not be true at all. It was needed from the development team 
+insight into the needs related to updates of the annual usage estimate, e.g. update frequency.  
+The development group discussed the different options and their impact on Data-
+to the number of messages received and forwarded by the hub and to the performance. In the group, the main
+led to the proposal that the annual usage estimate should be updated annually
+then one year from the start of the new contract. This was seen as sufficient by both the sellers 
+that 3. the needs of the parties in terms of annual usage estimate information, and not such update
+should cause problems in terms of performance if the update distribution is fairly even
+during the year. The number of updates would increase from the current level, but would presumably remain the same 
+however, reasonable in terms of system performance. If there were updates once 
+per month or more often in significantly higher amounts, the effect of this should be tested 
+to performance. 
+ 
+Minutes 
+ 
+12 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The development work group concluded that the solution would be significantly different from the current one and would require 
+the parties have further development in their own systems, so that the update of the annual usage estimate would start Da-
+to tahub as planned. In addition, at least some systems also have
+way that the annual usage estimate update message does not go to Datahub every time the annual usage estimate 
+is updated in the party's system. It was stated that the development proposal and planned 
+the solution should be discussed in a sub-working group with the system suppliers. 
+The development group also raised the option that Datahub would calculate the annual
+vion, for which a separate development proposal has also been raised. Marko stated that the current law 
+obliges the networks to do the calculation. 
+Summary: We are preparing a proposal so that the annual usage estimate is updated to Datahub once
+ran per year starting one year from the creation of the contract and every year from then on. Thing 
+will still be taken to the sub-working group of the development working group for evaluation. 
+ 
+3.3  
+For the development team's information, the status of the preparation (also for comments/questions
+to the development working group), applies to the following points of the list of development proposals, basic
+standard solution proposal in appendix 2 "Datahub change requests 20231020":3.3.1  
+Development proposal #326 - New reason code for contract cancellation 
+Laura initiated the development proposal regarding cancellations related to the termination of the seller 
+reason code to be used. The proposal is currently ready for the operator's mass event and 
+with regard to the cancellation notices sent to the distribution system operator as a result, but by the seller 
+in the case of self-declared cancellation, further clarification is required. ET has asked EV 
+statement on the matter and based on the statement received, the case has expanded to cover 
+also other decisions and cancellations originating from the seller. Development working group central
+discussed the matter and it was concluded that it is also important for the seller to be able to notify the cancellation, 
+but the process still needs to be worked through with EV/ET and defined by Datahub 
+point of view, after which the proposal can be submitted for consideration. Operator mass event-
+with regard to the reason code used in mass, it was stated that the development proposal can already be taken forward
+towards. Marko stated that the aim is to get the implementation to version 2.3. 
+Summary: The implementation related to the operator's mass event is promoted separately by new
+with the reason code. Other cases are prepared separately based on the discussions of EV and ET
+the foot. 
+ 
+3.3.2  
+Development Proposal #297 - Report to EV 
+Marko went through the development proposal regarding the information to be delivered to EV regarding non-vendors 
+places of use and asked the development team if the information listed now is sufficient for the seller
+mus to make with the customer. The development group pointed out that mandatory information is missing 
+from the proposed solution, because when EV delivers the information to the seller, the seller must be able to create
+the country's contract with the information in question without being in contact with the customer. For this list 
+of the information to be provided must be expanded to cover all mandatory customer and user
+location information for the new contract. 
+ 
+Minutes 
+ 
+13 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+The development team asked about the selection conditions under which the data will be included in the EV 
+to the report to be delivered and a note that these should only include the seller's ole-
+vat cases where the place of use is without a vendor. If the seller is in accordance with the terms 
+terminated the contract, for example, due to the customer's unpaid invoices, in question 
+is a situation originating from the customer and should not be delivered to EV. It was found that the
+let's make a proposal in this regard. 
+Summary: Let's supplement the information presented in the solution proposal of the report 
+lists in such a way that all the mandatory place of use and customer road information of the new contract
+dot are included in the report. In addition, the selection conditions for the report from road-
+do  
+ 
+3.3.3  
+Development proposal #303 - Balance error report for parties   
+Pauliina went through the development proposal regarding balance sheet errors due to deficiencies in the balance sheet agreement 
+and their reporting to the parties. Datahub has a large number of balance sheet contract deficiencies caused by
+known balance sheet error due to errors in Datahub or errors by the parties 
+used, due to which the balance sheet agreement has not entered into force correctly. 
+In these situations, there has been a gap and the balances have erroneously gone to network losses. 
+In June 2023, each network was provided with its own Excel listings of errors and then 
+it was concluded that the lists are not valid, but Datahub should deliver the information normally. This 
+requires development to Datahub, so that the calculation can be carried out and the data transmitted also
+for emergencies. The change has been forwarded to the system supplier for evaluation. Accomplish-
+there is no schedule yet, but we are trying to get it as soon as possible.  
+It was pointed out from the development work group that it is about Datahub's basic obligations and is
+The problems are partly caused by the system malfunctioning, which is a big deal 
+about the change. The group asked why the issue is not being corrected. Marko stated that 
+in practice, the correctness of balance sheet contracts is based on connection-disconnection rules and pro-
+During the project, not all special situations have been taken into account, which is why mistakes are made 
+is formed. The rules now have to be clarified afterwards, which is why it is not the case 
+not a bug fix but a change. In addition, some of the errors arise from incorrect actions of the parties
+as a result, when events are not handled correctly in the business. Datahub's customer service is 
+went through the situations with the parties and reminded that all events should be kept 
+process via Datahub and e.g. connections are made based on calls, but vir-
+fair processing is still taking place. 
+Some of the situations that cause errors in Datahub will be corrected in version 2.2.
+for its #183. Development proposal #303 will be used in the solutionn possible
+to a large extent, sim's already existing facilities related to calculations and intermediate
+to the Since balance sheet contract deficiencies will continue to arise, there is a solution 
+use also in the future, i.e. this will not remain a one-time solution. Marko also stated that it is 
+it should be noted that this will take away Datahub's development capacity from other
+out of it, because this is one of the most important things in prioritization.  
+Summary: Datahub is responsible for balance sheet error calculation and related data transmission and 
+in order for the industry to be able to manage the commercial agreements between the necessary parties, must 
+this functionality implements. Datahub corrects deficiencies in the processing of balance sheet contracts 
+ 
+Minutes 
+ 
+14 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+in version 2.2 and strives to fix the shortcomings in terms of Datahub processing in future ones 
+in versions. 
+ 
+3.3.4  
+Development proposal #316 - Authorization of the independent aggregator for the balance of the place of use
+to customary information 
+Marko went through the development proposal related to the arrival of the flexible market for an independent aggregate
+ri to the electricity retail market and the use of electricity retail market items 
+as flexible items in the reserve market (aFFR and mFFR). The thing is starting next year
+language in Finland and Datahub needs development so that an independent aggregator can get 
+up-to-date information about the balance sheet manager at the site of use and is able to report the information flexibly
+in accordance with the operating model created for the market. Due to the schedule, the implementation should be obtained 
+included in version 2.3. Size class 4+, i.e. quite a big change. 
+Summary: Datahub must support the start-up of an independent aggregator 
+for electricity retail market targets and produces Application-specific balance responsible-
+data for an independent aggregator, so this change is needed. 
+ 
+3.4  
+For the information of the development team, the improvements made to the CMS product version
+hin 2.1/2.2, applies to the following points in the list of development proposals, the solution proposal attached
+in tee 2 "Datahub change requests 20231020":  
+Marko made improvements to the CMS product.  
+Development proposal #12 - Improvement of business message search 
+In version 2.1, a new filter field has been added to the search functionality of business messages 
+to message delivery channels. Regarding message types, there is possibly a similar improvement 
+coming to version 2.3. 
+Development proposal #22 - CMS interface user party information displayed 
+In version 2.2, the user interface shows information about the party on whose behalf it is used. 
+Development proposal #26 - Open events page 
+In version 2.2, the open events list has a field that tells when the event is 
+created. According to the field, you can organize and filter information in the list. Also the events shown
+number of options has been expanded and the view maximized so that the browser window shows the
+the most information. 
+Other product improvements - Appendix 4 
+o In the Open events list, it is possible to search for events in the event step-
+I will follow. In version 2.2, the filtering has been changed so that only 
+events that may be associated with an open event.  
+ 
+Minutes 
+ 
+15 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+09.11.2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o The list of product improvements coming to version 2.2 will be supplemented later when 
+the version of the changes is confirmed. The list is maintained in the Datahub Services portal 2.2-
+under version content. 
+The development team had no comments on product improvements.  
+4  
+Status and progress of older development proposals - appendix 5 
+Marko presented the development proposals raised before implementation and the progress of their situation.
+in terms of The development proposals are to be taken up for consideration in stages by the parent
+from the beginning. Marko presented a model by which at least the larger development proposals bring
+given with less preparation to the development work group for consideration, where the support
+do you want to start preparing more of them? The development team thought the presented model was good 
+and it was decided to proceed as presented. 
+5  
+Other things 
+The development working group suggested that the development proposal #310 be taken into consideration the next time
+lead. Marko stated that efforts are being made to include this. It was initially stated that the
+this is a tricky case, and it is hardly possible to make any development in relation to Datahub.  
+6  
+Next meeting times 
+It was decided that the meeting times of the development work group for the beginning of 2024 will be agreed upon in the following 
+in the meeting. 
+7  
+Closing the meeting 
+The meeting ended at 15:00. 
+ 
+Attachments 
+Appendix 1 – 20231109 development team's current affairs 
+ 
+Annex 2 – Datahub Change wishes 20231020 
+ 
+Appendix 3 – KE162_Valemuutot 
+ 
+Appendix 4 – 20231018 Datahub 2.2_product improvements 
+ 
+Appendix 5 – 20231020 Older development proposals

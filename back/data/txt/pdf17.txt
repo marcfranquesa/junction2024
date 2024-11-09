@@ -1,0 +1,366 @@
+Minutes 
+ 
+1 (4) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+sub-working group 
+Fingrid Datahub Oy / Marko Juslin 
+21/11/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group sub-working group meeting 5 
+Time 
+21/11/2023 9:00–11:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal)  
+Pauliina Himanen 
+ 
+Fingrid Datahub Oy (siht) 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy  
+Nelli Karjalainen 
+ 
+Fingrid Datahub Oy 
+Greetta Arha  
+ 
+Väre Oy (remotely)   
+Pia Aaltonen   
+ 
+Fortum Markets (remotely)  
+Päivi Karpanen  
+ 
+Helen Oy (remotely) 
+Pekka Eerikainen 
+ 
+Veni Energia Oy (remotely) 
+Suvi Manninen 
+ 
+Caruna Oy (remotely)  
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab (remotely)  
+Petri Juhala  
+ 
+Synerall Finland Oy  
+Pasi Kangasniemi 
+ 
+S2B Energia Oy (remotely)  
+Jan Loman 
+ 
+ 
+CGI Suomi Oy (Datahub CMS) (remotely) 
+Jaakko Timonen 
+ 
+CGI Suomi Oy (Kolibri) (remotely)  
+Jani Pasanen 
+ 
+Tietoevry Oy (remotely)  
+Christian Rautjärvi 
+ 
+Hansen Technologies Oy (remotely)  
+Samuli Saine  
+ 
+Rejlers Finland Oy (remotely)  
+Tarja Teroheimo 
+ 
+Solteq Oyj (remotely)  
+Kari Iltola 
+ 
+ 
+Energy (remotely) 
+Teemu Hellas 
+ 
+Enerim Oy (remotely) 
+ 
+  
+Away 
+ 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy  
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy 
+ 
+1. 
+Opening the meeting, stating the attendees and the agenda  
+ 
+Marko opened the meeting at 9:03 a.m. and went through the meeting's agenda. There was no agenda 
+comments or additions. Those present and absent were noted.  
+ 
+2. 
+Presentation of development proposals and recommendation decision 
+ 
+Marko explained the procedure for reviewing development proposals. Marko stated that every-
+regarding the item on the agenda, possible clarification needs, comments and questions are discussed
+questions and the necessary discussion before asking for everyone's opinion separately.  
+ 
+#276 – Site Concurrency Data Management - Appendices 1 and 2 
+ 
+ 
+Minutes 
+ 
+2 (4) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+sub-working group 
+Fingrid Datahub Oy / Marko Juslin 
+21/11/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Samuli went through the original development proposal and Laura reviewed the proposed solution
+the one that would solve the underlying problem that the location of use parallel information 
+can be controlled by DH-126 and DH-127 processes only for the future. 
+ 
+In the sub-working group, there was a discussion about the necessity of change and where the problems came from 
+and the need to correct the location data, and whether the problem could be solved better
+with soft instructions. The group concluded that the background is often human errors, of which 
+won't go away as long as people use the systems. Repair needs related to pre-
+as a sign for situations where no power data has been reported for the production site, 
+which is why the pair of places of use is not netted. Current rules for use of location data 
+in the update and parallelism data maintenance processes mean that the netting
+I don't start until the day after the repair at the earliest, and the previous episode remains ne-
+not true. The problems have an impact on the customer's invoicing, and at worst they are financial 
+the effects can be great. In order to get to the right situation, the changes process
+hin was seen as necessary. 
+ 
+With regard to the new operator process presented for restoring the places of use, there was some thought 
+also the amount of repair needs and the possibility to handle these through the system supplier 
+more cost-effective. At the moment, however, even the system supplier does not have a pro-
+session to make corrections, and making corrections directly to the base must be avoided, 
+which is why a new process is necessary. There is no exact information on the amount of repair needs
+toa, but there have been needs and these have also caused problems on the sellers' side, 
+when the distribution system operators have not received corrected information and delivered, for example, the necessary
+accurate measurement data. It was generally stated that although currently the amounts of repair needs 
+are still small in mass, it is important in the solution to look to the future when the masses 
+are growing all the time, and with it the need to be able to correct errors will also grow-
+terrestrial. Marko also stated that the preliminary cost estimate for the now presented entity is 2 
+or small 3, i.e. approx. 30,000 euros. 
+ 
+During the review of the solution description, the following observations and clarifications were made: 
+• 
+In connection with parallelism data corrections, Datahub never sends measurement
+information to the parties. The shipment only applies to the recalculation in connection with the repair
+tuja series (netting and energy community).  
+• 
+Active from the operator's place of usethere is no way to say about the error return-
+mia to the parties, as the return is based on the request of the distribution system operator and the distribution ver-
+the conholder receives the information through that. There is no longer any on the decommissioned site of use 
+the seller, but the seller could have been at the place of use at the moment that the retrospective road-
+correction applies. The group thought about whether the seller would be confused, 
+if there are updates to a place of use that would have been disabled in the seller's information. 
+However, we did not see a problem here that should be taken into account in the solution. 
+• 
+In terms of time limits, it was concluded that immediately after the change, retroactive cor-
+access to parallelism data is allowed from 1 January 2023 and after that for 90 years
+rokauta is a good default time for retroactive repairs based on the billing cycle. 
+If necessary, the operator can also allow repairs further into the past.
+i do Repairs can therefore be made between 90 days in the past - 90 
+day in the future, i.e. also for the current day. 
+• 
+The current inference rules based on power information about when to take the usage places 
+to the netting calculation, do not change, but the change only applies to time limits for information
+for repair.  
+ 
+Minutes 
+ 
+3 (4) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+sub-working group 
+Fingrid Datahub Oy / Marko Juslin 
+21/11/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+ 
+ 
+Samuli also highlighted a new proposal for the development of support reporting around the topic
+ri, so that error situations could be detected faster and the planned 90 days would be enough
+to repair it. It was agreed that Samuli would record a preliminary proposal for the content of the report 
+for the new development proposal label. 
+ 
+The discussion also brought up the need to return to the previously rejected development proposal 
+#176, according to which Datahub would notify the distribution system operator of what is to be installed at the point of use 
+netting information (whether the place of use is in netting or not). With #276 comes the netting information 
+change also retroactively, and notification to the network would remove the risk of an error
+desta, when the reasoning did not have to take place in the network system, but the network would receive the information 
+From the data set by Datahub. It was stated that if #176 ends up being implemented, it 
+should coincide with the implementation of #276. It was decided to reconsider the matter
+to be discussed at the next meeting of the sub-working group.  
+ 
+The group also presented the idea of ​​videotaping the meetings in order to get the discussion that took place 
+up more easily. Marko stated that the matter can be thought about if the current model does not
+drift net. 
+ 
+Summary: Development proposal #276 received the support of the sub-working group with the solution condition described
+taking into account the refinements listed in the The time limit for retroactive repairs was determined to be 90 
+days into the past after the older situations have been corrected first 
+change to production after export. It was agreed that #176 be brought up again 
+to the January sub-working group.  
+ 
+ 
+#16 – Notification of the contract coming into force upon cancellation – appendix 2 
+ 
+Laura reviewed the question that arose in connection with the previously recommended development proposal 
+on whether the new message planned for the distribution system operator is still seen as necessary, 
+although the related reasoning will probably have to be carried out by the parties'
+because of development proposal #69, which is already in version 2.2.  
+ 
+The group initially discussed the need for retroactive cancellations in the first place 
+due to The original background of the development proposal was not familiar to everyone, and the proposals 
+in connection with this, it was hoped that when recording them, they would also remember to mention the basis of the proposals
+lut and background information. The group concluded that retroactive cancellations are often related to customer
+to dispute contracts or cancel vendor exchanges. It also causes cancellations 
+also, for example, contracts incorrectly declared for the wrong place of use. The group pondered 
+also the amounts of retroactive cancellations, but it was stated that these could not be directly accessed
+wool more precise numbers.  
+ 
+The group concluded that the planned message is still seen as necessary, even though
+a Chinese implementation has to be built into the systems even before receiving it. Central-
+in telu, it was also brought up that the contract situation after the cancellation is currently 
+from the Datahub user interface, but the group concluded that this cannot be considered 
+as a real alternative to checking the matter. Sanoma was seen to bring more 
+ 
+Minutes 
+ 
+4 (4) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+sub-working group 
+Fingrid Datahub Oy / Marko Juslin 
+21/11/2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+possiblesolutions made for automation and improvement version 2.2. Li-
+therefore, it was seen as good that similar messages are received both by sellers and distribution network management
+for tijas.  
+ 
+Summary: A message to the distribution system operator was still considered necessary, and it should not
+in a different version with development proposal #69 cause problems. 
+ 
+ 
+3. 
+Change  
+ 
+Pia posed a question to the system suppliers regarding possible future repairs 
+unnecessary customer information update messages sent by the systems. A few system
+the meter said that in the version update made in connection with Datahub version 2.2, this
+there would be repairs coming.  
+ 
+4. 
+Next meeting times  
+ 
+The next meeting of the sub-working group will be held on January 31, 2024 from 9:00 a.m. to 11:30 a.m. Processing is coming 
+at least development proposal #176 and instructions related to improving the quality of customer information. 
+   
+5. 
+Closing the meeting  
+ 
+The meeting was closed at 10:55. 
+ 
+ 
+Attachments 
+Appendix 1 – KE 276 
+ 
+Appendix 2 – Datahub Change wishes 20231107

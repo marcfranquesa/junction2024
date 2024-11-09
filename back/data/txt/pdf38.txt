@@ -1,0 +1,1554 @@
+id
+Achievement-
+version
+Release 
+version
+Status
+State
+Development proposal
+Development proposal
+Lift-
+date
+Raised 
+date
+Proposer
+Proposer
+Size Class-
+rating DH (1-3)
+Ball park 
+estimate for 
+DH
+Business manager
+invitation (1-3)
+Impact is 
+market
+Potential
+nose 
+of the product 
+improvement
+Product 
+Priority 
+(1-3)
+Priority
+Reasons for the proposal
+Arguments for proposal
+Comment
+Comment
+Effects of the proposal
+Impact of proposal
+Implementation evaluated 
+scope
+Does it require 
+measures 
+commissioning 
+in connection with
+(Yes/No)
+Processing 
+roadmap
+Next steps
+Wrought 
+in the development group
+date
+Presented in the 
+development WG
+Customer Committee/Development Working Group
+n progression recommendation
+Recommendation from CC/DWG
+x
+x
+x
+A description of what the requested change is about.
+in English
+Because 
+change
+dotus is 
+given.
+Where is the change proposal from 
+came
+x
+Why change is needed, what are they 
+concrete effects, if the change 
+would be omitted 
+(costs/extra work, etc.).
+How does the change affect the current ones 
+to specifications. 
+How to promote the matter, 
+e.g. is a walk-through sufficient? 
+in the process working group or 
+does it require a wider one 
+from the field of inquiry.
+Because it matters 
+processed e.g. process-
+in the working group
+Deciding how to go about with the change 
+let's move on, whether to do or not 
+without doing. Who/who made the decision? 
+have done.
+3 2.0
+Implemented
+According to one of the cases in the UC.DDQ.REQ.ACP.ID test, we need to 
+implement accounting point search using related accounting point identification 
+(RAP). As we understand the test, we should provide the DDQ an option that if 
+an AP is found using regular address based search and if the AP has a related 
+AP that did not appear in the original search, then the DDQ can find the related 
+AP using RAPI. However, at the moment the search requires that both post 
+office (city) and street name are present in the search keywords. I think the 
+search would be much more useful, if it would allow searching by RAPI only. This 
+way the DDQ can always retrieve an AP by knowing the address of the related 
+AP. For instance, in some rare cases, the AP might be located on the edge of a 
+county and the AP and related AP can have quite different addresses. If we 
+always require some address information in the search, then in most cases it is 
+easier for the DDQ to search by address only, since it must be more or less 
+known anyway.
+16/10/2020
+1
+0
+Explanation of the change of user ID 
+to the process
+No
+4
+Development condition
+so
+It has been recognized that all grid products are not possible to represent in the 
+Datahub data model, especially complex ones - these could be e.g. products 
+with different kinds of Peak power calculation rules. This is of course fine. 
+However, the grid product code is mandatory in the grid agreement confirmation 
+event, DH-312. So, there will be products which are not represented in the 
+Datahub, but they are referred to in the event. There are the requirements and 
+validations on the event "The product reported for the agreement must be found 
+in Datahub, be in effect when the agreement starts and belong to the reporting 
+market party.". How is this Supposed to be handled? Is it expected that some 
+sort of dummy products, without any product components, should be 
+established? Note that this doesn't seem to be possible currently, according to 
+the cardinality in the Data Standard.
+5 October 2020
+3
+2
+0
+3
+We are waiting for decisions 
+of the Smart Network Working Group 
+to the guidelines of the power tariff and 
+for the harmonization of the network tariff 
+regarding, this what 
+more likely to 
+to have effects 
+datahub 
+to functionalities. 
+Change to product data maintenance processes
+No
+5
+Development condition
+so
+Is it possible to get Accounting point type / MeteringPointType 
+(AG01=ConsumptionAG02=Production) (as optional) into E66 message? Now 
+when importing as a supplier E66 messages we don't know from the message 
+that is the data consumption or production.
+14/10/2020
+1
+1
+0
+2
+As part of energy communities 
+there will be definitions 
+to measurement data 
+changes, e.g. billing 
+intended as a base 
+calculated data will come 
+to own. 
+Transmission of measurement data
+No
+6 1.0
+Implemented
+There are business customers who do not have a y-ID, but currently there are none 
+possible to give the party's own ID to others than the bankruptcy estate
+to customers. Currently, e.g. certain consulates that do not have 
+fiscal obligation for the y-code and road municipalities from which e.g. the taxman is 
+currently taking away already issued y IDs. Nor is PRH for these 
+is not issuing y IDs. 
+This is why a change is needed to allow the notification of business customers 
+ID types include y ID and the party's own ID. 
+1 June 2020
+0
+The change is needed in order to datahub 
+can be reported as a business customer 
+with the party's own ID, 
+in situations where the customer does not have y-
+recognize and the customer is not 
+estate. If no change 
+to do, these customers cannot be notified 
+contracts to datahub in data conversion 
+and not in contract processesa datahub 
+after commissioning. 
+An option is added to the validation rules 
+also indicate the party's own ID. 
+The change affects the data hub as well 
+to market participants. 
+Yes
+Wrought 
+process working group, 
+internally in the project, 
+system vendor clinic
+sa. 
+System Supplier Forum
+brought up 
+the need for change 
+for a change request which 
+processed again 
+in the process working group 
+5 October 2020. This 
+the change proposal is 
+according to the decision. 
+12.6.2020/Processes., 
+19.8.2020/Processes., 
+10.9./Administrative Clinic, 
+5 October 2020 
+process working group
+7 1.0
+Implemented
+Change of contracts concluded for a place of use under construction 
+for processing the effective date when the measurement date is not the same as 
+the original stated contract effective date
+1/1/2020
+0
+The change is needed because the original 
+the planned model causes companies 
+manual steps and is for the customer 
+confusing because the customer will 
+send another confirmation of this new one 
+due to the contract. There are situations 
+estimated to be 100,000 – 150 annually 
+000 pcs. The amount of manual work is 
+massive.  
+Datahub has already been implemented in the system 
+according to the original specification 
+functionality. You have to get into the system 
+to build a logic connection statement 
+on the basis of the contract 
+to a change in the effective date. 
+The change also affects the industry because 
+industry systems must manage 
+changes so that these agreements, 
+which has been updated in datahub 
+effective date 
+based on the connection notification, source 
+new update/same contract notice 
+with a new date
+No
+The matter has been dealt with 
+process working group as well as 
+ET information exchange 
+in the development group. 
+Change request for CGI (CR-
+081)
+The matter has been dealt with 
+in the process working group 
+initially already 
+in December 2019, 
+actual processing 
+12 February 2020. Given 
+ET information exchange 
+to the development group 
+to be processed and processed 
+there on March 2, 2020
+8
+Development condition
+so
+ - Should it be possible to enter the date and datahub in the measurement data search 
+return information that has changed since the date given in the response?
+2020
+3
+2
+0
+2
+Searching for measurement information 
+the application period is already given.
+9
+Development condition
+so
+Management of VAT percentage in product information, VAT percentage to be changed otherwise when 
+announcing a new product
+2
+0
+0
+2
+It is not done in Datahub 
+billing so this 
+there would be no change in that 
+big thing in mind. And not 
+necessarily a big change 
+at the interface. 
+10 2.0
+Implemented
+With parallel usage location ID, usage location ID search without 
+address information (February 1, 2022 is part of the 2.0 functionality)
+Marjut finds out if this was already the case 
+some estimate was asked from CGI. At the same time, you could through the interface 
+enables with the use location ID 
+search for basic information on the place of use. 
+11
+Development condition
+so
+processing of the parallel use place in DH-331 and DH-351 events 
+(currently the ID number of the original DH-331-1 is reported, 
+should be the identifier of the place of use, which the seller has for sale)
+handling of the parallel metering point in DH-331 and DH-
+351 events (at the moment is notified the original DH-331-
+1 metering point id, shall be the metering point id that the 
+supplier has in sales)
+MP: Handling of Parallel Accounting Points with DD-331 
+and DH-351: 
+Neglect of Customer data update or update request 
+should be possible, 
+in case customer data update consists of both of the PO Box 
+and Street Address. 
+Currently rule force that one of those items need to be 
+updated, but it's not prohibited to update both of them
+From here 
+several 
+tickets 
+before 
+commissioning
+o.a
+1
+1
+0
+1 The CMS system is fully functional 
+illogically
+This is more of a fault 
+in the original 
+in the definition, should be corrected. 
+12
+Development condition
+so
+few improvement suggestions for the Search Business Messages functionality in 
+the Datahub GUI.
+The "Channel" filter could be a dropdown menu instead of a string input in the 
+filtering for better usability. The same applies to the "Message type" filter.
+1
+0x
+2 Usability improvement
+13
+Development condition
+so
+A filter for event type (corresponding to the "Transaction Type" in the message 
+details, e.g. "DH-311-1") would be very useful, crucial even, since using the 
+"Message type" filter is quite cumbersome to use due to the one to many 
+relationships between message types and event types (one message type is 
+used for many event types), and thus, doesn't provide detailed enough filtering.
+1
+0x
+2 Usability improvement
+14
+Development condition
+so
+It would also be very useful to have some representation of the corresponding 
+outbound ACC message in the message details for inbound messages. Now the 
+user has to go back and forth between the message details and the search 
+result.
+1
+0x
+2 Usability improvement
+15
+Development condition
+so
+party identification to the response of the DH-72X request
+1
+1
+0
+2 Usability improvement - effect 
+to the interface of the parties
+16
+Development condition
+so
+To the seller, in the acknowledgment of the cancellation of the sales contract, information about Jäikö 
+sales contract into force and until which date. Now you have to visit 
+in the user interface catsoma that you will definitely find out the situation.
+Notification about sales contract in case it is still valid and 
+valid until date. Now this requires use of UI to check the 
+situation.
+4/3/2021
+2
+1
+0
+1 Usability improvement - effect 
+to the interface of the parties
+E-mail notification if the end date 
+changes to a refundable contract. 
+17
+Development condition
+so
+For online contract confirmation, check that the sale and the online contract are at the same time 
+at the customer. There is currently no customer in the confirmation of the online contract. 
+This does not prevent the situation where the network makes a network contract for a different customer. 
+The network can have a different customer in its own system than in the hub. So it is 
+it is entirely the network's responsibility to ensure that the contract goes to which customer 
+will be reported in the DH-311-2 message. 
+New validation that grid and sales contracts are the same 
+end customer when confirming the grid contract. At the 
+moment there is no end customer in the confirmation of 
+the grid contract. This does not prevent that situation 
+DSO could do the grid contract for different end customers. 
+DSO can have in own system different than end customer 
+in datahub. That means that it is on DSO's responsibility 
+to make sure that the contract is done for the end customer 
+that was informed in the event DH-311-2.
+29/3/2021
+1
+1
+0
+1 Impact on the network company's interface
+Confirmation of the online contract is required 
+change so that Customer Data is a part 
+notification. 
+Ensuring the quality of information
+18
+Development condition
+so
+The number of places of use report does not show the place of use IDs. 
+Is it possible to get them displayed? If you can't get that for the PowerBI report 
+is it possible to add search criteria to control reports?
+MP: Accounting Point Report to be with AP ID:
+Accounting Point report doesn't have the Accounting 
+Point IDs (but number of Accounting Points).   
+In case the PowerBI report wouldn't have that information, 
+then the option could be to have it with control reports as 
+search criteria
+30/3/2021
+1
+0
+0
+2 Usability improvement
+Could find out if 
+possible to get credentials 
+to the report. 
+19
+Development condition
+so
+Did we have guidelines when the DSO should update the estimated annually 
+consumption when a new sales agreement is created? 
+If we don't have those yet, would it be possible to write those so that the DSO 
+needs to update the EYC after the new sales agreement has become valid? 
+Reasoning is that then the new supplier would get the updated information. 
+If the SAO updates the EYC when a new sales agreement is forwarded, the new 
+supplier does not get the new EYC in DH-122-2 or DH-122-4. 
+Building a scheduled DH-132 for the new supplier seems counter intuitive since 
+the data could be forwarded to the new supplier. It also causes unnecessary 
+messages if the new supplier starts to query the updated ACP data every day 
+until the new sales agreement is valid.
+23/04/2021
+3
+1
+0
+1 The change would be a big change in principle 
+in the datahub if the notification is about the place of use 
+of the change would be sent to a new one 
+to the seller before the valid one 
+agreement. And on the other hand, the change of JVH 
+in processes would be big if wanted 
+notice to datahub only 
+after the commencement of the sales contract. 
+We'll see if there's a need 
+to think about something 
+detour, e.g. 
+e-mail message to the seller 
+when the information is updated. 
+20
+Development condition
+so
+The wish that in the sales agreement search results (search sales agreement results) 
+the end date of the contract would be displayed. 
+But it would be nice to have a stop date and reason in the Search Sales line, so 
+one don't have to open the specific sales agreement for a quick check. But that's it 
+probably for later developments. Just a quick wish.
+8 June 2021
+1
+0
+0
+2 Usability improvement
+21
+Development condition
+so
+For example, mandatory ones are not highlighted/starred in the billing address form 
+fields even if there are any. These will only become apparent when there is information 
+sending. Mandatory information is also missing when filling out customer information 
+accents e.g. name and contact information. There was also a discussion that it would be 
+it would be great if the form had the functionality to highlight them 
+mandatory fields that are generated when the user selects a certain one 
+customer type.
+The mandatory fields are not highlighted or marked with 
+stars e.g. in the invoicing address form even there is some 
+mandatory field to be filled in. User get notification about 
+missing fields when trying to submit the form. In the 
+customer data fill is also missing the required mandatory 
+fields, e.g. name and contact information. Form could also 
+dynamically highlight the mandatory fields that are 
+necessary and and generated by user selection like when 
+selecting customer type.
+15.6.2021
+1
+0x
+2 Would clarify which are mandatory 
+fields and would improve usability. 
+The change wouldn't necessarily be big because 
+could be drawn into fields that are 
+mandatory
+Usability improvement
+22
+Development condition
+so
+In the Datahub user interface, it would be good if the user was represented at that moment 
+the organization would already be visibleright on the front page and not after clicking the user information
+It would be usefull to present the logged in person's 
+organization in the datahub UI right in the front page, not 
+after clicking the user information.
+16.6.2021
+1
+0 x
+2 The parties sometimes represent several 
+organizations and to facilitate daily work 
+it would be good if the information was 
+immediately visible
+Usability improvement
+23
+Improvement suggestion
+The message tracking form would need a GSRN identifier as a picking criterion. 
+Or as a worse alternative, the GSRN identifier could be displayed 
+in the message listing.
+16.6.2021
+2
+0
+0
+2 Monitoring messages would be easier if it was possible to search for messages by GSRN ID
+24
+Development proposal
+It would also be easier if it were possible to search for messages from the network access point in a time period limited by selection criteria
+16.6.2021
+2
+0
+0
+2 It would be possible to view messages from the access point faster
+25 1.8.1.1
+Implemented
+The functionality for searching for business messages is good because it allows you to monitor the number of messages and what types of messages have been processed. We have been a little disappointed that we have not received them in quantities in such a way that we could calculate how much of each message has been processed by message type. In other words, the functionality 
+"export.csv" is missing. Yesterday, when I was examining the user interface a little more closely, I noticed that the button is there, if you are really careful. The button can be found when you zoom in close enough to the right edge of the search results, and you can notice that a faint line appears in the user interface. When you manage to click on it, the buttons also open, as is the case with other search results, and this way you can also export the search data to a csv file for further analysis. It might be a good idea to check with the system supplier how to make that button more visible, because I believe that other parties might also need that feature. Attached are images, one of which shows a line that you have to click to find the button. 17.6.2021 0 1 Finding the button in question is difficult. Changing the button's 
+styling would make the button 
+more visible and easier to 
+find.
+The 
+styling of the button in question is not a major change.
+26
+Improvement
+Suggestions
+Improvement ideas for the 'List Open Transactions' page:
+1. It would be good if the created timestamp showed not only the date but also the 
+time. This way you can go through the open transactions in order. 
+2. It would be good if the view could be dragged to the entire screen. So you could see 
+more transactions at a time. 
+3. It would be good if it counted how many transactions there are.
+4. It would be good if you click on a row and it would appear in a color other than gray. 
+Now it is very difficult to see where you have clicked when everything is gray. 
+The differences in the gray tone are not visible enough.
+Development ideas to the 'List Open Transactions' page:
+1. Create time stamp could present also time besides the 
+date.
+2. It should be possible to maximize the whole view full 
+screen size. More events at one screen.
+3. The number of events presented.
+4. The selected row could be visualized with different 
+colour than grey. That would help the see where the 
+selection is at the moment. It is difficult to see differences 
+in the hues of grey.
+17.6.2021
+1
+0 x
+2 These changes would improve the usability of the 'List 
+Open Transactions' page
+27
+Development suggestion
+According to the GDPR, the data subject has the right to restrict the processing of his/her data.
+According to the Data Protection Regulation (art 18), the data subject has the right in certain situations to obtain from the data controller restriction of processing. Restriction of processing under the GDPR means that the data can still be stored, but for other processing (such as the transfer of data), there must be a specific basis provided for in the GDPR (e.g. consent of the data subject, processing to protect the rights of another party). 
+In relation to Datahub, the only basis for restricting processing under the GDPR is that the data subject disputes the accuracy of the personal data. According to the GDPR, processing must then be restricted until the controller has been able to verify the accuracy of the data.
+According to the GDPR, the registered has rights to limit the handling of her/his data.
+According to the data privacy art 18, the registered has in certain situations the right that the registry owner limits the handling of data. That means that those data can still be stored in the datahub, but for other handling (like e.g. abandonment of data) shall require a specific justification as legislated in data privacy art (like registered approval, handling data to protect other person's rights). In datahub case the only handling limitation justification, according to the data privacy art, could be that registered denies the correctness of personal data. According to the data privacy art, the handling of data shall be stopped until the Registry owner has been able to make sure that the 
+personal data is correct.
+21.6.2021
+2
+1 x
+1 Legality
+Has a wider impact on the industry, and 
+to plan how such limitation 
+implemented in the hub, and does it make a difference 
+to any market processes. And 
+whether the party will be notified 
+limiting extend to Hub?
+28
+Double (20)
+The contract end date should be shown in the search results of the CMS Contract Search 
+and the reason for termination, if termination has been announced
+28/06/2021
+Usability improvement
+That way, you wouldn't have to open it yourself 
+contract to see the information.
+29
+Double (19)
+There would be an update of the location information and an update of the annual usage estimate 
+inform the new seller of the place of use
+28/06/2021
+Usability improvement
+A principled decision on whether it is possible 
+information about the location of use will be announced in advance 
+for the future seller. It is currently agreed, 
+that the seller receives information about the location of use 
+notice if the change comes to the contract 
+during the validity period. 
+30
+Development condition
+so
+The connection status of the place of use should be updated in CMS in real time. Coupling 
+will be announced with an hourly accuracy, so if today there is a connection notification for this 
+for the day, the status should be updated in the CMS at the same time. 
+Switching state for metering point shall be updated real 
+time into CMS. Switch time is given in one hour accuracy, 
+thus if today comes a new switch notification for today, the 
+state shall be updated right away into CMS.
+28/06/2021
+2
+0x
+2 Usability improvement
+May be a bigger change in CMS 
+to the operating logic. 
+Confusing in the industry that this 
+the day's connection is shown in the user interface 
+only on tomorrow's view date. 
+31
+Development condition
+so
+An update or update request for customer data is rejected if the update includes both 
+PO box and street address. 
+Now it is in the rules that one of them has to report, but is not blocked 
+that you can report both. 
+MP: Customer data update (just PO Box or Street 
+address)
+Currently rule force that one of those items need to be 
+updated, but it's not prohibited to update both of them
+Origin: Market Party wish list -selected in January 2022
+28/06/2021
+0
+1 Usability improvement
+Without a rule, a party can notify 
+both, however, the zip code is only 
+once and the zip code of the post office box 
+differs from the postal code of the street address. 
+The quality of information is deteriorating. 
+32
+Development condition
+so
+Annual usage estimate and mutual validation of time zone data
+29/06/2021
+2
+1
+0
+3 Usability improvement
+Currently allows two annual usage estimates 
+although given as the time zone 
+one-time. There should be validation that if 
+single time measurement as a time zone should not be allowed 
+gives only one annual usage estimate
+33
+Preliminary investigation 
+CGI
+Notification of the termination of the agreement on the same termination date when 
+the contract has already ended in the data hub, it should be possible. 
+It should be possible to make notification of the contract 
+ending on the same date when the contract has already ended in 
+the datahub.
+29/06/2021
+3
+1 x
+2 Usability improvement
+Causes an unnecessary error message 
+to the sending party when the contract is already in place 
+ended on the same day. 
+34
+Development condition
+so
+We would need a report on everything concerning our side 
+of message traffic. Is it possible for you to deliver one that could be seen 
+reason code, place of use and all other information that comes out of the message? The one in CMS 
+The business news report does not quite cover our needs. Our intention would be 
+investigate error cases after TUKO2's decision.
+It should be possible to get a report out of all 
+events/messages for our market party. Report shall 
+include the following data: reason code, metering point id and 
+other message information. CMS business events report 
+does not cover this kind of needs. Report is needed when 
+analyzing error cases.
+21.9.2021
+2
+0x
+2 Usability improvement
+Search business messages is not enough
+35
+Development condition
+so
+Customer has a fixed term contract until 13 September 2022. However, move-out was 
+created for 30.9.2021. After the move-out being accepted by Datahub, customer 
+informs a new invoicing address. We update it to our system and that generates 
+DH-321-1. However, DH-321-1 is rejected by Datahub due to "Attribute 'Fixed 
+Term End Date' must be the same as or earlier than '2021-09-30T21:00:00Z'.". As 
+we are not trying to make any changes to the fixed term end date (same date is 
+in the DH-321-1 as is already in the customer contract in Datahub), why is the 
+message rejected? Is there a reason why Datahub is concerned about the fixed 
+term end date when contract is anyway ending (and ending was successful even 
+although fixed term and date is after the end date)? Could we expect changes 
+coming to the rules here in the near future?
+In cases of move-out getting cancelled, it would be better that the fixed term ends 
+date is the "original" one.
+23/09/2021
+1
+0
+0
+1 The contract update will not go through unless 
+party also update at the same time 
+expiration date of the term 
+for the end date of the contract. 
+Both in current and DH2.0 specs in 
+validation ruleö:
+• VR.AGR.052.225: The new fixed term 
+end date must be the same as or earlier than 
+the Agreement end date.
+That contract update crashes here. 
+In other words, the hub works according to the specs. 
+So a spec change is needed
+36
+Development condition
+so
+According to the notification of the e-invoice address, also the customer's bank. 
+5 October 2021
+1
+1
+0
+2 The customer's e-invoice without bank information 
+billing channel information is useless. 
+Can this information be considered? 
+to bring along. 
+37
+Development condition
+so
+It is not possible to deduce, for example, directly from the message sent by the datahub 
+in case of termination notification DH-422, whether the termination was made by the seller 
+on the basis of a disconnection request or for the network's own reasons. The original message 
+The identifier field always contains the identifier of the previous message in the chain (e.g. DH-422-
+2, the ID of DH-422-1), so nothing can be concluded from this. If 
+the identifier seller of the DH-421-1 message sent by the seller would be used instead 
+would see from this that it is a response to their request (but maybe 
+mixes datahub's composite processes processing). The same situation applies 
+all events that a party can send either on its own initiative or 
+in response to another party's request (DH-111, DH-122, DH-412, DH-422).
+7 October 2021
+2
+1
+0
+2 Can't be done in the seller's system 
+to conclude whether the interruption is caused by the network 
+interruption or response to done 
+to disconnection request. This information is needed, 
+in order to be able to assess whether it can be obtained 
+later the place of use connected when 
+own receivables have been collected from the customer.
+38
+Development condition
+so
+Validation of billing information by contract, that the counterparty has the information 
+through invoicing. 
+20/10/2021
+2
+0
+0
+3 Account line information is accepted, for example 
+contracts have different information. Currently 
+the description is that the party answers 
+from the reported information that goes to the right 
+to the recipient. 
+Consider how it affects performance 
+if all the calculation rows are validated 
+by agreement. 
+39
+Preliminary investigation 
+(law)
+A development idea for the future of collecting consumer authorizations 
+for efficiency.. Could the authorization done through the current portal 
+giving "detach" Datahub into a service and a website that could be connected 
+to the online services of the parties? In this case, the consumer would authorize GDPR 
+from the point of view of the right party in the service (Datahub) and authorization 
+giving could be connected to the situation where authorization is actually given 
+is required (the party's web service). In practice, the authorization service could be 
+from the user's point of view, in the same style as "pass-through service" as, for example, the current ones 
+identification services or payment services where the user moves from the website 
+to the other party's service and returns the necessary action 
+after completing. Such or a similar service is actually a prerequisite that 
+the possibilities of Datahub that are "behind" the authorization can be utilized 
+in the consumer segment. What would the development idea sound like?
+3 November 2021
+3
+1
+0
+3 A discussion is also required regarding the legal 
+with data protection people, not necessarily 
+straightforward
+Justifications of the law 
+point of view is needed.
+No
+40
+Development condition
+so
+The as/as to be used in the account of the place of use. should be returned 
+both options even if only one of these is given to the address. 
+Search should return Metering point id for both "as" and 
+"a." in case one of those is given into the search.
+23/11/2021
+1
+0x
+2 The ID applicant does not know which one 
+in a way the information is by the network 
+saved
+Needed a new validation rule for this. 
+No
+41
+Development condition
+so
+If the seller terminates or cancels the sales contract before the network has time 
+confirms his own corresponding network agreement, no information is transmitted to the network 
+termination or cancellation of the sales contract. 
+It might be a good idea to forward also on the basis of an unconfirmed online contract.
+DSO to receive info of SAG end or cancellation:
+In case DDQ ends or cancels SAG begore DSO has 
+confirmed one's GAG, DSO doesn't receive info of SAG 
+end or cancellation. It would be good to update the status 
+according to GAG not yet confirmed
+23/11/2021
+0
+1 The network would be notified if the seller immediately cancels 
+or terminate the contract.
+No
+42
+Development condition
+so
+The update of customer data should check that the customer is not saved in the data hub 
+unnecessary characters in the name. 
+For example, the message converter of one party's system changed the text like this: 
+Jämsänkoski Metsästysyhdistys ry. 
+Let's go through which characters should be allowed and which could be blocked. 
+Customer data characters to be verified:
+With Customer data update there should be Verified that 
+there aren't useless characters with customer's name to 
+be updated to Datahub. 
+E.g. "Jämsänkoski Metsästysyhdistys ry." 
+characters shouldn't be allowed
+Origin: Market Party wish list -selected in January 2022
+24/11/2021
+0
+1 The quality of customer information can be maintained 
+preferred
+The quality of customer information can be maintained 
+preferred
+43
+Development condition
+so
+Development proposal for further development: When the seller updates contract information, e.g 
+billing address, the DH-321-1 message should also add the deadline 
+start and end date. From the sellerHere is a development proposal that these dates do not need to be reported, as the dates to be included in the message do not necessarily match the existing agreement and have no effect. Example: a case where a fixed-term agreement started in 2014 and a maximum of 3.5 years back can be included in the DH-321-1 message as the start date of the fixed-term agreement. 30.11.2021 2 1 0 2 No 44 Development proposal Development proposal: DH-342 event description rule: Network agreement cancellation information is forwarded to the seller who has a sales agreement valid at the point of use at the time the cancellation takes effect. It would be good if it were checked that the sales agreement corresponding to the network agreement has been cancelled, so that the seller who has been reinstated is not notified. Especially if it is a different customer's agreement. 26.11.2021
+2
+0
+0
+2
+45
+Development proposal
+
+Market party has received updates to agreements with 
+invoicing email address, 
+although agreement invoice 
+channel is not email address. 
+Tittaan was not allowed to enter an email invoice address if the 
+invoicing channel is 
+something other than email. Datahub accepted these, however. 
+So, blocking validation should be done in this regard. 
+Email invoice to be updateable only if the correct Invoice 
+channel chosen:
+Market party has received updates to agreements with 
+invoicing email address, 
+although agreement invoice 
+channel is not email address.
+Origin: Market Party wish list -selected in January 2022
+30.11.2021
+0
+1
+46
+Development proposal
+A development proposal from Fortum: "We have had many cases where the electricity consumption point has not been found because the grid company or we have the wrong postal code in our data. We therefore suggest that the search could also be done without the postal code by placing an asterisk (*) in the search. For example, if the address is 
+Esimerkkikatu 7 C 44, 02210 ESPOO, the search could also be done in the mudo 
+Esimerkkikatu 7 C 44, * ESPOO. However, if the address has other information correct 
+except the postal code, then it is most likely that the search will produce the correct address. 
+In our opinion, this would benefit both the seller parties and the distribution network operators. 
+The Ediel.fi service also works in a similar way in the consumption point search service."
+We have a lot of cases where metering point cannot be 
+found because DSO or supplier has incorrect postal code 
+in the address. We propose possibility to make search 
+without postal code by giving asterix (*) into search.
+3.12.2021
+1
+0 x
+3
+47
+Development suggestion
+
+AdditionalCode fields contain funny texts, validation should be added so that 
+for example "Building" is not accepted in the future version.
+2.12.2021
+1
+1
+0
+3
+48 1.9.0
+Implemented
+The user interface sorts numeric fields as a string. This 
+cause sorting results in, for example, the order "1, 121, 13, 2,...' 
+3.2.2022
+Improves the 
+functionality of the user interface
+49
+Improvement suggestion
+
+Data interface uses person id or company id for 
+requests. Those URL requests are logged into log file and 
+that shall not happen.
+3.2.2022
+1
+0 x
+1 Improves data security
+50
+Improvement suggestion
+Case: The point of use was without a vendor and disconnected. The vendor reports a new 
+sales agreement to Datahub. In this connection, the vendor has clarified the 
+status of the point of use (disconnected). Later, the network reports the connection retroactively, 
+the connection date is the day before the start date of the agreement -> the seller does not receive information about the 
+connection, because the information is only forwarded to the current seller of the point of use. 
+The ticket that has come from this, is it a problem that should be added to the 
+development list at some time or should some instructions be found for the seller to deal with the situation?
+4.2.2022
+1
+1
+2 It would make it easier for the seller if he received the information. 
+Can the processing be changed so that if 
+that point of use update is announced 
+after the contract enters into force 
+(even if the change date itself is 
+for an earlier date) the seller would receive the 
+information. 
+The decision in principle 
+to whom the information about the 
+update of the point of use information 
+shall be sent
+51
+FG 
+documents
+The FD.CMD.AVR document has been provided to market parties in a stylized form. That 
+document describes the error codes returned by the B2B interface.
+The validations performed by the user interface, which are described in the 
+FD.CMD.ADC document, should be added to the document.
+There is also a separate document for errors in the measurement data. It would be a good idea to add the errors in this document to the same document.
+4.2.2022
+Validations can be documented for the market, the documentation of which is not currently available.
+52
+Development proposal
+At the request of the system supplier, I am submitting a development request regarding the language of the customer's 
+address and the contract's billing address.
+Now our system works in such a way that the update of customer data is automatically processed through the system (seller master). With the current model, we get 
+customer addresses mixed up in terms of language if we have 
+an online customer with a service language of Swedishi and the seller sends the address in Finnish. 
+These cannot be monitored/corrected in any way.
+According to the system supplier, if the addresses included language, they could 
+they make a comparison and in this way these cases would be caught and needed 
+repairs done.
+As a development, we hope to include a language code in connection with the customer's addresses and 
+to messages with addresses (postal address, billing address).
+18/02/2022
+1
+1
+0
+2 The language code is problematic for the customer 
+in the information if someone offers a service 
+in several languages ​​and the other not. 
+53
+Development condition
+so
+Validation in the form of a number should be added to the phone number. The data standard has 
+defined phone number format ITU-T E.164 (+358501234567) but datahub 
+however, this is not validated. 
+28/04/2022
+1
+0
+0
+2 Maintenance of information quality improves
+Data quality issue
+New validation rule
+54
+Development condition
+so
+As an online company, we find the cancellation code AR04 very inconvenient. AR04 code 
+can be used at this time even if the seller has concluded the contract as a delivery contract. 
+It can't really be like this, that the customer just cancels the sale, if that's the case 
+delivery contract. So, regarding this, the data hub should have a reasoning that no 
+the delivery contract can be canceled with reason AR04, or if you can, then the online contract should be 
+cancel also in this context. It is not possible for the customer to receive from someone else 
+a delivery contract from the seller, if the seller who is obligated to deliver already has a contract 
+cancelled. 
+Could the reason for this cancellation and its functionality be brought up if necessary 
+again in some new development groups, we would see that this would require 
+further definition/implementation towards the data hub.
+As a DSO we see the cancellation code AR04 very 
+complex. AR04 code can be used even supplier has 
+made contract as delivery contract. That can't happen in 
+real that end customer cancels only selling if there is 
+delivery contract. Datahub should conclude that delivery 
+contract cannot be canceled with AR04 code or if it can 
+be cancelled, then the grid contract shall be canceled as well. 
+It is not possible that end customers can get from others 
+supplier delivery contract if delivery responsible supplier 
+has already canceled the contract.
+Could this cancellation reason and its rules be re-
+evaluated in development workgroup. This requires new 
+Definitions to the datahub rules.
+4/5/2022
+1
+1
+0
+1 Causes a lot of manual processing 
+in the direction of the network and if there is a network contract 
+information cannot be canceled separately 
+of the supply contract to remain wrong and 
+causes problems e.g. of the customer 
+in billing. 
+of ET's development team 
+from the minutes of the meeting: 
+"We discussed 
+change of seller, but no 
+from the cancellation of the move, that is 
+with reason code AR04 to datahub 
+of notified cancellations. 
+It was pointed out that these 
+AR04 cancellations 
+cause a lot 
+extra work and 
+problems for network operators. 
+In addition to the network, also to the new one 
+incurred by the seller 
+New validation rule?
+55
+Development condition
+so
+The seller needs to get the customer's measurement data from the place of use, where the seller does not 
+still be a seller, from three years back instead of the current year.
+At the moment, the service provider's energy reporting authorization allows information retrieval 3 
+years back
+13 May 2022
+1
+0
+0
+2
+56
+Development condition
+so
+The contract code should be added to message DH-341-3: 
+How should the alignment of the DH-341-3 message to the contract to be returned be done. 
+We have encountered a situation where the place of use now has a valid one 
+sales contract and sales contract starting in the future. Another seller announces 
+for the duration of the now valid move-in agreement, from which it follows that 
+the sales contract starting in the future is canceled (message DH-311-5).
+The move-in made by another seller was canceled and datahub sent two DH-341
+3 messages (identical except for the message's unique identifier). How 
+the messages in question should be assigned to returnable contracts when they have them 
+as information only the location ID and the date of the canceled move-in?
+Event DH-341-1 shall have contract id: How the DH-341-3 
+event shall be pointed to the Refundable contract. We have 
+a case where the metering point has now a valid sales contract 
+and also sales contract starting in the future.Other 
+supplier informs about move-in for the now valid contract 
+that implies that the in future starting sales contract is 
+canceled (event DH-311-5).
+Move-in made by other supplier was canceled and 
+datahub send two DH-341-3 events (fully identical except 
+event id). How the events shall be focused to the 
+Refundable contracts when those have only metering point 
+and date for the canceled moved-in?
+16/05/2022
+1
+1
+0
+1
+57
+Development condition
+so
+Changing the state of the place of use In structures, the definition from temporary to connected will come 
+reassess. The functionality at the moment is that if Rakenteil 
+the temporary place of use has a valid contract at the time of connection, change 
+datahub automatically adjusts the contract entry into force date. 
+This serves in the processing of new properties. But the same functionality is also 
+when the place of use isdue to renovation, moved to space under construction, 
+without affecting the contractual situation. In this case, if the network changes the state directly 
+connected, the effective date of the agreement changes with the same rules, for example 
+in this situation you shouldn't. 
+Metering point state change from "Under construction" to 
+the "Switched" rules shall be re-evaluated. The current 
+rules say that if metering point "Under construction" has 
+valid contract when it is switched on, datahub will 
+automatically contract valid start from date according to 
+the switching date. This Server handling of new metering 
+points. But same functionality/rules are valid also when 
+metering point has been changed due to renovation to the 
+"Under construction" state, without updates on contract 
+state. In that case if DSO changes the stay directly to 
+switched on, changes the contract valid from date with 
+same rules, even should not in this case.
+18/05/2022
+2
+1
+0
+1 The implemented model currently causes 
+much regret for the parties involved. Switching mode 
+change causes contracts 
+the update of the effective dates as well 
+when the object is under renovation and 
+changed to status under construction. There is 
+instructed that in this case the place of use will come 
+first change to disconnected, before 
+connection. This is how contracts are avoided 
+from the update. 
+Can we have a conversation? 
+change to be e.g. different 
+switching mode 
+for renovation projects? Here 
+wouldn't need to build 
+complex reasoning 
+previously 
+agreement/connection mode 
+by. 
+58
+Development condition
+so
+The distribution system operator should always notify you first in meter removal situations 
+termination of the contract and only after that the termination notice related to it. 
+This would make it easier for the seller to recognize that the disconnect is related to this 
+for meter removal, and not e.g. to a disconnection based on network claims. 
+23.5.3033
+0
+0
+0
+2 To be discussed in the working group, whether 
+this is made possible by distribution system operators 
+from view. Instructions for doing this 
+in accordance with. No changes needed datahub 
+to the system. Is there a need to change something 
+for networks? 
+59
+Development condition
+so
+A new validation rule for transaction DH-124-1, according to which the seller cannot request 
+as user group BE14, if a specific one has already been defined for the place of use 
+user group information. At the moment, it works with automation in the network systems and 
+already more precisely defined information erodes with this
+New validation rule for the event DH-124-1 so that supplier 
+cannot be requested as user group BE14 in case there is 
+been defined specific user group for the metering point. At 
+the moment DSO systems updates user group 
+automatically and thus the specific user group information 
+is updated and lost.
+13 May 2022
+1
+0x
+1 Maintenance of information quality improves
+60
+Double (56)
+The party hopes that in the event of a cancellation in the DH-341-3 message transmitted 
+the identifier of the contract for which the party in question would also be forwarded 
+to receive that message. This need therefore arose in a situation where 
+the same seller has a previous contract (which has expired) at the place of use 
+in connection with the notice of the contract to be canceled) as well as canceled from the future 
+agreement (which was canceled in connection with the notification of the now-cancelable agreement). 
+In this situation, the seller receives two identical DH-341-3 messages and 
+the party's system cannot handle such a situation. They say it would make it easier 
+processing, if it were known for which contract DH-341-3 message 
+is received.
+31/5/2022
+61
+Development condition
+so
+The role of the balance sheet manager
+What are the costs for the balance sheet manager if it connects to Datahub on its own 
+with its ID (no delivery to be settled)? Because eSett does not 
+apparently deliver 15 min of data in their own data packages to the balance sheet managers as soon as 
+Datahub supplies it to eSett, so is the corresponding data available in Datahub's REST
+through the interface automatically to balance sheet managers, or should the sellers and 
+network companies authorize them separately for balance sheet managers? That is, the seller's sales 
+sum/network, sum of border points of the network, etc. it would be about time series searches.
+ML: There is no automatic interface for this, what are the messages of the balance sheet 
+would also be made available to balance sheet managers. So in this case it would work 
+through a seller/network mandate. In these situations, at least not for now 
+there is no possibility that the messages would be received by the assignment for both 
+to the parties, i.e. it would then only come to the person in charge of the balance sheet, if the seller made the authorization.
+5/5/2022
+3
+3
+0
+3
+62
+Development condition
+so
+The time step of the Time Series Data For Accounting Points report
+The Time Series Data For Accounting Points report would be good to be able to select different 
+time steps. At the moment, the report is only available with a time step of one hour.
+For consumption comparisons, daily or monthly steps would be useful.
+Are there plans to add a selection of steps to the report?
+It should be possible to select different time resolution on 
+"Time Series Data For Accounting Points" report. At the 
+moment report can be run only with one hour resolution. 
+To be able to make consumption comparisons by daily ormonthly level would be usefull.
+13/04/2022
+2
+0x
+2
+ML: “Not yet 
+known changes to this 
+to the report in the upcoming 1.9.0 
+version or DH 2.0 
+in connection with. Particular 
+the report is basically 
+intended measurement points 
+for viewing time series data 
+i.e. the time step is determined 
+data resolution 
+in accordance with.
+I'll add this 
+to the group of development proposals, 
+from which ideas are exported 
+ahead.
+63
+Development condition
+so
+Development idea that the history of balance sheet contracts would be shown as e.g. 
+the history of the online contract can be seen under contracts & products of the place of use
+It should be possible to view balance contract history, e.g. 
+grid contract history is visible under metering 
+point/contract&product.
+30/3/2022
+2
+0x
+2
+ML: "Thank you for the development idea! 
+The same wish also came 
+from the other party. 
+Balance agreement history 
+visibility would be easier 
+significantly networks 
+reviews of the possible 
+balance sheet contract deficiencies. 
+We find out if there are any of these 
+addition possible 
+for example to the following 
+version update.
+64
+Preliminary investigation 
+FG
+The accuracy of the measurement data
+In the energy industry's electricity measurement and balance settlement working group, we discussed the accuracy of measurement data. 
+Especially when switching to 15-min measurement in small objects, it would be good to recommend 1Wh recording accuracy.
+Previously, it was asked if Datahub also accepts measurement data with 1Wh accuracy and then 
+we were left with the understanding that measurement data could be delivered to Datahub with an accuracy of 1Wh.
+This is how it is in the guide: Business processes of the electricity retail market in Datahub on page 106
+"For applications with a fuse size or equivalent
+the electric power is a maximum of 3x63 A, the measurement data must be reported with an accuracy of 10 watt hours. In other respects
+measurement data must be reported with an accuracy of at least a kilowatt hour"
+This instruction can now be interpreted so that Datahub could be delivered more accurately than 10Wh 
+measurement data.
+Should that instruction be updated so that it becomes clear that you can also use 1Wh accuracy, but 10Wh 
+accuracy is the minimum requirement?
+9/12/2021
+0
+0
+0
+The matter of ET gives instructions 
+industry? Brings out the berries 
+to ET in the following 
+in the meeting.
+65
+Development condition
+so
+DH-810 design changes needed
+1) New Customer Authorization by Supplier (DH-811)
+-remove from design DDQ authorization AP01=Energy reporting (customer has agreement at the AP)
+-add validation for DDQ not to be able to authorize with AP01=Energy reporting (customer has agreement 
+at the AP)
+2 New Customer Authorization by Third Party (DH-812)
+-remove from design 3. party authorization AP02=Bid request (customer has agreement at the AP) and  
+AP04=Bid request (customer has not agreed at the AP)
+-add validation for 3.party not to be able to authorize with AP02=Bid request (customer has agreement at 
+the AP) and AP04=Bid request (customer has not agreed at the AP)
+3) New Customer Authorization by DSO (DH-813)
+- not needed
+-add validation for DSO not to be able to authorize (if the requester has the role THP)
+CAP changes
+1) CAP should show just the organizations that are able to permit authorizations (not else)
+INCUSE0000056492 - DH9 CAP: all organizations in CMS are displayed in CAP in authorization creation
+This change would remove eg. the companies made for assignments 
+2) Additionally there should be noted the changes needed for assignment groups
+Note: Design document changes also need to take place due to this change
+9 June 2022
+2
+0
+1
+Very critical change, asap.
+66
+Development condition
+so
+CGI FI/NL New Feature: Invoicing channel name has changed
+The name of invoicing channel AI05=Netposti has changed to OmaPosti. This would need to be changed in 
+CMS as well so that it is also correctly shown to end-customers in CAP. 
+9 June 2022
+1
+1
+2
+67
+Development condition
+so
+CGI FI New Feature: DH-321-1 Update of an agreement with fixed term fails if 
+the start of the fixed term is more than 3.5 years in the past
+The validation rule VR.AGR.051.202U blocks the changes of all fixed term agreements, if the fixed term 
+start date is older than -1280 (CP_AGRUPDSLS_FTS_MIN_PERIOD) or the fixed term end date is newer 
+than 90 (CP_AGRUPDSLS_FTS_MAX_PERIOD).
+The logic of the rule is incorrect. The rule needs to be changed so that, if the time limits of the fixed term 
+start date and fixed term end date of the message are different from the dates of the agreement, then the 
+date verification is done.
+If the fixed term dates of the message and the agreement are the same, then the rule is not verified.
+The idea is to allow the updates of the agreement if the fixed term start and end dates are not changed 
+without limitations of the fixed term dates.
+9 June 2022
+1
+0
+1
+68
+Development condition
+so
+CGI FI New Feature: US 7303 Agreement cancellation reason dropdown options 
+for DSO and DDQ
+The agreement cancellation reason in the GUI uses the list ACR_MP for both DSO and DDQ.
+The list contains reasons AR01, AR03, AR03 and AR04.
+For a DDQ the reason AR03 (Agreement canceled by the DSO) should not be included.
+For a DSO the reason AR02 (Agreement canceled by thesupplier) is not a valid option.
+There should be separate lists for DSOs and for DDQs.
+Also the option AR04 should be available only when the agreement is a move-in agreement, not a change 
+of supplier.
+9 June 2022
+1
+0
+2 Usability improvement
+- remove ACR_MP and replace with 
+ACR_DSO (AR01, AR03, AR04) and 
+ACR_DDQ (AR01, AR02, AR04)
+- update ACR_MP in GUI to 
+ACR_DDQ(Cancel Sales Agreement) and 
+ACR_DSO(Cancel Grid Agreement)
+- update VR.AGR.998.128A for a variant 
+for ACR_DDQ and one for ACR_DSO
+- Create a new validation rule to check 
+AR04 only allowed when the agreement is 
+a move-in agreement (Reason for 
+Agreement Start is AT03). (It is not 
+possible to make the screen that smart).
+The content of the ACR_DSO should 
+include AR01, AR02 and AR03. The AR04 
+should not be included.
+ - The reason to include the AR01 and 
+AR02 in the list of DSO is that the DSO 
+should reply to the cancellation with the 
+same code than the DDQ used in the 
+original cancel request.
+69
+Development condition
+so
+CGI FI New Feature: Grid agreement and sales agreement handled differently 
+after cancellation with reason AR01 outside balance window
+In design document FDCMD.340 in scenario 5 cancellation with reason AR01 outside balance window it is 
+described that the previous sales agreement is not restored after the cancellation. DH-341-3 message is sent 
+to previous supplier and they can submit a new agreement for the previous customer after the period during 
+which the canceled agreement is valid in datahub. The previous grid agreement, however, is restored. 
+Grid agreement should be handled like the sales agreement on the accounting point so previous grid 
+agreement should not be restored and the same end date should be given to grid agreement. If the previous 
+supplier submits a new sales agreement on the ACP, a new grid agreement will be created and confirmed 
+according to the normal process. 
+9 June 2022
+2
+0
+1
+70
+Development condition
+so
+CGI FI New Feature: US 7673: The DSO needs to be able to end grid agreement 
+that hasn't started yet
+At some point we have changed the DH-331 process so that the supplier can end the sales agreement that 
+is starting in the future. The DSO needs to be able to end the corresponding grid agreement as well. At the 
+moment DSO can only end the grid agreement that is valid when the ending is reported. 
+This is not needed for the go-live, but the correction needs to be done right after that. 
+See the US 7673 https://dev.azure.com/FNDatahub/Datahub/_workitems/edit/7673
+9 June 2022
+1
+1
+1
+71 1.9.0
+Implemented
+CGI FI New Feature: Cancellation of disconnection is not restoring balance 
+agreement
+Cancellation of disconnection is not restoring balance agreement to the accounting point. This functionality 
+is missing from the design and implementation. 
+9 June 2022
+72
+Double (69)
+CGI FI - Configuration Update: Grid agreement might get wrong end date after 
+cancellation with reason AR01 outside the balance window and no previous agreements
+In design document FD.CMD.340 scenario 7 after cancellation of the sales agreement with reason AR01 
+outside the balance window and no previous agreements it is described that the canceled agreement 
+remains valid during the period from the original start date of the now canceled Sales/Balance Agreement 
+until the cancellation reporting date (i.e. today).  After the cancellation DH-341-2 is forwarded to the DSO 
+and they are expected to cancel the corresponding grid agreement. 
+In the design (3.7.4.1.2.7) it also says that grid agreement remains valid during the period from the original 
+start date of the now canceled Grid Agreement until the cancellation reporting date (i.e. today). So if the 
+DSO does not cancel their grid agreement on the same day as the sales agreement is cancelled, grid 
+agreement gets a different end date than the sales agreement on the accounting point. This leads to DSO 
+and supplier invoicing the same customer from different periods. 
+The grid agreement should be ended on the same date as the sales agreement if the grid agreement is ended 
+as a response to sales agreement cancellation. 
+Change created based on already closed incident INCUSE0000056115.
+9 June 2022
+2
+73 2.0
+Implemented
+CGI NL New Feature: Datahub CMS show exchange points on the None status 
+list even thought there's been data for days
+Change ticket created from incident INCUSE0000053906
+Feature, discussed on the incident ticket, has already been designed to datahub 2.0, in CR 118
+Is it possible to get this feature already in use as it already exists?
+SQP Dashboard show one-directional exchange points' other measurement point on the None status list. 
+On one-directional exchange point the other measurement is not active and data is not required for that.  
+The in-active points should be removed from the SQP Dashboard None -status list.
+Incident INCUSE0000053904 created about the same issue but on measurement data reminders.
+74
+Development condition
+so
+CGI FI/NL New feature: Virtual production unit is not generated for future 
+ggeneration type changes
+Virtual production units are not generated in cases where DSO has changed the generation type of the 
+production and sales agreement for the acp is done afterwards for the period where the "old" generation 
+type is still active.
+At present only the active generation type of the acp on the start date of the sales agreement is taken into 
+account when creating the virtual production unit. Also possible changes in the production type in the future 
+(after the start date of the sales agreement) should be taken into account. So a vPUs should be generated 
+also for that production type.
+1
+0
+1
+75
+Development condition
+so
+Validation rule for using only capital letters in Post office in both invoicing 
+address and postal address
+In the Datahub Data standard it is mentioned that the post office should contain only capital letters. At the 
+moment there is no validation rule for which kind of
+letters are used (capital letters / lower case letters). Only capital letters should be allowed if the address is in 
+Finland. For foreign addresses no validation rule should be used.
+9 June 2022
+1
+1
+1
+76
+Development condition
+so
+New Role for Other DDQ type of market party that only uses GUI
+We have a need to create a new user role for DDQ's that are suppliers for production units, but do not 
+serve the entire energy market. 
+For these market parties we want to have a new user role for GUI, with a very limited set of systems 
+functions.
+The new role should be named OtherDDQ
+The role needs to have access to search, view and receive metering (Dh-200) and Settlement (DH-500) 
+data for production units. 
+I tested in Conv01 the role set-up and did not manage to find the exact combination.
+Below snippet of assigned sub-roles also give access to following searches, that should not be accessible 
+fot these other DDQ's
+accounting point, sales agreement and product
+I then assigned the following system functions for the role, but then I'm missing access to meter data.
+Accounting Point Get (ACP.GET)
+Get time series data from kx (getcalcs) (STS.GTS)
+Imbalance Settlement Data Request (STS.RTR.DDQ)
+List Production Units (PRU.LST)
+Listing Energy Time Series (ETS.LST)
+Metering Point Authorization Retrieve PRU (AGR.RTR.PRU)
+Retrieve Energy Time Series UI (ETS.LST.GUI)
+Retrieve Metering Point (MPT.RTR)
+Retrieve Production Unit (PRU.RTR)
+Retrieve Settlement Run Details (SMR.RTR.DTL)
+Retrieve Timeseries (ETS.RTR)
+Retrieve time series by TS type. (STS.TTS)
+Search Accounting Points (ACP.FND)
+Search Settlement (STS.LST)
+Search Settlement Runs (SMR.LST)
+Search TimeSeries (STS.LST_Results)
+View Settlement Run (SMR.RTR)
+Pls, identify the required set of system functions for the new role and include it in the standard roles (when 
+tested and approved)
+9 June 2022
+2
+0
+2
+77
+Development condition
+so
+MP: Add Dormant Users report to Market party Admin roles
+Dormant user report in GUI is now only accessible for MOP. 
+Market party admins, would benefit from the report and it would make it easier for them 
+to identify and manage Dormant users and through this make Datahub more secure.
+Add system function RPT-SEC-DMT to roles Security report and authorize these for 
+DSO_Admin, DDQ_Admin and THP_admin 
+9 June 2022
+1
+0
+2
+78 2.0
+Preliminary investigation
+Consumers Customer Identification (personal identification) is to allow also others 
+divider signs than - / A
+The Finnish government is renewing the personal identifications to ensure that ID's do not run out. In the 
+beginning of 2023, new customer identifications can also contain other signs than -/A as the divider. 
+This change is to remove the validation that the personal identification can contain only -/A. It is possible to 
+also change the validation to accept the new dividers (once they are defined by the regulator). 
+The divider is not to impact the check-digit calculation.
+9 June 2022
+1
+0
+1 The new dividers can be issued both to 
+newborn children but also the 
+immigrants getting a Finnish personal 
+identification, which is why the change 
+needs to be in affect from the beginning 
+of year 2023.
+79
+New
+80
+New
+81
+New
+82
+New
+83
+New
+84
+New
+85

@@ -1,0 +1,1217 @@
+Minutes 
+ 
+1 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Datahub Development group 3/2022 
+Time 
+2.11.2022 at 10:00-14:00 
+ 
+Place 
+Fingrid Datahub Oy – Läkkisepäntie 23, Helsinki 
+ 
+In 
+Marko Juslin  
+ 
+Fingrid Datahub Oy (principal) 
+ 
+Minna Luojus 
+ 
+Fingrid Datahub Oy  
+ 
+Laura Markkanen 
+ 
+Fingrid Datahub Oy 
+ 
+Jenni Mäkinen  
+ 
+Fingrid Datahub Oy (siht) 
+ 
+Elina Konttinen 
+ 
+Fingrid Datahub Oy 
+Suvi Manninen 
+ 
+Caruna Oy 
+ 
+Mia Nyman  
+ 
+Herrfors Nät-Verkko Oy Ab 
+ 
+Greetta Arha  
+ 
+Leppäkoski Sähkö 
+ 
+Pia Aaltonen  
+ 
+Fortum Markets 
+ 
+Päivi Karpanen  
+ 
+Helen Oy 
+ 
+Niina Leikas  
+ 
+Kerava Energy 
+ 
+Pekka Eerikainen 
+ 
+Veni Energia Oy  
+ 
+Kari Iltola 
+ 
+ 
+Energy Oy 
+Kirsi Jylhä 
+ 
+ 
+Pohjois-Suomen Energiatieto Oy (remotely) 
+Jari Arve 
+ 
+ 
+Sallila Energiapalvelut Oy  
+ 
+ 
+Away 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1  
+Opening the meeting, stating the attendees and the agenda 
+Marko Juslin opened the meeting at 10:00, the attendees were noted and the meeting was held 
+through the agenda.  
+ 
+2  
+Current overview of the data hub 
+Customer service – Jenni Mäkinen 10 min 
+ 
+Jenni reviewed the current issues of customer service (appendix 1 "Datahub 
+Development working group AspaTerveiset11-2022"). Pia Aaltonen comments on cancellation situations 
+regarding the guideline model, that concrete examples are specifically needed 
+in text format, e.g. has there been a change of seller or a move. Network company cancels situations 
+examples are also welcome, as this cancellation reason has sometimes been misused. Nina 
+Leikas also needed examples of cancellation situations in story form, similar ones that exist 
+was in the previous procedural instructions. Jenni stated that the biggest problem at the moment is 
+the fact that contracts are concluded, even if they are meant to be cancelled, in which case this is also the case 
+you should be able to open the situation in the instructions. 
+Greetta brought up the importance of the fact that 
+termination would be an event for the networks (if the functionality in question could be connected 
+ 
+Minutes 
+ 
+2 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+to the mass tool). Suvi commented that there would be no need to guess whether the contract situations are different 
+way in your own system vs. datahub.  
+ 
+Development team - Marko Juslin 10 min.  
+ 
+Marko presented the situation and schedule related to the development of customer information management (appendix 2 
+"Datahub Development team current affairs 112022"), there has also been a lot related to the matter 
+development proposals from the industry. It is intended to be created on the basis of data from Datahub 
+data quality analyses. The purpose is to form a working group (smaller temporary 
+sub-working group) to spar the preparation of the FG. Pia brought up the validation rules which 
+Tita has had vs. what the datahub could have, Laura stated that they don't have the hub 
+there will likely be new validations related to 2.0 customer data. Marko stated that we are trying 
+to identify which validation rules (e.g. related to the format of the phone number) are appropriate 
+do in any case, even if there is a bigger development in the management of customer data 
+as the final result of the analyses.  
+Pia brought up the instruction side / Fingrid's supervision in situations where the customer 
+e-mail addresses are updated several times a day. Niina Leikas comments on the big ones 
+from customers' customer information updates, which will be hundreds. Suvi also comments e.g. 
+DOCUSCAN address as the customer's mailing address, which sometimes causes mail 
+ending up at wrong addresses. Niina hoped that we would go through the situations as instructions that 
+for example "DOCUSCAN" is not the customer's mailing address. Pia also brought up the situation, 
+that all parties have the option to put the address in two places (invoicing vs. 
+postal address), so it should be required that each party has the necessary places for both 
+for addresses. 
+ 
+Greetta asked if it is possible to do the development of customer data in stages, such as 
+add validation rules. Marko stated that it is possible to choose individual development sites 
+to be taken forward separately alongside the analysis work on the quality of the broader customer data. Summer 
+asked if it is possible to perform a quality check against external registers (which would allow 
+catch, e.g., wrong hetu/name combinations). Marko stated that revision is intended 
+review customer information in a separate sub-working group.  
+Marko went through the "End customer has a large number of contracts" problem. As a solution 
+the situation is that in addition to the place of use, customer information is also locked 
+for the duration of the contract notice. Pia asked if it could happen that if oneto the customer 
+if 50 contracts are announced, the first one will go through and the rest will be blocked / 
+to a mistake. Suvi and Pia stated that the situation sounds worrying, whether the lockdown will remain 
+because of another contract, for example for a timeout. Suvi pointed out that the situation must 
+describe to the industry how the lock is practically visible to the parties. Jari Arve commented, 
+that if the lock lasts milliseconds, there will be no problem. If the lock takes longer, 
+there will be problems. Marko had no information about the testing situation, but the testing must be done 
+sufficiently comprehensively with a large set of contracts.  
+Finally, Marko presented the documentation, commenting and publishing of changes to the industry 
+more specifically. Greetta asked if the intention was to go through potential emerging issues in the industry 
+comments also among the development team. Marko stated that these will be reviewed first 
+instead only among the FG, but if the comment e.g. contradicts the development group 
+ 
+Minutes 
+ 
+3 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+with the previously recommended solution, and the situation will be reviewed if necessary 
+again in the development group. Greetta asked if we could communicate 
+recommendation of the development working group for the developer of the development proposal. To the ticket holder 
+is communicated at the stage when a new development proposal comes, that it will go 
+forward to the development team, but there will be further communication afterwards 
+to think separately later. 
+3  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+The recommendation from the working group (will the items be moved forward in the development process), applies 
+the following points of the list of development proposals, the solution proposal and justifications in Appendix 3 
+"Datahub change wishes 20221018":  
+o #5 measurement information process, Minna reviewed the description of the development proposal and 
+solution proposal 
+▪ 
+Kari Iltola: No comments on this topic 
+▪ 
+Greetta Arha: What size operator was it? New to us 
+thing, no problem with your system provider 
+▪ 
+Mia Nyman: We didn't think it was necessary, no more 
+▪ 
+Suvi Manninen: Not a familiar problem, agree with the previous ones, no 
+to continue 
+▪ 
+Päivi Karppanen: No more, the system administrator has to do it 
+changes in their own system 
+▪ 
+Niina Leikas: Not a familiar thing, according to the system editor, a change 
+would be good because it would enable the automation to be improved. But 
+however, there is no need for this. 
+▪ 
+Pekka Eerikäinen: It sounds like a problem for one operator 
+▪ 
+Pia Aaltonen: No more 
+▪ 
+Jari Arve: No need, the price tag seems big, I would think of something else 
+solution 
+▪ 
+Kirsi Jylhä: Not a familiar problem, no more 
+Summary of the proposal and its promotion: No development proposal 
+defended 
+o #8 (Fingrid), measurement data process, Minna presented the development proposal and 
+solution description 
+▪ 
+Kari: Would it be possible to save only those that have changed? 
+information, it would be seen which information has been replaced. No, however 
+to continue.  
+ 
+Minutes 
+ 
+4 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Greetta: No need  
+▪ 
+Mia: No need 
+▪ 
+Summer: No need 
+▪ 
+Päivi: No need 
+▪ 
+Niina: No need 
+▪ 
+Pekka: There is no need to move to the data hub, it can be taken care of. 
+on the "in house" side 
+▪ 
+Pia Aaltonen: Can't catch a situation where functionality 
+would be needed. No further. 
+▪ 
+Jari Arve: No need has been identified, we wondered if there would be 
+the service provider has a need for this. Should be from the third 
+fee charged to the party.  
+▪ 
+Kirsi Jylhä: No need 
+Summary of the proposal and its promotion: No development proposal 
+defended 
+o #55 measurement data process, Minna presented the development proposal and 
+solution description 
+▪ 
+Kari: We support the proposal 
+▪ 
+Greetta: The customer's advantage is that if there is a need, there is a need to get information 
+for three years, and if the authorizations are in order, yes 
+is supported.  
+▪ 
+Mia: One year is basically enough, but if others can see 
+as necessary, then OK.  
+▪ 
+Summer: If the sellers feel it is necessary, as is 
+illogicalities with the seller and the service provider are supported 
+▪ 
+Päivi: We support, why was there a difference of 1 vs. 3 years in the beginning?  
+▪ 
+Niina: Sellers should be treated the same as service providers, 
+i.e. supported 
+▪ 
+Pekka: Improves consumption forecasts if data is available 
+for a longer period of time. We support it. Why was it even limited in the first place 
+in three years, why not, for example, the whole history?  
+▪ 
+Pia: This is a bug because different information is offered to the seller and 
+to the service provider. We support it. Pia pointed out that 
+ 
+Minutes 
+ 
+5 (15)FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+the repair obligation is for three years, which may be the reason for that 
+to the original time. 
+▪ 
+Jari: If the customer's authorizations are in order, it is supported.  
+▪ 
+Kirsi: We support it.  
+Summary of the proposal and its promotion: Development proposal 
+was advocated 
+o #62 measurement data process, Pia started the development proposal and Minna 
+solution description. 
+▪ 
+Jari: No identified need, sounds like good functionality, 
+but the size class is guessing. If there is a wider need, we will be involved, 
+otherwise I don't see the need. 
+▪ 
+Kirsi: I agree, it sounds like a nice feature, but is it? 
+really a wider need. Information can be managed in your own 
+in the system.  
+▪ 
+Pia: "I don't know if sellers make this kind of comparison in general, there should be a reason." 
+▪ 
+Pekka: Quite a useful and good addition, the sellers know best if it is 
+need for this. The price tag suggests, it can also be done in house.  
+▪ 
+Kari: Along the same lines as the previous ones 
+▪ 
+Greetta: Same here, would there be a way around this?  
+▪ 
+Mia: Same here, nice-to-have, but not a must. 
+▪ 
+Suvi: Along the same lines, certainly useful, but does everyone have one 
+do the sellers need to use it?  
+▪ 
+Päivi: I agree, if it can be done cheaply.  
+▪ 
+Niina: There is no need, but it would be a nice addition. However, you don't want to 
+costs a lot.  
+Summary of the proposal and its promotion: 
+There was no wider need for the development proposal, unless it is successful 
+advantageously 
+o #64 (Fingrid), measurement data process, Minna presented the development proposal and 
+solution description 
+▪ 
+Kari: That sounds good 
+▪ 
+Greetta: An important useful update 
+▪ 
+Mia: I agree 
+ 
+Minutes 
+ 
+6 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Suvi: I agree 
+▪ 
+Päivi: I agree 
+▪ 
+Niina: I agree 
+▪ 
+Pekka: I agree 
+▪ 
+Pia: I agree 
+▪ 
+Jari: I agree 
+▪ 
+Kirsi: That sounds good 
+Summary of the proposal and its promotion: Development proposal 
+advocated 
+o #99 contract process, Jenni presented the development proposal and 
+solution description 
+▪ 
+Jari: The price tag could be lower, parameter information. Ok ours 
+for us. 
+▪ 
+Pia: Ok. Is all such updating behind CGI, or can it 
+FG manage these themselves? Marko stated that at the moment only 
+the system provider makes these changes because it also requires 
+taking care of system version control. 
+▪ 
+Pekka: Ok. 
+▪ 
+Niina: Ok, the seller should be able to remove the event as well 
+yourself, you have to look at this option separately. 
+▪ 
+Day: Ok.  
+▪ 
+Summer: Guidance matter. Does it just cause more wonder? No further. 
+▪ 
+Mia: It's okay, we know that these are always worth visiting 
+looking at the user interface. Cautious acceptance. 
+▪ 
+Greetta: Would there be solutions to the root cause, instructing the seller, 
+a comprehensive review of open monitoring events. 
+▪ 
+Kari: Cautious approval 
+▪ 
+Kirsi: If it is deemed necessary and if the price tag is small, then ok.  
+Summary of the proposal and its promotion: Caution 
+recommendation for the development proposal, but also requires in the first place 
+instructing the parties. 
+o #107 contract process, Kirsi initially and Laura presented the solution description 
+ 
+Minutes 
+ 
+7 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Jari: Size category high, not considered a big challenge at the moment. No 
+here it is necessary to see it as necessary, but if it is necessary for others then so be it 
+can be involved. Careful yes.  
+▪ 
+Pia: The seller's challenges elsewhere at the moment are not working for us 
+added value. The price tag is also high. No further. 
+▪ 
+Pekka: I can't estimate the extent of the need, but if there is a need 
+real so ok. Careful yes. 
+▪ 
+Niina: It's easier to check your own message traffic 
+historical information, if it's important to others, it won't be scored against, but no 
+necessary for oneself.  
+▪ 
+Päivi: I understand what is being asked and it could be clever, contracts 
+the clearing work takes the most time and could make it easier. Daily ones 
+the people doing the work can find the information elsewhere, so it's not necessary. 
+Big price tag. It would also be important to know what information has been cancelled 
+contracts are imported: by whom, on what date cancelled 
+etc. 
+▪ 
+Summer: Would speed things up, e.g. by operators 
+finding cancellations is challenging. If you could see the ones canceled and by whom 
+canceled by, that would make it easierinvestigation work. I see 
+necessary, we can manage with the current methods, but they are employable. 
+Careful yes.  
+▪ 
+Mia: If there is enough information about the cancellations, it will speed up the processing. 
+Nice to have, but expensive. Careful yes.  
+▪ 
+Greetta: Maybe something dependent on the customer information system, on my own 
+the system shows canceled contracts. Nice that you thought about it 
+more broadly, so that the balance sheet information would also be displayed. Careful yes if 
+cost 1+.   
+▪ 
+Kari: Careful yes.  
+▪ 
+Kirsi: The author of the proposal.  
+Summary of the proposal and its promotion: Advocacy 
+little more than resistance. Let's check the price estimate and 
+we will return to the matter if the price clearly deviates from the initial estimate 
+o #121 contract process, Laura presented the development proposal and 
+solution description.  
+▪ 
+Kari: If the event is pointless, it will be deleted. 
+▪ 
+Greetta: Get rid of it. 
+▪ 
+Mia: Get out. 
+ 
+Minutes 
+ 
+8 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Summer: Removed. 
+▪ 
+Päivi: Remove.  
+▪ 
+Niina: Get rid of it.  
+▪ 
+Pekka: Get rid of it. 
+▪ 
+Pia: To remove. 
+▪ 
+Jari: Get rid of it. 
+▪ 
+Kirsi: There have not been many cases related to this, there has been no ambiguity 
+what events should be done. We support the proposal.  
+Summary of the proposal and its promotion: Development proposal 
+is recommended. Let's remove the unnecessary event completely.  
+o #144 contract process, Suvi presented the development proposal and Laura 
+solution description. 
+▪ 
+Jari: Small price range, clear need, supported.  
+▪ 
+Pia: I am left with the understanding that the problem applies 
+contracts imported by data conversion, but now it seems that 
+applies to any contracts. (FG: Applies to other situations as well). 
+You could only check against the online agreement 
+delivery contract information. 
+▪ 
+Pekka: We support it.  
+▪ 
+Niina: We support it, although so far it hasn't happened 
+problem.  
+▪ 
+Päivi: We support it.  
+▪ 
+Suvi: Could make a check only against the online contract, 
+simplify definitions. But ok also with the current proposal, 
+the main thing is to get it right. We support it. 
+▪ 
+Mia: We support it, although so far not for our own company 
+problem.  
+▪ 
+Greetta: We support it.  
+▪ 
+Kari: We support it. 
+▪ 
+Kirsi: We support it.  
+Summary of the proposal and its promotion: Development proposal 
+supported as is 
+ 
+Minutes 
+ 
+9 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #159 contract process, Pia presented the development proposal and Jenni 
+solution description 
+▪ 
+Kari: If it's a small matter, we support it. 
+▪ 
+Greetta: We support it.  
+▪ 
+Mia: We support it. 
+▪ 
+Summer: Supported. 
+▪ 
+Päivi: We support it.  
+▪ 
+Niina: We support it.  
+▪ 
+Pekka: We support it. 
+▪ 
+Pia: We support it. 
+▪ 
+Jari: We support it. 
+▪ 
+Kirsi: We support it.  
+Summary of the proposal and its promotion: Development proposal 
+is recommended.  
+o #27 data protection, Laura presented the development proposal and solution description 
+▪ 
+Jari: A legal issue that should be able to be handled 
+in every system, I see it as a bug and this should be addressed 
+as a bug.  
+▪ 
+Pia: The topic was already discussed in the process working group, where 
+told that the necessary information/functionality would be imported 
+to the customer portal. If you have to do it, you have to e.g. FG's 
+customer service to be able to insert the "lock the customer" button 
+on, e.g. so that it would be valid for three days.  
+▪ 
+Pekka: Is it a theoretical or a real problem? Why the customer 
+would like to limit the use of your data and not correct your data? If 
+there are one case a year, it's not worth building anything amazing 
+co. for the situation. 
+▪ 
+Niina: There have been no similar cases. That sounds good, 
+that individual locking by the operator could be done. 
+▪ 
+Päivi: Must be able to handle possible individual situations.  
+▪ 
+Suvi: Isn't there a feature in the datahub that FG itself could lock 
+any customer information? You could ask CGI how the customers do 
+the locking is successful and so that it wouldn't cost too much either.  
+ 
+Minutes 
+ 
+10 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Mia: I agree. 
+▪ 
+Greetta: I agree. 
+▪ 
+Kari: I agree. 
+▪ 
+Kirsi: I agree.  
+Summary of the proposal and its promotion: Development proposal 
+you have to look again and find ways to handle the situation.  
+o #77 accessmanagement, Laura presented the development proposal and solution description 
+▪ 
+Kari: No comment on this. 
+▪ 
+Greetta: We support it. 
+▪ 
+Mia: No support. 
+▪ 
+Suvi: An okay suggestion, but no need. No support.  
+▪ 
+Päivi: There is no need for this, we can manage users 
+in another way too. No support.  
+▪ 
+Niina: There has not been a need for this, it would certainly make it easier for users 
+cleaning. 
+▪ 
+Pekka: Not critical, but one could assume that something like this 
+the functionality would already exist.  
+▪ 
+Pia: We can do without ko. report.   
+▪ 
+Jari: Handled by normal access control methods, even GDPR 
+determine the management process of people who have access to certain 
+systems. No need. 
+▪ 
+Kirsi: I understand the need, I support the proposal. 
+Summary of the proposal and its promotion: Under review 
+pricing for a development proposal, not a total knock out, but not huge 
+the need. Let's check if CGI would work as a bug fix, because GDPR-
+regulations. 
+o #115 (Fingrid), site process, Laura presented the development proposal and 
+solution description 
+▪ 
+Jari: There's no need to limit it, we support it. 99.  
+▪ 
+Pia: We must remember to inform system suppliers that in the future 
+two values ​​can be entered. 
+▪ 
+Pekka: I agree. 99. 
+ 
+Minutes 
+ 
+11 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Niina: I agree. 99. 
+▪ 
+Päivi: I agree. Not possible in the system. 
+▪ 
+Suvi: What to read in customer contracts for fuse size 
+of the forms, practically the one with whom ko. there is a problem, there has to be 
+come up with some detour to handle the situation. Have to check if they are common 
+regulations regarding numbering. 
+▪ 
+Mia: You can't even save it in your system. in terms of 
+fuse sizes. 
+▪ 
+Greetta: Should you go to the power targets, should you stay 
+to monitor the situation if these become more common? There is only one 
+problem? No support for this. 
+▪ 
+Kari: The reason is to map out whether adding 99 would cause problems. 
+▪ 
+Kirsi: Only one is allowed in our own systems, requires clarification. 
+Summary of the proposal and its promotion: Let's find out more and 
+brought up again at some point, not critical 
+o #142 site process, Laura presented the development proposal and 
+solution description. 
+▪ 
+Kari: If it's a small change, then we support it. 
+▪ 
+Greetta: What is the extent of the problem? Should 
+customer information systems develop this relationship, the system does not 
+should deliver a message if no information changes.  
+▪ 
+Mia: I agree. 
+▪ 
+Suvi: From whom of all parties does this become apparent, does it apply 
+individual party?  
+▪ 
+Päivi: From which of all parties does this come to light? Should inform 
+these parties that such useless messages come. FG should 
+find out the parties who act in this way. The party is not 
+maybe even noticed that they are sending useless messages.  
+▪ 
+Niina: The sending party must ensure that there are no unnecessary messages 
+source. 
+▪ 
+Pekka: It's a bit unclear if someone is updating unnecessarily 
+annual usage estimates, or does someone just update the information on the place of use 
+incorrectly, output end problem. 
+▪ 
+Pia: The problem of the output end.  
+ 
+Minutes 
+ 
+12 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+▪ 
+Jari: The problem of the starting point. 
+▪ 
+Kirsi: I don't know how big the problem is, if there is a bigger problem, 
+so cautious endorsement.  
+Summary of the proposal and its promotion: Let's find out more 
+extent of the problem before moving forward.  
+o #145 general management, Laura introduced the development proposal and 
+solution description 
+▪ 
+Jari: How big was the challenge? At a reasonable cost, ok. 
+▪ 
+Pia: I agree.  
+▪ 
+Pekka: I agree, if the costs are reasonable. Clear for this 
+the need, in which case the process to move the proposal forward should 
+speed up.  
+▪ 
+Niina: I agree, if the costs are reasonable.  
+▪ 
+Päivi: I agree. Making repairs is different today when 
+datahub is involved in the investigation. It's worth thinking about 
+management of exceptional situations as a whole. All parties 
+the common interest is that contracts end and begin at the same time 
+day (e.g. Karhu Voima case). 
+▪ 
+Suvi: Does this include all situations? E.g. that events 
+would go from decisions to networks. Not only support for this, 
+but you have to think more broadly in terms of the industry.  
+▪ 
+Mia: I agree, you need to know more about pricing.  
+▪ 
+Greetta: We need to broaden our perspective in the direction of networks, 
+development proposal made from the point of view of the now closing seller and FG. 
+Sellers and networks should ask how the situation would beyou take care of it 
+better.  
+▪ 
+Kari: All related situations must be taken into account at the same time. 
+▪ 
+Kirsi: I agree. It's good to take everyone's opinions into account. 
+Summary of the proposal and its promotion: I still have to 
+to find out, but also to quickly move on because 
+the market situation may be difficult in the coming winter. 
+ 
+o #57 contract process, also #104 contract process. In the previous one 
+in the meeting we discussed the possibilities to be created at the place of use 
+about new facilities, Laura introduced a new option (option 2) for this, see annex 
+ 
+Minutes 
+ 
+13 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+4 "Amendment proposal #57 - Updates 2.11.2022", where for places of use and 
+new reasoning rules are added to contractual situations.  
+o Discussed this option together and replaced the pre-imported one 
+example 3 with new examples 3a and 3b. It was jointly decided that these 
+the changes cover the necessary solution. 
+o Suvi asked if there is a price difference for options 1 and 2? The FG noted that the 2nd proposal 
+is, according to the preliminary assessment, more affordable.  
+Summary: the group was asked for their opinion on which solution proposal (1 or 2) 
+is better:  
+▪ 
+Jari: Option 2 is sufficient. 
+▪ 
+Pia: Option 2 
+▪ 
+Pekka: Option 2 
+▪ 
+Niina: Option 2  
+▪ 
+Päivi: Option 2 
+▪ 
+Summer: Option 2 
+▪ 
+Mia: Option 2 
+▪ 
+Greetta: Option 2.  
+▪ 
+Kari: Option 2 
+▪ 
+Cherry: Option 2 
+Summary of the proposal and its promotion: All of the group 
+members supported option 2. 
+ 
+• 
+We went through how we want to proceed with regard to the following development proposals, which 
+have been processed before and from which a more detailed cost estimate was obtained, in the appendix 
+3 "Datahub change wishes 20221018" primers for the discussion:  
+o #65 authorization process, Marko stated that the development proposal was under consideration 
+at the last meeting and the cost/benefit of the DH-800 part remained open. 
+Marko went through a more detailed cost estimate and also supplemented it 
+justification for the proposal. Will DH-800 process changes be made 
+also, are the changes made to the CAP enough?  
+▪ 
+Kirsi: How much does CAP implementation reduce manual work? (FG replied, 
+that it still requires a lot of manual work, because energy reporting
+types of authorizations could still be made). Kirsi can see 
+ 
+Minutes 
+ 
+14 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+based on this, the DH-800-
+for the process. 
+▪ 
+Kari: Authorization reasons and types should be what they should be, we support it. 
+▪ 
+Greetta: I also support the change in the 800 processes. 
+Basically, system errors must always be corrected. 
+▪ 
+Mia: I agree. 
+▪ 
+Suvi: I agree.  
+▪ 
+Päivi: I agree. 
+▪ 
+Niina: I agree. 
+▪ 
+Pekka: I agree. 
+▪ 
+Pia: I agree.  
+▪ 
+Jari: I agree. 
+Summary of the proposal and its promotion: Supported 
+proposal to make a change to the DH-800 processes as well. 
+ 
+• 
+Laura, Minna and Marko went through datahub's internal development proposals, which 
+are being taken to this kind of development (appendix 3 "Datahub changes wishes 
+20221018" primer): 
+o #74 (Fingrid), calculation management,  
+o #120 (Fingrid), general management,  
+o #122 (Fingrid), general management,  
+o #134 (Fingrid), contract process,  
+o #138 (Fingrid), general management,  
+o #139 (Fingrid), contract process,  
+o #143 (Fingrid), contract process,  
+• 
+We didn't have time to go through the implemented development proposals, there were #66, #76, #130. 
+4  
+Next meeting times  
+• 
+Looking for a new date for the 13.12.2022 meeting → Decided on a new one 
+for the date 19.12.2022.  
+ 
+Minutes 
+ 
+15 (15) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FGDH/ Marko Juslin 
+2 November 2022 
+ 
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+• 
+After this, the next meeting time is Wednesday, February 1, 2022 
+5  
+Closing the meeting 
+The meeting was closed at 14:25. 
+Attachments 
+Appendix 1 - Datahub Development Working Group AspaTerveiset11-2022 
+Appendix 2 - Datahub Development Team Current Affairs 112022 
+Appendix 3 - Datahub change requests 20221018 
+Appendix 4 - Amendment #57 - Updates 11/2/2022 
+ 
+ 
+Distribution 
+Development team members and industry

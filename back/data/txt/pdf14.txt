@@ -1,0 +1,136 @@
+Agenda 
+ 
+1 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+18/10/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group meeting 3/2022 
+Time 
+2.11.2022 10:00–14:00 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Current overview of the data hub 
+• 
+Customer service – Jenni Mäkinen 10 min 
+• 
+Development team - Marko Juslin 10 min 
+3  
+Presentation of development proposals and recommendation decision – 3 h 0 min 
+• 
+The recommendation from the working group (will the items be moved forward in the development process), applies 
+the following points of the list of development proposals, the proposed solution and the justifications in the appendix "Da-
+tahub Changes wishes 20221018":  
+o #5 (presented by Fingrid), measurement data process, 
+o #8 (Fingrid), measurement data process, 
+o #55 (Fingrid), measurement data process, 
+o #62 (Pia Aaltonen Fortum Markets Oy), measurement data process, 
+o #64 (Fingrid), measurement data process, 
+o #99 (Fingrid), contract process, 
+o #107 (Kirsi Jylhä Pohjois-Suomen Energiatieto Oy), contract process, 
+o #121 (Fingrid), contract process, 
+o #144 (Suvi Manninen Caruna Oy), contract process, 
+o #159 (Pia Aaltonen Fortum Markets Oy), contract process, 
+o #27 (Fingrid), data protection, 
+o #77 (Fingrid), access control, 
+o #115 (Fingrid), point of use process, 
+o #142 (Fingrid), point of use process, 
+ 
+Agenda 
+ 
+2 (2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+18/10/2022 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+o #145 (Fingrid), general management. 
+• 
+It requires a discussion in the working group on how to solve the next development condition-
+with several solution options and which has been discussed before. In the appendices "Da-
+tahub Requests for change 20221018" and "Change proposal #57" from the basis for the discussion:  
+o #57 (Fingrid), contract process,  
+▪ 
+#104 (Fingrid), contract process, relates to #57 discussion. 
+• 
+It requires a discussion in the working group on how to proceed with the following development proposals
+for sponges that have been processed before and for which a more accurate cost
+nusvario, in the appendix "Datahub Muutotoiveet 20221018" background for the discussion:  
+o #65 (Fingrid), authorization process. 
+• 
+For the information of the development team (datahub internal development), the development proposal concerns
+the following points in the list, the proposed solution and the reasons in the appendix "Datahub Muutos-
+wishes 20221018”:  
+o #74 (Fingrid), calculation management, 
+o #120 (Fingrid), general management, 
+o #122 (Fingrid), general management, 
+o #134 (Fingrid), contract process, 
+o #138 (Fingrid), general management, 
+o #139 (Fingrid), contract process, 
+o #143 (Fingrid), contract process. 
+• 
+Implemented development proposals (presented by Fingrid), implementation descriptions in the appendix 
+"Datahub change requests 20221018: #66, #76, #130. 
+4  
+Next meeting times - 5 min 
+• 
+13.12.2022 new date of the meeting 
+5  
+Closing the meeting

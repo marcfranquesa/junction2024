@@ -1,0 +1,185 @@
+MARKETS 
+NETWORKS 
+MINUTES 
+1(4) 
+Draft 
+Riina Heinimäki 
+13.6.2022 
+
+Finnish Energy Industries Federation 
+Eteläranta 10, 00130 Helsinki 
+www.energia.fi 
+Retail Market Procedures Development Group 4/2022 
+
+Time: 
+Wednesday 8.6.2022 at 12.00-16.00 
+Place: 
+Original Sokos Hotel Tripla, Fredikanterassi 1 B, 00520 Helsinki 
+Participants: 
+Jari Rusanen 
+Kajave Oy, Chairman 
+
+Greetta Arha 
+Leppäkoski Group Oy 
+
+Mari Eskelinen 
+Helen Oy 
+
+Timo Halttunen 
+Elenia Oy (remotely) 
+
+Heleena Hietanen 
+Tampereen Sähköverkko Oy 
+Tia Kautto
+
+Vattenfall Oy 
+Riitta Kettunen 
+Väre Oy 
+Risto Lehtonen 
+Köyliön-Säkylän Sähkö Oy (remotely) 
+Maire Siltanen 
+Lumo Energia Oyj 
+Sanna Turunen 
+Caruna Oy 
+Sari Wessman 
+Alva Sähköverkko Oy 
+
+Riina Heinimäki, Secretary 
+Finnish Energy Industries Federation 
+Miia Miettinen 
+Finnish Energy Industries Federation 
+Guests: 
+Anne Hutri 
+
+Adato Energia Oy (item 6) 
+
+Maria Boholm 
+Adato Energia Oy (item 6) 
+Obstruction: 
+Ina Lehto 
+Finnish Energy Industries Federation 
+Sampo Suhonen 
+Lappeenrannan Energia Oy 
+
+Agenda 
+
+1. 
+Opening of the meeting and reminder of compliance with competition legislation 
+The chairman opened the meeting and reminded the participants of compliance with competition legislation 
+in a meeting where competitors are present. A checklist of competition law rules has been attached to the TEAMS material. It was noted for information. 
+2. 
+Approval of the agenda 
+The agenda was approved without changes. 
+3. 
+Memorandum of the previous meeting 
+The memorandum of the previous meeting 3/2022 was approved without changes. 
+4. 
+Datahub 
+The current situation of the datahub project was discussed. The participants shared their experiences of using 
+datahub. 
+It was pointed out that datahub may repeatedly remind of a non-contractual situation from the same 
+access point. Over a hundred messages can come in one week. This complicates the operation of the network by unnecessarily blocking message traffic and requiring manual processing (deleting the message from the 
+message queue). The view was shared in the discussion that the process is not working correctly. It has been observed that 
+some access points do not report at all and some receive too many notifications. The problem is 
+known in Datahub, but there is no information about the repair schedule. It is hoped that Datahub's 
+development team will take the matter into consideration and try to find a solution quickly. All unnecessary 
+messages should be eliminated so as not to unnecessarily load the parties' systems or Datahub. 
+
+2(4) 
+It has also been felt that the processing of cancellations does not always work correctly. An example was a situation where the old vendor's sales contract has ended due to the customer's new contract, which is then 
+cancelled, causing the cancellation of network contracts at the same time. Based on this, Datahub has 
+announced the cancellation of the old sales contract without reason. Instead of cancellation, the old contract should be 
+reinstated. 
+It has also been felt that some tickets are answered very slowly and the investigation of the matter is not progressing in the company. 
+There are still challenges with balance agreements. Despite numerous attempts, the matter has not been 
+resolved. The challenge is particularly the correct handling of outages and outage cancellations. The Datahub 
+repair is apparently not coming until the autumn. This will cause repeated checks and 
+manual work on the networks. There was a concern that not all errors will even be found despite all checks. 
+Serious concerns were raised that due to errors, the balances may not be fixed, which is very 
+difficult, especially in this market situation. It was agreed that the concern would be forwarded to the first meeting of the 
+customer committee (9.6.). 
+There have been challenges in the delivery of metering data due to the outages. The networks have had to deliver 
+data again. The reminder for missing data still only works for the period of the 
+open balance window. Time out problems are still a problem. The challenges with metering data are already reflected in billing. 
+Sellers have had difficulties with billing when metering data is missing from Datahub. 
+One challenge experienced was that monitoring balances via the user interface is currently not working properly. All larger (multiple locations) searches end in a timeout. 
+The networks have now checked the information from Bass instead of Datahub. 
+The challenges related to correcting contract dates were discussed at length. Datahub refuses to retroactively correct changes to contract dates, even though all parties (vendors and 
+the network) agree that the change is appropriate. In practice, this leads to the seller having to 
+retroactively cancel the contract and re-notify it to Datahub. This is again a problem for the seller's own system and leads to unnecessary invoicing 
+corrections for the seller. Invoices for a cancelled contract have to be cancelled and re-invoiced for the new contract period retroactively. This is really confusing for the customer and causes 
+unnecessary work in the ledger. It was seen as important that such clear errors in 
+contract datesin the extreme, errors are corrected directly in Datahub without having to cancel and re-announce contracts. The customer experience suffers only because 
+for system technical reasons, errors cannot be corrected internally in the industry. This should not be the case, but the 
+industry should be able to handle situations without it being visible to the customer. 
+Customer data updates still cause major challenges, which are also visible in the 
+customer interface as incorrect operations and customer feedback. Solutions will be discussed at the Säti-
+days, but the updates should be made to work correctly so that it is possible to 
+maintain shared customer data reliably. 
+At the moment, challenges arise from both Datahub and the companies' customer information systems. The new systems do not yet work quite as planned or according to needs. 
+Despite the challenges mentioned, the basic processes are mainly working well, but there are still several initial 
+challenges. 
+It was agreed that Greetta would send greetings to the Datahub development group about the development needs experienced in the sector. 
+Sanna would also convey greetings to Caruna's representative on the customer committee, as Mari was unable to attend the first meeting. 
+Finally, the launch of new working groups in Datahub was discussed. The compositions of the working groups have been 
+published. From ET's current development group, Greetta is in the Datahub development group and Mari is in the customer committee. In addition, at least Vattenfall, Caruna and Helen have representatives in both ET's 
+and Datahub's working groups. It was agreed that representatives of these companies would internally coordinate the handling of 
+matters and convey messages between the working groups. It was seen as important that good and close contact and mutual understanding be maintained in common matters. 
+
+3(4) 
+The customer group will meet for the first time on 9.6. and the development group on 22.6. 
+It was agreed that the groups' agendas and materials will be distributed in the development group's teams as soon as they have been distributed to the groups. The secretary will modify the teams' folder structure to be up-to-date in this regard. The 
+wish is made to the new groups in Datahub that the groups' materials will be published at least a week before the 
+meeting, so that it is possible to get a broader view of the industry on the issues to be discussed at the meetings. 
+The secretary reported that the appointment process for the new three-year term of ET's institutions will start in the autumn. 
+It was noted that the latest version of the Datahub 2.0 specifications has been published on 3.6. and the Datahub implementation plan has been published on 2.6. 
+5. 
+Handling of cancellations 
+The handling of cancellations in Datahub was discussed. It was discussed whether ET's procedural guidelines and 
+datahub instructions are consistent and sufficiently clear. The ET procedure guidelines deal with the matter in 
+chapters 3.3.4, 3.3.5 and 3.3.7 and in the Datahub process guidelines in chapter 3.2.5.1. 
+We reviewed a situation where the contract made by the customer in connection with moving in is cancelled, 
+but the move in itself is not cancelled. In this case, the customer's delivery has started before the cancellation period has expired at the customer's express request and the customer is obliged to pay for the electricity they use. In this case, the seller's contract is also valid until the cancellation date. 
+This is stated in the ET's procedural guidelines in chapter 3.3.7, which states: 
+"In situations where only the change of vendor is cancelled retroactively, i.e. the customer has 
+moved to the location, but wants to change the vendor and the moving date has already passed 
+(delivery has begun), Datahub will terminate the cancelled vendor's contract as of the cancellation notification date and keep the energy in the vendor's balance sheet until that date. The vendor will then have the right to invoice the customer for the energy (actually) used, if this has been stated in the 
+contract confirmation." 
+The Datahub guidelines discuss cancellations in chapter 3.2.5.1, which states on page 90: 
+"If only the contract, but not the move-in, is cancelled, any previous 
+sales contract will not be reinstated at the point of use." 
+In addition, page 91 states: 
+“If there is no previous seller at the point of use when the customer cancels, the seller retains the right to invoice until the cancellation date in accordance with figure 4. The seller will find out whether the situation in figure 3 or 4 applies by checking the sales contract notification acknowledgement whether the sales contract to be cancelled is registered as a move-in or a change of seller.” 
+
+As described above, the instructions were interpreted to be consistent in this regard and the situation in Datahub is 
+handled in accordance with figure 4. 
+It was considered in which situation the situation in figure 3 copied below applies. 
+
+4(4) 
+
+According to the development group’s interpretation, the situation would be a change of seller, because the instructions state that 
+the reason code for the contract confirmation indicates which situation applies (figure 3 or 4). 
+It was unclear to the development team in what practical situation a customer could have a cancellation period after switching vendors after the balance sheet closing date and in which case the customer's contract would remain in force until the balance sheet closing date. It was agreed that Greetta would ask about the matter at the development team meeting. 
+Commentit was also agreed that the datahub instructions should be specified and clarified, so different 
+the descriptions of the cancellation situations make it clear which situation is involved (moving or 
+vendor change). There are so many cancellation situations that it's hard to understand what the different situations are 
+the pictures are suitable. 
+6. 
+Practical matters of Säti days  
+With Anne Hutri and Maria Boholm, we went through the practical issues of the Säti days and agreed 
+on pulling and dismantling group work.   
+7. 
+Other things  
+No other things. 
+8. 
+Next meetings 
+The following meetings have been agreed to be held: 
+• 
+Wednesday 21 September 2022 from 9:30 a.m. to 2:00 p.m  
+• 
+Thursday 24 November 2022 from 9:30 a.m. to 2:00 p.m 
+It was agreed that the meeting times will be changed in the fall, if necessary, when the data hub's working groups are known 
+meeting days.  
+9. 
+Closing the meeting 
+The chairman thanked the participants and closed the meeting at 15:20.

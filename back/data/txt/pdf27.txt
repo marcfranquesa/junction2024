@@ -1,0 +1,62 @@
+Agenda 
+ 
+1 (1) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Development team 
+Fingrid Datahub Oy / Marko Juslin 
+7 November 2023 
+  
+ 
+Fingrid Datahub Oy 
+Street address 
+Postal address 
+Phone 
+Fax 
+Business ID number 2745543-5, VAT reg. 
+Läkkisepäntie 21 
+P.O. 530 
+ 
+ 
+firstname.surname@fingrid.fi 
+00620 Helsinki 
+00101 Helsinki 
+030 395 5000 
+030 395 5196 
+www.fingrid.fi 
+ 
+Fingrid Datahub Development Working Group sub-working group meeting 5 
+Time 
+21/11/2023 09:00–11:30 
+ 
+Place 
+Fingrid Datahub Oy, Läkkisepäntie 23, Helsinki 
+ 
+Agenda 
+ 
+ 
+1  
+Opening of the meeting, identifying those present and the agenda 
+2  
+Presentation of development proposals and recommendation decision – 2 h 
+• 
+It requires a discussion in the working group, preliminary questions to clarify how the
+to resolve the following development proposals. In the appendices "Datahub changes wishes 
+20231107" background for the discussion and questions:  
+o #276 (Samuli Saine, Rejlers Finland Oy), measurement data management,  
+o #16 (Fingrid), contract process,  
+3  
+Change - 5 min 
+• 
+ 
+4  
+Next meeting times - 5 min 
+• 
+There will be 2024 meetings of the sub-working group of the development working group 
+5  
+Closing the meeting
