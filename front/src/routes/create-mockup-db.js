@@ -36,7 +36,6 @@ const createBacklogTableQuery = `
     backlog_id INTEGER PRIMARY KEY AUTOINCREMENT,
     feature_id INTEGER,
     status TEXT NOT NULL,
-    description TEXT NOT NULL,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (feature_id) REFERENCES features (feature_id) ON DELETE CASCADE
   )
@@ -71,15 +70,15 @@ db.run(insertFeaturesQuery, function (err) {
 
 // Insert mock data into the 'feature_backlog' table
 const insertBacklogQuery = `
-  INSERT INTO feature_backlog (feature_id, status, description, timestamp)
+  INSERT INTO feature_backlog (feature_id, status, timestamp)
   VALUES
-    (1, 'backlog', 'this is the description of this changes 123', '2024-11-01 10:00:00'),
-    (1, 'in progress', 'this is the description of this changes 456', '2024-11-02 12:30:00'),
-    (2, 'backlog', 'this is the description of this changes 789', '2024-11-01 14:00:00'),
-    (2, 'deployed', 'this is the description of this changes 123', '2024-11-03 16:00:00'),
-    (3, 'backlog', 'this is the description of this changes 456', '2024-11-01 09:00:00'),
-    (4, 'in progress', 'this is the description of this changes 789', '2024-11-02 11:00:00'),
-    (5, 'deployed', 'this is the description of this changes 000', '2024-11-03 17:00:00')
+    (1, 'backlog', '2024-11-01 10:00:00'),
+    (1, 'in progress', '2024-11-02 12:30:00'),
+    (2, 'backlog', '2024-11-01 14:00:00'),
+    (2, 'deployed', '2024-11-03 16:00:00'),
+    (3, 'backlog', '2024-11-01 09:00:00'),
+    (4, 'in progress', '2024-11-02 11:00:00'),
+    (5, 'deployed', '2024-11-03 17:00:00')
 `;
 
 db.run(insertBacklogQuery, function (err) {

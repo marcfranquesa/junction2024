@@ -30,12 +30,18 @@
 		<p>{data.feature.description}</p>
 
 		<h2 class="mt-4 text-xl font-semibold">Latest Updates</h2>
-		<ul class="list-inside list-disc">
-			<ul class="list-inside list-disc">
-				{#each data.feature.updates as update}
-					<li>{update.description}<span>{update.timestamp}</span></li>
-				{/each}
-			</ul>
+		<ul class="space-y-2 pl-5">
+			{#each data.feature.updates as update}
+				<li class="flex items-center space-x-2">
+					<!-- Bullet point styling -->
+					<span class="h-2.5 w-2.5 rounded-full bg-blue-500"></span>
+
+					<span class="font-semibold">{update.status}</span>
+
+					<!-- Timestamp styling -->
+					<span class="text-sm text-gray-500">{update.timestamp}</span>
+				</li>
+			{/each}
 		</ul>
 	</div>
 
