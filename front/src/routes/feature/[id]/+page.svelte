@@ -31,9 +31,11 @@
 
 		<h2 class="mt-4 text-xl font-semibold">Latest Updates</h2>
 		<ul class="list-inside list-disc">
-			{#each data.feature.updates as update}
-				<li>{update}</li>
-			{/each}
+			<ul class="list-inside list-disc">
+				{#each data.feature.updates as update}
+					<li>{update.status}</li>
+				{/each}
+			</ul>
 		</ul>
 	</div>
 
@@ -55,7 +57,7 @@
 			rows="4"
 			placeholder="Write your message here..."
 			class="w-full resize-none rounded border p-2"
-		/>
+		></textarea>
 
 		<button type="submit" class="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">
 			Send
