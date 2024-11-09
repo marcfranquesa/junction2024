@@ -24,6 +24,14 @@ services:
     environment:
       DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:${POSTGRES_PORT}/${POSTGRES_DB}"
 
+  # front:
+  #   container_name: front
+  #   build: ./front
+  #   ports:
+  #     - "80:3000"
+  #   depends_on:
+  #     - db
+
   # py:
   #   depends_on:
   #     - db
