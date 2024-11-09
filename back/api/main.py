@@ -65,7 +65,6 @@ def feature_detail(
     feature_id: int,
 ):
     query = select(m.Feature_Backlog).where(m.Feature_Backlog.feature_id == feature_id)
-
     features = session.exec(query).all()
 
     return [
