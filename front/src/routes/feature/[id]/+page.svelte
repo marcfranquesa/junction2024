@@ -25,28 +25,35 @@
 	<div class="feature-card">
 		<!-- Header (name and status) -->
 		<div class="feature-header">
-			<h2 class="feature-title text-2xl">
+			<h2 class="feature-title">{feature.name}</h2>
+		</div>
+
+		<div class="tag-status-row">
+			<div class="tags-group">
 				<span class="tag-tag bg-blue-100 text-blue-800">
 					{feature.tag}
-				</span>{feature.name}
-			</h2>
-			<span class="status-badge {statusColor} text-2xl">
-				{feature.status}
-			</span>
+				</span>
+				<span class="status-badge {statusColor}">
+					{feature.status}
+				</span>
+			</div>
 		</div>
 
-		<!-- Feature content (Description and updates) -->
-		<div class="feature-footer">
-			<p class="text-base">{data.feature.description}</p>
+		<div class="feature-description">
+			{feature.description}
 		</div>
 
 		<div class="feature-footer">
-			<h2 class="text-xl font-semibold">Latest Updates</h2>
+			<span class="feature-id">ID: {feature.feature_id}</span>
+		</div>
+
+		<div class="feature-footer">
+			<h2 class="mb-2 text-xl font-semibold text-black">Latest Updates</h2>
 			<ul class="space-y-2">
 				{#each data.feature.updates as update}
 					<li class="update-item flex items-center space-x-2">
 						<!-- Timestamp styling -->
-						<span class="text-sm text-gray-500"
+						<span class="text-base text-gray-500"
 							>{update.timestamp.substring(0, 10)}</span
 						>
 
@@ -60,7 +67,7 @@
 	<!-- Mail form -->
 	<div class="feature-card">
 		<div class="mb-4">
-			<h2 class="text-xl font-semibold">Any doubt or suggestion?</h2>
+			<h2 class="text-xl font-semibold text-black">Any doubt or suggestions?</h2>
 			<p class="text-base font-medium">Leave us a message and we will get you via mail.</p>
 		</div>
 		<form on:submit|preventDefault={submitMessage} class="space-y-4">
@@ -100,39 +107,82 @@
 			transform 0.2s ease,
 			box-shadow 0.2s ease;
 	}
+
+	.feature-header {
+		margin-bottom: 0.75rem;
+	}
+
 	.feature-title {
+		font-size: 1.75rem;
 		font-weight: 600;
 		color: #1a1a1a;
 	}
-	.feature-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+
+	.tag-status-row {
 		margin-bottom: 1rem;
 	}
+
+	.tags-group {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	.status-badge {
+		padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		font-size: 1.25rem;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+
+	.tag-tag {
+		padding: 0.25rem 0.75rem;
+		border-radius: 9999px;
+		font-size: 1.25rem;
+	}
+
+	.feature-description {
+		font-size: 1rem;
+		color: #4b5563;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
 	.feature-footer {
 		margin-top: 1rem;
 		padding-top: 1rem;
 		border-top: 1px solid #e5e7eb;
 	}
-	/* Feature details */
-	.update-item {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
+
+	.feature-id {
 		font-size: 0.875rem;
-		color: #4b5563;
+		color: #6b7280;
 	}
-	.tag-tag {
-		padding: 0.25rem 0.75rem;
-		border-radius: 9999px;
-		margin-right: 1rem;
+
+	/* Status colors */
+	:global(.bg-green-100) {
+		background-color: #dcfce7;
 	}
-	.status-badge {
-		padding: 0.25rem 0.75rem;
-		border-radius: 9999px;
-		font-weight: 500;
-		text-transform: capitalize;
+
+	:global(.text-green-800) {
+		color: #166534;
+	}
+
+	:global(.bg-red-100) {
+		background-color: #fee2e2;
+	}
+
+	:global(.text-red-800) {
+		color: #991b1b;
+	}
+
+	:global(.bg-blue-100) {
+		background-color: #dbeafe;
+	}
+
+	:global(.text-blue-800) {
+		color: #1e40af;
 	}
 
 	/* Input container for consistent form styling */
