@@ -2,31 +2,46 @@
     "resp": [
         {
             "Feature ID": "#57",
-            "Feature name": "point of use process",
+            "Feature name": "Point of use process",
+            "Feature tag": "Process",
+            "user_name": "Fingrid",
+            "user_id": 1,
             "Brief description": "More information in the appendix 'Amendment proposal 57 - options 1 and 2'",
             "Status": "existing"
         },
         {
             "Feature ID": "#176",
-            "Feature name": "point of use process",
+            "Feature name": "Point of use process",
+            "Feature tag": "Process",
+            "user_name": "Fingrid",
+            "user_id": 1,
             "Brief description": "",
             "Status": "existing"
         },
         {
             "Feature ID": "#33+#114",
-            "Feature name": "contract process",
+            "Feature name": "Contract process",
+            "Feature tag": "Process",
+            "user_name": "Fingrid",
+            "user_id": 1,
             "Brief description": "More information in the appendices 'Development proposal-33 - review' and 'Development condition-sockets 33 and 114'",
             "Status": "existing"
         },
         {
             "Feature ID": "#160",
-            "Feature name": "contract process",
+            "Feature name": "Contract process",
+            "Feature tag": "Process",
+            "user_name": "Fingrid",
+            "user_id": 1,
             "Brief description": "",
             "Status": "existing"
         },
         {
             "Feature ID": "#178",
-            "Feature name": "measurement data process",
+            "Feature name": "Measurement data process",
+            "Feature tag": "Process",
+            "user_name": "Fingrid",
+            "user_id": 1,
             "Brief description": "",
             "Status": "existing"
         }

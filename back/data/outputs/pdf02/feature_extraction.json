@@ -1,76 +1,103 @@
 {
     "resp": [
         {
-            "Feature ID": null,
-            "Feature name": "Minute accuracy for disconnection/connection times",
-            "Brief description": "Report disconnection/connection times with minute accuracy to Datahub and process with minute accuracy.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Disconnection/connection times with minute accuracy",
+            "feature_tag": "Time Accuracy",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "Reporting and processing disconnection/connection times with minute accuracy to Datahub.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Balance agreement and usage point status processing with minute accuracy",
-            "Brief description": "Determine the party whose balance the consumption goes to according to the balance agreement situation at the beginning of the time step (15 min or 1 h).",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Metering data reminders",
+            "feature_tag": "Data Reminders",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "Development needed for metering data reminders to avoid incorrect reminders.",
+            "status": "modified"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Metering data reminders update",
-            "Brief description": "Further development of metering data reminders to support minute accuracy for disconnection/connection times.",
-            "Status": "modified"
+            "feature_id": null,
+            "feature_name": "New attribute for exact disconnection/connection time",
+            "feature_tag": "Data Attribute",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "A new attribute is needed to handle the exact disconnection/connection time.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Balance agreement validity in disconnection situation",
-            "Brief description": "Balance agreement remains valid until the end of the disconnection time step (15 min/1 h) at the moment of disconnection.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Disconnection/connection times reported with minute accuracy",
+            "feature_tag": "Time Accuracy",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "Disconnection/connection times are reported to Datahub with minute accuracy.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "New attribute for exact disconnection/connection time",
-            "Brief description": "A new attribute is needed to handle the exact disconnection/connection time in Datahub.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Balance agreement situation at the beginning of the time step",
+            "feature_tag": "Balance Agreement",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "The party whose balance the consumption goes to is determined according to the balance agreement situation at the beginning of the time step (15 min or 1 h).",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Balance agreement creation in connection situation",
-            "Brief description": "Balance agreement is created from the beginning of the connection time step.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Balance agreement ends at the end of the time step",
+            "feature_tag": "Balance Agreement",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "The balance agreement remains valid until the end of the disconnection time step (15 min/1 h) at the moment of disconnection.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Alignment of calculation, point of use status, and balance agreements",
-            "Brief description": "Ensure that calculation, point of use status, and balance agreements are fully aligned with each other.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Balance agreement created from the beginning of the connection time step",
+            "feature_tag": "Balance Agreement",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "The balance agreement is created from the beginning of the connection time step.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "No changes required to metering information reminders",
-            "Brief description": "No changes are required to the metering information reminders in option B.",
-            "Status": "existing"
+            "feature_id": null,
+            "feature_name": "Status of the point of use handled similarly to the balance agreement",
+            "feature_tag": "Point of Use Status",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "The status of the point of use is handled similarly to the balance agreement.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Possible changes to messages transmitted to the parties",
-            "Brief description": "Possible changes to the messages transmitted to the parties (e.g., DH-13x, DH-412/422) for connection/disconnection information.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Disconnection time corresponds to the actual situation",
+            "feature_tag": "Disconnection Time",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "The disconnection time in the system data corresponds to the actual situation.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Balance agreement situation checked every time step",
-            "Brief description": "The balance agreement situation is checked every time step frame.",
-            "Status": "existing"
+            "feature_id": null,
+            "feature_name": "Handling of disconnection and connection in the same 15 min period",
+            "feature_tag": "Disconnection/Connection Handling",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "Special rules for handling disconnection and connection in the same 15 min period to avoid overlap in balance agreements.",
+            "status": "new"
         },
         {
-            "Feature ID": null,
-            "Feature name": "Handling of balance agreements in same quarter disconnection/connection",
-            "Brief description": "Handle balance agreements to avoid overlap when disconnection and connection occur during the same 15 min.",
-            "Status": "new"
-        },
-        {
-            "Feature ID": null,
-            "Feature name": "Handling of balance agreements in same hour disconnection/connection",
-            "Brief description": "Handle balance agreements to avoid overlap when disconnection and connection occur during the same hour.",
-            "Status": "new"
+            "feature_id": null,
+            "feature_name": "Handling of disconnection and connection in the same hour",
+            "feature_tag": "Disconnection/Connection Handling",
+            "user_name": "unknown",
+            "user_id": 1,
+            "brief_description": "Special rules for handling disconnection and connection in the same hour to avoid overlap in balance agreements.",
+            "status": "new"
         }
     ]
 }

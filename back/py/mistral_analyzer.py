@@ -14,42 +14,45 @@ prompts = {
     For each feature provide:
     - Feature ID (if mentioned)
     - Feature name
+    - Feature tag. Tag should be able to group different features into the same category.
+    - The user_name that has requested that feature. Short name of the user. If not known, just assign 'unknown'.
+    - The user_id that has requested that feature. This should be an integer number that numbers the user_name.
     - Brief description
     - Status (new/existing/modified)
     Format the response as a JSON list.
     Give ONLY the JSON, no extra text, please.
     """,
     
-    'requirements': """
-    Identify all requirements mentioned in this text.
-    Include:
-    - Functional requirements
-    - Non-functional requirements
-    - Technical constraints
-    Format the response as a JSON list.
-    Give ONLY the JSON, no extra text, please.
-    """,
-    
-    'action_items': """
-    Extract all action items and next steps from this text.
-    For each item include:
-    - Description
-    - Assigned to (if mentioned)
-    - Due date (if mentioned)
-    - Priority (if mentioned)
-    Format the response as a JSON list.
-    Give ONLY the JSON, no extra text, please.
-    """,
-    
-    'decisions': """
-    Identify all decisions made in this meeting.
-    Include:
-    - Decision description
-    - Context/rationale
-    - Stakeholders involved
-    Format the response as a JSON list.
-    Give ONLY the JSON, no extra text, please.
-    """
+        # 'requirements': """
+        # Identify all requirements mentioned in this text.
+        # Include:
+        # - Functional requirements
+        # - Non-functional requirements
+        # - Technical constraints
+        # Format the response as a JSON list.
+        # Give ONLY the JSON, no extra text, please.
+        # """,
+        # 
+        # 'action_items': """
+        # Extract all action items and next steps from this text.
+        # For each item include:
+        # - Description
+        # - Assigned to (if mentioned)
+        # - Due date (if mentioned)
+        # - Priority (if mentioned)
+        # Format the response as a JSON list.
+        # Give ONLY the JSON, no extra text, please.
+        # """,
+        # 
+        # 'decisions': """
+        # Identify all decisions made in this meeting.
+        # Include:
+        # - Decision description
+        # - Context/rationale
+        # - Stakeholders involved
+        # Format the response as a JSON list.
+        # Give ONLY the JSON, no extra text, please.
+        # """
 }
 
 txt_filenames = sorted([z for _, _, z in os.walk("data/txt/")][0])
