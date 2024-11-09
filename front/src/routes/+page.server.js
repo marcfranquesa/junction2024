@@ -1,3 +1,5 @@
+import * as config from "../config";
+
 // +page.server.js
 export const load = async ({ params }) => {
     const client = {
@@ -6,7 +8,7 @@ export const load = async ({ params }) => {
     };
 
     try {
-        const response = await fetch(`http://api/featurelists?user_id=${client.id}`, {
+        const response = await fetch(`${config.db_host}/featurelists?user_id=${client.id}`, {
             method: 'GET'
         });
 

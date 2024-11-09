@@ -1,5 +1,7 @@
+import * as config from "../../../config";
+
 export const load = async ({ params }) => {
-	const response = await fetch(`http://api/feature/${params.id}`, {
+	const response = await fetch(`${config.db_host}/feature/${params.id}`, {
 		method: 'GET'
 	});
 
