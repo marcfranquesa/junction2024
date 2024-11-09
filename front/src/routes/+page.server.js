@@ -8,7 +8,7 @@ export const load = async ({ params }) => {
     };
 
     try {
-        const response = await fetch(`${config.db_host}/featurelists?user_id=${client.id}`, {
+        const response = await fetch(`${config.api_host}/featurelists?user_id=${client.id}`, {
             method: 'GET'
         });
 
