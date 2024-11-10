@@ -1,4 +1,4 @@
-import * as config from "../config";
+import * as config from "../../config";
 
 // +page.server.js
 export const load = async ({ params }) => {

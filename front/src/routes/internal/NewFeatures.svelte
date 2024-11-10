@@ -1,5 +1,5 @@
 <script>
-	import Feature from '../Feature.svelte';
+	import Feature from '../features/Feature.svelte';
 	export let newFeatures;
 </script>
 
