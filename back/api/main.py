@@ -111,9 +111,13 @@ def feature_detail(
             feature_counts[feature] = 0
         feature_counts[feature] += 1
 
-    return {
-        "feature_counts": [
+    feature_counts_list = sorted(
+        [
             {"name": features_dict[feature], "userCount": count}
             for feature, count in feature_counts.items()
-        ]
-    }
+        ],
+        key=lambda x: x["userCount"],
+        reverse=True,
+    )
+
+    return {"feature_counts": feature_counts_list}

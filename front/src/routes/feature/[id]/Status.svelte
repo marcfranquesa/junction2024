@@ -3,6 +3,7 @@
 	let statusColor;
 
 	if (status === 'new') statusColor = 'bg-gray-500';
+	else if (status === 'modified') statusColor = 'bg-orange-500';
 	else if (status === 'existing') statusColor = 'bg-green-500';
 </script>
 
