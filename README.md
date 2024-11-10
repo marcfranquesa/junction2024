@@ -1,32 +1,46 @@
-# Fingrid Datahub Customer Interaction Platform
+<h1 align="center">FinRAG</h1>
 
-This project is a prototype for a customer interaction platform designed to address the needs of Fingrid's clients. The goal is to provide a more transparent and user-friendly interface to allow clients to easily track upcoming system versions, feature requests, and updates.
+A  customer interaction platform designed to address the needs of Fingrid's clients.
+We provide a more transparent and user-friendly interface to allow clients to easily track upcoming system versions, feature requests, and updates.
+
+<p align="center">
+  <img src="docs/project.png" alt="project" width="45%" style="display: inline-block;">
+  <img src="docs/internal.png" alt="internal" width="45%" style="display: inline-block;">
+</p>
+
+<p align="center">
+  <img src="docs/features.png" alt="features" width="45%" style="display: inline-block;">
+  <img src="docs/feature.png" alt="feature" width="45%" style="display: inline-block;">
+</p>
 
 ## Problem Statement
 
-Fingrid Datahub's system development is highly impactful for the energy sector, and the development work directly affects our clients. However, many clients find it difficult to follow up on their feature requests or to obtain an overview of system updates and new releases.
+Fingrid Datahub's system development is highly impactful for the energy sector, and the development work directly affects their clients.
+However, many clients find it difficult to follow up on their feature requests or to obtain an overview of system updates and new releases.
 
-Currently, the information process consists of newsletters and downloadable files, but clients have no automated notifications and cannot easily find updated content unless they regularly check themselves.
+Currently, the information process consists of newsletters and downloadable files.
 
-We aim to create a prototype that resolves these pain points by providing a customizable frontend experience. The platform should make it easier for clients to stay informed and track updates in real-time.
+We aim to create a prototype that resolves these pain points by providing a customizable frontend experience.
+The platform should make it easier for clients to stay informed and track updates in real-time.
+We additionally provide an internal view for Fingrid to track and monitor popular features.
 
 ## Approach
 
 To solve the problem, we used the following approach:
 
-1. **Feature Extraction**: We read through all relevant PDF documents using Mistral LLMs, which helped us to tag features for different versions of the system.
+1. **Feature Extraction**: RAG based pipeline to extract features from PDF documents using Mistral LLMs, adding tags and ids to each different feature.
 2. **Data Processing**: The extracted feature data is processed and structured into a more user-friendly format.
 3. **Frontend Implementation**: A SvelteKit web app was created to allow users to easily navigate and explore the different features.
 
 ## Project Structure
 
+We containerized everything using Docker and use Docker Compose to get everything up and running.
+
 ### Backend
 
-The backend of the project processes the feature data extracted from the PDFs and makes it available to the frontend. The backend is implemented using Python and includes the following:
-
--   **API**: Contains the main logic for serving data via HTTP.
--   **Database**: Stores the feature data and metadata.
 -   **Processing**: Handles data extraction and transformation from raw PDF files to structured data.
+-   **Database**: Stores the feature data and metadata.
+-   **API**: Using FastAPI to easily get the data.
 
 #### Backend Directory
 
@@ -35,10 +49,8 @@ back
 ├── api
 │   ├── Dockerfile
 │   ├── main.py
-│   ├── pyproject.toml
 │   ├── requirements.txt
 │   └── src
-│       ├── init.py
 │       ├── db.py
 │       └── models.py
 ├── db
@@ -52,7 +64,8 @@ back
 
 ### Frontend
 
-The frontend of the project is implemented using SvelteKit and provides a user-friendly interface to explore the features and updates. It displays the data fetched from the backend and allows users to interact with the features in a meaningful way.
+The frontend of the project is implemented using SvelteKit and provides a user-friendly interface to explore the features and updates.
+It displays the data fetched from the backend and allows users to interact with the features in a meaningful way.
 
 #### Frontend Directory
 
@@ -70,11 +83,15 @@ front
     └── pdfs
 ```
 
-### Documentation
+## Quickstart
 
--   **PDF Processing**: The PDFs are processed and transformed into structured data. The data extraction happens in the `processing` folder, where scripts like `mistral_analyzer.py` are used to extract and organize the data.
--   **Feature Display**: The extracted features are displayed on the frontend, where users can navigate and explore the information.
+To set up everything using docker use
 
-## Running the Project
+```docker-compose up -d --build```
 
-To run the project locally simply run `make`.
+Or simply
+
+```make```
+
+
+
