@@ -2,8 +2,8 @@
   import Ball from './Ball.svelte'; // Import Ball component
 
   // Function to handle redirection on click
-  function redirectToHome() {
-    window.location.href = '/';
+  function redirectToFeatures() {
+    window.location.href = '/features';
   }
 </script>
 
@@ -15,7 +15,7 @@
   <Ball />
 
   <!-- Invisible Clickable Overlay over the Ball Component -->
-  <div class="clickable-overlay" on:click={redirectToHome}></div>
+  <div class="clickable-overlay" on:click={redirectToFeatures}></div>
 
   <!-- Gradient Text -->
   <div class="text-container">
