@@ -1,1 +1,1 @@
-export const db_host = "http://localhost:8000"
+export const api_host = "http://api"
