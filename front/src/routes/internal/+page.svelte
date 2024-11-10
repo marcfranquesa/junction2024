@@ -1,25 +1,23 @@
 <script>
 	import Plot from './Plot.svelte';
-	import Inactive from './Inactive.svelte';
+	import NewFeatures from './NewFeatures.svelte';
 
 	export let data;
 	const featureCounts = data.feature_counts.feature_counts;
-	const inactiveFeatures = data.inactive_features;
+	const newFeatures = data.new_features;
 </script>
 
 <div class="page-container">
 	<h1 class="mb-4 text-2xl font-bold">Internal reporting</h1>
 
-	<div class="grid-container">
-		<!-- Gràfic -->
-		<div class="chart-card">
-			<Plot {featureCounts} />
-		</div>
+	<div class="chart-card">
+		<Plot {featureCounts} />
+	</div>
 
-		<!-- Llistat de features inactives -->
-		<div class="inactive-features">
-			<Inactive {inactiveFeatures} />
-		</div>
+	<h1 class="mb-4 mt-8 text-2xl font-bold">New Features</h1>
+
+	<div class="new-features">
+		<NewFeatures {newFeatures} />
 	</div>
 </div>
 
@@ -56,7 +54,7 @@
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 
-	.inactive-features {
+	.new-features {
 		margin-top: 0; /* Elimina el marge extra quan es passa a dues columnes */
 	}
 

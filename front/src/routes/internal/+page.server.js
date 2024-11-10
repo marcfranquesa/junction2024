@@ -7,14 +7,12 @@ export const load = async ({ params }) => {
 
 	const feature_counts = await response.json();
 
-	const inactive_features_response = await fetch(
-		`${config.db_host}/featurelists?status=inactive`
-	);
+	const new_features_response = await fetch(`${config.db_host}/featurelists?status=new`);
 
-	const inactive_features = await inactive_features_response.json();
+	const new_features = await new_features_response.json();
 
 	return {
 		feature_counts: feature_counts,
-		inactive_features: inactive_features
+		new_features: new_features
 	};
 };

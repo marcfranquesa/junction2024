@@ -11,6 +11,7 @@
 	} from 'chart.js';
 
 	export let featureCounts;
+	featureCounts = featureCounts.slice(0, 8);
 
 	Chart.register(BarController, CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
