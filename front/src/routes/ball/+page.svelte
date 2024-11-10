@@ -1,57 +1,88 @@
 <script>
-  import Ball from './Ball.svelte'; // Import directly from the same folder
+  import Ball from './Ball.svelte'; // Import Ball component
+
+  // Function to handle redirection on click
+  function redirectToHome() {
+    window.location.href = '/';
+  }
 </script>
 
 <div class="container">
-  <div class="ball-container">
-    <Ball />
-  </div>
-  <div class="title-container">
-    <span class="gradient-text">Generative AI</span>
+  <!-- Logo Image at Top Left -->
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <!-- Ball Component -->
+  <Ball />
+
+  <!-- Invisible Clickable Overlay over the Ball Component -->
+  <div class="clickable-overlay" on:click={redirectToHome}></div>
+
+  <!-- Gradient Text -->
+  <div class="text-container">
+    <span class="gradient-text">Feature Insights</span>
+    <span class="gradient-text">Platform</span>
   </div>
 </div>
 
 <style>
+  /* Importing Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
   /* Container for layout */
   .container {
-    display: flex;
-    position: relative; /* Make the container relative for absolute positioning */
-    width: 100%;
-    height: 100vh; /* Make the container full screen height */
-    padding: 0 20px; /* Optional padding */
-  }
-
-  /* Ball container styling */
-  .ball-container {
-    position: absolute;
-    left: 150px; /* Move the ball 150px from the left edge */
-    top: 50%;
-    transform: translateY(-50%); /* Center the ball vertically */
-    width: 100px; /* Fixed width for the ball */
-    height: 100px; /* Fixed height for the ball */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
   }
 
-  /* Title container styling */
-  .title-container {
-    flex: 1;
+  /* Logo styling for top-left position */
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    z-index: 15; /* Ensure logo is above other elements */
+  }
+
+  /* Text container styling */
+  .text-container {
+    position: absolute;
     display: flex;
-    justify-content: flex-end; /* Align the title to the right */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+    z-index: 10;
+    color: transparent;
+    margin-bottom: 350px; /* Adjust text position */
   }
 
   /* Gradient text styling */
   .gradient-text {
-    font-size: 3rem; /* Adjust font size as needed */
-    font-weight: bold;
-    background: linear-gradient(to right, #d8141c, white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    background: white;
     background-clip: text;
-    -webkit-background-clip: text; /* For Safari */
+    -webkit-background-clip: text;
     color: transparent;
-    padding-bottom: 2px; /* Add some padding below the text */
+    padding-bottom: 2px;
+    margin: 5px 0;
+  }
+
+  /* Clickable overlay positioned over the Ball component */
+  .clickable-overlay {
+    position: absolute;
+    top: 50%; /* Adjust as needed to match Ball position */
+    transform: translateY(-50%);
+    width: 300px; /* Adjust width to match Ball size */
+    height: 300px; /* Adjust height to match Ball size */
+    z-index: 12; /* Ensure it is above Ball but below the logo */
+    cursor: pointer;
   }
 </style>
 
