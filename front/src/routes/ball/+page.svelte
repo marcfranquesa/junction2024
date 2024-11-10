@@ -1,13 +1,23 @@
 <script>
   import Ball from './Ball.svelte'; // Import Ball component
+
+  // Function to handle redirection on click
+  function redirectToHome() {
+    window.location.href = '/';
+  }
 </script>
 
 <div class="container">
   <!-- Logo Image at Top Left -->
   <img src="logo.png" alt="Logo" class="logo" />
 
-  <!-- Ball Component and Text -->
+  <!-- Ball Component -->
   <Ball />
+
+  <!-- Invisible Clickable Overlay over the Ball Component -->
+  <div class="clickable-overlay" on:click={redirectToHome}></div>
+
+  <!-- Gradient Text -->
   <div class="text-container">
     <span class="gradient-text">Feature Insights</span>
     <span class="gradient-text">Platform</span>
@@ -36,10 +46,10 @@
     left: -150px;
     width: 150px; /* Adjust size as needed */
     height: auto;
-    z-index: 15; /* Make sure logo is above the Ball */
+    z-index: 15; /* Ensure logo is above other elements */
   }
 
-  /* Gradient text container styling */
+  /* Text container styling */
   .text-container {
     position: absolute;
     display: flex;
@@ -48,12 +58,12 @@
     align-items: center;
     z-index: 10;
     color: transparent;
-    margin-bottom: 350px; /* Adjust the text position */
+    margin-bottom: 350px; /* Adjust text position */
   }
 
   /* Gradient text styling */
   .gradient-text {
-    font-family: 'Poppins', sans-serif; /* Apply custom font */
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 600;
     background: white;
@@ -62,6 +72,17 @@
     color: transparent;
     padding-bottom: 2px;
     margin: 5px 0;
+  }
+
+  /* Clickable overlay positioned over the Ball component */
+  .clickable-overlay {
+    position: absolute;
+    top: 50%; /* Adjust as needed to match Ball position */
+    transform: translateY(-50%);
+    width: 300px; /* Adjust width to match Ball size */
+    height: 300px; /* Adjust height to match Ball size */
+    z-index: 12; /* Ensure it is above Ball but below the logo */
+    cursor: pointer;
   }
 </style>
 
