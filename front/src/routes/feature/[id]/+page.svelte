@@ -1,24 +1,48 @@
 <script>
-	export let data;
+    export let data;
 
-	const feature = data.feature;
+    const feature = data.feature;
 
-	let subject = '';
-	let message = '';
+    let subject = '';
+    let message = '';
 
-	$: statusColor =
-		feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
+    $: statusColor =
+        feature.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
 
-	const submitMessage = () => {
-		alert(`Message submitted:
-        - Subject: ${subject}
-        - Message: ${message}
-        - From: ${data.client.email}`);
+    const submitMessage = async () => {
+        // Display an alert with message information
+         console.log(`Message submitted:
+             - Subject: ${subject}
+             - Message: ${message}
+             - From: ${"tumaset23@gmail.com"}`);
 
-		// Reset content
-		subject = '';
-		message = '';
-	};
+        try {
+            const response = await fetch("http://localhost:3000/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: "tumaset23@gmail.com",
+                    subject,
+                    message,
+                }),
+            });
+
+            if (response.ok) {
+                console.log("Email sent successfully!");
+            } else {
+                console.log("Failed to send email.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            console.log("An error occurred while sending the email.");
+        }
+
+        // Reset form content
+        subject = '';
+        message = '';
+    };
 </script>
 
 <div class="w-full space-y-6 p-4">
