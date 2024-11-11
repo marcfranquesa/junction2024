@@ -1,1 +1,1 @@
-export const api_host = "http://api"
+export const api_host = 'http://api';

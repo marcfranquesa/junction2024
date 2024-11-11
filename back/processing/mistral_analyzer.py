@@ -3,7 +3,7 @@ import json
 from mistralai import Mistral
 
 # api_key = os.environ["MISTRAL_API_KEY"]
-api_key = "coEq39ZaZIRPHHFHCc3hTosfmszgfToq"
+api_key = ""
 model = "mistral-large-latest"
 
 client = Mistral(api_key=api_key)
